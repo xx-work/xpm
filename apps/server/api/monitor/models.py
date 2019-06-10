@@ -18,7 +18,7 @@ class ObjProcess(models.Model):
 from ..xobj.models import SysManagerCopInfo, ConnectManagerUserInfo
 
 from django.contrib.auth.models import User
-# 这里把平台用户省略，管理这个models 用 group 
+# 这里把平台用户省略，管理这个models 用 group
 
 class SystemObjProcess(ObjProcess):
     cop = models.ForeignKey(SysManagerCopInfo, verbose_name="sys_cop_process", related_name="sys_cop_process", on_delete=models.CASCADE)
