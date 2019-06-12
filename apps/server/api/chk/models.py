@@ -3,7 +3,6 @@ from django.utils.translation import ugettext_lazy as _
 import uuid
 
 
-
 CHANGE_STATUS = (
     ('APPENDING', 'APPENDING'), # 变更中
     ('FAILED', 'FAILED'),   # 变更失败

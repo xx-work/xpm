@@ -2,7 +2,7 @@ from django.db import models
 import uuid
 
 
-from cso.models import SysManagerCopInfo
+from ..xobj.models import SysManagerCopInfo
 
 # from services.models import UserProfile
 InfoSecEventTypes = (
