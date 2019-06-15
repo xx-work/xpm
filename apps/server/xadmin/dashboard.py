@@ -16,20 +16,12 @@ from ..models import SysManagerCopInfo, PolicyRule
 
 # @xadmin.sites.register(views.website.IndexView)
 # class MainDashboard(object):
-#     widgets = [
-#         [
-#             {"type": "html", "title": "首页设置窗体",
-#              "content": "<h3> 信息系统安全管理平台 </h3><p> GB∕T 34990-2017 信息安全技术 信息系统安全管理平台技术要求和测试评价方法 </p>"},
-#             {"type": "list", "model": "server.SysManagerCopInfo", "params": {"o": "-date_updated"}},
-#         ],
-#         [
-#             {"type": "qbutton", "title": "管理部件和策略",
-#              "btns": [{"model": SysManagerCopInfo},
-#                       {"model": PolicyRule},
-#                       ]},
-#             {"type": "addform", "model": SysManagerCopInfo},
-#         ]
-#     ]
+#     title = u"信息系统安全管理平台"
+#     icon = "fa fa-dashboard"
+#
+#     def get_page_id(self):
+#         return 'home'
+
 
 
 @xadmin.sites.register(views.BaseAdminView)

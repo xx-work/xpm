@@ -11,7 +11,7 @@ from rest_framework import permissions
 
 from .models import IdentityChoices, UserProfile
 
-class CreateUserSerializer(serializers.ModelSerializer):
+class UserProfileSerializer(serializers.ModelSerializer):
     token = serializers.CharField(label=u'登录状态token', read_only=True)  # 增加token字段
     identity = serializers.ChoiceField(label=u'身份', choices=IdentityChoices, default='Guest')
     truename = serializers.CharField(label=u'真实姓名', max_length=20, default='')
@@ -71,7 +71,7 @@ class CreateUserSerializer(serializers.ModelSerializer):
 
 class JWTUserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
-    serializer_class = CreateUserSerializer
+    serializer_class = UserProfileSerializer
     permission_classes = (permissions.IsAuthenticated, )
 
 
@@ -86,6 +86,7 @@ class UserAuditLogSerializer(serializers.ModelSerializer):
         model = UserAuditLog
         #fields = ('url', 'request_method', 'ip', 'username', 'status', 'opreate_time', 'param')
         fields = ('ip', 'username', 'status', 'opreate_time')
+
 
 class UserAuditLogViewSet(viewsets.ModelViewSet):
     queryset = UserAuditLog.objects.all()

@@ -31,7 +31,6 @@ def get_all_users(request):
     return Response({"res": res_data, "page_count": page_count, "pager": pager, "all_counts": all_counts})
 
 
-
 @api_view(['DELETE'])
 @permission_classes((IsAuthenticated, ))
 def user_delete(request, pk):

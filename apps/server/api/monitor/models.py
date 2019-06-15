@@ -27,3 +27,5 @@ class SystemObjProcess(ObjProcess):
     cop = models.ForeignKey(SysManagerCopInfo, verbose_name="系统部件", related_name="sys_cop_process", on_delete=models.CASCADE)
     user = models.ManyToManyField(ConnectManagerUserInfo, verbose_name="系统部件用户", related_name="sys_user_process")
     # plat_user = models.ManyToManyField(User, verbose_name="平台用户", related_name="plat_user_process", on_delete=models.CASCADE)
+
+
