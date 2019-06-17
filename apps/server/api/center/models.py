@@ -15,3 +15,11 @@ class SystemPolicyCentralizedManagement(models.Model):
     class Meta:
         db_table="policy_cen_mg"
         verbose_name="系统策略集中管理"
+
+
+class SecurityPolicyCentralizedManagement(SystemPolicyCentralizedManagement):
+    id = models.UUIDField(default=uuid.uuid4, primary_key=True)
+
+## 这个也许先不用
+
+

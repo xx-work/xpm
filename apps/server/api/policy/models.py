@@ -17,6 +17,9 @@ class PolicyBench(models.Model):
     desc = models.CharField(max_length=255, verbose_name="策略基准描述")
     type = models.CharField(max_length=50, verbose_name="基准类型", choices=PolicyBaseTypes)
 
+    def __str__(self):
+        return str(self.name) + "["+ str(self.type) +"]"
+
     class Meta:
         db_table="policy_bench"
         verbose_name="策略基准"
@@ -44,7 +47,7 @@ class PolicyAction(models.Model):
                                       verbose_name="关联的部件用户",
                                       blank=True,
                                       related_name="policy_action_users")
-    belong_cop = models.ForeignKey(SysManagerCopInfo, on_delete=models.CASCADE, related_name="系统部件")
+    belong_cop = models.ForeignKey(SysManagerCopInfo, on_delete=models.CASCADE, related_name="cop_policy_conn")
     _connect_agent = models.TextField(blank=True, verbose_name=u"系统部件的host")
     _connect_main = models.CharField(max_length=256, blank=True, verbose_name=u"关联的核心URL和请求方法")
     _connect_kwargs = models.TextField(blank=True, verbose_name=u"系统部件关联的信息|url参数等")
@@ -58,8 +61,9 @@ class PolicyAction(models.Model):
         verbose_name = "策略动作"
 
 
-class PolicyActionHistory(PolicyAction):
-    time = models.DateTimeField(auto_now_add=True)
+class PolicyActionHistory(models.Model):
+    policyaction = models.ForeignKey(PolicyAction, on_delete=models.CASCADE, related_name="action_policy_history")
+    add_time = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         db_table = "action_history"
