@@ -2,7 +2,7 @@ from django.db import models
 import uuid
 
 
-from ..xobj.models import SysManagerCopInfo
+from ..xobj.models import SysManagerCopInfo, ConnectManagerUserInfo
 
 # from services.models import UserProfile
 InfoSecEventTypes = (
@@ -47,11 +47,11 @@ class AttackerActionDesc(models.Model):
         verbose_name = "攻击者行为描述"
 
 
+# 之所以不用外键， 是因为当用户名没有的时候，仍然可以提供日志时间的记录。
 class InfoSecEvent(models.Model):
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)
     descover_time = models.DateTimeField(verbose_name="发现时间")
     happend_time = models.DateTimeField(verbose_name="事件发生时间")
-    report_time = models.DateTimeField(verbose_name="报告时间", auto_now_add=True)
     reporter = models.CharField(max_length=100, verbose_name="报告提交者用户名")
     infosysname = models.CharField(max_length=100, verbose_name="信息系统名称")
     describtion = models.TextField(verbose_name="信息描述")
@@ -63,9 +63,35 @@ class InfoSecEvent(models.Model):
     attacker_descs = models.ManyToManyField(SysManagerCopInfo, verbose_name="负面影响列表", related_name="info_conn_impact")
     impact_area = models.CharField(choices=InfoSecEventTypes, default='Guest', max_length=50)
 
-    had_action = models.TextField(verbose_name="已经采取的行动", blank=True)
+    # had_action = models.TextField(verbose_name="已经采取的行动", blank=True)
     plan_action = models.TextField(verbose_name="计划采取的行动", blank=True)
+
+    report_time = models.DateTimeField(verbose_name="报告时间", auto_now_add=True)
 
     class Meta:
         db_table="infosec_event"
         verbose_name="信息事件"
+
+
+InfoEventStates = (
+    ('DONE', "完成"),
+    ('IGN', "忽略"),
+    ('ING', '跟进中'),
+    ('NONE', '未处理'),
+)
+
+
+class InfoGoin(models.Model):
+    id = models.UUIDField(default=uuid.uuid4, primary_key=True)
+    info = models.ForeignKey(InfoSecEvent, verbose_name="事件", related_name="info_going", on_delete=models.CASCADE)
+    go_user = models.ForeignKey(ConnectManagerUserInfo, verbose_name="事态跟进用户", on_delete=models.CASCADE)
+
+    had_action = models.TextField(verbose_name="跟进动作", blank=True)
+    state = models.CharField(verbose_name="跟进中", max_length=33, choices=InfoEventStates, default='ING')
+    go_time = models.DateTimeField(verbose_name="跟进时间", auto_now_add=True)
+
+
+    class Meta:
+        db_table="infosec_detail"
+        verbose_name="信息事件跟进"
+

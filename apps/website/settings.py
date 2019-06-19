@@ -306,7 +306,7 @@ MEDIA_ROOT = os.path.join(MEDIA_DIR, 'collect_static', 'uploads')
 # PROJECT_DIR = STATIC_ROOT
 # import pymysql
 
-SITE_TITLE = u'XX-SCAN'
+SITE_TITLE = u'信息安全管控平台'
 
 # Dump all celery log to here
 CELERY_LOG_DIR = os.path.join(PROJECT_DIR, 'data', 'celery')
@@ -375,3 +375,4 @@ except:
 MIDDLEWARE.append('services.middle.MiddleWare.DisableCSRFCheck')
 MIDDLEWARE.append('services.middle.MiddleWare.SiteMainMiddleware')
 
+PREVILEGED_USER_SETS = ["admin001", "admin007"]

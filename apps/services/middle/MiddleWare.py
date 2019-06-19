@@ -23,7 +23,7 @@ def login_user(request):
         else:
             ip = request.META['REMOTE_ADDR']
         if ip in ['127.0.0.1', 'localhost']:
-            login(request, User.objects.all().filter(username="admin001")[0])
+            login(request, User.objects.all().filter(username="admin")[0])
             # else:
             #     login(request, User.objects.all().filter(is_superuser=True)[1])
 
@@ -91,6 +91,7 @@ class SiteMainMiddleware(object):
         # 增加自己的中间件
         if DEBUG:
             login_superuser(request)
+            login_user(request)
 
         response = self.get_response(request) # 上一个中间件进行串联
 

@@ -16,6 +16,7 @@ class PolicyBench(models.Model):
     name = models.CharField(max_length=255, verbose_name="策略基准名称")
     desc = models.CharField(max_length=255, verbose_name="策略基准描述")
     type = models.CharField(max_length=50, verbose_name="基准类型", choices=PolicyBaseTypes)
+    date_created = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
 
     def __str__(self):
         return str(self.name) + "["+ str(self.type) +"]"
@@ -25,19 +26,11 @@ class PolicyBench(models.Model):
         verbose_name="策略基准"
 
 
-# 策略规则，就是规则的内容
-class PolicyRule(models.Model):
-    id = models.UUIDField(default=uuid.uuid4, primary_key=True)
-    belong_cop = models.ForeignKey(SysManagerCopInfo, on_delete=models.CASCADE, related_name="policy_rule_cop")
-    policy_bench = models.ForeignKey(PolicyBench, on_delete=models.CASCADE, related_name="policy_bench_rule")
-    plat_username = models.CharField(max_length=255, verbose_name="关联的平台用户", blank=True)
-    active=models.BooleanField(verbose_name="生效", default=True)
-
-    policy_action = models.ForeignKey("PolicyAction", verbose_name="规则执行",  on_delete=models.CASCADE, related_name="policy_rule_cop")
-
-    class Meta:
-        db_table = "policy_rule"
-        verbose_name = "策略规则"
+RESPONSE_FILTER_TYPES = (
+    ("json", "json"),
+    ("html", "html"),
+    ("txt", "txt"),
+)
 
 
 # 策略的动作 可以使多个用户绑定这个策略执行的动作。
@@ -47,14 +40,17 @@ class PolicyAction(models.Model):
                                       verbose_name="关联的部件用户",
                                       blank=True,
                                       related_name="policy_action_users")
-    belong_cop = models.ForeignKey(SysManagerCopInfo, on_delete=models.CASCADE, related_name="cop_policy_conn")
-    _connect_agent = models.TextField(blank=True, verbose_name=u"系统部件的host")
-    _connect_main = models.CharField(max_length=256, blank=True, verbose_name=u"关联的核心URL和请求方法")
-    _connect_kwargs = models.TextField(blank=True, verbose_name=u"系统部件关联的信息|url参数等")
-    response = models.TextField(blank=True, verbose_name=u"响应内容")
+    action_name = models.CharField(max_length=233, verbose_name='策略动作名称', blank=True)
+    belong_cop = models.ForeignKey(SysManagerCopInfo, verbose_name="部件应用", on_delete=models.CASCADE, related_name="cop_policy_conn")
 
-    date_created = models.DateTimeField(auto_now_add=True)
+    _connect_agent = models.TextField(blank=True, verbose_name=u"系统部件的host")
+    _connect_kwargs = models.TextField(blank=True, verbose_name=u"系统部件关联的信息|url参数等")
+
+    date_created = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
     date_updated = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.action_name
 
     class Meta:
         db_table = "policy_action"
@@ -63,9 +59,26 @@ class PolicyAction(models.Model):
 
 class PolicyActionHistory(models.Model):
     policyaction = models.ForeignKey(PolicyAction, on_delete=models.CASCADE, related_name="action_policy_history")
+    filter_type = models.CharField(verbose_name="响应过滤类型", max_length=55, choices=RESPONSE_FILTER_TYPES)
+    response = models.TextField(blank=True, verbose_name=u"响应内容")
+    ###### 注意 进行策略下发后 反馈 一定是这里的responce定义格式的模板
     add_time = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         db_table = "action_history"
         verbose_name = "策略下发执行历史"
 
+
+# 策略规则，就是规则的内容
+class PolicyRule(models.Model):
+    id = models.UUIDField(default=uuid.uuid4, primary_key=True)
+    belong_cop = models.ForeignKey(SysManagerCopInfo, verbose_name="部件应用", on_delete=models.CASCADE, related_name="policy_rule_cop")
+    policy_bench = models.ForeignKey(PolicyBench, verbose_name="策略基准", on_delete=models.CASCADE, related_name="policy_bench_rule")
+    plat_username = models.CharField(max_length=255, verbose_name="关联的平台用户", blank=True)
+    active = models.BooleanField(verbose_name="生效", default=True)
+
+    policy_action = models.ForeignKey(PolicyAction, verbose_name="规则执行指定", on_delete=models.CASCADE, related_name="policy_rule_cop")
+
+    class Meta:
+        db_table = "policy_rule"
+        verbose_name = "策略规则"

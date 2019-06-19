@@ -4,4 +4,4 @@ from .api.models import *
 
 
 # 加载配置辅助的工具表
-from .fxconf.models import SnmpAgentCfgInfo, SnmpHostData
+from agent.snmpd.models import SnmpAgentCfgInfo, SnmpHostData
