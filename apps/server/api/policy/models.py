@@ -2,7 +2,7 @@ from django.db import models
 import uuid
 
 PolicyBaseTypes = (
-    ('plat', '平台策略'),
+    # ('plat', '平台策略'),
     ('system', '系统管理策略'),
     ('security', '安全机制策略'),
     ('audit', '审计机制策略')
@@ -78,6 +78,7 @@ class PolicyRule(models.Model):
     active = models.BooleanField(verbose_name="生效", default=True)
 
     policy_action = models.ForeignKey(PolicyAction, verbose_name="规则执行指定", on_delete=models.CASCADE, related_name="policy_rule_cop")
+    add_time = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         db_table = "policy_rule"

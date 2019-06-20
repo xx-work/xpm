@@ -92,6 +92,10 @@ class AuditLogObject(models.Model):
 
     date_created = models.DateTimeField(auto_now_add=True, verbose_name="审计时间")
 
+    def __str__(self):
+        return self.name
+
+
     class Meta:
         db_table = "audit_obj"
         verbose_name = "审计对象"

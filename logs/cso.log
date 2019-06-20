@@ -3727,3 +3727,453 @@ AttributeError: Unable to lookup 'filter_type' on PolicyAction or serverpolicyac
 2019-06-20 10:03:01 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
 2019-06-20 10:03:03 [basehttp INFO] "GET /server/infosecevent/add/ HTTP/1.1" 200 39111
 2019-06-20 10:03:03 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:10:14 [basehttp INFO] "GET / HTTP/1.1" 200 29424
+2019-06-20 16:10:14 [basehttp INFO] "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 22996
+2019-06-20 16:10:14 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 133529
+2019-06-20 16:10:14 [basehttp INFO] "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 186
+2019-06-20 16:10:14 [basehttp INFO] "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 836
+2019-06-20 16:10:14 [basehttp INFO] "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4610
+2019-06-20 16:10:14 [basehttp INFO] "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8805
+2019-06-20 16:10:14 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:10:14 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8515
+2019-06-20 16:10:14 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 60329
+2019-06-20 16:10:14 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15590
+2019-06-20 16:10:14 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4730
+2019-06-20 16:10:14 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 43825
+2019-06-20 16:10:15 [basehttp INFO] "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3508
+2019-06-20 16:10:15 [basehttp INFO] "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+2019-06-20 16:10:15 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3583
+2019-06-20 16:10:15 [basehttp INFO] "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3285
+2019-06-20 16:10:15 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 33207
+2019-06-20 16:10:15 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1029
+2019-06-20 16:10:15 [basehttp INFO] "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 248951
+2019-06-20 16:10:16 [basehttp INFO] "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+2019-06-20 16:10:20 [base WARNING] Not Found: /favicon.ico
+2019-06-20 16:10:20 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 9964
+2019-06-20 16:10:23 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 41740
+2019-06-20 16:10:23 [basehttp INFO] "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+2019-06-20 16:10:23 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2380
+2019-06-20 16:10:23 [basehttp INFO] "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1133
+2019-06-20 16:10:23 [basehttp INFO] "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1999
+2019-06-20 16:10:23 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 545
+2019-06-20 16:10:23 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 2046
+2019-06-20 16:10:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:10:26 [basehttp INFO] "GET /server/policyrule/add/ HTTP/1.1" 200 35418
+2019-06-20 16:10:26 [basehttp INFO] "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19841
+2019-06-20 16:10:26 [basehttp INFO] "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 11003
+2019-06-20 16:10:26 [basehttp INFO] "GET /static/xadmin/vendor/select2/select2_locale_zh-hans.js HTTP/1.1" 200 708
+2019-06-20 16:10:26 [basehttp INFO] "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8742
+2019-06-20 16:10:26 [basehttp INFO] "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1382
+2019-06-20 16:10:26 [basehttp INFO] "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 107692
+2019-06-20 16:10:26 [basehttp INFO] "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 102268
+2019-06-20 16:10:27 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 200 7777
+2019-06-20 16:10:27 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:10:38 [basehttp INFO] "GET /server/policyaction/add/ HTTP/1.1" 200 5246
+2019-06-20 16:13:15 [basehttp INFO] "POST /server/policyaction/add/ HTTP/1.1" 200 277
+2019-06-20 16:13:15 [basehttp INFO] "GET /server/policyrule/add/?_field=policy_action&policy_action=d586969e-32e8-4a2c-873a-2b8ddcdc3c8f HTTP/1.1" 200 2466
+2019-06-20 16:13:19 [basehttp INFO] "POST /server/policyrule/add/ HTTP/1.1" 302 0
+2019-06-20 16:13:20 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 48891
+2019-06-20 16:13:20 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:13:20 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4316
+2019-06-20 16:13:34 [basehttp INFO] "GET /server/sysmanagercopinfo/6562c027-b9c5-4256-80c6-bec3e15a4a3e/detail/?_format=html HTTP/1.1" 200 3067
+2019-06-20 16:14:03 [basehttp INFO] "GET /server/policybench/235e6dfb-a521-4d1c-811d-476882a3ce42/detail/?_format=html HTTP/1.1" 200 1379
+2019-06-20 16:14:15 [basehttp INFO] "GET /server/policyaction/d586969e-32e8-4a2c-873a-2b8ddcdc3c8f/detail/?_format=html HTTP/1.1" 200 1884
+2019-06-20 16:20:16 [exception ERROR] Internal Server Error: /server/policyrule/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: 'policy_action__cop_user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\contrib\admin\utils.py", line 330, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+  File "F:\workspace\cso_venv\lib\site-packages\django\contrib\admin\utils.py", line 307, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: PolicyRule has no field named 'policy_action__cop_user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 405, in get
+    context = self.get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 1 more times]
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  [Previous line repeated 1 more times]
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 384, in get_context
+    'result_headers': self.result_headers(),
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 524, in result_headers
+    field_name, row) for field_name in self.list_display]
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 524, in <listcomp>
+    field_name, row) for field_name in self.list_display]
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 441, in result_header
+    return_attr=True
+  File "F:\workspace\cso_venv\lib\site-packages\django\contrib\admin\utils.py", line 351, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'policy_action__cop_user' on PolicyRule or serverpolicyruleAdminListAdminViewModelAdminViewGlobalSettingCommAdminViewBaseSettingBaseAdminViewBaseAdminObjectViewobject
+2019-06-20 16:20:16 [basehttp ERROR] "GET /server/policyrule/ HTTP/1.1" 500 290315
+2019-06-20 16:20:59 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 49976
+2019-06-20 16:20:59 [basehttp INFO] "GET /static/xadmin/css/xadmin.plugin.aggregation.css HTTP/1.1" 200 100
+2019-06-20 16:20:59 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:21:03 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 46332
+2019-06-20 16:21:03 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:24:19 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 46810
+2019-06-20 16:24:19 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:24:21 [base WARNING] Not Found: /sys/straged/sysd586969e-32e8-4a2c-873a-2b8ddcdc3c8f
+2019-06-20 16:24:21 [basehttp WARNING] "GET /sys/straged/sysd586969e-32e8-4a2c-873a-2b8ddcdc3c8f HTTP/1.1" 404 10084
+2019-06-20 16:24:25 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 46810
+2019-06-20 16:24:31 [base WARNING] Not Found: /sys/straged/sysd586969e-32e8-4a2c-873a-2b8ddcdc3c8f
+2019-06-20 16:24:31 [basehttp WARNING] "GET /sys/straged/sysd586969e-32e8-4a2c-873a-2b8ddcdc3c8f HTTP/1.1" 404 10084
+2019-06-20 16:25:23 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 46810
+2019-06-20 16:25:25 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 46810
+2019-06-20 16:25:25 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:25:26 [basehttp INFO] "GET /server/policyaction/add/ HTTP/1.1" 200 34986
+2019-06-20 16:25:26 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:27:56 [basehttp INFO] "POST /server/policyaction/add/ HTTP/1.1" 302 0
+2019-06-20 16:27:56 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 49820
+2019-06-20 16:27:56 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:28:12 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 49976
+2019-06-20 16:28:12 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:28:16 [basehttp INFO] "GET /server/policyrule/?_p_active__exact=1 HTTP/1.1" 200 51946
+2019-06-20 16:28:16 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:28:21 [basehttp INFO] "GET /server/policyrule/?_p_active__exact=0 HTTP/1.1" 200 44496
+2019-06-20 16:28:21 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:28:32 [basehttp INFO] "GET /server/policyrule/?_p_active__exact=0&_p_policy_bench__type__exact=system HTTP/1.1" 200 45536
+2019-06-20 16:28:32 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:28:35 [basehttp INFO] "GET /server/policyrule/?_p_active__exact=0&_p_policy_bench__type__exact=security HTTP/1.1" 200 45578
+2019-06-20 16:28:35 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:28:40 [basehttp INFO] "GET /server/policyrule/?_p_active__exact=0&_p_policy_bench__type__exact=audit HTTP/1.1" 200 45515
+2019-06-20 16:28:40 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:28:43 [basehttp INFO] "GET /server/policyrule/? HTTP/1.1" 200 49976
+2019-06-20 16:28:43 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:29:28 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 61661
+2019-06-20 16:29:28 [basehttp INFO] "GET /static/xadmin/css/xadmin.widget.editable.css HTTP/1.1" 200 1162
+2019-06-20 16:29:28 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.editable.js HTTP/1.1" 200 6359
+2019-06-20 16:29:28 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:29:30 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 55267
+2019-06-20 16:29:30 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:29:41 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 39080
+2019-06-20 16:29:41 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:29:42 [basehttp INFO] "GET /server/backuphistory/add/ HTTP/1.1" 200 32971
+2019-06-20 16:29:43 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:30:41 [basehttp INFO] "GET /server/backuphistory/add/ HTTP/1.1" 200 32971
+2019-06-20 16:30:41 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:30:45 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 39080
+2019-06-20 16:30:45 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:30:47 [basehttp INFO] "GET /server/backuphistory/add/ HTTP/1.1" 200 32971
+2019-06-20 16:30:47 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:30:58 [basehttp INFO] "GET /server/backuphistory/add/ HTTP/1.1" 200 32971
+2019-06-20 16:30:58 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:37:04 [basehttp INFO] "GET /server/backuphistory/add/ HTTP/1.1" 200 32758
+2019-06-20 16:37:04 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:37:07 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 39080
+2019-06-20 16:37:07 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:37:09 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 49002
+2019-06-20 16:37:10 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:37:11 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 49002
+2019-06-20 16:37:11 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:37:13 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 49976
+2019-06-20 16:37:13 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:37:15 [basehttp INFO] "GET /server/policyrule/add/ HTTP/1.1" 200 36122
+2019-06-20 16:37:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:40:01 [basehttp INFO] "GET /server/policyrule/add/ HTTP/1.1" 200 36008
+2019-06-20 16:40:01 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:40:14 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 49976
+2019-06-20 16:40:14 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:40:16 [basehttp INFO] "GET /server/policyrule/add/ HTTP/1.1" 200 36008
+2019-06-20 16:40:16 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:40:41 [basehttp INFO] "GET /server/policyrule/add/ HTTP/1.1" 200 35843
+2019-06-20 16:40:41 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:41:46 [basehttp INFO] "GET /server/policyrule/add/ HTTP/1.1" 200 35843
+2019-06-20 16:41:46 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:42:13 [basehttp INFO] "GET /server/policyrule/add/ HTTP/1.1" 200 35881
+2019-06-20 16:42:13 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:42:32 [basehttp INFO] "GET /server/policyrule/add/ HTTP/1.1" 200 35881
+2019-06-20 16:42:32 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:42:34 [basehttp INFO] "POST /settings/user HTTP/1.1" 200 0
+2019-06-20 16:42:35 [basehttp INFO] "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1949
+2019-06-20 16:42:38 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 49455
+2019-06-20 16:42:38 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:42:39 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 49971
+2019-06-20 16:42:39 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:42:45 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 39294
+2019-06-20 16:42:45 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:42:47 [basehttp INFO] "GET /server/systempolicycentralizedmanagement/ HTTP/1.1" 200 39012
+2019-06-20 16:42:47 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:42:48 [basehttp INFO] "GET /server/auditpolicycentralizedmanagement/ HTTP/1.1" 200 39288
+2019-06-20 16:42:48 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:42:50 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 61656
+2019-06-20 16:42:50 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:42:51 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 55262
+2019-06-20 16:42:51 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:42:53 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 38837
+2019-06-20 16:42:53 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:42:54 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 55262
+2019-06-20 16:42:54 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:43:05 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 47099
+2019-06-20 16:43:05 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:43:06 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 49971
+2019-06-20 16:43:06 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:43:07 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 47099
+2019-06-20 16:43:07 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:43:08 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 49971
+2019-06-20 16:43:09 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:43:25 [basehttp INFO] "GET /server/policyrule/?_p_policy_bench__type__exact=plat HTTP/1.1" 200 44765
+2019-06-20 16:43:25 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:44:27 [basehttp INFO] "GET /server/policyrule/?_p_policy_bench__type__exact=plat HTTP/1.1" 200 44657
+2019-06-20 16:44:27 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:44:42 [basehttp INFO] "GET /server/policyrule/?_p_policy_bench__type__exact=plat&_p_belong_cop__in=6562c027-b9c5-4256-80c6-bec3e15a4a3e HTTP/1.1" 200 46266
+2019-06-20 16:44:42 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:44:45 [basehttp INFO] "GET /server/policyrule/? HTTP/1.1" 200 49878
+2019-06-20 16:44:46 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:44:55 [basehttp INFO] "GET /server/policyrule/add/ HTTP/1.1" 200 35876
+2019-06-20 16:44:55 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:45:10 [basehttp INFO] "POST /server/policyrule/add/ HTTP/1.1" 302 0
+2019-06-20 16:45:11 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 52675
+2019-06-20 16:45:11 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:45:22 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 52296
+2019-06-20 16:45:22 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:46:39 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 52296
+2019-06-20 16:46:39 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:46:40 [basehttp INFO] "GET /server/policyrule/add/ HTTP/1.1" 200 35876
+2019-06-20 16:46:40 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:46:51 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 49455
+2019-06-20 16:46:51 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:46:53 [basehttp INFO] "GET /server/policyaction/add/ HTTP/1.1" 200 34981
+2019-06-20 16:46:53 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:46:58 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 49455
+2019-06-20 16:46:58 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:48:23 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 39075
+2019-06-20 16:48:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:48:25 [basehttp INFO] "GET /server/backuphistory/add/ HTTP/1.1" 200 32753
+2019-06-20 16:48:25 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:48:57 [basehttp INFO] "POST /server/backuphistory/add/ HTTP/1.1" 302 0
+2019-06-20 16:48:57 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 44740
+2019-06-20 16:48:57 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:49:20 [basehttp INFO] "GET /server/backuphistory/add/ HTTP/1.1" 200 32753
+2019-06-20 16:49:20 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:49:27 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 44355
+2019-06-20 16:49:27 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:49:29 [basehttp INFO] "GET /auth/user/ HTTP/1.1" 200 56352
+2019-06-20 16:49:29 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:49:32 [basehttp INFO] "GET /auth/user/add/ HTTP/1.1" 200 32536
+2019-06-20 16:49:32 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:49:58 [basehttp INFO] "POST /auth/user/add/ HTTP/1.1" 302 0
+2019-06-20 16:49:58 [basehttp INFO] "GET /auth/user/ HTTP/1.1" 200 59129
+2019-06-20 16:49:58 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:51:10 [basehttp INFO] "POST /auth/user/ HTTP/1.1" 200 58846
+2019-06-20 16:51:17 [basehttp INFO] "GET /auth/user/ HTTP/1.1" 200 58846
+2019-06-20 16:51:17 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:51:32 [basehttp INFO] "POST /auth/user/ HTTP/1.1" 200 58846
+2019-06-20 16:51:42 [basehttp INFO] "GET /auth/user/ HTTP/1.1" 200 58846
+2019-06-20 16:51:43 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:52:03 [basehttp INFO] "GET /auth/user/?_p_is_superuser__exact=1 HTTP/1.1" 200 58563
+2019-06-20 16:52:03 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:52:11 [basehttp INFO] "GET /server/changeaudit/ HTTP/1.1" 200 39019
+2019-06-20 16:52:11 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:52:22 [basehttp INFO] "GET /server/infosecevent/ HTTP/1.1" 200 40049
+2019-06-20 16:52:22 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:52:24 [basehttp INFO] "GET /server/infosecevent/add/ HTTP/1.1" 200 34750
+2019-06-20 16:52:24 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:53:29 [exception ERROR] Internal Server Error: /server/infosecevent/add/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\edit.py", line 292, in post
+    self.save_models()
+  File "E:\xpm\apps\server\adminx\_4_solution\__init__.py", line 20, in save_models
+    instance = self.new_obj
+AttributeError: 'serverinfoseceventAdminCreateAdminViewModelFormAdm' object has no attribute 'new_obj'
+2019-06-20 16:53:29 [basehttp ERROR] "POST /server/infosecevent/add/ HTTP/1.1" 500 153027
+2019-06-20 16:53:58 [basehttp INFO] "GET /server/infosecevent/add/ HTTP/1.1" 200 34750
+2019-06-20 16:54:10 [exception ERROR] Internal Server Error: /server/infosecevent/add/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\edit.py", line 292, in post
+    self.save_models()
+  File "E:\xpm\apps\server\adminx\_4_solution\__init__.py", line 20, in save_models
+    instance = self.new_obj
+AttributeError: 'serverinfoseceventAdminCreateAdminViewModelFormAdm' object has no attribute 'new_obj'
+2019-06-20 16:54:10 [basehttp ERROR] "POST /server/infosecevent/add/ HTTP/1.1" 500 153027
+2019-06-20 16:54:15 [exception ERROR] Internal Server Error: /server/infosecevent/add/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\edit.py", line 292, in post
+    self.save_models()
+  File "E:\xpm\apps\server\adminx\_4_solution\__init__.py", line 20, in save_models
+    instance = self.new_obj
+AttributeError: 'serverinfoseceventAdminCreateAdminViewModelFormAdm' object has no attribute 'new_obj'
+2019-06-20 16:54:15 [basehttp ERROR] "POST /server/infosecevent/add/ HTTP/1.1" 500 153027
+2019-06-20 16:57:51 [basehttp INFO] "GET /server/infosecevent/ HTTP/1.1" 200 40049
+2019-06-20 16:57:51 [basehttp INFO] "GET /server/infosecevent/add/ HTTP/1.1" 200 40903
+2019-06-20 16:57:51 [basehttp ERROR] "GET /server/infosecevent/add/ HTTP/1.1" 500 59
+2019-06-20 16:57:53 [basehttp INFO] "GET /server/infosecevent/ HTTP/1.1" 200 40049
+2019-06-20 16:57:53 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:57:54 [basehttp INFO] "GET /server/infosecevent/add/ HTTP/1.1" 200 40903
+2019-06-20 16:57:54 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 200 10526
+2019-06-20 16:57:54 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css HTTP/1.1" 200 3897
+2019-06-20 16:57:55 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js HTTP/1.1" 200 21841
+2019-06-20 16:57:55 [basehttp INFO] "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 200 3069
+2019-06-20 16:57:55 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 200 33703
+2019-06-20 16:57:55 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:59:08 [basehttp INFO] "POST /server/infosecevent/add/ HTTP/1.1" 302 0
+2019-06-20 16:59:09 [basehttp INFO] "GET /server/infosecevent/ HTTP/1.1" 200 48616
+2019-06-20 16:59:09 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:59:16 [basehttp INFO] "GET /server/changeaudit/ HTTP/1.1" 200 39019
+2019-06-20 16:59:16 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:59:18 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 48997
+2019-06-20 16:59:18 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:59:24 [basehttp INFO] "GET / HTTP/1.1" 200 29419
+2019-06-20 16:59:24 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-20 16:59:28 [basehttp INFO] "GET /xadmin/userwidget/add/?user=1&page_id=home&_redirect=/ HTTP/1.1" 200 33647
+2019-06-20 16:59:28 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
