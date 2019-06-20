@@ -53,19 +53,17 @@ class InfoSecEvent(models.Model):
     descover_time = models.DateTimeField(verbose_name="发现时间")
     happend_time = models.DateTimeField(verbose_name="事件发生时间")
     reporter = models.CharField(max_length=100, verbose_name="报告提交者用户名")
-    infosysname = models.CharField(max_length=100, verbose_name="信息系统名称")
+    infosysname = models.CharField(max_length=100, verbose_name="信息来源", default='self')
     describtion = models.TextField(verbose_name="信息描述")
-    info_type = models.CharField(choices=InfoSecEventTypes, default='attack', max_length=50)
-    info_level = models.IntegerField(choices=InfoSecEventlevels, default=1)
+    info_type = models.CharField(choices=InfoSecEventTypes, default='attack', max_length=50, verbose_name="事件类型")
+    info_level = models.IntegerField(choices=InfoSecEventlevels, default=1, verbose_name="安全等级")
 
     impact_cops = models.ManyToManyField(SysManagerCopInfo, verbose_name="受影响的资产列表", related_name="info_conn_cops")
     negative_impacts = models.ManyToManyField(AttackerActionDesc, verbose_name="攻击者行为描述", related_name="info_conn_attack")
     attacker_descs = models.ManyToManyField(SysManagerCopInfo, verbose_name="负面影响列表", related_name="info_conn_impact")
-    impact_area = models.CharField(choices=InfoSecEventTypes, default='Guest', max_length=50)
-
+    # impact_area = models.CharField(choices=InfoSecEventTypes, default='Guest', max_length=50, verbose_name="影响范围")
     # had_action = models.TextField(verbose_name="已经采取的行动", blank=True)
     plan_action = models.TextField(verbose_name="计划采取的行动", blank=True)
-
     report_time = models.DateTimeField(verbose_name="报告时间", auto_now_add=True)
 
     class Meta:

@@ -1,1 +1,1 @@
-..\cso_venv\Scripts\activate.bat
+f:\\workspace\cso_venv\Scripts\activate.bat

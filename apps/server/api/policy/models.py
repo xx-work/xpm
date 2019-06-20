@@ -82,3 +82,6 @@ class PolicyRule(models.Model):
     class Meta:
         db_table = "policy_rule"
         verbose_name = "策略规则"
+
+
+## 安全机制;

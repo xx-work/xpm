@@ -26,6 +26,8 @@ def get_command(shell_cmd):
     return "".join([x.decode('unicode-escape') for x in stdout])
     #popen =  subprocess.run("nginx -V", shell=True, check=True)
 # popen =  subprocess.Popen("nginx -V", stdout=subprocess.PIPE, shell=True).stdout.readlines()
+
+
 def get_command_no_use(shell_cmd):
     import os
     popen = os.popen(shell_cmd)

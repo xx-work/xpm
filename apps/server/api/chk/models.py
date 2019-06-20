@@ -20,7 +20,7 @@ class ChangeAudit(models.Model):
     """
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)
 
-    opreate_username = models.ForeignKey(User, verbose_name="操作者", on_delete=models.CASCADE, related_name="plat_user_chk")
+    opreate_username = models.CharField(verbose_name=u"操作员", max_length=33, help_text='默认为操作员')
     change_subject = models.CharField(verbose_name="变更的主体", max_length=155, blank=True)
     change_object = models.CharField(verbose_name="变更受体", max_length=155, blank=True)
     # change_type = models.CharField(verbose_name="变更类型", max_length=33, choices=PolicyBaseTypes)

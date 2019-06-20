@@ -33,11 +33,11 @@ BOOTSTRAP_TOKEN:
 # MySQL or postgres setting like:
 # 使用Mysql作为数据库
 DB_ENGINE: mysql
-DB_HOST: 192.168.2.55
+DB_HOST: 192.168.2.227
 DB_PORT: 3306
 DB_USER: root
 DB_PASSWORD: test@1q2w2e4R
-DB_NAME: cso_610
+DB_NAME: cso_618
 
 # When Django start it will bind this host and port
 # ./manage.py runserver 127.0.0.1:8080
@@ -52,9 +52,9 @@ FLOWER_BASE_USER: admin001
 FLOWER_BASE_PASSWORD: 1q2w3e4R 
 # Use Redis as broker for celery and web socket
 # Redis配置
-REDIS_HOST: 192.168.2.41
+REDIS_HOST: 192.168.2.227
 REDIS_PORT: 6379
-# REDIS_PASSWORD:
+REDIS_PASSWORD: xxscan
 REDIS_DB_CELERY: 3
 REDIS_DB_CACHE: 4
 
