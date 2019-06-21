@@ -17,6 +17,7 @@ class BackUpHistoryAdmin(object):
             instance.opreate_username = request.user.username
         instance.save()
 
+
 xadmin.site.register(BackUpHistory, BackUpHistoryAdmin)
 
 

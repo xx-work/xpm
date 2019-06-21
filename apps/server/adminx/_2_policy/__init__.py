@@ -9,13 +9,13 @@ from ...models import PolicyBench, PolicyAction, PolicyRule, PolicyActionHistory
 class BenchInline(object):
     model = PolicyBench
     # extra = 1
-    style = "accordion"
+    # style = "accordion"
 
 
 class ActionInline(object):
     model = PolicyAction
     # extra = 1
-    style = "accordion"
+    # style = "accordion"
 
 
 class PolicyBenchAdmin(object):
@@ -63,11 +63,10 @@ class PolicyRuleAdmin(object):
     readonly_fields = ("plat_username", "id")
     form_layout = (
         Main(
-                Tab(
-                    "策略规则对象指定",
-                    Fieldset(
-                        "部件和生效", "belong_cop", "active",
-                        description="针对系统部件创建策略, 设置生效与否",
+            Tab(
+                "策略规则对象指定",
+                Fieldset(
+                    "部件和生效", "belong_cop", "active", description="针对系统部件创建策略, 设置生效与否",
                     ),
                     Inline(BenchInline),
                 ),

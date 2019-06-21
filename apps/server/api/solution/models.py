@@ -29,6 +29,9 @@ class EffectInfo(models.Model):
         EffectInfo.objects.all().delete()
         EffectInfo.objects.bulk_create([EffectInfo(negative_impact=x) for x in negative_impacts])
 
+    def __str__(self):
+        return self.negative_impact
+
     class Meta:
         db_table="negative_impact"
         verbose_name="负面影响"
@@ -41,6 +44,9 @@ class AttackerActionDesc(models.Model):
     def inital():
         AttackerActionDesc.objects.all().delete()
         AttackerActionDesc.objects.bulk_create([AttackerActionDesc(attacker_desc=x) for x in attacker_descs])
+
+    def __str__(self):
+        return self.attacker_desc
 
     class Meta:
         db_table = "attacker_action_desc"
@@ -66,6 +72,9 @@ class InfoSecEvent(models.Model):
     plan_action = models.TextField(verbose_name="计划采取的行动", blank=True)
     report_time = models.DateTimeField(verbose_name="报告时间", auto_now_add=True)
 
+    def __str__(self):
+        return self.infosysname
+
     class Meta:
         db_table="infosec_event"
         verbose_name="信息事件"
@@ -82,14 +91,11 @@ InfoEventStates = (
 class InfoGoin(models.Model):
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)
     info = models.ForeignKey(InfoSecEvent, verbose_name="事件", related_name="info_going", on_delete=models.CASCADE)
-    go_user = models.ForeignKey(ConnectManagerUserInfo, verbose_name="事态跟进用户", on_delete=models.CASCADE)
-
+    go_user = models.CharField(verbose_name="处理用户", max_length=33)
     had_action = models.TextField(verbose_name="跟进动作", blank=True)
     state = models.CharField(verbose_name="跟进中", max_length=33, choices=InfoEventStates, default='ING')
     go_time = models.DateTimeField(verbose_name="跟进时间", auto_now_add=True)
 
-
     class Meta:
         db_table="infosec_detail"
         verbose_name="信息事件跟进"
-

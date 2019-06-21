@@ -51,7 +51,6 @@ class InfoSecEventAdmin(object):
         )
     )
 
-
     def save_models(self):
         instance = self.new_obj
         request = self.request
@@ -60,8 +59,20 @@ class InfoSecEventAdmin(object):
         instance.save()
 
 
+class InfoGoingAdmin(object):
+    list_display = ['info', 'go_user',  'state', 'had_action', 'state', 'go_time']
+    readonly_fields = ["id", 'go_user']
+
+    def save_models(self):
+        instance = self.new_obj
+        request = self.request
+        if not instance.go_user:
+            instance.go_user = request.user.username
+        instance.save()
+
+
 xadmin.site.register(InfoSecEvent, InfoSecEventAdmin)
 
 xadmin.site.register(EffectInfo)
 xadmin.site.register(AttackerActionDesc)
-xadmin.site.register(InfoGoin)
+xadmin.site.register(InfoGoin, InfoGoingAdmin)

@@ -1,9 +1,9 @@
 # coding: utf-8
 from celery import shared_task
-from ops.celery.decorator import after_app_ready_start, after_app_shutdown_clean_periodic, \
+from services.celery.decorator import after_app_ready_start, after_app_shutdown_clean_periodic, \
     register_as_period_task
 
-from ops.celery.Task import CustomTask
+from services.celery.Task import CustomTask
 
 ## http://docs.celeryproject.org/en/latest/userguide/configuration.html#configuration
 

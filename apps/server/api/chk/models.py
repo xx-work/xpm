@@ -2,12 +2,13 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 import uuid
 
+from ..policy.models import PolicyBaseTypes
 
 CHANGE_STATUS = (
-    ('APPENDING', 'APPENDING'), # 变更中
-    ('FAILED', 'FAILED'),   # 变更失败
-    ('SECCUSS', 'SECCUSS'), # 变更成功
-    ('ROLLING', 'ROLLING'), # 变更回滚
+    ('APPENDING', '变更中'), # 变更中
+    ('FAILED', '变更失败'),   # 变更失败
+    ('SECCUSS', '变更成功'), # 变更成功
+    ('ROLLING', '变更回滚'), # 变更回滚
 )
 
 from django.contrib.auth.models import User
@@ -21,14 +22,15 @@ class ChangeAudit(models.Model):
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)
 
     opreate_username = models.CharField(verbose_name=u"操作员", max_length=33, help_text='默认为操作员')
-    change_subject = models.CharField(verbose_name="变更的主体", max_length=155, blank=True)
-    change_object = models.CharField(verbose_name="变更受体", max_length=155, blank=True)
-    # change_type = models.CharField(verbose_name="变更类型", max_length=33, choices=PolicyBaseTypes)
-
-    change_desc = models.CharField(verbose_name="变更描述", max_length=155)
+    # change_subject = models.CharField(verbose_name="变更的主体", max_length=155, blank=True)
+    # change_object = models.CharField(verbose_name="变更受体", max_length=155, blank=True)
+    change_type = models.CharField(verbose_name="变更类型", max_length=33, choices=PolicyBaseTypes, default='system')
+    change_name = models.CharField(verbose_name="变更名", max_length=155, blank=True, default=None)
+    change_obj = models.CharField(verbose_name="变更对象", max_length=155, blank=True, default=None)
+    change_desc = models.CharField(verbose_name="变更描述", max_length=155, blank=True, default=None)
     change_stat = models.CharField(verbose_name="变更状态", max_length=10, choices=CHANGE_STATUS, default="SECCUSS")
 
-    date_created = models.DateTimeField(auto_now_add=True)
+    date_created = models.DateTimeField(auto_now_add=True, verbose_name='审计时间')
 
     class Meta:
         db_table="change_audit"
