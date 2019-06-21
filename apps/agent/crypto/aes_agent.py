@@ -14,6 +14,7 @@ def add_to_16(s):
         s += '\0'
     return str.encode(s)  # 返回bytes
 
+
 def encrypted(text, key=AES_ENCODE_KEY):
     aes = AES.new(str.encode(key), AES.MODE_ECB)  # 初始化加密器，本例采用ECB加密模式
     return str(base64.encodebytes(aes.encrypt(add_to_16(text))), encoding='utf8').replace('\n', '')  # 加密
@@ -22,6 +23,7 @@ def encrypted(text, key=AES_ENCODE_KEY):
 def decriptd(encrypted_text, key=AES_ENCODE_KEY):
     aes = AES.new(str.encode(key), AES.MODE_ECB)  # 初始化加密器，本例采用ECB加密模式
     return str(aes.decrypt(base64.decodebytes(bytes(encrypted_text, encoding='utf8'))).rstrip(b'\0').decode("utf8"))  # 解密
+
 
 def encoded_json(obj, key=AES_ENCODE_KEY):
     text = json.dumps(obj) ## 将加密的json对象转化为字符串。
