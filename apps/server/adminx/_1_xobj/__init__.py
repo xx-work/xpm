@@ -16,3 +16,5 @@ class ConnectManagerUserInfoAdmin(object):
 xadmin.site.register(SysManagerCopInfo, SysManagerCopInfoAdmin)
 xadmin.site.register(ConnectManagerUserInfo, ConnectManagerUserInfoAdmin)
 xadmin.site.register(AuditLogObject)
+
+# 2019-6-22 生产环境下; 一定没有这个 editable 的; 不软不受平台监控。

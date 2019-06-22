@@ -2,12 +2,15 @@ import xadmin
 from xadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Side
 from ...models import InfoSecEvent, InfoGoin, EffectInfo, AttackerActionDesc
 
+from server.xadmin.actions.change_views_read import ViewdAction
+
 
 class InfoSecEventAdmin(object):
-    list_display = ['infosysname', 'info_type', 'describtion',
+    list_display = ['info_source', 'info_type', 'describtion',
                     'info_level', 'descover_time', 'happend_time', 'reporter', 'report_time']
     readonly_fields = ("reporter", "id")
 
+    actions = [ViewdAction, ]
     # wizard_form_list = [
     #     ('事件内容', {'fields': ['infosysname', 'info_type', 'describtion', 'info_level']}),
     #     ('发生和发现', {'fields': ['descover_time', 'happend_time', 'reporter']}),
@@ -16,12 +19,14 @@ class InfoSecEventAdmin(object):
     #     ('计划措施', {'fields': ['plan_action']}),
     # ]
 
+
+
     form_layout = (
         Main(
                 Tab(
                     "事件内容",
                     Fieldset(
-                        "手动增加事件", 'infosysname', 'info_type', 'describtion', 'info_level',
+                        "手动增加事件", 'info_source', 'info_type', 'describtion', 'info_level',
                         description="事件内容",
                     ),
                     Fieldset(
@@ -60,7 +65,7 @@ class InfoSecEventAdmin(object):
 
 
 class InfoGoingAdmin(object):
-    list_display = ['info', 'go_user',  'state', 'had_action', 'state', 'go_time']
+    list_display = ['info', 'go_user',  'state', 'had_action', 'go_time']
     readonly_fields = ["id", 'go_user']
 
     def save_models(self):

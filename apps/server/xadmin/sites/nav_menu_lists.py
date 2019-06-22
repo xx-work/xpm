@@ -10,11 +10,16 @@ from xadmin import views
 # from xadmin.plugins.batch import BatchChangeAction
 from django.contrib.auth.models import Group, User, Permission
 
+
+from reversion.models import Revision
+from xadmin.models import Log
+
+
 from server.api.center.models import SystemPolicyCentralizedManagement, AuditPolicyCentralizedManagement, SecurityPolicyCentralizedManagement
 from server.api.xobj.models import SysManagerCopInfo, ConnectManagerUserInfo, AuditLogObject
 from server.api.policy.models import PolicyActionHistory, PolicyRule, PolicyAction, PolicyBench
-from server.api.monitor.models import ObjProcess
-from server.api.solution.models import InfoSecEvent, InfoGoin, AttackerActionDesc
+from server.api.monitor.models import ObjProcess, ProcessAuditLog
+from server.api.solution.models import InfoSecEvent, InfoGoin, AttackerActionDesc, EffectInfo
 from server.api.chk.models import ChangeAudit
 from server.api.backer.models import BackUpHistory
 
@@ -71,6 +76,7 @@ class GlobalSetting(object):
 
             {'title': '变更处理', 'menus': (
                 {'title': '系统变更处理', 'url': self.get_model_url(ChangeAudit, 'changelist')},
+                {'title': '平台操作日志', 'url': self.get_model_url(Log, 'changelist')},
                         ), "icon": "fa fa-try"},
 
             {'title': '灾难备份和恢复管理', 'menus': (
@@ -84,19 +90,30 @@ class GlobalSetting(object):
                 {'title': '责任管理', 'url': self.get_model_url(Community, 'changelist'), "icon":"fa fa-rocket"},
             ), "icon": "fa fa-users"},
 
+            {'title': '', 'menus': (
+            ), "icon": "fa fa-ignore"},
 
             {'title': '其他工具', 'menus': (
                 {'title': 'SNMP设置', 'url': self.get_model_url(SnmpAgentCfgInfo, 'changelist')},
-                {'title': '策略下发历史', 'url': self.get_model_url(PolicyActionHistory, 'changelist')},
-
-            ), "icon": "fa fa-users"},
+                {'title': '策略下发记录', 'url': self.get_model_url(PolicyActionHistory, 'changelist')},
+                {'title': '进程监控记录', 'url': self.get_model_url(ProcessAuditLog, 'changelist')},
+                {'title': '事件跟进记录', 'url': self.get_model_url(InfoGoin, 'changelist')},
+            ), "icon": "fa fa-bell"},
 
             {'title': '响应事件管理设置', 'menus': (
                 {'title': '攻击者行为', 'url': self.get_model_url(AttackerActionDesc, 'changelist')},
-                {'title': '事件性质管理', 'url': self.get_model_url(InfoSecEvent, 'changelist')},
+                {'title': '事件性质管理', 'url': self.get_model_url(EffectInfo, 'changelist')},
+                # {'title': '事件跟进记录', 'url': self.get_model_url(InfoGoin, 'changelist')},
+            ), "icon": "fa fa-users"},
 
-            ), "icon": "fa fa-users"}
-)
+
+            {'title': '', 'menus': (), "icon": "fa fa-ignore"},
+
+            {'title': '平台版本更新记录', 'menus': (
+                {'title': '版本更新', 'url': self.get_model_url(Revision, 'changelist')},
+               ), "icon": "fa fa-fire"},
+
+        )
 
 # """
 # select user_alert.*, regular.rules_type, regular.msg from

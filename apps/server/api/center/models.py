@@ -5,6 +5,7 @@ import uuid
 from ..xobj.models import SysManagerCopInfo
 from ..monitor.models import STATES
 
+
 class SystemPolicyCentralizedManagement(models.Model):
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)
     cop = models.ForeignKey(SysManagerCopInfo, verbose_name="系统部件", on_delete=models.CASCADE, related_name="cop_center")

@@ -61,7 +61,7 @@ class PolicyActionHistory(models.Model):
     policyaction = models.ForeignKey(PolicyAction, on_delete=models.CASCADE, related_name="action_policy_history")
     filter_type = models.CharField(verbose_name="响应过滤类型", max_length=55, choices=RESPONSE_FILTER_TYPES)
     response = models.TextField(blank=True, verbose_name=u"响应内容")
-    ###### 注意 进行策略下发后 反馈 一定是这里的responce定义格式的模板
+    # 注意 进行策略下发后 反馈 一定是这里的responce定义格式的模板
     add_time = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -78,7 +78,7 @@ class PolicyRule(models.Model):
     active = models.BooleanField(verbose_name="生效", default=True)
 
     policy_action = models.ForeignKey(PolicyAction, verbose_name="规则执行指定", on_delete=models.CASCADE, related_name="policy_rule_cop")
-    add_time = models.DateTimeField(auto_now_add=True)
+    add_time = models.DateTimeField(auto_now_add=True, verbose_name="创建日期")
 
     class Meta:
         db_table = "policy_rule"

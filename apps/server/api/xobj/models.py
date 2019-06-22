@@ -12,25 +12,49 @@ ProtocalSets = (
     ('smtp', 'SMTP')
 )
 
+LevelSets = (
+    ("High", "高"),
+    ("Midium", "中"),
+    ("Low", "低"),
+)
+
+CopTypes = (
+    ("CommonServer", "普通服务器、终端设备操作系统"),
+    ("ServerDb", "服务器数据库管理系统"),
+    ("Softd", "应用软件系统"),
+    ("Openvas", "网络脆弱性扫描系统"),
+    ("Netd", "路由器交换机网络设备"),
+    ("Firewalld", "防火墙系统"),
+    ("IDS/IPS", "入侵检测/防御系统"),
+    ("MISP", "统一威胁管理系统"),
+    ("Gelid", "网络和终端隔离设备"),
+    ("NetdWorkDivice", "联网办公设备"),
+    ("NetdPhisicalDivice", "联网的物理安全设施"),
+    ("Others", "其他"),
+)
+
+
 # 当前信息都是手动填写
 class SysManagerCopInfo(models.Model):
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)
     uniq_flag = models.CharField(max_length=155, verbose_name="系统部件唯一标识", unique=True)  ## 系统资源配置关联
     name = models.CharField(max_length=128, verbose_name=u"系统部件名称")
     ip = models.GenericIPAddressField(verbose_name=_('ip'))
-    type = models.CharField(max_length=128, verbose_name=u"系统部件的类型", default="CommonHost")
-    level = models.CharField(max_length=128, verbose_name=u"安全等级", default="High")
+    type = models.CharField(max_length=128, verbose_name=u"系统部件的类型", choices=CopTypes)
+    level = models.CharField(max_length=128, verbose_name=u"安全等级", default="High", choices=LevelSets)
     pushed = models.BooleanField(verbose_name="接入", default=True)
     os = models.CharField(max_length=128, verbose_name=u"操作系统", default="Linux")
     mac = models.CharField(max_length=128, verbose_name=u"mac地址",  blank=True)
     mac_vendor = models.CharField(max_length=128, verbose_name=u"厂家",  blank=True)
     up = models.BooleanField(verbose_name="存活状态", default=True)
-    extra = models.TextField(verbose_name=u"额外补充信息", default="")
+    extra = models.TextField(verbose_name=u"额外补充信息", blank=True)
     # comment = models.TextField( verbose_name=u"系统部件描述", default="")
-    managers = models.ManyToManyField("ConnectManagerUserInfo", verbose_name="系统部件管理用户", related_name="sys_cop_conn_users")
+    managers = models.ManyToManyField("ConnectManagerUserInfo",
+                                      verbose_name="系统部件管理用户",
+                                      related_name="sys_cop_conn_users", blank=True)
 
-    date_created = models.DateTimeField(auto_now_add=True)
-    date_updated = models.DateTimeField(auto_now=True)
+    date_created = models.DateTimeField(auto_now_add=True, verbose_name="部件接入时间")
+    date_updated = models.DateTimeField(auto_now=True, verbose_name="部件信息修改时间")
 
     def __str__(self):
         return str(self.name)

@@ -11,7 +11,7 @@
 
 
 from services.api.plat.platlog.models import PlatOptHistory
-from services.api.oauth.models import  UserAuditLog, Community
+from services.api.oauth.models import UserAuditLog, Community
 
 
 

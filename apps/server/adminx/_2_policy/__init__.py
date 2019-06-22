@@ -1,5 +1,5 @@
 import xadmin
-from  xadmin.filters import MultiSelectFieldListFilter
+from xadmin.filters import MultiSelectFieldListFilter
 from xadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Side
 from xadmin.plugins.inline import Inline
 
@@ -50,8 +50,8 @@ class PolicyRuleAdmin(object):
     ]
 
     save_as = True
-    aggregate_fields = {"add_time": "min"}
-    grid_layouts = ("table", "thumbnails")
+    # aggregate_fields = {"add_time": "min"}
+    # grid_layouts = ("table", "thumbnails")
 
     def save_models(self):
         instance = self.new_obj

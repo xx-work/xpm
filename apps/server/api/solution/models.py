@@ -22,7 +22,7 @@ attacker_descs = ["犯罪/经济利益", "消遣/黑客攻击", "政治/恐怖�
 
 
 class EffectInfo(models.Model):
-    negative_impact =  models.CharField(max_length=100, verbose_name="负面影响")
+    negative_impact = models.CharField(max_length=100, verbose_name="负面影响")
 
     @staticmethod
     def inital():
@@ -59,7 +59,9 @@ class InfoSecEvent(models.Model):
     descover_time = models.DateTimeField(verbose_name="发现时间")
     happend_time = models.DateTimeField(verbose_name="事件发生时间")
     reporter = models.CharField(max_length=100, verbose_name="报告提交者用户名")
-    infosysname = models.CharField(max_length=100, verbose_name="信息来源", default='self')
+    # infosysname = models.CharField(max_length=100, verbose_name="信息来源", default='self')
+    info_source = models.OneToOneField(SysManagerCopInfo, verbose_name="信息来源", related_name="info_source", on_delete=models.DO_NOTHING, default=None)
+    infosysname = models.CharField(max_length=200, verbose_name="事件名称", default="")
     describtion = models.TextField(verbose_name="信息描述")
     info_type = models.CharField(choices=InfoSecEventTypes, default='attack', max_length=50, verbose_name="事件类型")
     info_level = models.IntegerField(choices=InfoSecEventlevels, default=1, verbose_name="安全等级")
@@ -96,6 +98,11 @@ class InfoGoin(models.Model):
     state = models.CharField(verbose_name="跟进中", max_length=33, choices=InfoEventStates, default='ING')
     go_time = models.DateTimeField(verbose_name="跟进时间", auto_now_add=True)
 
+
+    def __str__(self):
+        return self.info.infosysname  + "[" +self.state + "]"
+
     class Meta:
         db_table="infosec_detail"
         verbose_name="信息事件跟进"
+

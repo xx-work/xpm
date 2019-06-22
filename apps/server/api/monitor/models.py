@@ -1,11 +1,18 @@
 from django.db import models
 import uuid
 
+# STATES = (
+#     ("RUNING", "<span style='color:#F00'>运行中</span>"),
+#     ("STOPED", "<span style='color:#A10'>已停止</span>"),
+#     ("APPENDING", "<span style='color:#F20'>监控中</span>"),
+# )
+
 STATES = (
-    ("RUNING", "RUNING"),
-    ("STOPED", "STOPED"),
-    ("APPENDING", "APPENDING"),
+    ("RUNING", "运行中"),
+    ("STOPED", "已停止"),
+    ("APPENDING", "监控中"),
 )
+
 
 from ..policy.models import PolicyBaseTypes
 from ..xobj.models import SysManagerCopInfo, ConnectManagerUserInfo
@@ -30,8 +37,8 @@ class ObjProcess(models.Model):
         return str(self.cop.name) + "__" +  str(self.process_name)
 
     class Meta:
-        db_table="sys_process"
-        verbose_name="特定的运行进程"
+        db_table = "sys_process"
+        verbose_name = "特定的运行进程"
 
 
 class ProcessAuditLog(models.Model):
@@ -40,8 +47,8 @@ class ProcessAuditLog(models.Model):
     date_created = models.DateTimeField(verbose_name="监控时间", auto_now_add=True)
 
     class Meta:
-        db_table="process_audit"
-        verbose_name="进程监控周期"
+        db_table = "process_audit"
+        verbose_name = "进程监控周期"
 
 ## 监控内容；
 ## 系统进程; 监控系统部件的系统管理是否发生变化。配置等。

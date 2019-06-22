@@ -13,6 +13,7 @@ class BackUpHistoryAdmin(object):
     def save_models(self):
         instance = self.new_obj
         request = self.request
+
         if not instance.opreate_username:
             instance.opreate_username = request.user.username
         instance.save()
