@@ -68,7 +68,8 @@ class InfoSecEvent(models.Model):
 
     impact_cops = models.ManyToManyField(SysManagerCopInfo, verbose_name="受影响的资产列表", related_name="info_conn_cops")
     negative_impacts = models.ManyToManyField(AttackerActionDesc, verbose_name="攻击者行为描述", related_name="info_conn_attack")
-    attacker_descs = models.ManyToManyField(SysManagerCopInfo, verbose_name="负面影响列表", related_name="info_conn_impact")
+    # attacker_descs = models.ManyToManyField(SysManagerCopInfo, verbose_name="负面影响列表", related_name="info_conn_impact")
+
     # impact_area = models.CharField(choices=InfoSecEventTypes, default='Guest', max_length=50, verbose_name="影响范围")
     # had_action = models.TextField(verbose_name="已经采取的行动", blank=True)
     plan_action = models.TextField(verbose_name="计划采取的行动", blank=True)
@@ -80,7 +81,7 @@ class InfoSecEvent(models.Model):
     class Meta:
         db_table="infosec_event"
         verbose_name="信息事件"
-
+        ordering = ('-happend_time',)
 
 InfoEventStates = (
     ('DONE', "完成"),
@@ -98,11 +99,10 @@ class InfoGoin(models.Model):
     state = models.CharField(verbose_name="跟进中", max_length=33, choices=InfoEventStates, default='ING')
     go_time = models.DateTimeField(verbose_name="跟进时间", auto_now_add=True)
 
-
     def __str__(self):
-        return self.info.infosysname  + "[" +self.state + "]"
+        return self.info.infosysname + "[" +self.state + "]"
 
     class Meta:
         db_table="infosec_detail"
         verbose_name="信息事件跟进"
-
+        ordering = ('-go_time',)

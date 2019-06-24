@@ -6571,3 +6571,1040 @@ AttributeError: 'InfoSecEvent' object has no attribute 'name'
 2019-06-22 17:23:19 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
 2019-06-22 17:25:37 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58601
 2019-06-22 17:25:38 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:51:42 [basehttp INFO] "GET / HTTP/1.1" 200 30176
+2019-06-24 08:51:42 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+2019-06-24 08:51:42 [basehttp INFO] "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+2019-06-24 08:51:42 [basehttp INFO] "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+2019-06-24 08:51:42 [basehttp INFO] "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+2019-06-24 08:51:42 [basehttp INFO] "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 304 0
+2019-06-24 08:51:42 [basehttp INFO] "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+2019-06-24 08:51:42 [basehttp INFO] "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+2019-06-24 08:51:42 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+2019-06-24 08:51:42 [basehttp INFO] "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+2019-06-24 08:51:42 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+2019-06-24 08:51:42 [basehttp INFO] "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+2019-06-24 08:51:42 [basehttp INFO] "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+2019-06-24 08:51:43 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+2019-06-24 08:51:43 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+2019-06-24 08:51:43 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+2019-06-24 08:51:43 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+2019-06-24 08:51:43 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+2019-06-24 08:51:43 [basehttp INFO] "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 304 0
+2019-06-24 08:51:43 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:51:43 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+2019-06-24 08:51:43 [basehttp INFO] "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+2019-06-24 08:51:43 [base WARNING] Not Found: /favicon.ico
+2019-06-24 08:51:43 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 9965
+2019-06-24 08:51:46 [basehttp INFO] "GET /agent/snmpagentcfginfo/ HTTP/1.1" 200 53837
+2019-06-24 08:51:46 [basehttp INFO] "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/css/xadmin.widget.editable.css HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.editable.js HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 304 0
+2019-06-24 08:51:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 304 0
+2019-06-24 08:51:48 [basehttp INFO] "GET /server/policyactionhistory/ HTTP/1.1" 200 41382
+2019-06-24 08:51:48 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:54:05 [basehttp INFO] "GET / HTTP/1.1" 200 30176
+2019-06-24 08:54:05 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:54:07 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 45959
+2019-06-24 08:54:07 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:54:10 [basehttp INFO] "GET /auth/user/ HTTP/1.1" 200 49651
+2019-06-24 08:54:10 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:54:10 [basehttp INFO] "GET /auth/group/ HTTP/1.1" 200 43349
+2019-06-24 08:54:11 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:54:13 [basehttp INFO] "GET /auth/permission/ HTTP/1.1" 200 103716
+2019-06-24 08:54:13 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:54:15 [basehttp INFO] "GET /services/community/ HTTP/1.1" 200 39780
+2019-06-24 08:54:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:54:17 [basehttp INFO] "GET /services/community/add/ HTTP/1.1" 200 34509
+2019-06-24 08:54:17 [basehttp INFO] "GET /static/xadmin/vendor/select2/select2_locale_zh-hans.js HTTP/1.1" 200 708
+2019-06-24 08:54:17 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:55:17 [basehttp INFO] "POST /services/community/add/ HTTP/1.1" 302 0
+2019-06-24 08:55:17 [basehttp INFO] "GET /services/community/ HTTP/1.1" 200 44963
+2019-06-24 08:55:17 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:55:23 [basehttp INFO] "GET /auth/user/ HTTP/1.1" 200 49651
+2019-06-24 08:55:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:55:25 [basehttp INFO] "GET /auth/group/ HTTP/1.1" 200 43349
+2019-06-24 08:55:25 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:55:26 [basehttp INFO] "GET /auth/permission/ HTTP/1.1" 200 103716
+2019-06-24 08:55:26 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:55:30 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58601
+2019-06-24 08:55:31 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:55:33 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 40553
+2019-06-24 08:55:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:55:34 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 78108
+2019-06-24 08:55:34 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:55:36 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 62677
+2019-06-24 08:55:36 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:55:38 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 39594
+2019-06-24 08:55:39 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:55:40 [basehttp INFO] "GET /server/auditlogobject/add/ HTTP/1.1" 200 35132
+2019-06-24 08:55:40 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 08:56:22 [basehttp INFO] "POST /server/auditlogobject/add/ HTTP/1.1" 302 0
+2019-06-24 08:56:22 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 41800
+2019-06-24 08:56:22 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:03:55 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 41452
+2019-06-24 09:03:55 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:03:58 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 62677
+2019-06-24 09:03:58 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:04:01 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 41452
+2019-06-24 09:04:01 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:04:02 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 78108
+2019-06-24 09:04:02 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:04:03 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 41452
+2019-06-24 09:04:03 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:04:04 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 62677
+2019-06-24 09:04:05 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:04:06 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 41452
+2019-06-24 09:04:07 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:04:11 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 44871
+2019-06-24 09:04:12 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:04:13 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 49450
+2019-06-24 09:04:13 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:04:14 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 44871
+2019-06-24 09:04:14 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:04:15 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 50227
+2019-06-24 09:04:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:04:20 [basehttp INFO] "GET /server/policyactionhistory/?_rel_policyaction__id__exact=8d8a206a-1724-4bab-b902-50a402c8aa88 HTTP/1.1" 200 41712
+2019-06-24 09:04:20 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:04:23 [basehttp INFO] "GET /server/policyactionhistory/add/?_rel_policyaction__id__exact=8d8a206a-1724-4bab-b902-50a402c8aa88 HTTP/1.1" 200 34447
+2019-06-24 09:04:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:04:36 [basehttp INFO] "POST /server/policyactionhistory/add/?_rel_policyaction__id__exact=8d8a206a-1724-4bab-b902-50a402c8aa88 HTTP/1.1" 302 0
+2019-06-24 09:04:36 [basehttp INFO] "GET /server/policyactionhistory/?_rel_policyaction__id__exact=8d8a206a-1724-4bab-b902-50a402c8aa88 HTTP/1.1" 200 46310
+2019-06-24 09:04:36 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:05:43 [basehttp INFO] "GET /server/policyactionhistory/?_rel_policyaction__id__exact=8d8a206a-1724-4bab-b902-50a402c8aa88 HTTP/1.1" 200 46171
+2019-06-24 09:05:43 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:06:17 [basehttp INFO] "GET /server/policyactionhistory/?_rel_policyaction__id__exact=8d8a206a-1724-4bab-b902-50a402c8aa88 HTTP/1.1" 200 46390
+2019-06-24 09:06:17 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:06:22 [basehttp INFO] "GET /server/policyactionhistory/ HTTP/1.1" 200 44550
+2019-06-24 09:06:22 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:06:23 [basehttp INFO] "GET /agent/snmpagentcfginfo/ HTTP/1.1" 200 53837
+2019-06-24 09:06:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:06:35 [basehttp INFO] "GET /server/sysmanagercopinfo/84936e64-168d-40dc-9b73-ccaed6fba8be/detail/?_format=html HTTP/1.1" 200 3127
+2019-06-24 09:06:44 [basehttp INFO] "GET /server/systempolicycentralizedmanagement/ HTTP/1.1" 200 39769
+2019-06-24 09:06:44 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:06:46 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 40051
+2019-06-24 09:06:46 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:06:46 [basehttp INFO] "GET /server/auditpolicycentralizedmanagement/ HTTP/1.1" 200 40045
+2019-06-24 09:06:47 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:06:48 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 78108
+2019-06-24 09:06:48 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:06:49 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 62677
+2019-06-24 09:06:50 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:06:51 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 62677
+2019-06-24 09:06:51 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:06:53 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 41452
+2019-06-24 09:06:53 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:07:00 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58601
+2019-06-24 09:07:00 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:07:01 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 40553
+2019-06-24 09:07:01 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:07:03 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58601
+2019-06-24 09:07:03 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:07:26 [basehttp INFO] "GET /server/processauditlog/?_rel_process__id__exact=d1c5315d-48ac-42bb-9568-25c39138d9ee HTTP/1.1" 200 45265
+2019-06-24 09:07:26 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:07:31 [basehttp INFO] "GET /server/systempolicycentralizedmanagement/ HTTP/1.1" 200 39769
+2019-06-24 09:07:32 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:07:33 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 40051
+2019-06-24 09:07:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:07:33 [basehttp INFO] "GET /server/auditpolicycentralizedmanagement/ HTTP/1.1" 200 40045
+2019-06-24 09:07:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:28:08 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 40051
+2019-06-24 09:28:08 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:34:14 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 38619
+2019-06-24 09:34:14 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:34:18 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 76676
+2019-06-24 09:34:18 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:34:19 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61245
+2019-06-24 09:34:19 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:34:20 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40020
+2019-06-24 09:34:20 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:34:22 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 43439
+2019-06-24 09:34:22 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:34:22 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 48018
+2019-06-24 09:34:22 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:34:23 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 48018
+2019-06-24 09:34:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:34:25 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 48795
+2019-06-24 09:34:25 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:34:26 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 43439
+2019-06-24 09:34:26 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:34:26 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 48018
+2019-06-24 09:34:26 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:34:30 [basehttp INFO] "GET /server/policyrule/?_p_policy_bench__type__exact=system HTTP/1.1" 200 50394
+2019-06-24 09:34:30 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:34:34 [basehttp INFO] "GET /server/policyrule/?_p_policy_bench__type__exact=security HTTP/1.1" 200 43402
+2019-06-24 09:34:35 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:34:41 [basehttp INFO] "GET /server/policyrule/?_p_policy_bench__type__exact=system HTTP/1.1" 200 50394
+2019-06-24 09:34:41 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:35:09 [basehttp INFO] "POST /server/policyrule/bookmark/ HTTP/1.1" 200 103
+2019-06-24 09:35:12 [basehttp INFO] "GET /server/policyrule/?_p_policy_bench__type__exact=system HTTP/1.1" 200 49890
+2019-06-24 09:35:12 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:35:18 [basehttp INFO] "GET /server/policyrule/?_p_policy_bench__type__exact=security HTTP/1.1" 200 43680
+2019-06-24 09:35:18 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:35:31 [basehttp INFO] "POST /server/policyrule/bookmark/ HTTP/1.1" 200 105
+2019-06-24 09:35:35 [basehttp INFO] "GET /server/policyrule/?_p_policy_bench__type__exact=audit HTTP/1.1" 200 43954
+2019-06-24 09:35:35 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:35:46 [basehttp INFO] "POST /server/policyrule/bookmark/ HTTP/1.1" 200 102
+2019-06-24 09:35:47 [basehttp INFO] "GET /server/policyrule/?_p_policy_bench__type__exact=audit HTTP/1.1" 200 43501
+2019-06-24 09:35:47 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:35:49 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 48955
+2019-06-24 09:35:50 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:35:52 [basehttp INFO] "GET /server/policyrule/add/ HTTP/1.1" 200 34966
+2019-06-24 09:35:52 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:35:59 [basehttp INFO] "GET /server/policybench/add/ HTTP/1.1" 200 3588
+2019-06-24 09:36:51 [basehttp INFO] "POST /server/policybench/add/ HTTP/1.1" 200 282
+2019-06-24 09:36:51 [basehttp INFO] "GET /server/policyrule/add/?_field=policy_bench&policy_bench=f001e62e-e0e0-4785-a99e-bd45a237e35f HTTP/1.1" 200 2568
+2019-06-24 09:36:58 [basehttp INFO] "GET /server/policyaction/add/ HTTP/1.1" 200 5656
+2019-06-24 09:38:18 [basehttp INFO] "POST /server/policyaction/add/ HTTP/1.1" 200 283
+2019-06-24 09:38:18 [basehttp INFO] "GET /server/policyrule/add/?_field=policy_action&policy_action=b2424cb1-58dc-4dae-b196-d2ac6adb221e HTTP/1.1" 200 2684
+2019-06-24 09:38:20 [basehttp INFO] "POST /server/policyrule/add/ HTTP/1.1" 302 0
+2019-06-24 09:38:21 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 51505
+2019-06-24 09:38:21 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:38:33 [basehttp INFO] "GET /server/policyrule/c6ef6e76-1dcf-48de-82f6-681248d4ce30/update/ HTTP/1.1" 200 35540
+2019-06-24 09:38:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:38:41 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 51137
+2019-06-24 09:38:41 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:38:47 [basehttp INFO] "GET /server/policyrule/add/ HTTP/1.1" 200 35153
+2019-06-24 09:38:47 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:38:52 [basehttp INFO] "GET /server/policybench/add/ HTTP/1.1" 200 3588
+2019-06-24 09:39:54 [basehttp INFO] "POST /server/policybench/add/ HTTP/1.1" 200 285
+2019-06-24 09:39:54 [basehttp INFO] "GET /server/policyrule/add/?_field=policy_bench&policy_bench=d00e403a-3b13-444b-b2a0-747bf5d34e51 HTTP/1.1" 200 2665
+2019-06-24 09:40:00 [basehttp INFO] "GET /server/policyaction/add/ HTTP/1.1" 200 5656
+2019-06-24 09:42:52 [basehttp INFO] "POST /server/policyaction/add/ HTTP/1.1" 200 279
+2019-06-24 09:42:53 [basehttp INFO] "GET /server/policyrule/add/?_field=policy_action&policy_action=e2d56fd9-5a53-4be5-b81b-85f44beea5f8 HTTP/1.1" 200 2773
+2019-06-24 09:42:55 [basehttp INFO] "POST /server/policyrule/add/ HTTP/1.1" 302 0
+2019-06-24 09:42:55 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53683
+2019-06-24 09:42:55 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:43:02 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54182
+2019-06-24 09:43:02 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:43:23 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53315
+2019-06-24 09:43:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:44:45 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53926
+2019-06-24 09:44:45 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:45:29 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53961
+2019-06-24 09:45:30 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:45:47 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53961
+2019-06-24 09:45:48 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:46:05 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53961
+2019-06-24 09:46:05 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:46:07 [basehttp INFO] "GET /server/policyrule/?_p_policy_bench__type__exact=system HTTP/1.1" 200 51037
+2019-06-24 09:46:07 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:46:09 [basehttp INFO] "GET /server/policyrule/?_p_policy_bench__type__exact=security HTTP/1.1" 200 51019
+2019-06-24 09:46:09 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:46:11 [basehttp INFO] "GET /server/policyrule/?_p_policy_bench__type__exact=security HTTP/1.1" 200 51019
+2019-06-24 09:46:11 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:46:12 [basehttp INFO] "GET /server/policyrule/?_p_policy_bench__type__exact=audit HTTP/1.1" 200 50934
+2019-06-24 09:46:12 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:46:17 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54182
+2019-06-24 09:46:18 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:46:49 [base WARNING] Not Found: /sys/pushed
+2019-06-24 09:46:49 [basehttp WARNING] "GET /sys/pushed?sid=e2d56fd9-5a53-4be5-b81b-85f44beea5f8 HTTP/1.1" 404 10003
+2019-06-24 09:46:51 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54182
+2019-06-24 09:46:55 [basehttp INFO] "GET /server/policyrule/?_rel_policy_action__id__exact=e2d56fd9-5a53-4be5-b81b-85f44beea5f8 HTTP/1.1" 200 51798
+2019-06-24 09:46:55 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:46:58 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 46461
+2019-06-24 09:46:58 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:04 [basehttp INFO] "GET /server/policybench/f001e62e-e0e0-4785-a99e-bd45a237e35f/update/ HTTP/1.1" 200 33162
+2019-06-24 09:47:04 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:08 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 46461
+2019-06-24 09:47:08 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:11 [basehttp INFO] "GET /server/policybench/d00e403a-3b13-444b-b2a0-747bf5d34e51/update/ HTTP/1.1" 200 33165
+2019-06-24 09:47:11 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:13 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 46461
+2019-06-24 09:47:13 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:14 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53961
+2019-06-24 09:47:14 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:18 [basehttp INFO] "GET /server/policyrule/c6ef6e76-1dcf-48de-82f6-681248d4ce30/update/ HTTP/1.1" 200 35726
+2019-06-24 09:47:18 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:23 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53961
+2019-06-24 09:47:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:25 [basehttp INFO] "GET /server/policyrule/7850340c-af3b-4fe3-bbe6-5b98d661c503/update/ HTTP/1.1" 200 35771
+2019-06-24 09:47:26 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:27 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53961
+2019-06-24 09:47:28 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:29 [basehttp INFO] "GET /server/policyrule/2c1f0a13-a875-4a77-a52f-f0bd04ea4dd5/update/ HTTP/1.1" 200 35726
+2019-06-24 09:47:29 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:30 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53961
+2019-06-24 09:47:31 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:31 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54182
+2019-06-24 09:47:31 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:33 [basehttp INFO] "GET /server/policyaction/e2d56fd9-5a53-4be5-b81b-85f44beea5f8/update/ HTTP/1.1" 200 35366
+2019-06-24 09:47:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:46 [basehttp INFO] "POST /server/policyaction/e2d56fd9-5a53-4be5-b81b-85f44beea5f8/update/ HTTP/1.1" 302 0
+2019-06-24 09:47:46 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54458
+2019-06-24 09:47:46 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:48 [basehttp INFO] "GET /server/policyaction/b2424cb1-58dc-4dae-b196-d2ac6adb221e/update/ HTTP/1.1" 200 35287
+2019-06-24 09:47:48 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:47:50 [basehttp INFO] "POST /server/policyaction/b2424cb1-58dc-4dae-b196-d2ac6adb221e/update/ HTTP/1.1" 302 0
+2019-06-24 09:47:50 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54486
+2019-06-24 09:47:51 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:52:11 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54230
+2019-06-24 09:52:11 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:52:33 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54190
+2019-06-24 09:52:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:52:46 [basehttp INFO] "GET /server/policyaction/8d8a206a-1724-4bab-b902-50a402c8aa88/update/ HTTP/1.1" 200 35226
+2019-06-24 09:52:47 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:52:52 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54190
+2019-06-24 09:52:53 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:53:11 [basehttp INFO] "GET /server/policyaction/e2d56fd9-5a53-4be5-b81b-85f44beea5f8/update/ HTTP/1.1" 200 35335
+2019-06-24 09:53:11 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:53:44 [basehttp INFO] "POST /server/policyaction/e2d56fd9-5a53-4be5-b81b-85f44beea5f8/update/ HTTP/1.1" 302 0
+2019-06-24 09:53:44 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54372
+2019-06-24 09:53:44 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:54:26 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54120
+2019-06-24 09:54:26 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:54:26 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53961
+2019-06-24 09:54:27 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:54:28 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54120
+2019-06-24 09:54:28 [basehttp ERROR] "GET /server/policyaction/ HTTP/1.1" 500 59
+2019-06-24 09:54:28 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53961
+2019-06-24 09:54:28 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:54:29 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54120
+2019-06-24 09:54:29 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:54:30 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 46461
+2019-06-24 09:54:30 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:54:31 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53961
+2019-06-24 09:54:31 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:54:33 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 46461
+2019-06-24 09:54:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:54:36 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 46461
+2019-06-24 09:54:36 [basehttp ERROR] "GET /server/policybench/ HTTP/1.1" 500 59
+2019-06-24 09:54:36 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53961
+2019-06-24 09:54:36 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:54:37 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 46461
+2019-06-24 09:54:37 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:54:38 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 46461
+2019-06-24 09:54:38 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:59:30 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 47233
+2019-06-24 09:59:30 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 09:59:33 [exception ERROR] Internal Server Error: /server/auditlogobject/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 401, in get
+    response = self.get_result_list()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 200, in get_result_list
+    return self.make_result_list()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 196, in make_result_list
+    self.list_per_page * self.page_num + len(self.result_list))
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 254, in __len__
+    self._fetch_all()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 1182, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 62, in __iter__
+    for row in compiler.results_iter(results):
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 1011, in apply_converters
+    value = converter(value, expression, connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\operations.py", line 252, in convert_uuidfield_value
+    value = uuid.UUID(value)
+  File "G:\anaconda\lib\uuid.py", line 140, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+2019-06-24 09:59:33 [basehttp ERROR] "GET /server/auditlogobject/ HTTP/1.1" 500 194151
+2019-06-24 10:01:19 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 38168
+2019-06-24 10:01:19 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:01:20 [basehttp INFO] "GET /server/auditlogobject/add/ HTTP/1.1" 200 34384
+2019-06-24 10:01:20 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:02:04 [basehttp INFO] "POST /server/auditlogobject/add/ HTTP/1.1" 302 0
+2019-06-24 10:02:04 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40398
+2019-06-24 10:02:04 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:02:16 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40038
+2019-06-24 10:02:16 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:02:16 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61913
+2019-06-24 10:02:17 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:02:19 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40038
+2019-06-24 10:02:19 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:02:30 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61913
+2019-06-24 10:02:30 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:02:31 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 78341
+2019-06-24 10:02:31 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:02:32 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 78341
+2019-06-24 10:02:32 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:02:33 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61913
+2019-06-24 10:02:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:16:39 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 78341
+2019-06-24 10:16:39 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:16:40 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 38619
+2019-06-24 10:16:40 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:16:42 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 38619
+2019-06-24 10:16:42 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:16:44 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 38619
+2019-06-24 10:16:44 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:16:46 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 63415
+2019-06-24 10:16:46 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:16:51 [basehttp INFO] "GET /server/connectmanageruserinfo/d1abc7b9-1c6b-48dd-b470-d13269f6343c/patch/?fields=username HTTP/1.1" 200 511
+2019-06-24 10:16:52 [basehttp INFO] "POST /server/connectmanageruserinfo/d1abc7b9-1c6b-48dd-b470-d13269f6343c/patch/ HTTP/1.1" 200 97
+2019-06-24 10:16:55 [basehttp INFO] "GET /server/connectmanageruserinfo/d1abc7b9-1c6b-48dd-b470-d13269f6343c/update/ HTTP/1.1" 200 36210
+2019-06-24 10:16:55 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:17:09 [basehttp INFO] "POST /server/connectmanageruserinfo/d1abc7b9-1c6b-48dd-b470-d13269f6343c/update/ HTTP/1.1" 302 0
+2019-06-24 10:17:10 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 63697
+2019-06-24 10:17:10 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:17:56 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 63421
+2019-06-24 10:17:56 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:18:29 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 63421
+2019-06-24 10:18:29 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:18:31 [basehttp INFO] "GET /server/connectmanageruserinfo/d1abc7b9-1c6b-48dd-b470-d13269f6343c/update/ HTTP/1.1" 200 36216
+2019-06-24 10:18:31 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:18:36 [basehttp INFO] "POST /server/connectmanageruserinfo/d1abc7b9-1c6b-48dd-b470-d13269f6343c/update/ HTTP/1.1" 302 0
+2019-06-24 10:18:36 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 63694
+2019-06-24 10:18:36 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:18:42 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35802
+2019-06-24 10:18:42 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:19:19 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35813
+2019-06-24 10:19:19 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:19:59 [basehttp INFO] "POST /server/connectmanageruserinfo/add/ HTTP/1.1" 302 0
+2019-06-24 10:19:59 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 67668
+2019-06-24 10:19:59 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:23:15 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 67522
+2019-06-24 10:23:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:23:35 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 78341
+2019-06-24 10:23:35 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:24:17 [basehttp INFO] "GET /server/infosecevent/?_rel_info_source__id__exact=84936e64-168d-40dc-9b73-ccaed6fba8be HTTP/1.1" 200 42012
+2019-06-24 10:24:17 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:24:32 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 67522
+2019-06-24 10:24:32 [basehttp ERROR] "GET /server/connectmanageruserinfo/ HTTP/1.1" 500 59
+2019-06-24 10:24:32 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 78341
+2019-06-24 10:24:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:24:36 [basehttp INFO] "GET /server/infosecevent/?_rel_impact_cops__id__exact=84936e64-168d-40dc-9b73-ccaed6fba8be HTTP/1.1" 200 51952
+2019-06-24 10:24:36 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:26:15 [basehttp INFO] "GET /server/infosecevent/?_rel_impact_cops__id__exact=84936e64-168d-40dc-9b73-ccaed6fba8be HTTP/1.1" 200 51952
+2019-06-24 10:26:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:26:18 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 76789
+2019-06-24 10:26:19 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:26:33 [basehttp INFO] "GET /server/infosecevent/?_rel_impact_cops__id__exact=84936e64-168d-40dc-9b73-ccaed6fba8be HTTP/1.1" 200 51952
+2019-06-24 10:26:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:26:34 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 76789
+2019-06-24 10:26:36 [basehttp INFO] "GET /server/infosecevent/?_rel_info_source__id__exact=7b47e7be-0714-4881-90fc-292e2551a6bd HTTP/1.1" 200 42018
+2019-06-24 10:26:37 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:26:40 [basehttp INFO] "GET /server/infosecevent/ HTTP/1.1" 200 48423
+2019-06-24 10:26:40 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:27:30 [basehttp INFO] "GET /server/infosecevent/ HTTP/1.1" 200 48423
+2019-06-24 10:27:30 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:27:32 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 76789
+2019-06-24 10:27:32 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:27:33 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 67522
+2019-06-24 10:27:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:27:34 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40038
+2019-06-24 10:27:34 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:27:35 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 67522
+2019-06-24 10:27:35 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:27:45 [basehttp INFO] "POST /server/connectmanageruserinfo/ HTTP/1.1" 200 30021
+2019-06-24 10:27:45 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:27:47 [basehttp INFO] "POST /server/connectmanageruserinfo/ HTTP/1.1" 302 0
+2019-06-24 10:27:47 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 52536
+2019-06-24 10:27:47 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:27:52 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35962
+2019-06-24 10:27:52 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:28:14 [basehttp INFO] "POST /server/connectmanageruserinfo/add/ HTTP/1.1" 302 0
+2019-06-24 10:28:14 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 56455
+2019-06-24 10:28:14 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:29:03 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 56084
+2019-06-24 10:29:03 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:29:44 [basehttp INFO] "GET / HTTP/1.1" 200 28744
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+2019-06-24 10:29:44 [basehttp INFO] "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+2019-06-24 10:29:44 [base WARNING] Not Found: /favicon.ico
+2019-06-24 10:29:44 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 9965
+2019-06-24 10:29:47 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 47233
+2019-06-24 10:29:47 [basehttp INFO] "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+2019-06-24 10:29:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+2019-06-24 10:29:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+2019-06-24 10:29:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+2019-06-24 10:29:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+2019-06-24 10:29:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+2019-06-24 10:29:47 [basehttp INFO] "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+2019-06-24 10:29:47 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:29:48 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53961
+2019-06-24 10:29:48 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:29:50 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54120
+2019-06-24 10:29:50 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:29:56 [basehttp INFO] "GET /agent/snmpagentcfginfo/ HTTP/1.1" 200 52405
+2019-06-24 10:29:56 [basehttp INFO] "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 304 0
+2019-06-24 10:29:56 [basehttp INFO] "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 304 0
+2019-06-24 10:29:56 [basehttp INFO] "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 304 0
+2019-06-24 10:29:56 [basehttp INFO] "GET /static/xadmin/css/xadmin.widget.editable.css HTTP/1.1" 304 0
+2019-06-24 10:29:56 [basehttp INFO] "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 304 0
+2019-06-24 10:29:56 [basehttp INFO] "GET /static/xadmin/vendor/select2/select2_locale_zh-hans.js HTTP/1.1" 304 0
+2019-06-24 10:29:56 [basehttp INFO] "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 304 0
+2019-06-24 10:29:56 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:29:56 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 304 0
+2019-06-24 10:29:56 [basehttp INFO] "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 304 0
+2019-06-24 10:29:56 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.editable.js HTTP/1.1" 304 0
+2019-06-24 10:29:56 [basehttp INFO] "GET /server/policyactionhistory/ HTTP/1.1" 200 43118
+2019-06-24 10:29:56 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:29:57 [basehttp INFO] "GET /server/processauditlog/ HTTP/1.1" 200 41532
+2019-06-24 10:29:57 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:29:57 [basehttp INFO] "GET /server/infogoin/ HTTP/1.1" 200 46430
+2019-06-24 10:29:57 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:29:58 [basehttp INFO] "GET /server/processauditlog/ HTTP/1.1" 200 41532
+2019-06-24 10:29:58 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:29:59 [basehttp INFO] "GET /server/infogoin/ HTTP/1.1" 200 46430
+2019-06-24 10:29:59 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:29:59 [basehttp INFO] "GET /server/processauditlog/ HTTP/1.1" 200 41532
+2019-06-24 10:30:00 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:30:00 [basehttp INFO] "GET /server/policyactionhistory/ HTTP/1.1" 200 43118
+2019-06-24 10:30:00 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:30:01 [basehttp INFO] "GET /server/processauditlog/ HTTP/1.1" 200 41532
+2019-06-24 10:30:01 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:30:01 [basehttp INFO] "GET /server/infogoin/ HTTP/1.1" 200 46430
+2019-06-24 10:30:02 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:30:05 [basehttp INFO] "GET /server/attackeractiondesc/ HTTP/1.1" 200 44216
+2019-06-24 10:30:05 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:30:06 [basehttp INFO] "GET /server/effectinfo/ HTTP/1.1" 200 40970
+2019-06-24 10:30:06 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:30:06 [basehttp INFO] "GET /server/attackeractiondesc/ HTTP/1.1" 200 44216
+2019-06-24 10:30:06 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:30:11 [basehttp INFO] "GET /server/effectinfo/ HTTP/1.1" 200 40970
+2019-06-24 10:30:11 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:30:13 [basehttp INFO] "GET /reversion/revision/ HTTP/1.1" 200 43311
+2019-06-24 10:30:13 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 304 0
+2019-06-24 10:30:13 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 304 0
+2019-06-24 10:30:13 [basehttp INFO] "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 304 0
+2019-06-24 10:30:13 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:30:15 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58243
+2019-06-24 10:30:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:30:16 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39121
+2019-06-24 10:30:16 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:30:18 [basehttp INFO] "GET /reversion/revision/ HTTP/1.1" 200 43311
+2019-06-24 10:30:18 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:30:19 [basehttp INFO] "GET /reversion/revision/add/ HTTP/1.1" 200 43844
+2019-06-24 10:30:19 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css HTTP/1.1" 304 0
+2019-06-24 10:30:19 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js HTTP/1.1" 304 0
+2019-06-24 10:30:19 [basehttp INFO] "GET /static/xadmin/js/xadmin.plugin.formset.js HTTP/1.1" 200 5969
+2019-06-24 10:30:19 [basehttp INFO] "GET /static/xadmin/css/xadmin.plugin.formset.css HTTP/1.1" 200 1177
+2019-06-24 10:30:19 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:31:17 [basehttp INFO] "POST /reversion/revision/add/ HTTP/1.1" 302 0
+2019-06-24 10:31:17 [basehttp INFO] "GET /reversion/revision/ HTTP/1.1" 200 47860
+2019-06-24 10:31:17 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:31:20 [basehttp INFO] "GET /reversion/revision/add/ HTTP/1.1" 200 43844
+2019-06-24 10:31:20 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:31:59 [basehttp INFO] "POST /reversion/revision/add/ HTTP/1.1" 302 0
+2019-06-24 10:32:00 [basehttp INFO] "GET /reversion/revision/ HTTP/1.1" 200 49080
+2019-06-24 10:32:00 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:13 [basehttp INFO] "GET /server/changeaudit/ HTTP/1.1" 200 38751
+2019-06-24 10:32:13 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:13 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 91723
+2019-06-24 10:32:14 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:38 [basehttp INFO] "GET /reversion/revision/2/update/ HTTP/1.1" 200 44386
+2019-06-24 10:32:38 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:42 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 76789
+2019-06-24 10:32:42 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:43 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 56084
+2019-06-24 10:32:43 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:44 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40038
+2019-06-24 10:32:44 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:44 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 56084
+2019-06-24 10:32:44 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:50 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58243
+2019-06-24 10:32:50 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:50 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39121
+2019-06-24 10:32:51 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:52 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58243
+2019-06-24 10:32:52 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:53 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39121
+2019-06-24 10:32:53 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:53 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58243
+2019-06-24 10:32:53 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:54 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39121
+2019-06-24 10:32:54 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:56 [basehttp INFO] "GET /agent/snmphostdata/add/ HTTP/1.1" 200 34673
+2019-06-24 10:32:56 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:32:59 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39121
+2019-06-24 10:32:59 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:33:00 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58243
+2019-06-24 10:33:00 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:33:05 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 76789
+2019-06-24 10:33:05 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:33:06 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 56084
+2019-06-24 10:33:06 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:33:09 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 76789
+2019-06-24 10:33:09 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:34:45 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77212
+2019-06-24 10:34:45 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:34:48 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77212
+2019-06-24 10:34:48 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:34:58 [basehttp INFO] "GET /server/sysmanagercopinfo/?_p_type__exact=IDS%2FIPS HTTP/1.1" 200 59521
+2019-06-24 10:34:58 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:35:26 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77212
+2019-06-24 10:35:26 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:35:35 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 56084
+2019-06-24 10:35:35 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:35:45 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35962
+2019-06-24 10:35:45 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:35:58 [basehttp INFO] "POST /server/connectmanageruserinfo/add/ HTTP/1.1" 302 0
+2019-06-24 10:35:58 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60233
+2019-06-24 10:35:58 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:36:50 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60944
+2019-06-24 10:36:50 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:36:59 [basehttp INFO] "GET /server/connectmanageruserinfo/?_p__identity__exact=sysuser HTTP/1.1" 200 44344
+2019-06-24 10:36:59 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:01 [basehttp INFO] "GET /server/connectmanageruserinfo/?_p__identity__exact=secuser HTTP/1.1" 200 44344
+2019-06-24 10:37:01 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:05 [basehttp INFO] "GET /server/connectmanageruserinfo/?_p__identity__exact=auduser HTTP/1.1" 200 44344
+2019-06-24 10:37:05 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:07 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60944
+2019-06-24 10:37:07 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:27 [basehttp INFO] "GET / HTTP/1.1" 200 28744
+2019-06-24 10:37:27 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:33 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 47233
+2019-06-24 10:37:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:34 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53961
+2019-06-24 10:37:34 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:34 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54120
+2019-06-24 10:37:35 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:35 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54120
+2019-06-24 10:37:35 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:35 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53961
+2019-06-24 10:37:36 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:36 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 47233
+2019-06-24 10:37:36 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:38 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77212
+2019-06-24 10:37:38 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:39 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60944
+2019-06-24 10:37:39 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:39 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60944
+2019-06-24 10:37:39 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:40 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60944
+2019-06-24 10:37:40 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:41 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40038
+2019-06-24 10:37:41 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:41 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60944
+2019-06-24 10:37:41 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:42 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77212
+2019-06-24 10:37:42 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:49 [basehttp INFO] "POST /settings/user HTTP/1.1" 200 0
+2019-06-24 10:37:49 [basehttp INFO] "GET /static/xadmin/css/themes/bootstrap-theme.css HTTP/1.1" 200 20249
+2019-06-24 10:37:51 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60943
+2019-06-24 10:37:51 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:52 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77211
+2019-06-24 10:37:52 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:53 [basehttp INFO] "GET /server/sysmanagercopinfo/add/ HTTP/1.1" 200 36843
+2019-06-24 10:37:53 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:37:56 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60943
+2019-06-24 10:37:56 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:38:01 [basehttp INFO] "POST /settings/user HTTP/1.1" 200 0
+2019-06-24 10:38:04 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77213
+2019-06-24 10:38:04 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:38:05 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60945
+2019-06-24 10:38:05 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:38:14 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 53962
+2019-06-24 10:38:14 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:38:19 [basehttp INFO] "POST /settings/user HTTP/1.1" 200 0
+2019-06-24 10:38:24 [basehttp INFO] "POST /settings/user HTTP/1.1" 200 0
+2019-06-24 10:38:32 [basehttp INFO] "POST /settings/user HTTP/1.1" 200 0
+2019-06-24 10:38:37 [basehttp INFO] "POST /settings/user HTTP/1.1" 200 0
+2019-06-24 10:38:40 [basehttp INFO] "POST /settings/user HTTP/1.1" 200 0
+2019-06-24 10:38:53 [basehttp INFO] "POST /settings/user HTTP/1.1" 200 0
+2019-06-24 10:38:56 [basehttp INFO] "POST /settings/user HTTP/1.1" 200 0
+2019-06-24 10:39:02 [basehttp INFO] "GET /server/infosecevent/ HTTP/1.1" 200 48426
+2019-06-24 10:39:02 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:39:05 [basehttp INFO] "POST /settings/user HTTP/1.1" 200 0
+2019-06-24 10:39:07 [basehttp INFO] "GET /server/infosecevent/ HTTP/1.1" 200 48428
+2019-06-24 10:39:07 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:39:09 [basehttp INFO] "GET /server/systempolicycentralizedmanagement/ HTTP/1.1" 200 38342
+2019-06-24 10:39:09 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:39:12 [basehttp INFO] "POST /settings/user HTTP/1.1" 200 0
+2019-06-24 10:39:14 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 38618
+2019-06-24 10:39:14 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:39:15 [basehttp INFO] "GET /server/auditpolicycentralizedmanagement/ HTTP/1.1" 200 38612
+2019-06-24 10:39:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:39:19 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60943
+2019-06-24 10:39:19 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 10:50:28 [basehttp INFO] "GET / HTTP/1.1" 200 28743
+2019-06-24 10:50:28 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:18:23 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60943
+2019-06-24 11:18:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:18:25 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60943
+2019-06-24 11:18:25 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:18:26 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40037
+2019-06-24 11:18:26 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:18:27 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60943
+2019-06-24 11:18:27 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:18:28 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40037
+2019-06-24 11:18:28 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:18:30 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60943
+2019-06-24 11:18:30 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:19:44 [basehttp INFO] "GET /server/connectmanageruserinfo/96a914b7-e929-4796-abb8-9ec8d1f111b1/update/ HTTP/1.1" 200 36283
+2019-06-24 11:19:44 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:19:47 [exception ERROR] Internal Server Error: /server/connectmanageruserinfo/96a914b7-e929-4796-abb8-9ec8d1f111b1/update/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\edit.py", line 512, in post
+    return super(UpdateAdminView, self).post(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\edit.py", line 292, in post
+    self.save_models()
+  File "E:\xpm\apps\server\adminx\_1_xobj\__init__.py", line 27, in save_models
+    return HttpResponse(status=403, data="该用户名已被占用, 请选择独特的用户名或者联系管理员修改平台用户用户名。")
+  File "F:\workspace\cso_venv\lib\site-packages\django\http\response.py", line 283, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'data'
+2019-06-24 11:19:47 [basehttp ERROR] "POST /server/connectmanageruserinfo/96a914b7-e929-4796-abb8-9ec8d1f111b1/update/ HTTP/1.1" 500 157429
+2019-06-24 11:20:22 [basehttp INFO] "POST /server/connectmanageruserinfo/96a914b7-e929-4796-abb8-9ec8d1f111b1/update/ HTTP/1.1" 302 0
+2019-06-24 11:20:23 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61197
+2019-06-24 11:20:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:20:26 [basehttp INFO] "GET /server/connectmanageruserinfo/96a914b7-e929-4796-abb8-9ec8d1f111b1/update/ HTTP/1.1" 200 36283
+2019-06-24 11:20:26 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:20:31 [basehttp INFO] "POST /server/connectmanageruserinfo/96a914b7-e929-4796-abb8-9ec8d1f111b1/update/ HTTP/1.1" 302 0
+2019-06-24 11:20:31 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61197
+2019-06-24 11:20:31 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:20:33 [basehttp INFO] "GET /server/connectmanageruserinfo/96a914b7-e929-4796-abb8-9ec8d1f111b1/update/ HTTP/1.1" 200 36283
+2019-06-24 11:20:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:21:37 [basehttp INFO] "POST /server/connectmanageruserinfo/96a914b7-e929-4796-abb8-9ec8d1f111b1/update/ HTTP/1.1" 302 0
+2019-06-24 11:21:37 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61197
+2019-06-24 11:21:38 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:21:45 [basehttp INFO] "GET /auth/user/ HTTP/1.1" 200 48218
+2019-06-24 11:21:45 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:21:48 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 11:21:49 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:22:18 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 44526
+2019-06-24 11:22:18 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:22:22 [basehttp INFO] "GET /server/backuphistory/add/ HTTP/1.1" 200 32077
+2019-06-24 11:22:22 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:22:26 [basehttp INFO] "POST /server/backuphistory/add/ HTTP/1.1" 302 0
+2019-06-24 11:22:26 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 45756
+2019-06-24 11:22:26 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:23:07 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 45824
+2019-06-24 11:23:07 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:23:17 [basehttp INFO] "GET /server/changeaudit/ HTTP/1.1" 200 38750
+2019-06-24 11:23:17 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:23:19 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 91722
+2019-06-24 11:23:19 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:23:33 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60943
+2019-06-24 11:23:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:23:49 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77211
+2019-06-24 11:23:49 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:23:50 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60943
+2019-06-24 11:23:50 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:23:51 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40037
+2019-06-24 11:23:51 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:23:52 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60943
+2019-06-24 11:23:52 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:23:53 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77211
+2019-06-24 11:23:53 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:23:55 [basehttp INFO] "GET /server/systempolicycentralizedmanagement/ HTTP/1.1" 200 38336
+2019-06-24 11:23:55 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:23:56 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 38618
+2019-06-24 11:23:56 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:24:14 [basehttp INFO] "GET /server/auditpolicycentralizedmanagement/ HTTP/1.1" 200 38612
+2019-06-24 11:24:14 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:24:15 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 38618
+2019-06-24 11:24:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:24:15 [basehttp INFO] "GET /server/systempolicycentralizedmanagement/ HTTP/1.1" 200 38336
+2019-06-24 11:24:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:26:36 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 38618
+2019-06-24 11:26:36 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:26:37 [basehttp INFO] "GET /server/auditpolicycentralizedmanagement/ HTTP/1.1" 200 38612
+2019-06-24 11:26:37 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:26:42 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 38618
+2019-06-24 11:26:42 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:26:43 [basehttp INFO] "GET /server/systempolicycentralizedmanagement/ HTTP/1.1" 200 38336
+2019-06-24 11:26:43 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:26:49 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77211
+2019-06-24 11:26:49 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:26:50 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60943
+2019-06-24 11:26:50 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:26:51 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60943
+2019-06-24 11:26:51 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:26:52 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60943
+2019-06-24 11:26:52 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:32:00 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 60943
+2019-06-24 11:32:00 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:32:02 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35961
+2019-06-24 11:32:02 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:32:11 [basehttp INFO] "POST /server/connectmanageruserinfo/add/ HTTP/1.1" 302 0
+2019-06-24 11:32:12 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 65092
+2019-06-24 11:32:12 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:32:26 [basehttp INFO] "GET /server/connectmanageruserinfo/e46d4db3-4a40-40ee-a553-04c55072bc89/update/ HTTP/1.1" 200 36281
+2019-06-24 11:32:26 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:32:30 [basehttp INFO] "POST /server/connectmanageruserinfo/e46d4db3-4a40-40ee-a553-04c55072bc89/update/ HTTP/1.1" 302 0
+2019-06-24 11:32:30 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 64983
+2019-06-24 11:32:30 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:32:49 [basehttp INFO] "POST /server/connectmanageruserinfo/ HTTP/1.1" 200 29702
+2019-06-24 11:32:49 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:32:50 [basehttp INFO] "POST /server/connectmanageruserinfo/ HTTP/1.1" 302 0
+2019-06-24 11:32:50 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 53609
+2019-06-24 11:32:50 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:39:40 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35961
+2019-06-24 11:39:40 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:39:47 [basehttp INFO] "POST /server/connectmanageruserinfo/add/ HTTP/1.1" 302 0
+2019-06-24 11:39:47 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 53725
+2019-06-24 11:39:47 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:39:51 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 53358
+2019-06-24 11:39:51 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:39:59 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35961
+2019-06-24 11:39:59 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:40:06 [basehttp INFO] "POST /server/connectmanageruserinfo/add/ HTTP/1.1" 302 0
+2019-06-24 11:40:06 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 53731
+2019-06-24 11:40:06 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:40:09 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 53358
+2019-06-24 11:40:09 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:44:54 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 53358
+2019-06-24 11:44:54 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:44:57 [basehttp INFO] "GET /auth/user/ HTTP/1.1" 200 50709
+2019-06-24 11:44:57 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:45:04 [basehttp INFO] "GET /auth/user/ HTTP/1.1" 200 50709
+2019-06-24 11:45:04 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:50:02 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 53358
+2019-06-24 11:50:02 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:50:04 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35961
+2019-06-24 11:50:04 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:50:14 [basehttp INFO] "POST /server/connectmanageruserinfo/add/ HTTP/1.1" 302 0
+2019-06-24 11:50:14 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 53721
+2019-06-24 11:50:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:50:16 [base WARNING] Not Found: /server/connectmanageruserinfo/0021be0c-7e64-4ce5-adc2-ea0924077c39/update/
+2019-06-24 11:50:16 [basehttp WARNING] "GET /server/connectmanageruserinfo/0021be0c-7e64-4ce5-adc2-ea0924077c39/update/ HTTP/1.1" 404 2089
+2019-06-24 11:50:19 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 53358
+2019-06-24 11:50:21 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35961
+2019-06-24 11:50:21 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:50:29 [basehttp INFO] "POST /server/connectmanageruserinfo/add/ HTTP/1.1" 302 0
+2019-06-24 11:50:29 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 57599
+2019-06-24 11:50:29 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:51:35 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 57226
+2019-06-24 11:51:35 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:51:37 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35961
+2019-06-24 11:51:37 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:52:05 [basehttp INFO] "POST /server/connectmanageruserinfo/add/ HTTP/1.1" 302 0
+2019-06-24 11:52:05 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61467
+2019-06-24 11:52:05 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:52:32 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35961
+2019-06-24 11:52:32 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:52:38 [exception ERROR] Internal Server Error: /server/connectmanageruserinfo/add/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\edit.py", line 292, in post
+    self.save_models()
+  File "E:\xpm\apps\server\adminx\_1_xobj\__init__.py", line 27, in save_models
+    raise AssertionError("该用户名已被占用, 请选择独特的用户名或者联系管理员修改平台用户用户名。")
+AssertionError: 该用户名已被占用, 请选择独特的用户名或者联系管理员修改平台用户用户名。
+2019-06-24 11:52:38 [basehttp ERROR] "POST /server/connectmanageruserinfo/add/ HTTP/1.1" 500 146535
+2019-06-24 11:54:11 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35961
+2019-06-24 11:54:44 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77211
+2019-06-24 11:54:44 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:54:46 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61093
+2019-06-24 11:54:46 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:54:55 [basehttp INFO] "GET /server/connectmanageruserinfo/9c550b03-3eb7-4eac-a887-8f9ca560ab72/update/ HTTP/1.1" 200 36393
+2019-06-24 11:54:55 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:56:23 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61093
+2019-06-24 11:56:24 [basehttp INFO] "GET /static/xadmin/css/themes/bootstrap-theme.css HTTP/1.1" 200 20249
+2019-06-24 11:56:24 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:56:29 [basehttp INFO] "GET /server/connectmanageruserinfo/53e21e9a-fde6-452e-b9d8-a87c7d209a2f/update/ HTTP/1.1" 200 36335
+2019-06-24 11:56:29 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:56:32 [exception ERROR] Internal Server Error: /server/connectmanageruserinfo/53e21e9a-fde6-452e-b9d8-a87c7d209a2f/update/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\edit.py", line 512, in post
+    return super(UpdateAdminView, self).post(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\edit.py", line 292, in post
+    self.save_models()
+  File "E:\xpm\apps\server\adminx\_1_xobj\__init__.py", line 27, in save_models
+    raise AssertionError("该用户名已被占用, 请选择独特的用户名或者联系管理员修改平台用户用户名。")
+AssertionError: 该用户名已被占用, 请选择独特的用户名或者联系管理员修改平台用户用户名。
+2019-06-24 11:56:32 [basehttp ERROR] "POST /server/connectmanageruserinfo/53e21e9a-fde6-452e-b9d8-a87c7d209a2f/update/ HTTP/1.1" 500 153438
+2019-06-24 11:56:34 [basehttp INFO] "GET /server/connectmanageruserinfo/53e21e9a-fde6-452e-b9d8-a87c7d209a2f/update/ HTTP/1.1" 200 36335
+2019-06-24 11:56:42 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61093
+2019-06-24 11:56:43 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:56:46 [basehttp INFO] "GET /server/connectmanageruserinfo/53e21e9a-fde6-452e-b9d8-a87c7d209a2f/update/ HTTP/1.1" 200 36335
+2019-06-24 11:56:46 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 11:56:50 [exception ERROR] Internal Server Error: /server/connectmanageruserinfo/53e21e9a-fde6-452e-b9d8-a87c7d209a2f/update/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\edit.py", line 512, in post
+    return super(UpdateAdminView, self).post(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\edit.py", line 292, in post
+    self.save_models()
+  File "E:\xpm\apps\server\adminx\_1_xobj\__init__.py", line 27, in save_models
+    raise AssertionError("该用户名已被占用, 请选择独特的用户名或者联系管理员修改平台用户用户名。")
+AssertionError: 该用户名已被占用, 请选择独特的用户名或者联系管理员修改平台用户用户名。
+2019-06-24 11:56:50 [basehttp ERROR] "POST /server/connectmanageruserinfo/53e21e9a-fde6-452e-b9d8-a87c7d209a2f/update/ HTTP/1.1" 500 153509
+2019-06-24 11:56:52 [basehttp INFO] "GET /server/connectmanageruserinfo/53e21e9a-fde6-452e-b9d8-a87c7d209a2f/update/ HTTP/1.1" 200 36335
+2019-06-24 13:50:14 [basehttp INFO] "GET / HTTP/1.1" 200 28743
+2019-06-24 13:50:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:50:15 [base WARNING] Not Found: /favicon.ico
+2019-06-24 13:50:15 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 9965
+2019-06-24 13:50:17 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77211
+2019-06-24 13:50:17 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:50:18 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61093
+2019-06-24 13:50:19 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:50:21 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40037
+2019-06-24 13:50:21 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:50:23 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61093
+2019-06-24 13:50:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684

@@ -20,10 +20,6 @@ def inital_data():
         SnmpAgentCfgInfo.objects.create(
             cop=_cop,
             snmp_port=x["port"],
-            snmp_community = x["community"],
+            snmp_community=x["community"],
         )
     print("创建完成。")
-
-
-
-

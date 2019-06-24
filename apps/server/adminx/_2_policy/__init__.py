@@ -19,6 +19,7 @@ class ActionInline(object):
 
 
 class PolicyBenchAdmin(object):
+    list_filter = ['type', ]
     list_display = ("name", "desc", "type", "date_created")
 
 
@@ -36,7 +37,13 @@ class PolicyActionAdmin(object):
 
 class PolicyRuleAdmin(object):
 
-    list_display = ['belong_cop', 'policy_bench', 'policy_action', 'plat_username', 'active', ]
+    def policy_type(self, instance):
+        return instance.policy_bench.get_type_display()
+    policy_type.short_description = "策略类型"
+    policy_type.allow_tags = True
+    policy_type.is_column = True
+
+    list_display = ['belong_cop', 'policy_bench', 'policy_type', 'policy_action', 'plat_username', 'active', ]
 
     style_fields = {"system": "radio-inline"}
     search_fields = ["action_name", ]
@@ -82,7 +89,18 @@ class PolicyRuleAdmin(object):
     )
 
 
+class PolicyHistoryAdmin(object):
+
+    def action_name(self, instance):
+        return instance.policyaction.action_name
+    action_name.short_description = "操作"
+    action_name.allow_tags = True
+    action_name.is_column = True
+
+    list_display = ('action_name', 'filter_type', 'response', 'add_time')
+
+
 xadmin.site.register(PolicyBench, PolicyBenchAdmin)
 xadmin.site.register(PolicyAction, PolicyActionAdmin)
 xadmin.site.register(PolicyRule, PolicyRuleAdmin)
-xadmin.site.register(PolicyActionHistory)
+xadmin.site.register(PolicyActionHistory, PolicyHistoryAdmin)

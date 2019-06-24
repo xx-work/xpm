@@ -51,7 +51,8 @@ class SysManagerCopInfo(models.Model):
     # comment = models.TextField( verbose_name=u"系统部件描述", default="")
     managers = models.ManyToManyField("ConnectManagerUserInfo",
                                       verbose_name="系统部件管理用户",
-                                      related_name="sys_cop_conn_users", blank=True)
+                                      related_name="sys_cop_conn_users",
+                                      blank=True)
 
     date_created = models.DateTimeField(auto_now_add=True, verbose_name="部件接入时间")
     date_updated = models.DateTimeField(auto_now=True, verbose_name="部件信息修改时间")
@@ -78,47 +79,51 @@ STATES = (
 )
 
 
-
 class ConnectManagerUserInfo(models.Model):
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)
-    name = models.CharField(max_length=128, verbose_name=_('Name'))
+    name = models.CharField(max_length=128, verbose_name=u'用户机制名')
     username = models.CharField(max_length=32, blank=True, verbose_name=_('Username'))
     _password = models.CharField(max_length=256, blank=True, null=True, verbose_name=_('Password'))
-    _identity = models.CharField(max_length=66, verbose_name="部件管理身份", default="superuser")
+    _identity = models.CharField(max_length=66, verbose_name="部件管理身份", default="superuser", choices=IdentityTypes)
     _token = models.CharField(max_length=256, blank=True, null=True, verbose_name=_('WebToken'))
     _private_key = models.TextField(max_length=4096, blank=True, null=True, verbose_name=_('SSH private key'))
     _public_key = models.TextField(max_length=4096, blank=True, verbose_name=_('SSH public key'))
     # comment = models.TextField(blank=True, max_length=1024, verbose_name=_('Comment'))
     _protocol = models.CharField(max_length=32, default="http", verbose_name="管理的协议", choices=ProtocalSets)
+
+    email = models.CharField(max_length=100, default="test@example.com", verbose_name="默认登记邮箱")
+    create_user = models.CharField(max_length=100, default="admin001", verbose_name="创建者")
     extra_info = models.CharField(max_length=255, blank=True, verbose_name=u"真实的补充信息")
     is_active = models.BooleanField(verbose_name="生效", default=True)
-    date_created = models.DateTimeField(auto_now_add=True)
+    date_created = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
     date_updated = models.DateTimeField(auto_now=True)
     # created_by = models.CharField(max_length=128, null=True, verbose_name=_('Created by'))
     # belong_plat = models.CharField(max_length=32, blank=True, verbose_name="归属平台")
     # belong_cop = models.ForeignKey(SysManagerCopInfo, on_delete=models.CASCADE, related_name="sys_cop_conn_user")
 
-
     def __str__(self):
-        return self.name + "[" + self.username +"]"
+        # return self.name + "[" + self.username +"]"
+        return self.name
 
     class Meta:
         db_table = "sys_cop_user"
         verbose_name = "系统部件用户及连接信息"
 
 
+# 2019-6-24 这个环节也许依赖于指定进程。
+from ..monitor.models import ObjProcess
+
+
 class AuditLogObject(models.Model):
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)
     name = models.CharField(max_length=128, verbose_name='审计对象名称')
     cop = models.ForeignKey(SysManagerCopInfo, verbose_name="审计对象部件", related_name='cop_to_audit', on_delete=models.CASCADE)
-    process = models.CharField(max_length=128, verbose_name='审计对象进程')
+    process = models.ForeignKey(ObjProcess, verbose_name="审计对象进程指定", related_name='cop_audit_process', on_delete=models.PROTECT)
     state = models.CharField(max_length=32, default="RUNING", verbose_name="状态", choices=STATES)
-
     date_created = models.DateTimeField(auto_now_add=True, verbose_name="审计时间")
 
     def __str__(self):
         return self.name
-
 
     class Meta:
         db_table = "audit_obj"

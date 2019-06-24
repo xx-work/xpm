@@ -23,7 +23,7 @@ class InfoSecEventAdmin(object):
 
     form_layout = (
         Main(
-                Tab(
+            Tab(
                     "事件内容",
                     Fieldset(
                         "手动增加事件", 'info_source', 'info_type', 'describtion', 'info_level',
@@ -42,7 +42,7 @@ class InfoSecEventAdmin(object):
                         description="影响范围",
                     ),
                 ),
-        ),
+            ),
         Side(
             Tab(
                 "计划措施",

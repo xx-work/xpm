@@ -34,14 +34,14 @@ class ObjProcessProcessAdmin(object):
     readonly_fields = ("date_created", "id")
     form_layout = (
             Main(
-                    Tab(
+                  Tab(
                         "进程",
                         Fieldset(
                             "部件和生效", "process_name", "cop", "process", "user",
                             description="针对系统部件创建策略, 设置生效与否",
                         ),
 
-                    ),
+                ),
             ),
             Side(
                 Tab(
@@ -49,8 +49,8 @@ class ObjProcessProcessAdmin(object):
                     Fieldset("process_type"),
                     # Inline(ActionInline)
                 ),
-            )
-        )
+           )
+    )
 
 
 class ProcessAuditAdmin(object):

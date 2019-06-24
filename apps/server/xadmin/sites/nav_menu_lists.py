@@ -55,7 +55,7 @@ class GlobalSetting(object):
             {'title': '管理对象识别', 'menus': (
                 {'title': '系统管理对象识别', 'url': self.get_model_url(SysManagerCopInfo, 'changelist')},
                 {'title': '安全管理对象识别', 'url': self.get_model_url(ConnectManagerUserInfo, 'changelist')},
-                {'title': '审计机制对象', 'url': self.get_model_url(AuditLogObject, 'changelist')},
+                {'title': '审计管理对象识别', 'url': self.get_model_url(AuditLogObject, 'changelist')},
             ), "icon": "fa fa-html5"},
 
             {'title': '管理策略设置', 'menus': (
@@ -90,8 +90,7 @@ class GlobalSetting(object):
                 {'title': '责任管理', 'url': self.get_model_url(Community, 'changelist'), "icon":"fa fa-rocket"},
             ), "icon": "fa fa-users"},
 
-            {'title': '', 'menus': (
-            ), "icon": "fa fa-ignore"},
+            # {'title': '', 'menus': (), "icon": "fa fa-ignore"},
 
             {'title': '其他工具', 'menus': (
                 {'title': 'SNMP设置', 'url': self.get_model_url(SnmpAgentCfgInfo, 'changelist')},
@@ -107,7 +106,7 @@ class GlobalSetting(object):
             ), "icon": "fa fa-users"},
 
 
-            {'title': '', 'menus': (), "icon": "fa fa-ignore"},
+            # {'title': '', 'menus': (), "icon": "fa fa-ignore"},
 
             {'title': '平台版本更新记录', 'menus': (
                 {'title': '版本更新', 'url': self.get_model_url(Revision, 'changelist')},

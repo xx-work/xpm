@@ -49,7 +49,7 @@ class ProcessAuditLog(models.Model):
     class Meta:
         db_table = "process_audit"
         verbose_name = "进程监控周期"
-
+        ordering = ('-date_created',)
 ## 监控内容；
 ## 系统进程; 监控系统部件的系统管理是否发生变化。配置等。
 

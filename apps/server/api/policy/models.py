@@ -55,19 +55,22 @@ class PolicyAction(models.Model):
     class Meta:
         db_table = "policy_action"
         verbose_name = "策略动作"
-
+        ordering = ('-date_created',)
 
 class PolicyActionHistory(models.Model):
     policyaction = models.ForeignKey(PolicyAction, on_delete=models.CASCADE, related_name="action_policy_history")
     filter_type = models.CharField(verbose_name="响应过滤类型", max_length=55, choices=RESPONSE_FILTER_TYPES)
     response = models.TextField(blank=True, verbose_name=u"响应内容")
     # 注意 进行策略下发后 反馈 一定是这里的responce定义格式的模板
-    add_time = models.DateTimeField(auto_now_add=True)
+    add_time = models.DateTimeField(auto_now_add=True, verbose_name="下发时间")
+
+    def __str__(self):
+        return self.policyaction.action_name + "-下发"
 
     class Meta:
         db_table = "action_history"
         verbose_name = "策略下发执行历史"
-
+        ordering = ('-add_time',)
 
 # 策略规则，就是规则的内容
 class PolicyRule(models.Model):
@@ -80,9 +83,12 @@ class PolicyRule(models.Model):
     policy_action = models.ForeignKey(PolicyAction, verbose_name="规则执行指定", on_delete=models.CASCADE, related_name="policy_rule_cop")
     add_time = models.DateTimeField(auto_now_add=True, verbose_name="创建日期")
 
+    def __str__(self):
+        return "基于【" + self.policy_bench.name + "】的规则"
+
     class Meta:
         db_table = "policy_rule"
         verbose_name = "策略规则"
-
+        ordering = ('-add_time',)
 
 ## 安全机制;
