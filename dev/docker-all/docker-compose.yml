@@ -2,29 +2,56 @@ version: "2.2"
 
 services:
    web:
-      container_name: web-server
+      container_name: gunicorn
       restart: always
-      build: ./whtv_web
-      expose:
-        - "8077"
+      image: 'actanble/xpm'
+      ports:
+        - "18077:8077"
       volumes:
-        - ./whtv_web:/usr/src/app
+        - ./apps:/usr/src/app
+        - ./config.yml:/usr/src/config.yml
       command: /usr/local/bin/gunicorn website.wsgi:application -w 2 -b :8077
       networks:
           customize_net:
-            ipv4_address: 192.168.32.223
+            ipv4_address: 192.168.77.223
+
    celery:
-     container_name: web-server
+     container_name: celery
      restart: always
-     build: ./whtv_web
-     expose:
-       - "8077"
+     image: 'actanble/xpm'
      volumes:
-       - ./whtv_web:/usr/src/app
-     command: /usr/local/bin/celery website.wsgi:application -w 2 -b :8077
+        - ./apps:/usr/src/app
+        - ./config.yml:/usr/src/config.yml
+     command: /usr/local/bin/python -m celery worker -A ops -l INFO --autoscale=20,4 --logfile=/var/log/celery-worker.log --pidfile=celeryd.pid
      networks:
        customize_net:
-         ipv4_address: 192.168.32.223
+         ipv4_address: 192.168.77.111
+
+   beat:
+     container_name: beat
+     restart: always
+     image: 'actanble/xpm'
+     volumes:
+        - ./apps:/usr/src/app
+        - ./config.yml:/usr/src/config.yml
+     command: /usr/local/bin/celery -A ops beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler --max-interval=60 --detach  --pidfile=beatd.pid
+     networks:
+       customize_net:
+         ipv4_address: 192.168.77.112
+
+   flower:
+     container_name: flower
+     restart: always
+     image: 'actanble/xpm'
+     ports:
+       - "10055:5555"
+     volumes:
+        - ./apps:/usr/src/app
+        - ./config.yml:/usr/src/config.yml
+     command: /usr/local/bin/flower --port=5555 --broker=redis://:xxscan@192.168.2.227:6379/3 --persistent --pidfile=/var/run/flower.pid
+     networks:
+       customize_net:
+         ipv4_address: 192.168.77.80
 
    nginx:
       container_name: nginx
@@ -37,7 +64,7 @@ services:
         - /srv/docker/logs/nginx:/var/log/nginx/
       networks:
           customize_net:
-            ipv4_address: 192.168.33.99
+            ipv4_address: 192.168.77.99
 
 networks:
   customize_net:
@@ -45,4 +72,4 @@ networks:
     ipam:
       driver: default
       config:
-        - subnet: 192.168.33.0/24
+        - subnet: 192.168.77.0/24
