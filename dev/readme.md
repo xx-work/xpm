@@ -1,18 +1,16 @@
-## 安装 Docker-compose 
-```bash
-yum -y install gcc gcc-c++ make openssl openssl-devel
-pip3 install docker-compose -i https://pypi.tuna.tsinghua.edu.cn/simple
-cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-
-```
+# 开发部署说明文档
 
 
-**ubuntu 同步时间设置**
-> https://www.cnblogs.com/xwdreamer/p/3448773.html
 
-
-## 创建utf-8数据库
-- `CREATE DATABASE `cso_618` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;`
-
-
-## ---
+## Docker 
+- `docker` Web平台部署概要 [老版本](./docker)
+  - [Nginx容器和配置文件](./docker/nginx-container)
+  - [Web容器docker-compose](./docker/docker-compose.yml)
+  - [Docker安装脚本](./docker/install_docker.sh)
+  - [宿主机安装python脚本](./docker/install_python36.sh)
+- `sueprvisord` 宿主机部署服务管控配置 [Supervisord](./supervisord)
+  - [gunicorn](./supervisord/supervisord.d/gunicorn.ini)
+  - [celery](./supervisord/supervisord.d/celery.ini)
+  - [celery-beat](./supervisord/supervisord.d/beat.ini)
+  - [flower](./supervisord/supervisord.d/flower.ini)
+- `docker-all` 完全版本的 `docker-compose` 设置

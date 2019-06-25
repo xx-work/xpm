@@ -47,7 +47,7 @@ class Community(models.Model):
     community_name = models.CharField(u"组织名称", max_length=200)
     responsibility = models.TextField(u"责任书", default="-")
 
-    date_created = models.DateTimeField(auto_now_add=True)
+    date_created = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
     date_updated = models.DateTimeField(auto_now=True)
 
     def __str__(self):

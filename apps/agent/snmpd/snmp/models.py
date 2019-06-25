@@ -40,8 +40,9 @@ class SnmpHostData(models.Model):
     disk_percent = models.FloatField( verbose_name="硬盘占用", default=0.0)
     up_time = models.IntegerField(verbose_name="开启时间", blank=True, default=0)
 
-    date_created = models.DateTimeField(auto_now_add=True)
+    date_created = models.DateTimeField(auto_now_add=True, verbose_name="监控时间")
 
     class Meta:
         db_table="snmp_agent_data"
         verbose_name="SNMP部件监控数据"
+        ordering = ('date_created', )

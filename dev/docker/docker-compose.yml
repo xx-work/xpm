@@ -24,13 +24,11 @@ services:
 
    redis:
      container_name: redis-server
-     image: 'sameersbn/redis:4.0.9-2'
+     build: ./redis
      restart: always
      volumes:
-       - /srv/docker/redis:/var/lib/redis
+       - /srv/docker/redis2:/data
        - /etc/localtime:/etc/localtime
-     environment:
-       - REDIS_PASSWORD=xxscan
      ports:
        - "6379:6379"
      networks:

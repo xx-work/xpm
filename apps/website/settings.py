@@ -280,7 +280,7 @@ STATICFILES_FINDERS = (
 )
 
 
-### Email-settings
+# Email-settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = False
 EMAIL_HOST = 'smtp.163.com'
@@ -290,9 +290,6 @@ EMAIL_PORT = 25
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER
 
-#from .site_settings.logsettings import LOGGING
-
-# from .site_settings.cors import *
 MEDIA_DIR = STATIC_ROOT
 if sys.platform == 'win32':
     MEDIA_DIR = "e://"
@@ -336,14 +333,29 @@ CELERY_WORKER_REDIRECT_STDOUTS_LEVEL = "INFO"
 CELERY_WORKER_MAX_TASKS_PER_CHILD = 40
 CELERY_TASK_SOFT_TIME_LIMIT = 3600
 
-CELERYD_FORCE_EXECV = True
+CELERYD_FORCE_EXECV = True     # 非常重要,有些情况下可以防止死锁
 CELERY_WORKER_CONCURRENCY = 1
+CELERYD_CONCURRENCY = 20  # 并发worker数
+
+# 2019-6-25 设置 interval 出错加上 celery_timezone
+CELERY_TIMEZONE = TIME_ZONE
+CELERYD_PREFETCH_MULTIPLIER = 1
+CELERYD_MAX_TASKS_PER_CHILD = 100    # 每个worker最多执行万100个任务就会被销毁，可防止内存泄露
+
+
+CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
+CELERY_TASK_ALWAYS_EAGER = True
+CELERY_WORKER_HIJACK_ROOT_LOGGER = False
+CELERY_TASK_ACKS_LATE = True  # Retry if task fails
+CELERY_TASK_TIME_LIMIT = 60 * 25  # in seconds, so 25 minutes
+CELERY_SEND_TASK_ERROR_EMAILS = False
+
 
 # Cache use redis
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        #'BACKEND': 'redis_cache.cache.RedisCache',
+        # 'BACKEND': 'redis_cache.cache.RedisCache',
         'LOCATION': 'redis://:%(password)s@%(host)s:%(port)s/%(db)s' % {
             'password': CONFIG.REDIS_PASSWORD,
             'host': CONFIG.REDIS_HOST,
@@ -371,8 +383,9 @@ except:
     pass
 
 
-## 取消CSRF中间件
+# 取消CSRF中间件
 MIDDLEWARE.append('secs.middle.MiddleWare.DisableCSRFCheck')
 MIDDLEWARE.append('secs.middle.MiddleWare.SiteMainMiddleware')
+
 
 PREVILEGED_USER_SETS = ["admin001", "admin007"]
