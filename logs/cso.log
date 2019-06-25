@@ -7608,3 +7608,1247 @@ AssertionError: 该用户名已被占用, 请选择独特的用户名或者联�
 2019-06-24 13:50:21 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
 2019-06-24 13:50:23 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61093
 2019-06-24 13:50:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:52:33 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 54368
+2019-06-24 13:52:33 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:52:34 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 47232
+2019-06-24 13:52:34 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:52:35 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54119
+2019-06-24 13:52:35 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:52:37 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39120
+2019-06-24 13:52:37 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:52:37 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 13:52:37 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:52:38 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39120
+2019-06-24 13:52:39 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:58:04 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77211
+2019-06-24 13:58:04 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:58:07 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61093
+2019-06-24 13:58:07 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:58:11 [basehttp INFO] "POST /server/connectmanageruserinfo/ HTTP/1.1" 200 29466
+2019-06-24 13:58:11 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:58:12 [basehttp INFO] "POST /server/connectmanageruserinfo/ HTTP/1.1" 302 0
+2019-06-24 13:58:12 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 53609
+2019-06-24 13:58:12 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:58:19 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35961
+2019-06-24 13:58:19 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:58:56 [basehttp INFO] "POST /server/connectmanageruserinfo/add/ HTTP/1.1" 302 0
+2019-06-24 13:58:57 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 57565
+2019-06-24 13:58:57 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:59:03 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35961
+2019-06-24 13:59:03 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 13:59:34 [exception ERROR] Internal Server Error: /server/connectmanageruserinfo/add/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\edit.py", line 292, in post
+    self.save_models()
+  File "E:\xpm\apps\server\adminx\_1_xobj\__init__.py", line 27, in save_models
+    raise AssertionError("该用户名已被占用, 请选择独特的用户名或者联系管理员修改平台用户用户名。")
+AssertionError: 该用户名已被占用, 请选择独特的用户名或者联系管理员修改平台用户用户名。
+2019-06-24 13:59:34 [basehttp ERROR] "POST /server/connectmanageruserinfo/add/ HTTP/1.1" 500 146298
+2019-06-24 13:59:37 [basehttp INFO] "GET /server/connectmanageruserinfo/add/ HTTP/1.1" 200 35961
+2019-06-24 13:59:44 [basehttp INFO] "POST /server/connectmanageruserinfo/add/ HTTP/1.1" 302 0
+2019-06-24 13:59:44 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61387
+2019-06-24 13:59:44 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:01:02 [basehttp INFO] "GET /server/connectmanageruserinfo/53e21e9a-fde6-452e-b9d8-a87c7d209a2f/update/ HTTP/1.1" 200 36335
+2019-06-24 14:01:02 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:01:09 [exception ERROR] Internal Server Error: /server/connectmanageruserinfo/53e21e9a-fde6-452e-b9d8-a87c7d209a2f/update/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\edit.py", line 512, in post
+    return super(UpdateAdminView, self).post(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\edit.py", line 292, in post
+    self.save_models()
+  File "E:\xpm\apps\server\adminx\_1_xobj\__init__.py", line 28, in save_models
+    raise AssertionError("该用户名已被占用, 请选择独特的用户名或者联系管理员修改平台用户用户名。")
+AssertionError: 该用户名已被占用, 请选择独特的用户名或者联系管理员修改平台用户用户名。
+2019-06-24 14:01:10 [basehttp ERROR] "POST /server/connectmanageruserinfo/53e21e9a-fde6-452e-b9d8-a87c7d209a2f/update/ HTTP/1.1" 500 152811
+2019-06-24 14:34:41 [basehttp INFO] "GET / HTTP/1.1" 200 28743
+2019-06-24 14:34:41 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:34:42 [base WARNING] Not Found: /favicon.ico
+2019-06-24 14:34:42 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 9965
+2019-06-24 14:34:44 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 47232
+2019-06-24 14:34:44 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:34:45 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 54368
+2019-06-24 14:34:45 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:34:47 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54119
+2019-06-24 14:34:47 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:34:49 [basehttp INFO] "GET /server/policyaction/8d8a206a-1724-4bab-b902-50a402c8aa88/update/ HTTP/1.1" 200 35129
+2019-06-24 14:34:49 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:35:11 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 14:35:11 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:35:12 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39120
+2019-06-24 14:35:13 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:35:15 [basehttp INFO] "GET /server/infosecevent/ HTTP/1.1" 200 48959
+2019-06-24 14:35:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:35:17 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 45824
+2019-06-24 14:35:17 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:36:15 [basehttp INFO] "GET /server/changeaudit/ HTTP/1.1" 200 38750
+2019-06-24 14:36:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:36:16 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 93926
+2019-06-24 14:36:16 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 304 0
+2019-06-24 14:36:16 [basehttp INFO] "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 304 0
+2019-06-24 14:36:16 [basehttp INFO] "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 304 0
+2019-06-24 14:36:16 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:36:23 [basehttp INFO] "GET /server/changeaudit/ HTTP/1.1" 200 38750
+2019-06-24 14:36:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:36:23 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 93926
+2019-06-24 14:36:23 [basehttp ERROR] "GET /xadmin/log/ HTTP/1.1" 500 59
+2019-06-24 14:36:24 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 93926
+2019-06-24 14:36:24 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:36:29 [basehttp INFO] "GET /server/changeaudit/ HTTP/1.1" 200 38750
+2019-06-24 14:36:30 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:36:31 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 93926
+2019-06-24 14:36:31 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:46:26 [exception ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\dashboard.py", line 593, in get
+    return self.template_response('xadmin/views/dashboard.html', self.get_context())
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\dashboard.py", line 586, in get_context
+    context = super(Dashboard, self).get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 410, in get_context
+    menus = copy.copy(self.get_nav_menu())
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 336, in get_nav_menu
+    site_menu = list(self.get_site_menu() or [])
+  File "E:\xpm\apps\server\xadmin\sites\nav_menu_lists.py", line 78, in get_site_menu
+    {'title': '平台操作日志', 'url': self.get_model_url(Log, 'changelist')},
+NameError: name 'Log' is not defined
+2019-06-24 14:46:26 [basehttp ERROR] "GET / HTTP/1.1" 500 228088
+2019-06-24 14:47:23 [basehttp INFO] "GET / HTTP/1.1" 200 28743
+2019-06-24 14:47:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:47:28 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 72058
+2019-06-24 14:47:28 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:47:52 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 62877
+2019-06-24 14:47:52 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:47:58 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 62877
+2019-06-24 14:47:58 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:04 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 14:48:04 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:05 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39120
+2019-06-24 14:48:05 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:06 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 14:48:06 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:07 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39120
+2019-06-24 14:48:07 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:07 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 14:48:07 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:10 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39120
+2019-06-24 14:48:10 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:13 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 14:48:13 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:14 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39120
+2019-06-24 14:48:14 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:15 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 14:48:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:16 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77211
+2019-06-24 14:48:16 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:17 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61004
+2019-06-24 14:48:17 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:17 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40037
+2019-06-24 14:48:17 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:18 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61004
+2019-06-24 14:48:18 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:19 [basehttp INFO] "GET /server/systempolicycentralizedmanagement/ HTTP/1.1" 200 38336
+2019-06-24 14:48:19 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:20 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 38618
+2019-06-24 14:48:20 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:20 [basehttp INFO] "GET /server/auditpolicycentralizedmanagement/ HTTP/1.1" 200 38612
+2019-06-24 14:48:20 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:21 [basehttp INFO] "GET /server/securitypolicycentralizedmanagement/ HTTP/1.1" 200 38618
+2019-06-24 14:48:21 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:48:21 [basehttp INFO] "GET /server/systempolicycentralizedmanagement/ HTTP/1.1" 200 38336
+2019-06-24 14:48:21 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:06 [basehttp INFO] "GET /server/attackeractiondesc/ HTTP/1.1" 200 44215
+2019-06-24 14:49:06 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:07 [basehttp INFO] "GET /server/effectinfo/ HTTP/1.1" 200 40969
+2019-06-24 14:49:07 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:08 [basehttp INFO] "GET /server/attackeractiondesc/ HTTP/1.1" 200 44215
+2019-06-24 14:49:08 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:08 [basehttp INFO] "GET /server/effectinfo/ HTTP/1.1" 200 40969
+2019-06-24 14:49:08 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:09 [basehttp INFO] "GET /reversion/revision/ HTTP/1.1" 200 48794
+2019-06-24 14:49:10 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:13 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 14:49:13 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:13 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39120
+2019-06-24 14:49:13 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:18 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 14:49:18 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:19 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39120
+2019-06-24 14:49:19 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:40 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77211
+2019-06-24 14:49:40 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:40 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61004
+2019-06-24 14:49:40 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:41 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40037
+2019-06-24 14:49:41 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:48 [basehttp INFO] "GET / HTTP/1.1" 200 28743
+2019-06-24 14:49:48 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:49 [basehttp INFO] "GET /server/changeaudit/ HTTP/1.1" 200 38750
+2019-06-24 14:49:49 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:49:50 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 62877
+2019-06-24 14:49:50 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:50:10 [basehttp INFO] "GET /auth/user/1/detail/?_format=html HTTP/1.1" 200 4073
+2019-06-24 14:50:23 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 14:50:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 14:50:26 [basehttp INFO] "GET /auth/user/ HTTP/1.1" 200 60679
+2019-06-24 14:50:26 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:03:14 [basehttp INFO] "GET /server/changeaudit/ HTTP/1.1" 200 38750
+2019-06-24 16:03:14 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:03:15 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 62877
+2019-06-24 16:03:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:03:16 [basehttp INFO] "GET /server/changeaudit/ HTTP/1.1" 200 38750
+2019-06-24 16:03:16 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:03:17 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 62877
+2019-06-24 16:03:17 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:03:23 [basehttp INFO] "GET /server/changeaudit/ HTTP/1.1" 200 38750
+2019-06-24 16:03:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:03:25 [basehttp INFO] "GET /server/infosecevent/ HTTP/1.1" 200 48959
+2019-06-24 16:03:25 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:03:27 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 16:03:27 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:03:28 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 16:03:28 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:03:30 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 16:03:30 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:03:34 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77211
+2019-06-24 16:03:34 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:03:34 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61004
+2019-06-24 16:03:35 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:03:35 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40037
+2019-06-24 16:03:35 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:03:36 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61004
+2019-06-24 16:03:36 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:03:38 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77211
+2019-06-24 16:03:38 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:04:01 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61004
+2019-06-24 16:04:01 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:04:15 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 54368
+2019-06-24 16:04:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:04:16 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54119
+2019-06-24 16:04:16 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:04:25 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 62877
+2019-06-24 16:04:25 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:04:30 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39120
+2019-06-24 16:04:30 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:04:31 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 16:04:31 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:04:35 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 39120
+2019-06-24 16:04:35 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:04:38 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 45824
+2019-06-24 16:04:38 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:30:39 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 45824
+2019-06-24 16:30:39 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:30:42 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77211
+2019-06-24 16:30:42 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:30:44 [basehttp INFO] "GET /server/sysmanagercopinfo/84936e64-168d-40dc-9b73-ccaed6fba8be/patch/?fields=ip HTTP/1.1" 200 511
+2019-06-24 16:30:48 [basehttp INFO] "POST /server/sysmanagercopinfo/84936e64-168d-40dc-9b73-ccaed6fba8be/patch/ HTTP/1.1" 200 93
+2019-06-24 16:30:49 [basehttp INFO] "GET /server/sysmanagercopinfo/7b47e7be-0714-4881-90fc-292e2551a6bd/patch/?fields=ip HTTP/1.1" 200 512
+2019-06-24 16:30:51 [basehttp INFO] "GET /server/sysmanagercopinfo/492a0c34-f560-4f1e-a7cb-9929a3fa1a68/patch/?fields=ip HTTP/1.1" 200 513
+2019-06-24 16:30:58 [basehttp INFO] "POST /server/sysmanagercopinfo/492a0c34-f560-4f1e-a7cb-9929a3fa1a68/patch/ HTTP/1.1" 200 93
+2019-06-24 16:31:04 [basehttp INFO] "POST /server/sysmanagercopinfo/492a0c34-f560-4f1e-a7cb-9929a3fa1a68/patch/ HTTP/1.1" 200 93
+2019-06-24 16:31:05 [basehttp INFO] "POST /server/sysmanagercopinfo/7b47e7be-0714-4881-90fc-292e2551a6bd/patch/ HTTP/1.1" 200 93
+2019-06-24 16:37:23 [basehttp INFO] "POST /server/sysmanagercopinfo/7b47e7be-0714-4881-90fc-292e2551a6bd/patch/ HTTP/1.1" 200 95
+2019-06-24 16:37:32 [basehttp INFO] "POST /server/sysmanagercopinfo/492a0c34-f560-4f1e-a7cb-9929a3fa1a68/patch/ HTTP/1.1" 200 93
+2019-06-24 16:37:43 [basehttp INFO] "GET /server/systempolicycentralizedmanagement/ HTTP/1.1" 200 38336
+2019-06-24 16:37:43 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 16:37:46 [basehttp INFO] "GET /agent/snmpagentcfginfo/ HTTP/1.1" 200 52404
+2019-06-24 16:37:47 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:26:04 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 17:26:05 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:26:08 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 45824
+2019-06-24 17:26:09 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:26:10 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 17:26:10 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:26:12 [basehttp INFO] "GET /server/changeaudit/ HTTP/1.1" 200 38750
+2019-06-24 17:26:12 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:26:14 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 45824
+2019-06-24 17:26:14 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:26:15 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 17:26:15 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:26:18 [basehttp INFO] "GET /agent/snmpagentcfginfo/ HTTP/1.1" 200 52404
+2019-06-24 17:26:18 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:26:20 [basehttp INFO] "GET /agent/snmpagentcfginfo/d4cf7650-548a-4235-be64-ee03518582d9/patch/?fields=snmp_community HTTP/1.1" 200 581
+2019-06-24 17:26:28 [basehttp INFO] "POST /agent/snmpagentcfginfo/d4cf7650-548a-4235-be64-ee03518582d9/patch/ HTTP/1.1" 200 111
+2019-06-24 17:26:30 [basehttp INFO] "GET /agent/snmpagentcfginfo/acc00b15-a4b3-4c67-be76-4e6910e6cbc5/patch/?fields=snmp_community HTTP/1.1" 200 581
+2019-06-24 17:26:31 [basehttp INFO] "POST /agent/snmpagentcfginfo/acc00b15-a4b3-4c67-be76-4e6910e6cbc5/patch/ HTTP/1.1" 200 111
+2019-06-24 17:26:32 [basehttp INFO] "GET /agent/snmpagentcfginfo/931644c3-f92b-43bd-b33c-c9f9cd404d0b/patch/?fields=snmp_community HTTP/1.1" 200 581
+2019-06-24 17:26:34 [basehttp INFO] "POST /agent/snmpagentcfginfo/931644c3-f92b-43bd-b33c-c9f9cd404d0b/patch/ HTTP/1.1" 200 111
+2019-06-24 17:26:35 [basehttp INFO] "GET /agent/snmpagentcfginfo/7f72649d-5bbf-4b69-b613-eff270e3cf86/patch/?fields=snmp_community HTTP/1.1" 200 581
+2019-06-24 17:26:37 [basehttp INFO] "POST /agent/snmpagentcfginfo/7f72649d-5bbf-4b69-b613-eff270e3cf86/patch/ HTTP/1.1" 200 111
+2019-06-24 17:28:09 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 52978
+2019-06-24 17:28:09 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:30:45 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 52978
+2019-06-24 17:30:45 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:30:46 [basehttp INFO] "GET /server/objprocess/ HTTP/1.1" 200 58242
+2019-06-24 17:30:46 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:30:47 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 52978
+2019-06-24 17:30:47 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:30:50 [basehttp INFO] "GET /server/attackeractiondesc/ HTTP/1.1" 200 44215
+2019-06-24 17:30:51 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:31:02 [base WARNING] Not Found: /admin/
+2019-06-24 17:31:02 [basehttp WARNING] "GET /admin/ HTTP/1.1" 404 9950
+2019-06-24 17:33:32 [base WARNING] Not Found: /admin/
+2019-06-24 17:33:32 [basehttp WARNING] "GET /admin/ HTTP/1.1" 404 9950
+2019-06-24 17:33:40 [exception ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\dashboard.py", line 593, in get
+    return self.template_response('xadmin/views/dashboard.html', self.get_context())
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\dashboard.py", line 586, in get_context
+    context = super(Dashboard, self).get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 410, in get_context
+    menus = copy.copy(self.get_nav_menu())
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 336, in get_nav_menu
+    site_menu = list(self.get_site_menu() or [])
+  File "E:\xpm\apps\server\xadmin\sites\nav_menu_lists.py", line 108, in get_site_menu
+    {'title': '周期任务', 'url': self.get_model_url(PeriodicTask, 'changelist')},
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 148, in get_model_url
+    args=args, kwargs=kwargs, current_app=self.admin_site.name)
+  File "F:\workspace\cso_venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "F:\workspace\cso_venv\lib\site-packages\django\urls\resolvers.py", line 634, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'django_celery_beat_periodictask_changelist' not found. 'django_celery_beat_periodictask_changelist' is not a valid view function or pattern name.
+2019-06-24 17:33:40 [basehttp ERROR] "GET / HTTP/1.1" 500 244655
+2019-06-24 17:35:16 [exception ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\dashboard.py", line 593, in get
+    return self.template_response('xadmin/views/dashboard.html', self.get_context())
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\dashboard.py", line 586, in get_context
+    context = super(Dashboard, self).get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 410, in get_context
+    menus = copy.copy(self.get_nav_menu())
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 336, in get_nav_menu
+    site_menu = list(self.get_site_menu() or [])
+  File "E:\xpm\apps\server\xadmin\sites\nav_menu_lists.py", line 108, in get_site_menu
+    {'title': '周期任务', 'url': self.get_model_url(PeriodicTask, 'changelist')},
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 148, in get_model_url
+    args=args, kwargs=kwargs, current_app=self.admin_site.name)
+  File "F:\workspace\cso_venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "F:\workspace\cso_venv\lib\site-packages\django\urls\resolvers.py", line 634, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'django_celery_beat_periodictask_changelist' not found. 'django_celery_beat_periodictask_changelist' is not a valid view function or pattern name.
+2019-06-24 17:35:16 [basehttp ERROR] "GET / HTTP/1.1" 500 244790
+2019-06-24 17:36:25 [basehttp INFO] "GET / HTTP/1.1" 200 28743
+2019-06-24 17:36:25 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:37:04 [exception ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\dashboard.py", line 593, in get
+    return self.template_response('xadmin/views/dashboard.html', self.get_context())
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\dashboard.py", line 586, in get_context
+    context = super(Dashboard, self).get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 410, in get_context
+    menus = copy.copy(self.get_nav_menu())
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 336, in get_nav_menu
+    site_menu = list(self.get_site_menu() or [])
+  File "E:\xpm\apps\server\xadmin\sites\nav_menu_lists.py", line 108, in get_site_menu
+    {'title': '周期任务', 'url': self.get_model_url(PeriodicTask, 'changelist')},
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 148, in get_model_url
+    args=args, kwargs=kwargs, current_app=self.admin_site.name)
+  File "F:\workspace\cso_venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "F:\workspace\cso_venv\lib\site-packages\django\urls\resolvers.py", line 634, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'django_celery_beat_periodictask_changelist' not found. 'django_celery_beat_periodictask_changelist' is not a valid view function or pattern name.
+2019-06-24 17:37:04 [basehttp ERROR] "GET / HTTP/1.1" 500 244655
+2019-06-24 17:37:36 [exception ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\dashboard.py", line 593, in get
+    return self.template_response('xadmin/views/dashboard.html', self.get_context())
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\dashboard.py", line 586, in get_context
+    context = super(Dashboard, self).get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 410, in get_context
+    menus = copy.copy(self.get_nav_menu())
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 336, in get_nav_menu
+    site_menu = list(self.get_site_menu() or [])
+  File "E:\xpm\apps\server\xadmin\sites\nav_menu_lists.py", line 109, in get_site_menu
+    {'title': 'Crontab任务', 'url': self.get_model_url(CrontabSchedule, 'changelist')},
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 148, in get_model_url
+    args=args, kwargs=kwargs, current_app=self.admin_site.name)
+  File "F:\workspace\cso_venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "F:\workspace\cso_venv\lib\site-packages\django\urls\resolvers.py", line 634, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'django_celery_beat_crontabschedule_changelist' not found. 'django_celery_beat_crontabschedule_changelist' is not a valid view function or pattern name.
+2019-06-24 17:37:36 [basehttp ERROR] "GET / HTTP/1.1" 500 244760
+2019-06-24 17:37:55 [exception ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\dashboard.py", line 593, in get
+    return self.template_response('xadmin/views/dashboard.html', self.get_context())
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\dashboard.py", line 586, in get_context
+    context = super(Dashboard, self).get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 410, in get_context
+    menus = copy.copy(self.get_nav_menu())
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 336, in get_nav_menu
+    site_menu = list(self.get_site_menu() or [])
+  File "E:\xpm\apps\server\xadmin\sites\nav_menu_lists.py", line 110, in get_site_menu
+    {'title': '间隔周期任务', 'url': self.get_model_url(IntervalSchedule, 'changelist')},
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 148, in get_model_url
+    args=args, kwargs=kwargs, current_app=self.admin_site.name)
+  File "F:\workspace\cso_venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "F:\workspace\cso_venv\lib\site-packages\django\urls\resolvers.py", line 634, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'django_celery_beat_intervalschedule_changelist' not found. 'django_celery_beat_intervalschedule_changelist' is not a valid view function or pattern name.
+2019-06-24 17:37:55 [basehttp ERROR] "GET / HTTP/1.1" 500 244730
+2019-06-24 17:38:06 [basehttp INFO] "GET / HTTP/1.1" 200 29473
+2019-06-24 17:38:07 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:39:03 [basehttp INFO] "GET /admin HTTP/1.1" 200 6398
+2019-06-24 17:39:03 [basehttp INFO] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+2019-06-24 17:39:03 [basehttp INFO] "GET /static/admin/css/base.css HTTP/1.1" 200 16106
+2019-06-24 17:39:03 [basehttp INFO] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17894
+2019-06-24 17:39:03 [basehttp INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2019-06-24 17:39:03 [basehttp INFO] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2019-06-24 17:39:03 [basehttp INFO] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2019-06-24 17:39:03 [basehttp INFO] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+2019-06-24 17:39:03 [basehttp INFO] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+2019-06-24 17:39:03 [basehttp INFO] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+2019-06-24 17:39:05 [basehttp INFO] "GET /admindjango_celery_beat/crontabschedule/ HTTP/1.1" 200 4496
+2019-06-24 17:39:05 [basehttp INFO] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+2019-06-24 17:39:05 [basehttp INFO] "GET /adminjsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:39:05 [basehttp INFO] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+2019-06-24 17:39:05 [basehttp INFO] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6897
+2019-06-24 17:39:05 [basehttp INFO] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8729
+2019-06-24 17:39:05 [basehttp INFO] "GET /static/admin/js/core.js HTTP/1.1" 200 7134
+2019-06-24 17:39:05 [basehttp INFO] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+2019-06-24 17:39:05 [basehttp INFO] "GET /static/admin/js/actions.js HTTP/1.1" 200 6502
+2019-06-24 17:39:05 [basehttp INFO] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+2019-06-24 17:39:05 [basehttp INFO] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+2019-06-24 17:39:05 [basehttp INFO] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2019-06-24 17:39:08 [basehttp INFO] "GET /admindjango_celery_beat/ HTTP/1.1" 200 3962
+2019-06-24 17:39:09 [basehttp INFO] "GET /admindjango_celery_beat/intervalschedule/ HTTP/1.1" 200 3323
+2019-06-24 17:39:09 [basehttp INFO] "GET /adminjsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:39:10 [basehttp INFO] "GET /admindjango_celery_beat/intervalschedule/add/ HTTP/1.1" 200 4832
+2019-06-24 17:39:10 [basehttp INFO] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+2019-06-24 17:39:10 [basehttp INFO] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+2019-06-24 17:39:10 [basehttp INFO] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+2019-06-24 17:39:10 [basehttp INFO] "GET /adminjsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:39:11 [basehttp INFO] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+2019-06-24 17:39:24 [basehttp INFO] "POST /admindjango_celery_beat/intervalschedule/add/ HTTP/1.1" 302 0
+2019-06-24 17:39:24 [basehttp INFO] "GET /admindjango_celery_beat/intervalschedule/ HTTP/1.1" 200 4696
+2019-06-24 17:39:24 [basehttp INFO] "GET /adminjsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:39:24 [basehttp INFO] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2019-06-24 17:39:26 [basehttp INFO] "GET /admindjango_celery_beat/ HTTP/1.1" 200 3962
+2019-06-24 17:39:30 [basehttp INFO] "GET /admindjango_celery_beat/periodictask/ HTTP/1.1" 200 6018
+2019-06-24 17:39:30 [basehttp INFO] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2019-06-24 17:39:30 [basehttp INFO] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+2019-06-24 17:39:30 [basehttp INFO] "GET /adminjsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:39:32 [basehttp INFO] "GET /admindjango_celery_beat/periodictask/add/ HTTP/1.1" 200 15005
+2019-06-24 17:39:33 [basehttp INFO] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20283
+2019-06-24 17:39:33 [basehttp INFO] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+2019-06-24 17:39:33 [basehttp INFO] "GET /static/admin/js/collapse.js HTTP/1.1" 200 1151
+2019-06-24 17:39:33 [basehttp INFO] "GET /adminjsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:39:33 [basehttp INFO] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+2019-06-24 17:39:33 [basehttp INFO] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+2019-06-24 17:40:07 [basehttp INFO] "POST /admindjango_celery_beat/periodictask/add/ HTTP/1.1" 302 0
+2019-06-24 17:40:07 [basehttp INFO] "GET /admindjango_celery_beat/periodictask/ HTTP/1.1" 200 6784
+2019-06-24 17:40:08 [basehttp INFO] "GET /adminjsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:40:28 [basehttp INFO] "GET /admindjango_celery_beat/periodictask/2/change/ HTTP/1.1" 200 15344
+2019-06-24 17:40:28 [basehttp INFO] "GET /adminjsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:40:35 [basehttp INFO] "GET /admindjango_celery_beat/periodictask/ HTTP/1.1" 200 6571
+2019-06-24 17:40:35 [basehttp INFO] "GET /adminjsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:40:43 [basehttp INFO] "GET /admindjango_celery_beat/ HTTP/1.1" 200 3962
+2019-06-24 17:40:47 [basehttp INFO] "GET / HTTP/1.1" 200 28743
+2019-06-24 17:40:47 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:40:49 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 47232
+2019-06-24 17:40:49 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:40:49 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 54368
+2019-06-24 17:40:49 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:40:51 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54119
+2019-06-24 17:40:51 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:40:51 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 47232
+2019-06-24 17:40:52 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:40:53 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 52978
+2019-06-24 17:40:53 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:40:55 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 52978
+2019-06-24 17:40:55 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 17:40:57 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 52978
+2019-06-24 17:40:57 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-24 18:00:16 [exception ERROR] Internal Server Error: /server/systempolicycentralizedmanagement/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 582, in connect
+    **kwargs)
+  File "G:\anaconda\lib\socket.py", line 724, in create_connection
+    raise err
+  File "G:\anaconda\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 234, in get_new_connection
+    return Database.connect(**conn_params)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 629, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.2.227' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\xpm\apps\services\middle\MiddleWare.py", line 93, in __call__
+    login_superuser(request)
+  File "E:\xpm\apps\services\middle\MiddleWare.py", line 34, in login_superuser
+    login(request, User.objects.all().filter(is_staff=True)[0])
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 306, in __getitem__
+    qs._fetch_all()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 1182, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 1055, in execute_sql
+    sql, params = self.as_sql()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 461, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 393, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\where.py", line 80, in as_sql
+    sql, params = compiler.compile(child)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 393, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\lookups.py", line 160, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\lookups.py", line 153, in process_lhs
+    db_type = self.lhs.output_field.db_type(connection=connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\fields\__init__.py", line 648, in db_type
+    return connection.data_types[self.get_internal_type()] % data
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 133, in data_types
+    if self.features.supports_microsecond_precision:
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\features.py", line 65, in supports_microsecond_precision
+    return self.connection.mysql_version >= (5, 6, 4)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 349, in mysql_version
+    match = server_version_re.match(self.mysql_server_info)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 343, in mysql_server_info
+    with self.temporary_connection() as cursor:
+  File "G:\anaconda\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 576, in temporary_connection
+    cursor = self.cursor()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 255, in cursor
+    return self._cursor()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 234, in get_new_connection
+    return Database.connect(**conn_params)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 629, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '192.168.2.227' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+2019-06-24 18:00:18 [exception ERROR] Internal Server Error: /server/systempolicycentralizedmanagement/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 582, in connect
+    **kwargs)
+  File "G:\anaconda\lib\socket.py", line 724, in create_connection
+    raise err
+  File "G:\anaconda\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 234, in get_new_connection
+    return Database.connect(**conn_params)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 629, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.2.227' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\xpm\apps\services\middle\MiddleWare.py", line 93, in __call__
+    login_superuser(request)
+  File "E:\xpm\apps\services\middle\MiddleWare.py", line 34, in login_superuser
+    login(request, User.objects.all().filter(is_staff=True)[0])
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 306, in __getitem__
+    qs._fetch_all()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 1182, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 1055, in execute_sql
+    sql, params = self.as_sql()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 461, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 393, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\where.py", line 80, in as_sql
+    sql, params = compiler.compile(child)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 393, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\lookups.py", line 160, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\lookups.py", line 153, in process_lhs
+    db_type = self.lhs.output_field.db_type(connection=connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\fields\__init__.py", line 648, in db_type
+    return connection.data_types[self.get_internal_type()] % data
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 133, in data_types
+    if self.features.supports_microsecond_precision:
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\features.py", line 65, in supports_microsecond_precision
+    return self.connection.mysql_version >= (5, 6, 4)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 349, in mysql_version
+    match = server_version_re.match(self.mysql_server_info)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 343, in mysql_server_info
+    with self.temporary_connection() as cursor:
+  File "G:\anaconda\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 576, in temporary_connection
+    cursor = self.cursor()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 255, in cursor
+    return self._cursor()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 234, in get_new_connection
+    return Database.connect(**conn_params)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 629, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '192.168.2.227' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+2019-06-24 18:00:20 [basehttp ERROR] "GET /server/systempolicycentralizedmanagement/ HTTP/1.1" 500 281818
+2019-06-24 18:00:20 [basehttp ERROR] "GET /server/systempolicycentralizedmanagement/ HTTP/1.1" 500 59
+2019-06-24 18:00:21 [exception ERROR] Internal Server Error: /server/objprocess/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 582, in connect
+    **kwargs)
+  File "G:\anaconda\lib\socket.py", line 724, in create_connection
+    raise err
+  File "G:\anaconda\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 234, in get_new_connection
+    return Database.connect(**conn_params)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 629, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.2.227' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\xpm\apps\services\middle\MiddleWare.py", line 93, in __call__
+    login_superuser(request)
+  File "E:\xpm\apps\services\middle\MiddleWare.py", line 34, in login_superuser
+    login(request, User.objects.all().filter(is_staff=True)[0])
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 306, in __getitem__
+    qs._fetch_all()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 1182, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 1055, in execute_sql
+    sql, params = self.as_sql()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 461, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 393, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\where.py", line 80, in as_sql
+    sql, params = compiler.compile(child)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 393, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\lookups.py", line 160, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\lookups.py", line 153, in process_lhs
+    db_type = self.lhs.output_field.db_type(connection=connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\fields\__init__.py", line 648, in db_type
+    return connection.data_types[self.get_internal_type()] % data
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 133, in data_types
+    if self.features.supports_microsecond_precision:
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\features.py", line 65, in supports_microsecond_precision
+    return self.connection.mysql_version >= (5, 6, 4)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 349, in mysql_version
+    match = server_version_re.match(self.mysql_server_info)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 343, in mysql_server_info
+    with self.temporary_connection() as cursor:
+  File "G:\anaconda\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 576, in temporary_connection
+    cursor = self.cursor()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 255, in cursor
+    return self._cursor()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 234, in get_new_connection
+    return Database.connect(**conn_params)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 629, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '192.168.2.227' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+2019-06-24 18:00:22 [basehttp ERROR] "GET /server/systempolicycentralizedmanagement/ HTTP/1.1" 500 281818
+2019-06-24 18:00:22 [basehttp ERROR] "GET /server/systempolicycentralizedmanagement/ HTTP/1.1" 500 59
+2019-06-24 18:00:25 [basehttp ERROR] "GET /server/objprocess/ HTTP/1.1" 500 281352
+2019-06-24 18:00:25 [basehttp ERROR] "GET /server/objprocess/ HTTP/1.1" 500 59
+2019-06-25 08:30:23 [basehttp INFO] "GET / HTTP/1.1" 200 28743
+2019-06-25 08:30:23 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:23 [base WARNING] Not Found: /favicon.ico
+2019-06-25 08:30:23 [basehttp WARNING] "GET /favicon.ico HTTP/1.1" 404 10071
+2019-06-25 08:30:26 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 47232
+2019-06-25 08:30:26 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:27 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 54368
+2019-06-25 08:30:27 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:27 [basehttp INFO] "GET /server/policyaction/ HTTP/1.1" 200 54119
+2019-06-25 08:30:27 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:29 [basehttp INFO] "GET /server/sysmanagercopinfo/ HTTP/1.1" 200 77212
+2019-06-25 08:30:29 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:30 [basehttp INFO] "GET /server/connectmanageruserinfo/ HTTP/1.1" 200 61004
+2019-06-25 08:30:30 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:31 [basehttp INFO] "GET /server/auditlogobject/ HTTP/1.1" 200 40037
+2019-06-25 08:30:31 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:34 [basehttp INFO] "GET /server/changeaudit/ HTTP/1.1" 200 38750
+2019-06-25 08:30:34 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:35 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 62877
+2019-06-25 08:30:35 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:40 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 45824
+2019-06-25 08:30:40 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:43 [basehttp INFO] "GET /auth/user/ HTTP/1.1" 200 60679
+2019-06-25 08:30:43 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:44 [basehttp INFO] "GET /auth/group/ HTTP/1.1" 200 41916
+2019-06-25 08:30:44 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:44 [basehttp INFO] "GET /auth/group/ HTTP/1.1" 200 41916
+2019-06-25 08:30:44 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:45 [basehttp INFO] "GET /auth/permission/ HTTP/1.1" 200 102283
+2019-06-25 08:30:45 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:46 [basehttp INFO] "GET /services/community/ HTTP/1.1" 200 43220
+2019-06-25 08:30:46 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:49 [basehttp INFO] "GET /server/policyactionhistory/ HTTP/1.1" 200 43494
+2019-06-25 08:30:49 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:49 [basehttp INFO] "GET /server/processauditlog/ HTTP/1.1" 200 41900
+2019-06-25 08:30:50 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:50 [basehttp INFO] "GET /server/infogoin/ HTTP/1.1" 200 46837
+2019-06-25 08:30:50 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:53 [basehttp INFO] "GET /server/attackeractiondesc/ HTTP/1.1" 200 44215
+2019-06-25 08:30:53 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:54 [basehttp INFO] "GET /server/effectinfo/ HTTP/1.1" 200 40969
+2019-06-25 08:30:54 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:30:57 [basehttp INFO] "GET /reversion/revision/ HTTP/1.1" 200 48794
+2019-06-25 08:30:57 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:31:06 [basehttp INFO] "GET /agent/snmphostdata/ HTTP/1.1" 200 52978
+2019-06-25 08:31:07 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:31:09 [basehttp INFO] "GET /server/infosecevent/ HTTP/1.1" 200 48959
+2019-06-25 08:31:09 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:31:12 [basehttp INFO] "GET /server/policybench/ HTTP/1.1" 200 47232
+2019-06-25 08:31:12 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:31:13 [basehttp INFO] "GET /server/policyrule/ HTTP/1.1" 200 54368
+2019-06-25 08:31:13 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:31:16 [basehttp INFO] "GET /server/infosecevent/ HTTP/1.1" 200 48959
+2019-06-25 08:31:16 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:31:17 [basehttp INFO] "GET /server/changeaudit/ HTTP/1.1" 200 38750
+2019-06-25 08:31:17 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:31:18 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 62877
+2019-06-25 08:31:18 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:31:20 [basehttp INFO] "GET /xadmin/log/ HTTP/1.1" 200 62877
+2019-06-25 08:31:20 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 08:31:40 [basehttp INFO] "GET /server/backuphistory/ HTTP/1.1" 200 45824
+2019-06-25 08:31:40 [basehttp INFO] "GET /jsi18n/ HTTP/1.1" 200 7684
+2019-06-25 09:50:41 [base WARNING] Not Found: /server/sysmanagercopinfo/
+2019-06-25 09:50:45 [base WARNING] Not Found: /server/sysmanagercopinfo/
+2019-06-25 09:52:50 [base WARNING] Not Found: /manager/connectmandsaDSAdsa
+2019-06-25 09:52:55 [base WARNING] Not Found: /manager/
+2019-06-25 09:53:08 [base WARNING] Not Found: /manager/manager/changeaudit/

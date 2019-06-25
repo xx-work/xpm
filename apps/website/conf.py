@@ -12,6 +12,7 @@ from importlib import import_module
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_DIR = os.path.dirname(BASE_DIR)
 
+
 def import_string(dotted_path):
     try:
         module_path, class_name = dotted_path.rsplit('.', 1)
@@ -322,7 +323,9 @@ defaults = {
     'REDIS_DB_CELERY': 3,
     'REDIS_DB_CACHE': 4,
     'REDIS_DB_SESSION': 5,
-    'FLOWER_BIND_PORT': 5535, ## flower_port
+    'FLOWER_BIND_PORT': 5535,
+    'FLOWER_BASE_USER': 'admin001',
+    'FLOWER_BASE_PASSWORD': '1q2w3e4R',
     'CAPTCHA_TEST_MODE': None,
     'TOKEN_EXPIRATION': 3600 * 24,
     'DISPLAY_PER_PAGE': 25,

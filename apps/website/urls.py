@@ -13,10 +13,10 @@ xversion.register_models()
 
 urlpatterns = [
       url(r'^', xadmin.site.urls),
-      url(r'^cso/mg/', include("services.urls")),
-      url(r'^cso/v1/', include("server.urls")),
-      #url(r'^cso/v1/', include("scan.urls")), ## 管理
-
+      # url(r'^admin', admin.site.urls),
+      url(r'^cso/mg/', include("secs.urls")),
+      url(r'^cso/v1/', include("manager.urls")),
+      # url(r'^cso/v1/', include("scan.urls")), ## 管理
   ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 

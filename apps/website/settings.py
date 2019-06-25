@@ -62,8 +62,8 @@ INSTALLED_APPS = [
     'django_celery_beat',
 ]
 
-INSTALLED_APPS += ["services.apps.LocalAppConfig", "server.apps.LocalAppConfig"]
-INSTALLED_APPS += ["agent.apps.LocalAppConfig"]
+INSTALLED_APPS += ["secs.apps.LocalAppConfig", "manager.apps.LocalAppConfig"]
+INSTALLED_APPS += ["agent.apps.LocalAppConfig", "ops.apps.LocalAppConfig"]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -171,7 +171,7 @@ LOGGING = {
             'level': LOG_LEVEL,
             'propagate': False,
         },
-        'django.server': {
+        'django.manager': {
             'handlers': ['console', 'file'],
             'level': LOG_LEVEL,
             'propagate': False,
@@ -372,7 +372,7 @@ except:
 
 
 ## 取消CSRF中间件
-MIDDLEWARE.append('services.middle.MiddleWare.DisableCSRFCheck')
-MIDDLEWARE.append('services.middle.MiddleWare.SiteMainMiddleware')
+MIDDLEWARE.append('secs.middle.MiddleWare.DisableCSRFCheck')
+MIDDLEWARE.append('secs.middle.MiddleWare.SiteMainMiddleware')
 
 PREVILEGED_USER_SETS = ["admin001", "admin007"]

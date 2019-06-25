@@ -2,22 +2,150 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a879713-0b59-4f63-8b0e-5ef7e459e8e6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manager/cfg/parseJson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/cfg/parse_cli.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/cfg/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ops/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secs/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secs/api/oauth/local_jwt/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secs/api/plat/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secs/api/plat/platlog/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secs/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/snmpd/snmp/inital/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/snmpd/snmp/inital/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/adminx/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/adminx/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/crypto/aes_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/crypto/aes_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/efk/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/agent/efk/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/snmpd/snmp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/snmpd/snmp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/snmpd/snmp/snmpd.conf" beforeDir="false" afterPath="$PROJECT_DIR$/agent/snmpd/snmp/snmpd.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/sscripts/sysd/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/agent/sscripts/sysd/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agent/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/migrations/0002_auto_20190622_1632.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/migrations/0003_auto_20190622_1712.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/migrations/0004_auto_20190624_0958.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/migrations/0005_auto_20190624_1016.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/migrations/0006_auto_20190624_1022.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/migrations/0007_remove_infosecevent_attacker_descs.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/adminx/_1_xobj/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/adminx/_1_xobj/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/adminx/_2_policy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/adminx/_2_policy/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/adminx/_3_monitor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/adminx/_3_monitor/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/adminx/_4_solution/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/adminx/_4_solution/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/backer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/backer/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/chk/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/chk/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/monitor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/monitor/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/policy/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/policy/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/solution/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/solution/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/xobj/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/xobj/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/xadmin/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/xadmin/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/xadmin/sites/nav_menu_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/xadmin/sites/nav_menu_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/minitord/script_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/adminx/_0_center/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/adminx/_0_center/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/adminx/_1_xobj/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/adminx/_1_xobj/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/adminx/_2_policy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/adminx/_2_policy/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/adminx/_3_monitor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/adminx/_3_monitor/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/adminx/_4_solution/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/adminx/_4_solution/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/adminx/_5_chk/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/adminx/_5_chk/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/adminx/_6_backer/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/adminx/_6_backer/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/adminx/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/adminx/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/adminx/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/manager/adminx/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/backer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/api/backer/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/backer/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/manager/api/backer/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/center/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/api/center/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/center/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/manager/api/center/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/chk/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/api/chk/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/chk/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/manager/api/chk/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/monitor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/api/monitor/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/monitor/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/manager/api/monitor/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/policy/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/api/policy/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/policy/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/manager/api/policy/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/manager/api/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/solution/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/api/solution/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/xobj/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/api/xobj/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/fxconf.zip" beforeDir="false" afterPath="$PROJECT_DIR$/manager/fxconf.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/manager/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tasks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/xadmin/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/cfg/datas/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/xadmin/actions/change_views_read.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/xadmin/actions/change_views_read.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/xadmin/dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/xadmin/dashboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/xadmin/plugins/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/manager/xadmin/plugins/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/xadmin/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/manager/xadmin/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/xadmin/sites/nav_menu_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/xadmin/sites/nav_menu_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/xint/2019_06_18_inital_eventinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/xint/2019_06_18_inital_eventinfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/xint/2019_06_19_inital_plat_user_001.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/xint/2019_09_21_inital_platcops_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/xint/2019_09_21_inital_platcops_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/xint/inital/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/cfg/datas/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/xint/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/xint/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/WAF.md" beforeDir="false" afterPath="$PROJECT_DIR$/secs/WAF.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/adminx/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/adminx/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/audit/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/audit/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/blacklist.zip" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/blacklist.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/customizer_obtain.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/customizer_obtain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/local_jwt/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/xadmin/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/local_jwt/jwt_authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/local_jwt/jwt_authentication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/local_jwt/jwt_serrializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/local_jwt/jwt_serrializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/local_jwt/jwt_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/local_jwt/jwt_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/local_jwt/jwt_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/local_jwt/jwt_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/local_jwt/jwt_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/local_jwt/jwt_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/local_jwt/p2_serrializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/local_jwt/p2_serrializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/local_jwt/p2_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/local_jwt/p2_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/local_jwt/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/local_jwt/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/login_fail_frequent_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/login_fail_frequent_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/permissions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/simple_jwt.zip" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/simple_jwt.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/user_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/user_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/utils/custom_jwt_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/utils/custom_jwt_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/utils/local_authenticate.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/utils/local_authenticate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/utils/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/utils/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/oauth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/oauth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/plat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/xint/inital/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/plat/platlog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ops/apscheduler/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/plat/platlog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/plat/platlog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/plat/platlog/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/plat/platlog/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/plat/platlog/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/plat/platlog/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/plat/platlog/views_orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/plat/platlog/views_orm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/utils/JWT_USER_DEMO/jwt_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/utils/JWT_USER_DEMO/jwt_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/utils/filemg_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/utils/filemg_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/utils/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/utils/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api/utils/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/secs/api/utils/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/celery/Task.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/celery/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/celery/const.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/celery/decorator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/celery/logger.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/celery/signal_handler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/celery/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/dprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/flower/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/middle/MiddleWare.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/middle/MiddleWare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/middle/middletest.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/middle/middletest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/middle/opt_log_middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/middle/opt_log_middleware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/middle/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/middle/permissions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/middle/utils/url_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/middle/utils/url_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ops/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/opreations/2019_0501_inital_migrations.sh" beforeDir="false" afterPath="$PROJECT_DIR$/secs/opreations/2019_0501_inital_migrations.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/secs/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/tasks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/utils/db_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/utils/db_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/utils/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/utils/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/utils/unix_commads.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/utils/unix_commads.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/website/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/restframework.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/restframework.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cso" beforeDir="false" afterPath="$PROJECT_DIR$/../cso" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../logs/cso.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/cso.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,116 +160,111 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/adminx/_1_xobj/__init__.py">
+        <entry file="file://$PROJECT_DIR$/website/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-427">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            <state relative-caret-position="201">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/adminx/_2_policy/__init__.py">
+        <entry file="file://$PROJECT_DIR$/ops/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="31" column="27" selection-start-line="27" selection-start-column="3" selection-end-line="31" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/api/backer/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="38" />
+            <state relative-caret-position="110">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/api/center/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/api/chk/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/api/monitor/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="51" column="37" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/api/policy/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="83" column="12" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/api/xobj/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="129" column="29" selection-start-line="129" selection-start-column="29" selection-end-line="129" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/api/solution/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/xadmin/plugins/readme.md">
+        <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="409">
+                <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+              </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/agent/snmpd/snmp/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="18" selection-end-column="77" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/agent/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <folding>
+                <element signature="e#16#72#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/agent/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manager/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#15#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ops/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ops/apscheduler/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="110">
+                <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,6 +284,8 @@
       <find>get_site_menu</find>
       <find>IdentityTypes</find>
       <find>make_password</find>
+      <find>pub</find>
+      <find>website</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,48 +294,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/services/dprocess.py" />
-        <option value="$PROJECT_DIR$/server/adminx/__init__.py" />
-        <option value="$PROJECT_DIR$/agent/crypto/Dockerfile" />
-        <option value="$PROJECT_DIR$/server/xint/2019_06_18_inital_eventinfo.py" />
-        <option value="$PROJECT_DIR$/website/urls.py" />
-        <option value="$PROJECT_DIR$/services/utils/tasks.py" />
-        <option value="$PROJECT_DIR$/server/xadmin/plugins/readme.md" />
-        <option value="$PROJECT_DIR$/agent/snmpd/models.py" />
-        <option value="$PROJECT_DIR$/agent/crypto/aes_agent.py" />
-        <option value="$PROJECT_DIR$/agent/efk/readme.md" />
-        <option value="$PROJECT_DIR$/server/adminx/_5_chk/__init__.py" />
-        <option value="$PROJECT_DIR$/services/api/oauth/models.py" />
-        <option value="$PROJECT_DIR$/services/models.py" />
-        <option value="$PROJECT_DIR$/services/adminx/__init__.py" />
         <option value="$PROJECT_DIR$/server/adminx/_6_backer/__init__.py" />
         <option value="$PROJECT_DIR$/server/xadmin/actions/change_views_read.py" />
         <option value="$PROJECT_DIR$/server/api/center/models.py" />
-        <option value="$PROJECT_DIR$/server/xint/2019_09_21_inital_platcops_info.py" />
-        <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/agent/tasks.py" />
         <option value="$PROJECT_DIR$/agent/snmpd/snmp/collect.py" />
         <option value="$PROJECT_DIR$/server/adminx/_3_monitor/__init__.py" />
         <option value="$PROJECT_DIR$/agent/snmpd/snmp/inital/__init__.py" />
-        <option value="$PROJECT_DIR$/server/xadmin/sites/nav_menu_lists.py" />
         <option value="$PROJECT_DIR$/server/adminx/_2_policy/__init__.py" />
         <option value="$PROJECT_DIR$/server/xadmin/readme.md" />
         <option value="$PROJECT_DIR$/server/adminx/_4_solution/__init__.py" />
         <option value="$PROJECT_DIR$/server/api/backer/models.py" />
-        <option value="$PROJECT_DIR$/server/adminx/_1_xobj/__init__.py" />
         <option value="$PROJECT_DIR$/server/api/chk/models.py" />
         <option value="$PROJECT_DIR$/server/api/monitor/models.py" />
         <option value="$PROJECT_DIR$/server/api/policy/models.py" />
         <option value="$PROJECT_DIR$/server/api/solution/models.py" />
+        <option value="$PROJECT_DIR$/agent/crypto/aes_agent.py" />
         <option value="$PROJECT_DIR$/server/api/xobj/models.py" />
+        <option value="$PROJECT_DIR$/server/adminx/_1_xobj/__init__.py" />
+        <option value="$PROJECT_DIR$/server/adminx/_5_chk/__init__.py" />
+        <option value="$PROJECT_DIR$/server/xint/2019_09_21_inital_platcops_info.py" />
+        <option value="$PROJECT_DIR$/server/xint/2019_06_19_inital_plat_user_001.py" />
+        <option value="$PROJECT_DIR$/server/xint/2019_06_19_inital_agent_infos.py" />
+        <option value="$PROJECT_DIR$/server/xint/all.py" />
+        <option value="$PROJECT_DIR$/agent/minitord/script_run.py" />
+        <option value="$PROJECT_DIR$/agent/efk/readme.md" />
+        <option value="$PROJECT_DIR$/agent/sscripts/sysd/readme.md" />
+        <option value="$PROJECT_DIR$/server/cfg/datas/config.ini" />
+        <option value="$PROJECT_DIR$/server/cfg/readme.md" />
+        <option value="$PROJECT_DIR$/server/cfg/parse_cli.py" />
+        <option value="$PROJECT_DIR$/server/cfg/datas/config.json" />
+        <option value="$PROJECT_DIR$/server/cfg/parseJson.py" />
+        <option value="$PROJECT_DIR$/services/celery/decorator.py" />
+        <option value="$PROJECT_DIR$/agent/snmpd/snmp/snmpd.conf" />
+        <option value="$PROJECT_DIR$/services/celery/__init__.py" />
+        <option value="$PROJECT_DIR$/agent/adminx/__init__.py" />
+        <option value="$PROJECT_DIR$/server/xadmin/sites/nav_menu_lists.py" />
+        <option value="$PROJECT_DIR$/ops/readme.md" />
+        <option value="$PROJECT_DIR$/server/tasks.py" />
+        <option value="$PROJECT_DIR$/services/__init__.py" />
+        <option value="$PROJECT_DIR$/website/conf.py" />
+        <option value="$PROJECT_DIR$/website/settings.py" />
+        <option value="$PROJECT_DIR$/ops/__init__.py" />
+        <option value="$PROJECT_DIR$/../cso" />
+        <option value="$PROJECT_DIR$/ops/celery/__init__.py" />
+        <option value="$PROJECT_DIR$/agent/tasks.py" />
+        <option value="$PROJECT_DIR$/ops/conf.py" />
+        <option value="$PROJECT_DIR$/manager/models.py" />
+        <option value="$PROJECT_DIR$/ops/models.py" />
+        <option value="$PROJECT_DIR$/ops/apscheduler/readme.md" />
+        <option value="$PROJECT_DIR$/website/urls.py" />
+        <option value="$PROJECT_DIR$/manager/tasks.py" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="128" />
-    <option name="y" value="12" />
-    <option name="width" value="1654" />
-    <option name="height" value="958" />
+    <option name="x" value="168" />
+    <option name="y" value="52" />
+    <option name="width" value="1559" />
+    <option name="height" value="923" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -220,7 +362,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,25 +369,16 @@
               <item name="apps" type="b2602c69:ProjectViewProjectNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="agent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cso" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -302,12 +434,13 @@
       <workItem from="1561098293049" duration="6294000" />
       <workItem from="1561167782402" duration="15166000" />
       <workItem from="1561336720719" duration="12766000" />
-      <workItem from="1561355191043" duration="293000" />
+      <workItem from="1561355191043" duration="10717000" />
+      <workItem from="1561422551684" duration="6158000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48802000" />
+    <option name="totallyTimeSpent" value="65384000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -319,17 +452,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="128" y="12" width="1654" height="958" extended-state="0" />
+    <frame x="168" y="52" width="1559" height="923" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2847309" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24484365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
       <window_info id="Project Explorer" order="4" />
       <window_info id="Job Explorer" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32914573" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5198638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -339,9 +472,9 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.29001203" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2515042" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23994975" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.20544836" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.20477387" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -354,405 +487,357 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/agent/minitord/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent/minitord/script_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent/efk/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="308">
+            <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent/crypto/aes_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-242">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent/sscripts/secd/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent/sscripts/logd/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent/sscripts/sysd/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="8" selection-start-column="8" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/cfg/datas/config.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/cfg/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="88">
+            <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/cfg/parse_cli.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="49" column="35" lean-forward="true" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/cfg/datas/config.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/cfg/parseJson.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent/snmpd/snmp/collect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/celery/utils.py" />
+    <entry file="file://$PROJECT_DIR$/services/celery/decorator.py" />
+    <entry file="file://$PROJECT_DIR$/agent/snmpd/snmp/snmpd.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/conf.py" />
+    <entry file="file://$PROJECT_DIR$/services/celery/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/services/tasks.py" />
+    <entry file="file://$PROJECT_DIR$/manager/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secs/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://F:/workspace/cso_venv/Lib/site-packages/django_celery_beat/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="257" column="6" selection-start-line="257" selection-start-column="6" selection-end-line="257" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent/adminx/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/xadmin/sites/nav_menu_lists.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1086">
+          <caret line="110" column="38" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="22">
+            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secs/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#49#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cso">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4103">
+          <caret line="58" column="67" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
+          <folding>
+            <element signature="e#40#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops/celery/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="90" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
+          <folding>
+            <element signature="e#25#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secs/WAF.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-82" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secs/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="600">
+            <caret line="144" column="2" selection-start-line="144" selection-start-column="2" selection-end-line="144" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-616">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+          <folding>
+            <element signature="e#49#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secs/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent/snmpd/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="52" lean-forward="true" selection-start-column="52" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent/snmpd/snmp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="18" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops/apscheduler/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="110">
+            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/website/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="329">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/workspace/cso_venv/Lib/site-packages/reversion/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3165">
-          <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/migrations/__init__.py">
+    <entry file="file://$PROJECT_DIR$/agent/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://G:/anaconda/Lib/uuid.py">
+    <entry file="file://$PROJECT_DIR$/ops/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/workspace/cso_venv/Lib/site-packages/django/db/migrations/graph.py">
+    <entry file="file://$PROJECT_DIR$/manager/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="92" column="26" lean-forward="true" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        <state relative-caret-position="198">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#15#71#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/agent/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="462">
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
           <folding>
             <element signature="e#16#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/agent/snmpd/snmp/collect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/policy/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/monitor/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/chk/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/center/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent/snmpd/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent/snmpd/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent/snmpd/snmp/src/conf.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent/snmpd/snmp/src/dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent/snmpd/snmp/src/utils.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent/snmpd/snmp/inital/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent/xadmin/views/xviews.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/xint/2019_06_19_inital_plat_user_001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/xint/2019_09_21_inital_platcops_info.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/api/oauth/user_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/api/oauth/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/adminx/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/xint/2019_06_18_inital_eventinfo.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/adminx/_5_chk/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/adminx/_6_backer/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/adminx/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="414">
-            <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <first_editor relative-caret-position="409">
+            <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/workspace/cso_venv/Lib/site-packages/xadmin/views/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1570">
-          <caret line="248" column="6" selection-start-line="248" selection-start-column="6" selection-end-line="248" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/xadmin/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="132">
-            <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/xadmin/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/adminx/_3_monitor/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/adminx/_4_solution/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/adminx/_0_center/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/xadmin/actions/change_views_read.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="e#33#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/xadmin/sites/nav_menu_lists.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/xadmin/dashboard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/workspace/cso_venv/Lib/site-packages/django/contrib/auth/base_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/workspace/cso_venv/Lib/site-packages/django/contrib/auth/hashers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="63" column="17" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/adminx/_2_policy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="31" column="27" selection-start-line="27" selection-start-column="3" selection-end-line="31" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/xadmin/plugins/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/adminx/_1_xobj/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-427">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/backer/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/center/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/chk/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/policy/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="83" column="12" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/monitor/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="51" column="37" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/solution/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/xobj/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="129" column="29" selection-start-line="129" selection-start-column="29" selection-end-line="129" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

@@ -44,9 +44,9 @@ def test_encode_and_decode_json(json_dcit):
     print(type(d_decode))
 
 
-if __name__ == '__main__':
-    test_encode_and_decode_json({"a": [i for i in range(100)]})
-    test_encode_and_decode_json({"a": [i for i in range(600)]})
-    test_encode_and_decode_json({"a": [i for i in range(700)]})
+# if __name__ == '__main__':
+#     test_encode_and_decode_json({"a": [i for i in range(100)]})
+#     test_encode_and_decode_json({"a": [i for i in range(600)]})
+#     test_encode_and_decode_json({"a": [i for i in range(700)]})
 
 

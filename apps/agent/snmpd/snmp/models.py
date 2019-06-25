@@ -2,7 +2,7 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 import uuid
 
-from server.api.models import SysManagerCopInfo
+from manager.api.models import SysManagerCopInfo
 
 
 SnmpVersionChoices = (

@@ -8,7 +8,7 @@ REST_FRAMEWORK_APPS = (
 APPEND_SLASH=False
 
 # https://getblimp.github.io/django-rest-framework-jwt/
-from services.api.oauth.local_jwt.jwt_settings import LocalJSONWebTokenAuthentication
+from secs.api.oauth.local_jwt.jwt_settings import LocalJSONWebTokenAuthentication
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
@@ -32,4 +32,4 @@ REST_FRAMEWORK = {
 
 }
 
-from services.api.oauth.local_jwt.jwt_settings import JWT_AUTH
+from secs.api.oauth.local_jwt.jwt_settings import JWT_AUTH
