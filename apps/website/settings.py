@@ -64,6 +64,7 @@ INSTALLED_APPS = [
 
 INSTALLED_APPS += ["secs.apps.LocalAppConfig", "manager.apps.LocalAppConfig"]
 INSTALLED_APPS += ["agent.apps.LocalAppConfig", "ops.apps.LocalAppConfig"]
+# INSTALLED_APPS += ["pydash.apps.LocalAppConfig", ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -315,6 +316,7 @@ CELERY_BROKER_URL = 'redis://:%(password)s@%(host)s:%(port)s/%(db)s' % {
     'port': CONFIG.REDIS_PORT,
     'db': CONFIG.REDIS_DB_CELERY,
 }
+
 CELERY_TASK_SERIALIZER = 'pickle'
 CELERY_RESULT_SERIALIZER = 'pickle'
 CELERY_RESULT_BACKEND = CELERY_BROKER_URL
@@ -344,11 +346,17 @@ CELERYD_MAX_TASKS_PER_CHILD = 100    # 每个worker最多执行万100个任务�
 
 
 CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
-CELERY_TASK_ALWAYS_EAGER = True
+CELERY_TASK_ALWAYS_EAGER = False
 CELERY_WORKER_HIJACK_ROOT_LOGGER = False
 CELERY_TASK_ACKS_LATE = True  # Retry if task fails
 CELERY_TASK_TIME_LIMIT = 60 * 25  # in seconds, so 25 minutes
 CELERY_SEND_TASK_ERROR_EMAILS = False
+
+
+CELERY_ALWAYS_EAGER = False
+CELERY_ACKS_LATE = True
+CELERY_TASK_PUBLISH_RETRY = True
+CELERY_DISABLE_RATE_LIMITS = False
 
 
 # Cache use redis

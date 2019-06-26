@@ -18,6 +18,7 @@ urlpatterns = [
       url(r'^cso/mg/', include("secs.urls")),
       url(r'^cso/v1/', include("manager.urls")),
       url(r'^cso/agent/', include("agent.urls")),
+      # url(r'^pydash/', include("pydash.urls")),
       # url(r'^cso/v1/', include("scan.urls")), ## 管理
   ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

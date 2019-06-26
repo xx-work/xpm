@@ -119,14 +119,7 @@ class GlobalSetting(object):
 
         )
 
-# """
-# select user_alert.*, regular.rules_type, regular.msg from
-# (select rule_id, count(rule_id) as c from user_alert where start_time between '2019-5-1' and '2019-6-1' group by rule_id
-# order by c desc) as user_alert  left join regular on user_alert.rule_id=regular.sid limit 10
-# """
-#
-#
-# """
-# select src_ip, count(src_ip) as c from user_alert where start_time between '2019-5-1' and '2019-6-1' group by src_ip order by c desc''
-#
-# """
+
+from .views.custom_view import SystemCentralManagementsView, TestEchartsView
+xadmin.site.register_view(r'sys_center_m$', SystemCentralManagementsView, name='sys_center_m')
+xadmin.site.register_view(r'test_echarts_view$', TestEchartsView, name='test_echarts')

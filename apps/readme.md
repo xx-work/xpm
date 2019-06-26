@@ -34,10 +34,10 @@
 
 ## 2019-6-25
 - 去掉花里胡哨的CSO管理
- - `../../cso_venv/bin/celery worker -A ops -l INFO --autoscale=20,4 --detach --logfile=../logs/celery-worker.log`
- - `../../cso_venv/bin/celery -A ops beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler --max-interval=60 --detach --logfile=../logs/celery-beat.log`
- - `../../cso_venv/bin/flower --address=0.0.0.0 --port=5555 --broker=redis://:xxscan@192.168.2.227:6379/3 --log-to-stderr=../logs/flower.log --persistent`
- - `../../cso_venv/bin/gunicorn website.wsgi -b 0.0.0.0:8888 -w 2 -p /home/django/xpm/tmp/gunicorn.pid --access-logformat %(h)s %(t)s "%(r)s" %(s)s %(b)s  --error-logfile ../logs/gunicorn.log --log-level DEBUG --access-logfile /var/log/hop_srv_access.log`
+ - `celery worker -A ops -l INFO --autoscale=20,4 --detach --logfile=/opt/celery-worker.log`
+ - `celery -A ops beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler --max-interval=60 --detach --logfile=/opt/celery-beat.log`
+ - `flower --address=0.0.0.0 --port=5555 --broker=redis://:xxscan@192.168.2.227:6379/3 --log-to-stderr=../logs/flower.log --persistent`
+ - `gunicorn website.wsgi -b 0.0.0.0:8888 -w 2 -p /home/django/xpm/tmp/gunicorn.pid --access-logformat %(h)s %(t)s "%(r)s" %(s)s %(b)s  --error-logfile ../logs/gunicorn.log --log-level DEBUG --access-logfile /var/log/hop_srv_access.log`
 - 修改目录结构
  - 替换原来的`server`为当前的 `manager`
  - 用`pycharm`替换`service`为 `secs`记录平台的安全机制。

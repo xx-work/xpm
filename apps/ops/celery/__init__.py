@@ -8,6 +8,7 @@ platforms.C_FORCE_ROOT = True
 
 # Todo: Set ENV and autodiscover_tasks based in django-beat
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'website.settings')
+os.environ.setdefault('FORKED_BY_MULTIPROCESSING', '1')
 
 # from website import settings
 from website import settings
