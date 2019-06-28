@@ -19,8 +19,6 @@ class InfoSecEventAdmin(object):
     #     ('计划措施', {'fields': ['plan_action']}),
     # ]
 
-
-
     form_layout = (
         Main(
             Tab(
@@ -78,6 +76,11 @@ class InfoGoingAdmin(object):
 
 xadmin.site.register(InfoSecEvent, InfoSecEventAdmin)
 
-xadmin.site.register(EffectInfo)
-xadmin.site.register(AttackerActionDesc)
+
+class HiddenMenuAdmin(object):
+    hidden_menu = True
+
+
+xadmin.site.register(EffectInfo, HiddenMenuAdmin)
+xadmin.site.register(AttackerActionDesc, HiddenMenuAdmin)
 xadmin.site.register(InfoGoin, InfoGoingAdmin)

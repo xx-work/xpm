@@ -11,6 +11,7 @@ class SnmpAgentCfgInfoAdmin(object):
     #     Fieldset("名称", 'name', 'summary'),
     #     Fieldset(None, 'user', 'desc', 'id', **{"style": "display:None"}),
     # )
+    hidden_menu = True
 
 
 class SnmpHostDataAdmin(object):
@@ -54,6 +55,8 @@ class SnmpHostDataAdmin(object):
         },
     }
 
+    hidden_menu = True
+
 
 xadmin.site.register(SnmpHostData, SnmpHostDataAdmin)
 xadmin.site.register(SnmpAgentCfgInfo, SnmpAgentCfgInfoAdmin)
@@ -64,3 +67,4 @@ xadmin.sites.register(PeriodicTask)
 xadmin.sites.register(CrontabSchedule)
 xadmin.sites.register(IntervalSchedule)
 
+## pip

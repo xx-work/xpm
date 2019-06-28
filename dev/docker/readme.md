@@ -15,4 +15,8 @@ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 - `CREATE DATABASE `cso_618` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;`
 
 
-## ---
+## 版本漏洞检测
+```
+https://cr.console.aliyun.com/repository/cn-beijing/xx-zhang/docker-t50/0.2/scan
+```
+

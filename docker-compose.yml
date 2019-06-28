@@ -1,0 +1,70 @@
+version: "3"
+
+services:
+   web:
+      container_name: gunicorn
+      restart: always
+      image: 'actanble/xpm'
+      ports:
+        - "18077:8077"
+      volumes:
+        - /etc/localtime:/etc/localtime:ro
+        - ./apps:/usr/src/app
+        - ./collect_static:/usr/src/collect_static
+        - ./config.yml:/usr/src/config.yml
+      command: /usr/local/bin/gunicorn website.wsgi:application -w 2 -b :8077
+      networks:
+          customize_net:
+            ipv4_address: 192.168.77.110
+
+   celery:
+     container_name: celery
+     restart: always
+     image: 'actanble/xpm'
+     volumes:
+        - /etc/localtime:/etc/localtime:ro
+        - ./apps:/usr/src/app
+        - ./config.yml:/usr/src/config.yml
+        - /srv/docker/cso/log/:/opt/
+     command: /usr/local/bin/celery worker -A ops -l INFO --autoscale=20,4 --logfile=/opt/celery.log --pidfile=celeryd.pid
+     networks:
+       customize_net:
+         ipv4_address: 192.168.77.111
+
+   beat:
+     container_name: beat
+     restart: always
+     image: 'actanble/xpm'
+     volumes:
+        - /etc/localtime:/etc/localtime:ro
+        - ./apps:/usr/src/app
+        - ./config.yml:/usr/src/config.yml
+        - /srv/docker/cso/log/:/opt/
+     command: /usr/local/bin/celery -A ops beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler --max-interval=60 --detach --logfile=/opt/beat.log
+     networks:
+       customize_net:
+         ipv4_address: 192.168.77.112
+
+   flower:
+     container_name: flower
+     restart: always
+     image: 'actanble/xpm'
+     ports:
+       - "10055:5555"
+     volumes:
+        - /etc/localtime:/etc/localtime:ro
+        - ./apps:/usr/src/app
+        - ./config.yml:/usr/src/config.yml
+     command: /usr/local/bin/flower --port=5555 --broker=redis://:xxscan@192.168.2.227:6379/3 --persistent
+     networks:
+       customize_net:
+         ipv4_address: 192.168.77.80
+
+networks:
+  customize_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.77.0/24
+

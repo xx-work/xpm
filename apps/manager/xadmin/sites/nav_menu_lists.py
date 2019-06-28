@@ -120,6 +120,7 @@ class GlobalSetting(object):
         )
 
 
+
 from .views.custom_view import SystemCentralManagementsView, TestEchartsView
 xadmin.site.register_view(r'sys_center_m$', SystemCentralManagementsView, name='sys_center_m')
 xadmin.site.register_view(r'test_echarts_view$', TestEchartsView, name='test_echarts')
