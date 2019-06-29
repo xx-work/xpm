@@ -1,6 +1,8 @@
 #!/bin/bash
 
 python ../apps/manage.py shell << EOF
-from
+from secs.models import Userprofile
+
+
 EOF
 

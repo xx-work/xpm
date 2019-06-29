@@ -10,8 +10,7 @@ class CustomTask(Task):
     def on_success(self, retval, task_id, args, kwargs):
 
         print('task done: {0}'.format(retval))
-        from datetime import datetime
-
+        # from datetime import datetime
         return super(CustomTask, self).on_success(retval, task_id, args, kwargs)
 
     def on_failure(self, exc, task_id, args, kwargs, einfo):

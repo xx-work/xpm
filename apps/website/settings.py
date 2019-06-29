@@ -342,7 +342,7 @@ CELERYD_CONCURRENCY = 20  # 并发worker数
 # 2019-6-25 设置 interval 出错加上 celery_timezone
 CELERY_TIMEZONE = TIME_ZONE
 CELERYD_PREFETCH_MULTIPLIER = 1
-CELERYD_MAX_TASKS_PER_CHILD = 100    # 每个worker最多执行万100个任务就会被销毁，可防止内存泄露
+CELERYD_MAX_TASKS_PER_CHILD = 100 
 
 
 CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
