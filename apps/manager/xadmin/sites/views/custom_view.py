@@ -27,3 +27,14 @@ class TestEchartsView(CommAdminView):
         context["breadcrumbs"].append({'title': title})  # 把面包屑变量添加到context里面
 
         return render(request, 'cso/xadmin/audit/echarts_show.html', context)  # 最后指定自定义的template模板，并返回context
+
+
+class TestBootstrapTableView(CommAdminView):
+
+    def get(self, request):
+        context = super().get_context()
+        title = "BootStrap测试"  # 定义面包屑变量
+        context["breadcrumbs"].append({'url': '/', 'title': '首页'})  # 把面包屑变量添加到context里面
+        context["breadcrumbs"].append({'title': title})  # 把面包屑变量添加到context里面
+
+        return render(request, 'cso/xadmin/sec/bootstrap-table.html', context)

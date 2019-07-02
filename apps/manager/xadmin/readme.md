@@ -1,6 +1,12 @@
 # 辅助 xadmin 管理
 
 
+- 首页的左侧重要分栏 
+  - [nav_list](./sites/nav_menu_lists.py)
+  - [plugins注册列表](./plugins/readme.md)
+  - [站点自定义views](./views/views_registers.py)
+  - [站点兼容django2-admin工具](./utils/hockd_utils.py)
+  - [动作函数位置，批量操作](./actions/change_views_read.py)
 
 
 ## Xadmin 自定制
@@ -8,7 +14,20 @@
 
 
 ## 教程
-
+```
+BaseAdminView: 所有 AdminView的基础类， 注册在该 View 上的插件可以影响所有的 AdminView；
+CommAdminView: 用户已经登录后显示的 View， 也是所有登录后 View 的基础类。 
+   # 该 View主要作用是创建了 Xadmin 的通用元素， 
+   # 例如： 系统菜单、 用户信息等。 
+   # 插件可以通过注册该 View 来修改这些信息；
+ModelAdminView: 基于 Model 的 AdminView的基础类，注册的插件可以影响所有基于 Model 的 View；
+ListAdminView: Model 列表页面 View；
+ModelFormAdminView: Model 编辑页面 View；
+CreateAdminView: Model 创建页面 View；
+UpdateAdminView: Model 修改页面 View；
+DeleteAdminView: Model 删除页面 View；
+DetailAdminView: Model 详情页面 View；
+```
 
 ### ModelView 参数
 ```
@@ -39,3 +58,7 @@ list_per_page = 50 # 每页显示数据的条数
 list_max_show_all = 200 #每页最大显示数据的条数
 
 ```
+
+
+## 2019-7-2 插件开发
+- [插件开发](https://www.cnblogs.com/lanqie/p/8340215.html)

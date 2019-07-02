@@ -15,6 +15,7 @@ class SnmpAgentCfgInfoAdmin(object):
 
 
 class SnmpHostDataAdmin(object):
+    isExecute = True
 
     def send_flow_m(self, instance):
         return round(float(instance.send_flow / 1024 / 1024), 3)
@@ -67,4 +68,6 @@ xadmin.sites.register(PeriodicTask)
 xadmin.sites.register(CrontabSchedule)
 xadmin.sites.register(IntervalSchedule)
 
-## pip
+
+
+

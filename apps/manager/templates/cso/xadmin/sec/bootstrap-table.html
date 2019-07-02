@@ -1,0 +1,42 @@
+{% extends 'cso/xadmin/base_site.html' %}
+{% load staticfiles %}
+
+
+{% block extrastyle %}
+{#     <script src="{% static 'agent/js/echarts.min.js' %}"></script>#}
+          <link rel="stylesheet" href="{% static 'bootstrap-table/css/bootstrap-table.min.css' %}">
+{% endblock %}
+
+ {% block extrahead %}
+     <script src="{% static 'bootstrap-table/js/bootstrap-table.min.js' %}"></script>
+     <script src="{% static 'bootstrap-table/js/bootstrap-table-zh-CN.js' %}"></script>
+ {% endblock %}
+
+
+
+{% block mycontent %}
+
+    <table data-toggle="table">
+      <thead>
+        <tr>
+          <th>Item ID</th>
+          <th>Item Name</th>
+          <th>Item Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Item 1</td>
+          <td>$1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Item 2</td>
+          <td>$2</td>
+        </tr>
+      </tbody>
+    </table>
+
+{% endblock %}
+

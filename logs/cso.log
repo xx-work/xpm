@@ -827,3 +827,369 @@ Traceback (most recent call last):
   File "E:\xpm\apps\pydash\views.py", line 634, in getdiskio
     datasets_in_i.append(int(diskrw[1]))
 IndexError: string index out of range
+2019-07-02 16:11:22 [base WARNING] Not Found: /favicon.ico
+2019-07-02 16:17:32 [exception ERROR] Internal Server Error: /agent/snmphostdata/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = response.render()
+  File "F:\workspace\cso_venv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "F:\workspace\cso_venv\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "F:\workspace\cso_venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "F:\workspace\cso_venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "F:\workspace\cso_venv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "F:\workspace\cso_venv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "F:\workspace\cso_venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "F:\workspace\cso_venv\lib\site-packages\django\template\loader_tags.py", line 122, in get_parent
+    raise TemplateSyntaxError(error_msg)
+django.template.exceptions.TemplateSyntaxError: Invalid template name in 'extends' tag: ''. Got this from the 'base_template' variable.
+2019-07-02 16:30:20 [base WARNING] Not Found: /favicon.ico
+2019-07-02 16:39:22 [exception ERROR] Internal Server Error: /manager/infosecevent/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 405, in get
+    context = self.get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 2 more times]
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 56, in _inner_method
+    result = func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 387, in get_context
+    context = super(ListAdminView, self).get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 2 more times]
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 56, in _inner_method
+    result = func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 510, in get_context
+    context = super(ModelAdminView, self).get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 2 more times]
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 56, in _inner_method
+    result = func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 405, in get_context
+    context = super(CommAdminView, self).get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 2 more times]
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 60, in _inner_method
+    raise IncorrectPluginArg(u'Plugin filter method need a arg to receive parent method result.')
+xadmin.views.base.IncorrectPluginArg: Plugin filter method need a arg to receive parent method result.
+2019-07-02 16:39:56 [exception ERROR] Internal Server Error: /manager/infosecevent/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 405, in get
+    context = self.get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 2 more times]
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 56, in _inner_method
+    result = func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 387, in get_context
+    context = super(ListAdminView, self).get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 2 more times]
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 56, in _inner_method
+    result = func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 510, in get_context
+    context = super(ModelAdminView, self).get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 2 more times]
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 56, in _inner_method
+    result = func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 405, in get_context
+    context = super(CommAdminView, self).get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 2 more times]
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 60, in _inner_method
+    raise IncorrectPluginArg(u'Plugin filter method need a arg to receive parent method result.')
+xadmin.views.base.IncorrectPluginArg: Plugin filter method need a arg to receive parent method result.
+2019-07-02 16:58:55 [base WARNING] Not Found: /test_bootstrp_table$
+2019-07-02 17:19:23 [exception ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\dashboard.py", line 593, in get
+    return self.template_response('xadmin/views/dashboard.html', self.get_context())
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\dashboard.py", line 586, in get_context
+    context = super(Dashboard, self).get_context()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 410, in get_context
+    menus = copy.copy(self.get_nav_menu())
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 336, in get_nav_menu
+    site_menu = list(self.get_site_menu() or [])
+  File "E:\xpm\apps\manager\xadmin\sites\nav_menu_lists.py", line 48, in get_site_menu
+    if self.request.user.is_superuser():
+TypeError: 'bool' object is not callable
+2019-07-02 17:19:24 [base WARNING] Not Found: /favicon.ico

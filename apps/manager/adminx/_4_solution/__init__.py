@@ -6,6 +6,8 @@ from manager.xadmin.actions.change_views_read import ViewdAction
 
 
 class InfoSecEventAdmin(object):
+    isExecute = True
+
     list_display = ['info_source', 'info_type', 'describtion',
                     'info_level', 'descover_time', 'happend_time', 'reporter', 'report_time']
     readonly_fields = ("reporter", "id")
@@ -75,6 +77,7 @@ class InfoGoingAdmin(object):
 
 
 xadmin.site.register(InfoSecEvent, InfoSecEventAdmin)
+# TEST_PLUGIN 测试插件
 
 
 class HiddenMenuAdmin(object):
