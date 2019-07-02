@@ -1,41 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/manager/xadmin/sites/nav_menu_lists.py" line="125" />
+    <bookmark url="file://$PROJECT_DIR$/manager/xadmin/sites/nav_menu_lists.py" line="126" />
     <bookmark url="file://$PROJECT_DIR$/manager/templates/cso/xadmin/sec/bootstrap-table.html" line="17" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a879713-0b59-4f63-8b0e-5ef7e459e8e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/agent/abstracts/get_data_from_csv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agent/static/agent/css/bootstrap-table.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agent/static/agent/js/bootstrap-table.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agent/static/bootstrap-table/js/bootstrap-table-zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/cso/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/cso/plugins/top_toolbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/cso/xadmin/sec/bootstrap-table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tree.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/xadmin/plugins/tplugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/xadmin/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/xadmin/utils/hockd_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/xadmin/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/xadmin/views/views_registers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/adminx/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/adminx/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/adminx/_4_solution/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/adminx/_4_solution/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/xadmin/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/manager/xadmin/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/xadmin/sites/nav_menu_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/xadmin/sites/nav_menu_lists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/xadmin/sites/views/custom_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager/xadmin/sites/views/custom_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dev/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dev/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gtest/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gtest/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gtest/.idea/gtest.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gtest/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gtest/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gtest/firephp/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gtest/termui/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gtest/termui/goenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logs/cso.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/cso.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,13 +36,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manager/xadmin/sites/nav_menu_lists.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
+            <state relative-caret-position="222">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="591">
+                <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manager/xadmin/sites/views/custom_view.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="29" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="29" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manager/templates/cso/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+            <state relative-caret-position="286">
+              <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -89,7 +85,10 @@
         <entry file="file://F:/workspace/cso_venv/Lib/site-packages/xadmin/views/base.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="237">
-              <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="53" />
+              <caret line="317" column="6" selection-start-line="317" selection-start-column="6" selection-end-line="317" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,25 +133,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manager/xadmin/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="374">
-                <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manager/cfg/parse_cli.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-924" />
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -187,8 +167,8 @@
       <find>static</find>
       <find>cash_title_link</find>
       <find>top</find>
-      <find>response</find>
       <find>TemplateResponse</find>
+      <find>response</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -230,7 +210,6 @@
         <option value="$PROJECT_DIR$/../gtest/shallnoxbox/build/docker-entrypoint.sh" />
         <option value="$PROJECT_DIR$/../gtest/shallnoxbox/build/Dockerfile" />
         <option value="$PROJECT_DIR$/../dev/readme.md" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/agent/static/agent/js/bootstrap-table.min.js" />
         <option value="$PROJECT_DIR$/agent/static/agent/css/bootstrap-table.min.css" />
         <option value="$PROJECT_DIR$/agent/static/bootstrap-table/js/bootstrap-table-zh-CN.js" />
@@ -248,6 +227,7 @@
         <option value="$PROJECT_DIR$/website/settings.py" />
         <option value="$PROJECT_DIR$/manager/templates/cso/index.html" />
         <option value="$PROJECT_DIR$/manager/xadmin/sites/nav_menu_lists.py" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -272,47 +252,6 @@
             <path>
               <item name="apps" type="b2602c69:ProjectViewProjectNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="cso" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="xadmin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="xadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="sites" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="secs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="apps" type="b2602c69:ProjectViewProjectNode" />
@@ -473,12 +412,12 @@
       <workItem from="1561800550455" duration="303000" />
       <workItem from="1561941067148" duration="2554000" />
       <workItem from="1561947755130" duration="15327000" />
-      <workItem from="1562027236932" duration="14189000" />
+      <workItem from="1562027236932" duration="15012000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166397000" />
+    <option name="totallyTimeSpent" value="167220000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,16 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="541">
-            <caret line="54" selection-start-line="54" selection-end-line="54" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/agent/static/agent/js/bootstrap-table.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -822,16 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manager/xadmin/sites/views/custom_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manager/xadmin/plugins/list_plugin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -895,6 +814,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/website/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2172">
+          <caret line="397" lean-forward="true" selection-start-line="397" selection-end-line="397" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/website/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -913,16 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2172">
-          <caret line="397" lean-forward="true" selection-start-line="397" selection-end-line="397" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://F:/workspace/cso_venv/Lib/site-packages/django/template/response.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2258">
@@ -933,24 +852,47 @@
     <entry file="file://F:/workspace/cso_venv/Lib/site-packages/xadmin/views/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
-          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="53" />
+          <caret line="317" column="6" selection-start-line="317" selection-start-column="6" selection-end-line="317" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/xadmin/sites/views/custom_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="29" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manager/templates/cso/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        <state relative-caret-position="286">
+          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manager/xadmin/sites/nav_menu_lists.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
+        <state relative-caret-position="222">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="591">
+            <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

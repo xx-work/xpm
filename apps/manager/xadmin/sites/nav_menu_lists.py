@@ -3,12 +3,13 @@ from __future__ import absolute_import
 # from collections import OrderedDict
 # from django.apps import apps
 # from xadmin.util import smart_text, capfirst, sortkeypicker
-# from xadmin.plugins.inline import Inline, filter_hook
+from xadmin.plugins.inline import Inline, filter_hook
 import xadmin
 from xadmin import views
 # from xadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Side
 # from xadmin.plugins.batch import BatchChangeAction
 from django.contrib.auth.models import Group, User, Permission
+from django.shortcuts import render_to_response, render
 
 from django.template.response import TemplateResponse
 
@@ -126,7 +127,7 @@ class GlobalSetting(object):
 from .views.custom_view import SystemCentralManagementsView, TestEchartsView, TestBootstrapTableView
 
 xadmin.site.register_view(r'sys_center_m$', SystemCentralManagementsView, name='sys_center_m')
-xadmin.site.register_view(r'/', TestEchartsView, name='test_echarts')
+xadmin.site.register_view(r'test_echarts', TestEchartsView, name='test_echarts')
 # xadmin.site.register_view(r'test_bootstrp_table$', TestBootstrapTableView, name='test_bootstrp_table')
 
 
