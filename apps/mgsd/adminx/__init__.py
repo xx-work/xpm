@@ -15,3 +15,7 @@ from ._5_chk import *
 
 from ._6_backer import *
 
+
+# 取消界面注册的相关列表和视图
+from ..xadmin.sites.unregisterd import *
+

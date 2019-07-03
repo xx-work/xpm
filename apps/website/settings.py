@@ -35,7 +35,11 @@ BOOTSTRAP_TOKEN = CONFIG.BOOTSTRAP_TOKEN
 DEBUG = CONFIG.DEBUG
 
 # Absolute url for some case, for example email link
-SITE_URL = CONFIG.SITE_URL
+if DEBUG:
+    SITE_URL = 'http://localhost:3322'
+else:
+    SITE_URL = CONFIG.SITE_URL
+
 
 # LOG LEVEL
 LOG_LEVEL = CONFIG.LOG_LEVEL

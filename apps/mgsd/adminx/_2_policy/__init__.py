@@ -21,10 +21,11 @@ class ActionInline(object):
 class PolicyBenchAdmin(object):
     list_filter = ['type', ]
     list_display = ("name", "desc", "type", "date_created")
+    hidden_menu = True
 
 
 class PolicyActionAdmin(object):
-
+    hidden_menu = True
     def pushed(self, instance):
         return """<a href="/sys/pushed?sid={}">策略下发</a>""".format( str(instance.id) )
     pushed.short_description = "策略下发"
@@ -36,7 +37,7 @@ class PolicyActionAdmin(object):
 
 
 class PolicyRuleAdmin(object):
-
+    hidden_menu = True
     def policy_type(self, instance):
         return instance.policy_bench.get_type_display()
     policy_type.short_description = "策略类型"
@@ -90,6 +91,7 @@ class PolicyRuleAdmin(object):
 
 
 class PolicyHistoryAdmin(object):
+    hidden_menu = True
 
     def action_name(self, instance):
         return instance.policyaction.action_name

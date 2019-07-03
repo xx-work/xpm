@@ -6,6 +6,7 @@ from ...models import ObjProcess, ProcessAuditLog
 
 
 class ObjProcessProcessAdmin(object):
+    hidden_menu = True
     list_display = ['process_name', 'process_type', 'cop',
                     'process', 'user', 'date_created', 'the_last_monitor_time', 'the_last_monitor_state']
     list_editable = ['process_name', 'process_type', 'process']
@@ -55,7 +56,7 @@ class ObjProcessProcessAdmin(object):
 
 class ProcessAuditAdmin(object):
     list_display = ('process_info', 'process_stat', 'date_created')
-
+    hidden_menu = True
     def process_info(self, instance):
         return instance.process.cop.name + instance.process.process_name + " | " + instance.process.process + " | " + instance.process.get_process_type_display()
     process_info.short_description = "进程描述(部件|进程名|进程|类型)"

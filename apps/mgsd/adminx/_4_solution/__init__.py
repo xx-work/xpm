@@ -68,6 +68,8 @@ class InfoGoingAdmin(object):
     list_display = ['info', 'go_user',  'state', 'had_action', 'go_time']
     readonly_fields = ["id", 'go_user']
 
+    hidden_menu = True
+
     def save_models(self):
         instance = self.new_obj
         request = self.request

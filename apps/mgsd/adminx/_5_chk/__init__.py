@@ -9,6 +9,7 @@ from ...models import ChangeAudit
 class ChangeAuditAdmin(object):
     readonly_fields = ("opreate_username", )
     list_display = ('change_name', 'change_type', 'change_obj', 'change_desc', 'change_stat')
+    list_filter = ['change_type', ]
 
 
 xadmin.site.register(ChangeAudit, ChangeAuditAdmin)
@@ -17,11 +18,11 @@ xadmin.site.register(ChangeAudit, ChangeAuditAdmin)
 from xadmin.models import Log
 from xadmin.adminx import LogAdmin
 
-xadmin.site.unregister(Log)
-
 
 class LogAdmin2(LogAdmin):
     list_per_page = 12
+    hidden_menu = True
 
 
+xadmin.site.unregister(Log)
 xadmin.site.register(Log, LogAdmin2)

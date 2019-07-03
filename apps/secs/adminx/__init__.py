@@ -14,6 +14,8 @@ class GroupInline(object):
 
 
 class CommunityAdmin(object):
+    hidden_menu = True
+
     list_display = ("community_name", "group", "responsibility", "date_created")
 
     form_layout = (

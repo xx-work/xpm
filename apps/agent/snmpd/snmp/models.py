@@ -45,4 +45,4 @@ class SnmpHostData(models.Model):
     class Meta:
         db_table="snmp_agent_data"
         verbose_name="SNMP部件监控数据"
-        ordering = ('date_created', )
+        ordering = ('-date_created', )
