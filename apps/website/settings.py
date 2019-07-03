@@ -62,7 +62,7 @@ INSTALLED_APPS = [
     'django_celery_beat',
 ]
 
-INSTALLED_APPS += ["secs.apps.LocalAppConfig", "manager.apps.LocalAppConfig"]
+INSTALLED_APPS += ["secs.apps.LocalAppConfig", "mgsd.apps.LocalAppConfig"]
 INSTALLED_APPS += ["agent.apps.LocalAppConfig", "ops.apps.LocalAppConfig"]
 # INSTALLED_APPS += ["pydash.apps.LocalAppConfig", ]
 
@@ -172,7 +172,7 @@ LOGGING = {
             'level': LOG_LEVEL,
             'propagate': False,
         },
-        'django.manager': {
+        'django.mgsd': {
             'handlers': ['console', 'file'],
             'level': LOG_LEVEL,
             'propagate': False,

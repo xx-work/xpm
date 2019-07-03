@@ -17,3 +17,7 @@
 
 ## Docker 架构修改
 - django-beat 失效，异步任务使用 apscheduler 控制 djcelery 
+
+## gd
+- `4/ewFdzkY-iZ_ecxgQIPxDrZvoi-hZFVxTnyjtc0PmwRyhdDY5TZ7IUgY`
+

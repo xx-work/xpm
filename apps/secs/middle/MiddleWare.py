@@ -27,11 +27,17 @@ def login_user(request):
             # else:
             #     login(request, User.objects.all().filter(is_superuser=True)[1])
 
+
 def login_superuser(request):
     if request.user.username == "":
         from django.contrib.auth import login
         from django.contrib.auth.models import User
         login(request, User.objects.all().filter(is_staff=True)[0])
+    # else:
+    #     if request.user.username == "admin001":
+    #         if request.get_full_path().split('/')[-1] == 'admin':
+    #             from django.shortcuts import redirect
+    #             return redirect('/test')
 
 
 def visitor_permission_response(request, response):
@@ -64,7 +70,8 @@ def visitor_permission_response(request, response):
 
     return response
 
-## 访客权限管理中间件
+
+# 访客权限管理中间件
 class VisitorPermissionsMiddleWare(MiddlewareMixin):
     def process_view(self, request, view_func, view_args, view_kwargs):
         response = view_func(request, *view_args, **view_kwargs)
@@ -91,14 +98,14 @@ class SiteMainMiddleware(object):
         # 增加自己的中间件
         if DEBUG:
             login_superuser(request)
-            login_user(request)
+            # login_user(request)
 
         response = self.get_response(request) # 上一个中间件进行串联
 
         from .opt_log_middleware import put_log
         put_log(request)
 
-        ## 访客权限中间件
+        # 访客权限中间件
         response = visitor_permission_response(request=request, response=response)
 
         return response

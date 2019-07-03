@@ -12,16 +12,25 @@ from xadmin.plugins import xversion
 xversion.register_models()
 
 
+from mgsd.views import homepage, dashboard
+
 urlpatterns = [
-      url(r'^', xadmin.site.urls),
-      url(r'^admin/', admin.site.urls),
+
+      url(r'^$', homepage, name='home'),
+      url(r'^/asd/fdasfdsa$', dashboard, name='dashboard'),
+      # url(r'^admin/', admin.site.urls),
+      url(r'^admin/', xadmin.site.urls),
       url(r'^cso/mg/', include("secs.urls")),
-      url(r'^cso/v1/', include("manager.urls")),
+      url(r'^cso/v1/', include("mgsd.urls")),
       url(r'^cso/agent/', include("agent.urls")),
       # url(r'^pydash/', include("pydash.urls")),
       # url(r'^cso/v1/', include("scan.urls")), ## 管理
-  ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+  ]
 
+
+urlpatterns += static(
+    settings.STATIC_URL, document_root=settings.STATIC_ROOT
+)
 
 urlpatterns += static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
