@@ -43,4 +43,5 @@ class MenuAttackOneToRedirectView(CommAdminView):
         # return HttpResponse(content)
         return redirect( get_menu_origin_url(pk) )
 
+
 xadmin.site.register_view(r'^' + MEMU_SUFFIX + '(?P<pk>[\w_]+)$', MenuAttackOneToRedirectView, name='menu_url_kv')

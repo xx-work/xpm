@@ -14,6 +14,8 @@ import subprocess
 import sys, io
 # Change default encoding to utf8
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8')
+
+
 def get_command(shell_cmd):
     # import shlex
     # import subprocess
