@@ -2,7 +2,7 @@ FROM debian:stretch
 
 # apt install -y apt-transport-https
 
-INSTALL_PATH=/software
+ENV INSTALL_PATH /software
 mkdir -p ${INSTALL_PATH}
 
 cat > /etc/apt/sources.list <<- EOF

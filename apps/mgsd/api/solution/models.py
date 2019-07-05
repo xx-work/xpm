@@ -69,7 +69,6 @@ class InfoSecEvent(models.Model):
     impact_cops = models.ManyToManyField(SysManagerCopInfo, verbose_name="受影响的资产列表", related_name="info_conn_cops")
     negative_impacts = models.ManyToManyField(AttackerActionDesc, verbose_name="攻击者行为描述", related_name="info_conn_attack")
     # attacker_descs = models.ManyToManyField(SysManagerCopInfo, verbose_name="负面影响列表", related_name="info_conn_impact")
-
     # impact_area = models.CharField(choices=InfoSecEventTypes, default='Guest', max_length=50, verbose_name="影响范围")
     # had_action = models.TextField(verbose_name="已经采取的行动", blank=True)
     plan_action = models.TextField(verbose_name="计划采取的行动", blank=True)

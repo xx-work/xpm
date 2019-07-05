@@ -1,6 +1,7 @@
+# coding:utf-8
 
-from .center.models import SystemPolicyCentralizedManagement, AuditPolicyCentralizedManagement, \
-    SecurityPolicyCentralizedManagement
+# 三板斧之一 系统部件管理需要的models
+from ..api.none4cso.system.models import SystemPolicyCentralizedManagement
 
 from .xobj.models import SysManagerCopInfo, ConnectManagerUserInfo, AuditLogObject
 

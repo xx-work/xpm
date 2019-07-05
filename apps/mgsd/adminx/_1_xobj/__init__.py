@@ -7,8 +7,23 @@ from django.http import HttpResponse
 
 class SysManagerCopInfoAdmin(object):
     list_filter = ['type', 'level', ]
-    list_display = ['name', 'uniq_flag', 'pushed', 'up', 'ip', 'type', 'level', 'mac', 'os', 'mac_vendor']
-    list_editable = ['uniq_flag', 'ip', 'name', 'pushed']
+    list_display = ['name', 'uniq_flag', 'pushed', 'up', 'ip', 'type', 'level', 'mac', 'os', 'mac_vendor', 'cop_connect_user']
+    # list_editable = ['uniq_flag', 'ip', 'name', 'pushed']
+    show_detail_fields = ('uniq_flag',)
+
+    def cop_connect_user(self, instance):
+        show_detaild = lambda x : """<a data-res-uri="{based_url}{id}/detail/" data-edit-uri="{based_url}{id}/update/" 
+        class="details-handler" rel="tooltip" title="{name}"> {name}<i class="fa fa-info-circle"></i> </a>  """.format(
+            based_url=self.get_model_url(ConnectManagerUserInfo, 'changelist'), id=x.id, name=x.name
+        )
+
+        links = "<ul><li>" + "</li><li>".join([show_detaild(x) for x in instance.managers.all()]) + "</li></ul>"
+        from django.utils.safestring import mark_safe
+        return mark_safe(links)
+
+    cop_connect_user.short_description = "管理员用户集"
+    cop_connect_user.allow_tags = True
+    cop_connect_user.is_column = True
 
 
 class ConnectManagerUserInfoAdmin(object):
@@ -16,6 +31,7 @@ class ConnectManagerUserInfoAdmin(object):
     list_filter = ['is_active', '_identity', 'create_user',]
     list_display = ['name', 'username', '_password', '_identity', '_protocol', 'is_active', 'create_user', 'date_created']
     list_editable = ['name', 'username', 'process', 'is_active']
+    show_bookmarks = False
 
     def save_models(self):
         instance = self.new_obj

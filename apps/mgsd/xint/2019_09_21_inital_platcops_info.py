@@ -29,6 +29,7 @@ CopsInfo = [
  "mac": "52:54:00:89:DF:3F","level": "High", "mac_vendor": "QEMU virtual NIC", "name": "入侵防御系统"},
 ]
 
+
 def inintal_cops(delete=True):
     django_setup()
     import logging

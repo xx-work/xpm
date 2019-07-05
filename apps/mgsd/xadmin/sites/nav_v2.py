@@ -7,7 +7,7 @@ try:
 except:
     from django.urls import reverse
 
-from mgsd.api.center.models import SystemPolicyCentralizedManagement, AuditPolicyCentralizedManagement, SecurityPolicyCentralizedManagement
+from mgsd.api.models import SystemPolicyCentralizedManagement
 from mgsd.api.xobj.models import SysManagerCopInfo, ConnectManagerUserInfo, AuditLogObject
 from mgsd.api.policy.models import PolicyActionHistory, PolicyRule, PolicyAction, PolicyBench
 from mgsd.api.monitor.models import ObjProcess, ProcessAuditLog
@@ -58,7 +58,7 @@ class GlobalSetting(object):
                 ), "icon": "fa fa-html5"},
 
                 {'title': '安全机制管理', 'menus': (
-                    {'title': '安全策略集中管理', 'url': self.get_model_url(SecurityPolicyCentralizedManagement, 'changelist')},
+                    {'title': '安全策略集中管理', 'url': self.get_model_url(SystemPolicyCentralizedManagement, 'changelist')},
                     {'title': '安全管理对象识别', 'url': self.get_model_url(ConnectManagerUserInfo, 'changelist')},
                     {'title': '安全管理策略设置', 'url':  get_menu_url("sec_policy")},
                     {'title': '安全事件响应处置', 'url': self.get_model_url(InfoSecEvent, 'changelist')},
@@ -66,7 +66,7 @@ class GlobalSetting(object):
                 ), "icon": "fa fa-cog"},
 
                 {'title': '审计机制管理', 'menus': (
-                    {'title': '审计策略集中管理', 'url': self.get_model_url(AuditPolicyCentralizedManagement, 'changelist')},
+                    {'title': '审计策略集中管理', 'url': self.get_model_url(SystemPolicyCentralizedManagement, 'changelist')},
                     {'title': '审计管理对象识别', 'url': self.get_model_url(AuditLogObject, 'changelist')},
                     {'title': '审计管理策略设置', 'url': get_menu_url("aud_policy")},
                     {'title': '审计事件响应处置', 'url': self.get_model_url(InfoSecEvent, 'changelist')},

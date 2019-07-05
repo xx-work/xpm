@@ -12,3 +12,6 @@
 ## 安全相关的策略监控和执行
 - 认证授权的策略。平台对平台
 
+
+## snmpd 信息获取路径
+- [snmpd.conf](../sscripts/logd/snmpd.conf)
