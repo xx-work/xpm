@@ -11,9 +11,9 @@ def get_detaild_model(ModelViewAdmin, Model,  objs):
     return mark_safe(links)
 
 
-def get_markd_table_details_show(ModelViewAdmin, Model, titile='预览表格'):
+def get_markd_table_details_show(url, titile='预览表格'):
 
     show_detaild = """<a data-res-uri="{based_url}" class="details-handler" rel="tooltip" title="{name}"> {name} 
-    <i class="fa fa-info-circle"></i> </a>  """.format(based_url=ModelViewAdmin.get_model_url(Model, 'changelist'), name=titile)
+    <i class="fa fa-info-circle"></i> </a>  """.format(based_url=url, name=titile)
     from django.utils.safestring import mark_safe
     return mark_safe(show_detaild)
