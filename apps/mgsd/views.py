@@ -30,7 +30,7 @@ class TestInputView(CommAdminView):
         return render(request, 'cso/xadmin/demo.html', context)
 
 
-from mgsd.url_confs import MEMU_SUFFIX, get_menu_origin_url, get_menu_url
+from mgsd.url_confs import MEMU_SUFFIX, get_menu_origin_url, get_menu_url, XADMIN_URL_PREFIX
 
 
 class MenuAttackOneToRedirectView(CommAdminView):
@@ -45,3 +45,4 @@ class MenuAttackOneToRedirectView(CommAdminView):
 
 
 xadmin.site.register_view(r'^' + MEMU_SUFFIX + '(?P<pk>[\w_]+)$', MenuAttackOneToRedirectView, name='menu_url_kv')
+xadmin.site.register_view(r'^' + XADMIN_URL_PREFIX + '(?P<pk>\d+)$', TestInputView, name='metu')

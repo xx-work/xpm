@@ -82,6 +82,7 @@ class InfoSecEvent(models.Model):
         verbose_name="信息事件"
         ordering = ('-happend_time',)
 
+
 InfoEventStates = (
     ('DONE', "完成"),
     ('IGN', "忽略"),

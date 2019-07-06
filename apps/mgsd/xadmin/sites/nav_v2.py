@@ -94,6 +94,7 @@ class GlobalSetting(object):
 
 from .views.custom_view import SystemCentralManagementsView, TestEchartsView, TestBootstrapTableView
 
+
 xadmin.site.register_view(r'sys_center_m$', SystemCentralManagementsView, name='sys_center_m')
 xadmin.site.register_view(r'test_echarts', TestEchartsView, name='test_echarts')
 # xadmin.site.register_view(r'test_bootstrp_table$', TestBootstrapTableView, name='test_bootstrp_table')
