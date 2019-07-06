@@ -57,6 +57,7 @@ class PolicyAction(models.Model):
         verbose_name = "策略动作"
         ordering = ('-date_created',)
 
+
 class PolicyActionHistory(models.Model):
     policyaction = models.ForeignKey(PolicyAction, on_delete=models.CASCADE, related_name="action_policy_history")
     filter_type = models.CharField(verbose_name="响应过滤类型", max_length=55, choices=RESPONSE_FILTER_TYPES)
@@ -71,6 +72,7 @@ class PolicyActionHistory(models.Model):
         db_table = "action_history"
         verbose_name = "策略下发执行历史"
         ordering = ('-add_time',)
+
 
 # 策略规则，就是规则的内容
 class PolicyRule(models.Model):

@@ -4536,3 +4536,39 @@ TypeError: must be str, not UUID
 2019-07-05 17:23:51 [base WARNING] Not Found: /admin/2
 2019-07-05 17:30:17 [base WARNING] Not Found: /admin/mgsd/connectmanageruserinfo//2b99842a-90ca-4883-8ac2-6a03bf1ff3be/detail/
 2019-07-05 17:30:41 [base WARNING] Not Found: /admin/mgsd/connectmanageruserinfo//2b99842a-90ca-4883-8ac2-6a03bf1ff3be/detail/
+2019-07-06 09:12:55 [base WARNING] Not Found: /favicon.ico
+2019-07-06 09:13:08 [base WARNING] Not Found: /xadmin
+2019-07-06 09:13:12 [base WARNING] Not Found: /admin//
+2019-07-06 09:21:12 [base WARNING] Not Found: /12
+2019-07-06 09:22:04 [base WARNING] Not Found: /14
+2019-07-06 09:22:17 [base WARNING] Not Found: /13
+2019-07-06 09:22:22 [base WARNING] Not Found: /admin/2
+2019-07-06 09:33:43 [base WARNING] Not Found: /admin/2
+2019-07-06 09:33:50 [base WARNING] Not Found: /admin/2
+2019-07-06 09:34:43 [base WARNING] Not Found: /admin/2
+2019-07-06 09:35:14 [base WARNING] Not Found: /admin/^
+2019-07-06 10:48:24 [exception ERROR] Internal Server Error: /admin/test1
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 271, in view
+    self = cls(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 494, in __init__
+    self.opts = self.model._meta
+AttributeError: 'NoneType' object has no attribute '_meta'
+2019-07-06 11:03:43 [base WARNING] Not Found: /12
+2019-07-06 11:24:01 [base WARNING] Not Found: /admin/1
+2019-07-06 11:26:18 [base WARNING] Not Found: /12
+2019-07-06 17:05:14 [base WARNING] Not Found: /favicon.ico

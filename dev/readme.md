@@ -21,4 +21,10 @@
 ## gd(GoogleDrive)
 - `4/ewFdzkY-iZ_ecxgQIPxDrZvoi-hZFVxTnyjtc0PmwRyhdDY5TZ7IUgY`
 
-## 
+## 重要修复建议
+- beat 取消。
+
+## Dockerfile编写提升技巧
+- `localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8 \`
+- `{conmmands} | tee <txt=file> `
+

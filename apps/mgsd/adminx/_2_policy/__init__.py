@@ -106,3 +106,6 @@ xadmin.site.register(PolicyBench, PolicyBenchAdmin)
 xadmin.site.register(PolicyAction, PolicyActionAdmin)
 xadmin.site.register(PolicyRule, PolicyRuleAdmin)
 xadmin.site.register(PolicyActionHistory, PolicyHistoryAdmin)
+
+
+from .sys.adminx import *

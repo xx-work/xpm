@@ -1,10 +1,13 @@
+# coding:utf-8
+
 import xadmin
-from ...api.models import SystemPolicyCentralizedManagement
+from ....api.models import SystemPolicyCentralizedManagement
 from xadmin.views import ListAdminView
 from .._1_xobj import SysManagerCopInfo, ConnectManagerUserInfo
 
 from ...models import BackUpHistory
-# from ...xadmin.utils.self_utils import get_markd_table_details_show
+from ...xadmin.utils.self_utils import get_markd_table_details_show
+from django.utils.safestring import mark_safe
 
 
 class SystemPolicyCentralizedManagementAdmin(ListAdminView):
@@ -22,7 +25,6 @@ class SystemPolicyCentralizedManagementAdmin(ListAdminView):
     cop_state.is_column = True
 
     def backuo2(self, instance):
-        from django.utils.safestring import mark_safe
         return mark_safe("""<a data-res-uri="{based_url}" class="details-handler" rel="tooltip" title="{name}"> {name} 
     <i class="fa fa-info-circle"></i> </a>  """.format(based_url=self.get_model_url(BackUpHistory, 'changelist'),
                                                        name='备份记录'))
