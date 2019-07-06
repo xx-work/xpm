@@ -6,13 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a879713-0b59-4f63-8b0e-5ef7e459e8e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/api/solution/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/api/solution/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/xadmin/utils/self_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/xadmin/utils/self_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dev/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dev/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../logs/cso.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/cso.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,14 +43,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="-276">
+              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="26" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../dev/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="528">
+                <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -97,18 +103,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mgsd/urls.py">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -203,7 +197,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/../gtest/readme.md" />
-        <option value="$PROJECT_DIR$/../dev/readme.md" />
         <option value="$PROJECT_DIR$/mgsd/xadmin/dashboard.py" />
         <option value="$PROJECT_DIR$/mgsd/xadmin/sites/nav_menu_lists.py" />
         <option value="$PROJECT_DIR$/mgsd/adminx/_2_policy/__init__.py" />
@@ -253,6 +246,7 @@
         <option value="$PROJECT_DIR$/mgsd/views.py" />
         <option value="$PROJECT_DIR$/mgsd/xadmin/utils/self_utils.py" />
         <option value="$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py" />
+        <option value="$PROJECT_DIR$/../dev/readme.md" />
       </list>
     </option>
   </component>
@@ -279,26 +273,7 @@
             </path>
             <path>
               <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="agent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="adminx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="adminx" type="462c0819:PsiDirectoryNode" />
-              <item name="_0_center" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -444,12 +419,12 @@
       <workItem from="1562114160255" duration="26964000" />
       <workItem from="1562200573356" duration="14979000" />
       <workItem from="1562287637819" duration="20461000" />
-      <workItem from="1562373948761" duration="4524000" />
+      <workItem from="1562373948761" duration="5157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234148000" />
+    <option name="totallyTimeSpent" value="234781000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -461,7 +436,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1741" y="73" width="1514" height="908" extended-state="0" />
+    <frame x="1919" y="100" width="1514" height="908" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14540467" />
@@ -534,13 +509,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/secs/dprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ops/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -892,11 +860,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="-276">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="26" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../dev/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="528">
+            <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
