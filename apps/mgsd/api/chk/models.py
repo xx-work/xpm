@@ -35,4 +35,4 @@ class ChangeAudit(models.Model):
     class Meta:
         db_table="change_audit"
         verbose_name="平台变更记录"
-        ordering = ('-date_created',)
+        ordering = ('-date_created', )

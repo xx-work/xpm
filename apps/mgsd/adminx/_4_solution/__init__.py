@@ -89,3 +89,5 @@ class HiddenMenuAdmin(object):
 xadmin.site.register(EffectInfo, HiddenMenuAdmin)
 xadmin.site.register(AttackerActionDesc, HiddenMenuAdmin)
 xadmin.site.register(InfoGoin, InfoGoingAdmin)
+
+from .sbf.adminx import *

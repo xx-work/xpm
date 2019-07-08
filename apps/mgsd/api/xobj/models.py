@@ -42,7 +42,7 @@ class SysManagerCopInfo(models.Model):
     ip = models.GenericIPAddressField(verbose_name=_('ip'))
     type = models.CharField(max_length=128, verbose_name=u"系统部件的类型", choices=CopTypes)
     level = models.CharField(max_length=128, verbose_name=u"安全等级", default="High", choices=LevelSets)
-    pushed = models.BooleanField(verbose_name="接入", default=True)
+    pushed = models.BooleanField(verbose_name="接入", default=False)
     os = models.CharField(max_length=128, verbose_name=u"操作系统", default="Linux")
     mac = models.CharField(max_length=128, verbose_name=u"mac地址",  blank=True)
     mac_vendor = models.CharField(max_length=128, verbose_name=u"厂家",  blank=True)

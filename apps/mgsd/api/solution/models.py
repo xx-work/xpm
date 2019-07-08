@@ -17,6 +17,9 @@ InfoSecEventlevels = (
     (3, '特别重大'),
 )
 
+from ..policy.models import PolicyBaseTypes
+
+
 negative_impacts = ["违背保密性(未授权泄露)", "违背完整性(未授权篡改)", "违背可用性(即不可用)", "违背抗抵赖性", "遭受破坏"]
 attacker_descs = ["犯罪/经济利益", "消遣/黑客攻击", "政治/恐怖主义", "报复", "其他"]
 
@@ -65,9 +68,10 @@ class InfoSecEvent(models.Model):
     describtion = models.TextField(verbose_name="信息描述")
     info_type = models.CharField(choices=InfoSecEventTypes, default='attack', max_length=50, verbose_name="事件类型")
     info_level = models.IntegerField(choices=InfoSecEventlevels, default=1, verbose_name="安全等级")
-
-    impact_cops = models.ManyToManyField(SysManagerCopInfo, verbose_name="受影响的资产列表", related_name="info_conn_cops")
+    plat_etype = models.CharField(choices=PolicyBaseTypes, default='system', max_length=50, verbose_name="平台故障事件分类")
+    impact_cops = models.ManyToManyField(SysManagerCopInfo, verbose_name="受影响的资产列表", related_name="info_conn_cops", blank=True)
     negative_impacts = models.ManyToManyField(AttackerActionDesc, verbose_name="攻击者行为描述", related_name="info_conn_attack")
+    effect_info = models.ManyToManyField(EffectInfo, verbose_name="负面影响", related_name="info_conn_effect", blank=True, default=None)
     # attacker_descs = models.ManyToManyField(SysManagerCopInfo, verbose_name="负面影响列表", related_name="info_conn_impact")
     # impact_area = models.CharField(choices=InfoSecEventTypes, default='Guest', max_length=50, verbose_name="影响范围")
     # had_action = models.TextField(verbose_name="已经采取的行动", blank=True)

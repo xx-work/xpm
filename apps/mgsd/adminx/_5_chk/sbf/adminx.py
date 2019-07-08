@@ -3,7 +3,7 @@
 from __future__ import absolute_import
 
 import xadmin
-from ....api.models import SecurityPolicyRule, SystemPolicyRule, AuditPolicyRule
+
 from ....api.models import ConnectManagerUserInfo, ChangeAudit
 
 from ....api.none4cso.models import SystemChangeAudit, AuditChangeAudit, SecurityChangeAudit
@@ -37,7 +37,7 @@ class SystemChangeAuditAdmin(ListAdminView):
 
     def get_change_obj(self, instance):
         return instance.change_obj
-    get_change_name.short_description = "变更主体"
+    get_change_obj.short_description = "变更对象"
 
     def get_change_detail(self, instance):
         return instance.change_obj

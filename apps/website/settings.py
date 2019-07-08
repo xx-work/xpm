@@ -15,7 +15,7 @@ DOCKERD = True
 LOG_DIR = os.path.join(PROJECT_DIR, 'logs')
 CSO_LOG_FILE = os.path.join(LOG_DIR, 'cso.log')
 ANSIBLE_LOG_FILE = os.path.join(LOG_DIR, 'ansible.log')
-GUNICORN_LOG_FILE = os.path.join(LOG_DIR, 'gunicorn.log')\
+GUNICORN_LOG_FILE = os.path.join(LOG_DIR, 'gunicorn.log')
 
 VERSION = const.VERSION
 

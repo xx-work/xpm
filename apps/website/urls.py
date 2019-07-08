@@ -6,6 +6,7 @@ from django.contrib import admin
 import xadmin
 xadmin.autodiscover()
 
+from django.contrib.auth.models import User
 
 # version模块自动注册需要版本控制的 Model
 from xadmin.plugins import xversion
