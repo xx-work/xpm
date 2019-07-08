@@ -127,7 +127,9 @@ class AuditLogObject(models.Model):
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)
     name = models.CharField(max_length=128, verbose_name='审计对象名称')
     cop = models.ForeignKey(SysManagerCopInfo, verbose_name="审计对象部件", related_name='cop_to_audit', on_delete=models.CASCADE)
-    process = models.ForeignKey(ObjProcess, verbose_name="审计对象进程指定", related_name='cop_audit_process', on_delete=models.PROTECT)
+    table_name = models.CharField(max_length=128, verbose_name='表名', blank=True)
+    managers = models.ManyToManyField("ConnectManagerUserInfo",verbose_name="审计管理用户",
+                                      related_name="audit_conn_users", blank=True)
     state = models.CharField(max_length=32, default="RUNING", verbose_name="状态", choices=STATES)
     date_created = models.DateTimeField(auto_now_add=True, verbose_name="审计时间")
 
