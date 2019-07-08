@@ -7,7 +7,7 @@ try:
 except:
     from django.urls import reverse
 
-from mgsd.api.models import SystemPolicyCentralizedManagement
+
 from mgsd.api.xobj.models import SysManagerCopInfo, ConnectManagerUserInfo, AuditLogObject
 from mgsd.api.policy.models import PolicyActionHistory, PolicyRule, PolicyAction, PolicyBench
 from mgsd.api.monitor.models import ObjProcess, ProcessAuditLog
@@ -16,8 +16,15 @@ from mgsd.api.chk.models import ChangeAudit
 from mgsd.api.backer.models import BackUpHistory
 
 
+from secs.api.oauth.models import Community
+from django.contrib.auth.models import User, Group, Permission
+
 from ...url_confs import get_menu_url
 
+# 全部都是补丁模板
+from mgsd.api.models import SystemPolicyCentralizedManagement, SecurityPolicyCentralizedManagement, AuditPolicyCentralizedManagement
+from mgsd.models import SecurityPolicyRule, AuditPolicyRule, SystemPolicyRule
+from mgsd.models import AuditChangeAudit, SecurityChangeAudit, SystemChangeAudit
 
 @xadmin.sites.register(views.CommAdminView)
 class GlobalSetting(object):
@@ -40,10 +47,10 @@ class GlobalSetting(object):
                     # {'title': '组织的信息安全责任制度管理', 'url': reverse('test_input', kwargs={'pk': 3}), },
                     # {'title': '平台管理员用户管理', 'url': reverse('test_input', kwargs={'pk': 4}), },
                     # {'title': '平台管理员安全责任管理', 'url': reverse('test_input', kwargs={'pk': 5}), },
-                    {'title': '组织机构角色责任和权限管理', 'url': "/admin/1", },
-                    {'title': '组织的安全和管理', 'url': "/admin/2", },
-                    {'title': '组织的信息安全责任制度管理', 'url': "/admin/3", },
-                    {'title': '平台管理员用户管理', 'url': "/admin/4", },
+                    {'title': '组织机构角色责任和权限管理', 'url': self.get_model_url(Community, 'changelist'), },
+                    {'title': '组织的安全和管理', 'url': self.get_model_url(Permission, 'changelist'), },
+                    {'title': '组织的信息安全责任制度管理', 'url': self.get_model_url(Group, 'changelist'), },
+                    {'title': '平台管理员用户管理', 'url': self.get_model_url(User, 'changelist'), },
                     {'title': '平台管理员安全责任管理', 'url': "/admin/6", },
 
                 ), "icon": "fa fa-heart"},
@@ -51,26 +58,27 @@ class GlobalSetting(object):
                 {'title': '系统部件管理', 'menus': (
                     {'title': '系统策略集中管理', 'url': self.get_model_url(SystemPolicyCentralizedManagement, 'changelist') },
                     {'title': '系统管理对象识别', 'url': self.get_model_url(SysManagerCopInfo, 'changelist')},
-                    {'title': '系统管理策略设置', 'url': get_menu_url("sys_policy")},
+                    {'title': '系统管理策略设置', 'url': self.get_model_url(SystemPolicyRule, 'changelist')},
+                    {'title': '系统部件运行监控', 'url': '/fffffffffffffffff'},
                     {'title': '系统事件响应处置', 'url': self.get_model_url(InfoSecEvent, 'changelist')},
-                    {'title': '系统变更管理', 'url':  get_menu_url("sys_chk")},
+                    {'title': '系统变更管理', 'url':  self.get_model_url(SystemChangeAudit, 'changelist')},
                     {'title': '灾难备份及恢复管理', 'url': self.get_model_url(BackUpHistory, 'changelist')},
                 ), "icon": "fa fa-html5"},
 
                 {'title': '安全机制管理', 'menus': (
-                    {'title': '安全策略集中管理', 'url': self.get_model_url(SystemPolicyCentralizedManagement, 'changelist')},
+                    {'title': '安全策略集中管理', 'url': self.get_model_url(SecurityPolicyCentralizedManagement, 'changelist')},
                     {'title': '安全管理对象识别', 'url': self.get_model_url(ConnectManagerUserInfo, 'changelist')},
-                    {'title': '安全管理策略设置', 'url':  get_menu_url("sec_policy")},
+                    {'title': '安全管理策略设置', 'url':  self.get_model_url(SecurityPolicyRule, 'changelist')},
                     {'title': '安全事件响应处置', 'url': self.get_model_url(InfoSecEvent, 'changelist')},
-                    {'title': '安全变更管理', 'url': get_menu_url("sec_chk")},
+                    {'title': '安全变更管理', 'url': self.get_model_url(SecurityChangeAudit, 'changelist')},
                 ), "icon": "fa fa-cog"},
 
                 {'title': '审计机制管理', 'menus': (
-                    {'title': '审计策略集中管理', 'url': self.get_model_url(SystemPolicyCentralizedManagement, 'changelist')},
+                    {'title': '审计策略集中管理', 'url': self.get_model_url(AuditPolicyCentralizedManagement, 'changelist')},
                     {'title': '审计管理对象识别', 'url': self.get_model_url(AuditLogObject, 'changelist')},
-                    {'title': '审计管理策略设置', 'url': get_menu_url("aud_policy")},
+                    {'title': '审计管理策略设置', 'url': self.get_model_url(AuditPolicyRule, 'changelist')},
                     {'title': '审计事件响应处置', 'url': self.get_model_url(InfoSecEvent, 'changelist')},
-                    {'title': '审计变更管理', 'url': get_menu_url("aud_chk")},
+                    {'title': '审计变更管理', 'url': self.get_model_url(AuditChangeAudit, 'changelist') },
                 ), "icon": "fa fa-eye"},
 
                 {'title': '数据管理功能', 'menus': (

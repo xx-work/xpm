@@ -7,6 +7,8 @@ from ...models import ChangeAudit
 
 
 class ChangeAuditAdmin(object):
+    hidden_menu = True
+
     readonly_fields = ("opreate_username", )
     list_display = ('change_name', 'change_type', 'change_obj', 'change_desc', 'change_stat')
     list_filter = ['change_type', ]
@@ -26,3 +28,5 @@ class LogAdmin2(LogAdmin):
 
 xadmin.site.unregister(Log)
 xadmin.site.register(Log, LogAdmin2)
+
+from .sbf.adminx import *

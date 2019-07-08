@@ -6,19 +6,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a879713-0b59-4f63-8b0e-5ef7e459e8e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mgsd/adminx/_2_policy/self/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mgsd/adminx/_3_monitor/sys/adminx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gtest/pentest.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent/templates/mgsd/tools/importexport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mgsd/adminx/_5_chk/sbf/adminx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mgsd/xadmin/plugins/self_list_plugin_show.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_0_center/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_0_center/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mgsd/adminx/_2_policy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_2_policy/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_2_policy/self/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_2_policy/sys/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_2_policy/sbf/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_3_monitor/sys/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_3_monitor/sys/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_5_chk/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_5_chk/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgsd/adminx/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgsd/api/backer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/api/backer/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgsd/api/center/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgsd/api/center/utils/system/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mgsd/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/api/none4cso/system/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/api/none4cso/system/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/api/policy/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/api/policy/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dev/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dev/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gtest/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../gtest/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgsd/api/none4cso/system/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgsd/api/none4cso/system/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/api/none4cso/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgsd/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgsd/xadmin/utils/self_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/xadmin/utils/self_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../logs/cso.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/cso.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,10 +63,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py">
+        <entry file="file://$PROJECT_DIR$/mgsd/adminx/_5_chk/sbf/adminx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="310">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="e#16#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgsd/adminx/_5_chk/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -68,58 +87,53 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gtest/pentest.md">
+        <entry file="file://$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-482">
+              <caret line="65" column="42" lean-forward="true" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgsd/api/backer/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="66">
-                <caret line="3" selection-start-line="3" selection-end-line="3" />
-              </first_editor>
+              <first_editor />
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgsd/adminx/_6_backer/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgsd/api/backer/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mgsd/adminx/_0_center/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="132">
-                <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgsd/adminx/_2_policy/__init__.py">
+        <entry file="file://$PROJECT_DIR$/mgsd/api/chk/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgsd/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="154">
-                <caret line="7" selection-start-line="7" selection-end-line="7" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgsd/api/none4cso/system/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+            <state relative-caret-position="540">
+              <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -128,43 +142,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgsd/adminx/_3_monitor/sys/adminx.py">
+        <entry file="file://$PROJECT_DIR$/mgsd/api/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="286">
+              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgsd/adminx/_2_policy/sys/adminx.py">
+        <entry file="file://$PROJECT_DIR$/mgsd/adminx/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="e#16#29#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="418">
+              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgsd/adminx/_2_policy/self/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="44">
-                <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgsd/api/policy/models.py">
+        <entry file="file://$PROJECT_DIR$/mgsd/api/none4cso/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="85" selection-end-column="75" />
+            <state relative-caret-position="232">
+              <caret line="49" column="6" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -178,19 +177,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pub</find>
-      <find>website</find>
-      <find>Asia</find>
-      <find>BEAT</find>
-      <find>conf</find>
       <find>.conf</find>
       <find>CELERY_ACCEPT_CONTENT</find>
       <find>CELERY_WORKER_REDIRECT_STDOUTS</find>
@@ -216,6 +210,11 @@
       <find>scanner</find>
       <find>CELERY</find>
       <find>STATES</find>
+      <find>UserManager</find>
+      <find>perm</find>
+      <find>object_list_template</find>
+      <find>has_add_permission</find>
+      <find>ChangeAuditAdmin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -224,14 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/secs/adminx/__init__.py" />
-        <option value="$PROJECT_DIR$/mgsd/xadmin/sites/unregisterd.py" />
-        <option value="$PROJECT_DIR$/ops/celery/__init__.py" />
-        <option value="$PROJECT_DIR$/agent/snmpd/snmp/models.py" />
-        <option value="$PROJECT_DIR$/agent/sscripts/logd/snmpd.conf" />
-        <option value="$PROJECT_DIR$/mgsd/adminx/_5_chk/__init__.py" />
-        <option value="$PROJECT_DIR$/mgsd/url_confs.py" />
-        <option value="$PROJECT_DIR$/website/settings.py" />
         <option value="$PROJECT_DIR$/mgsd/tests.py" />
         <option value="$PROJECT_DIR$/agent/django_celery_beat.md" />
         <option value="$PROJECT_DIR$/../gtest/openvas_ub1804/sources.list" />
@@ -245,7 +236,6 @@
         <option value="$PROJECT_DIR$/agent/crypto/Dockerfile" />
         <option value="$PROJECT_DIR$/mgsd/xint/2019_09_21_inital_platcops_info.py" />
         <option value="$PROJECT_DIR$/mgsd/api/center/vmodels/models.py" />
-        <option value="$PROJECT_DIR$/mgsd/api/backer/models.py" />
         <option value="$PROJECT_DIR$/../docker-compose.yml" />
         <option value="$PROJECT_DIR$/mgsd/api/center/vmodels/system/models.py" />
         <option value="$PROJECT_DIR$/mgsd/adminx/_3_monitor/__init__.py" />
@@ -255,34 +245,43 @@
         <option value="$PROJECT_DIR$/agent/sscripts/readme.md" />
         <option value="$PROJECT_DIR$/mgsd/api/center/models.py" />
         <option value="$PROJECT_DIR$/mgsd/adminx/_1_xobj/__init__.py" />
-        <option value="$PROJECT_DIR$/mgsd/adminx/readme.md" />
-        <option value="$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py" />
         <option value="$PROJECT_DIR$/mgsd/api/solution/models.py" />
         <option value="$PROJECT_DIR$/mgsd/views.py" />
         <option value="$PROJECT_DIR$/../gtest/readme.md" />
-        <option value="$PROJECT_DIR$/mgsd/xadmin/utils/self_utils.py" />
         <option value="$PROJECT_DIR$/mgsd/xadmin/__init__.py" />
         <option value="$PROJECT_DIR$/../dev/readme.md" />
         <option value="$PROJECT_DIR$/../gtest/social-engineer-toolkit/Dockerfile" />
         <option value="$PROJECT_DIR$/../gtest/pentest.md" />
         <option value="$PROJECT_DIR$/mgsd/readme.md" />
-        <option value="$PROJECT_DIR$/mgsd/api/none4cso/system/models.py" />
-        <option value="$PROJECT_DIR$/mgsd/adminx/_3_monitor/sys/adminx.py" />
-        <option value="$PROJECT_DIR$/mgsd/api/models.py" />
-        <option value="$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py" />
         <option value="$PROJECT_DIR$/mgsd/api/policy/models.py" />
-        <option value="$PROJECT_DIR$/mgsd/adminx/_2_policy/__init__.py" />
         <option value="$PROJECT_DIR$/mgsd/adminx/_2_policy/self/readme.md" />
         <option value="$PROJECT_DIR$/mgsd/adminx/_2_policy/sys/adminx.py" />
         <option value="$PROJECT_DIR$/mgsd/adminx/_0_center/readme.md" />
+        <option value="$PROJECT_DIR$/mgsd/xadmin/plugins/self_list_plugin_show.py" />
+        <option value="$PROJECT_DIR$/agent/templates/mgsd/tools/importexport.html" />
+        <option value="$PROJECT_DIR$/mgsd/api/none4cso/system/models.py" />
+        <option value="$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py" />
+        <option value="$PROJECT_DIR$/mgsd/templates/cso/xadmin/list_model.html" />
+        <option value="$PROJECT_DIR$/mgsd/xadmin/utils/self_utils.py" />
+        <option value="$PROJECT_DIR$/mgsd/adminx/_2_policy/__init__.py" />
+        <option value="$PROJECT_DIR$/mgsd/adminx/_2_policy/sbf/adminx.py" />
+        <option value="$PROJECT_DIR$/mgsd/models.py" />
+        <option value="$PROJECT_DIR$/mgsd/api/models.py" />
+        <option value="$PROJECT_DIR$/mgsd/adminx/readme.md" />
+        <option value="$PROJECT_DIR$/mgsd/adminx/_3_monitor/sys/adminx.py" />
+        <option value="$PROJECT_DIR$/mgsd/api/none4cso/models.py" />
+        <option value="$PROJECT_DIR$/mgsd/adminx/_5_chk/__init__.py" />
+        <option value="$PROJECT_DIR$/mgsd/api/backer/models.py" />
+        <option value="$PROJECT_DIR$/mgsd/adminx/_5_chk/sbf/adminx.py" />
+        <option value="$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1942" />
-    <option name="y" value="159" />
+    <option name="x" value="1827" />
+    <option name="y" value="105" />
     <option name="width" value="1514" />
-    <option name="height" value="908" />
+    <option name="height" value="870" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -292,6 +291,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -301,81 +301,30 @@
             </path>
             <path>
               <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="adminx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="adminx" type="462c0819:PsiDirectoryNode" />
-              <item name="_0_center" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="adminx" type="462c0819:PsiDirectoryNode" />
-              <item name="_2_policy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="adminx" type="462c0819:PsiDirectoryNode" />
-              <item name="_2_policy" type="462c0819:PsiDirectoryNode" />
-              <item name="sys" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="adminx" type="462c0819:PsiDirectoryNode" />
-              <item name="_3_monitor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
               <item name="gtest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../requirements/requirements.txt" />
+    <property name="last_opened_file_path" value="E:/cso_recode" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\xpm\apps\mgsd\api\none4cso" />
       <recent name="E:\xpm\apps\mgsd\api\none4cso\system" />
       <recent name="E:\xpm\apps\mgsd\api\center\vmodels\system" />
       <recent name="E:\xpm\apps\manager\xadmin\views" />
       <recent name="E:\xpm\apps\manager\xadmin\utils" />
-      <recent name="E:\xpm\gtest\shallnoxbox\build" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -498,11 +447,12 @@
       <workItem from="1562200573356" duration="14979000" />
       <workItem from="1562287637819" duration="20461000" />
       <workItem from="1562373948761" duration="18193000" />
+      <workItem from="1562545046417" duration="12233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247817000" />
+    <option name="totallyTimeSpent" value="260050000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -514,17 +464,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1942" y="159" width="1514" height="908" extended-state="0" />
-    <editor active="true" />
+    <frame x="1827" y="105" width="1514" height="870" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14540467" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15226337" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
       <window_info id="Project Explorer" order="4" />
       <window_info id="Job Explorer" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4994681" weight="0.16576965" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4994681" weight="0.16554509" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4979424" weight="0.28716645" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39726028" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -542,7 +491,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.025377229" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.025377229" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16529493" />
@@ -587,235 +536,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ops/flower/api.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/api/center/vmodels/system/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/mgsd/api/center/vmodels/system/models.py" />
-    <entry file="file://$PROJECT_DIR$/mgsd/api/none4cso/system/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/api/none4cso/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="44">
-            <caret line="2" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1320">
-            <caret line="60" column="36" lean-forward="true" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent/sscripts/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="352">
-            <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent/sscripts/logd/snmpd.conf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent/static/agent/js/liandong.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agent/static/agent/css/bootstrap-table.min.css" />
-    <entry file="file://$PROJECT_DIR$/mgsd/api/center/models.py" />
-    <entry file="file://F:/workspace/cso_venv/Lib/site-packages/xadmin/views/list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1290">
-          <caret line="100" column="6" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/api/xobj/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="51" column="12" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/api/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://F:/workspace/cso_venv/Lib/site-packages/xadmin/views/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="143" column="8" selection-start-line="143" selection-start-column="8" selection-end-line="143" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_5_chk/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_4_solution/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_1_xobj/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/xadmin/utils/hockd_utils.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="325" column="14" selection-start-line="325" selection-start-column="14" selection-end-line="325" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/url_confs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="17" selection-start-line="6" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_6_backer/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/adminx/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="308">
-            <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ops/celery/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/api/backer/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/api/chk/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/api/chk/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-246">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gtest/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="660">
-            <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/xadmin/utils/self_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="65" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/api/solution/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="90" column="1" lean-forward="true" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="47" column="88" selection-start-line="47" selection-start-column="88" selection-end-line="47" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../gtest/downloads_requests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -836,13 +556,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gtest/social-engineer-toolkit/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../gtest/social-engineer-toolkit/Dockerfile" />
     <entry file="file://$PROJECT_DIR$/mgsd/xadmin/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -850,33 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/api/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="154">
-            <caret line="7" selection-start-line="7" selection-end-line="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -900,60 +587,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_3_monitor/sys/adminx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/api/none4cso/system/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/api/policy/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="85" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_2_policy/self/readme.md">
+    <entry file="file://$PROJECT_DIR$/mgsd/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="44">
-            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <first_editor relative-caret-position="154">
+            <caret line="7" selection-start-line="7" selection-end-line="7" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_2_policy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_2_policy/sys/adminx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#16#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -961,9 +601,325 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="132">
-            <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+            <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/workspace/cso_venv/Lib/site-packages/django/contrib/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8969">
+          <caret line="1" column="75" selection-start-line="1" selection-start-column="64" selection-end-line="1" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/xadmin/plugins/tplugin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/templates/cso/plugins/top_toolbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent/templates/mgsd/tools/importexport.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_2_policy/self/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="44">
+            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/xadmin/plugins/self_list_plugin_show.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/api/solution/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="90" column="1" lean-forward="true" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/api/center/utils/system/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/api/none4cso/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#15#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="47" column="88" selection-start-line="47" selection-start-column="88" selection-end-line="47" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/url_confs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-394">
+          <caret line="6" column="17" selection-start-line="6" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/xadmin/utils/hockd_utils.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/api/center/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/templates/cso/xadmin/list_model.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-946">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="110" selection-start-line="27" selection-start-column="100" selection-end-line="27" selection-end-column="110" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/workspace/cso_venv/Lib/site-packages/xadmin/views/list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="378" column="49" selection-start-line="378" selection-start-column="49" selection-end-line="378" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/api/policy/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="81" column="17" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/xadmin/utils/self_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/workspace/cso_venv/Lib/site-packages/xadmin/views/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="188" column="26" lean-forward="true" selection-start-line="188" selection-start-column="26" selection-end-line="188" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/api/xobj/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-230">
+          <caret line="84" column="12" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_2_policy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/adminx/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="396">
+            <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_2_policy/sbf/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="44" />
+          <folding>
+            <element signature="e#16#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_3_monitor/sys/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#16#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/xadmin/sites/unregisterd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/adminx/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/api/none4cso/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="49" column="6" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_6_backer/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/api/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_5_chk/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_5_chk/sbf/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#16#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-482">
+          <caret line="65" column="42" lean-forward="true" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/api/backer/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/api/backer/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/api/chk/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

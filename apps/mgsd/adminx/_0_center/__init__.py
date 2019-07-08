@@ -1,5 +1,5 @@
 import xadmin
-from ...api.models import SystemPolicyCentralizedManagement
+from ...api.models import SystemPolicyCentralizedManagement, AuditPolicyCentralizedManagement, SecurityPolicyCentralizedManagement
 from xadmin.views import ListAdminView
 from .._1_xobj import SysManagerCopInfo, ConnectManagerUserInfo
 
@@ -7,6 +7,7 @@ from ...models import BackUpHistory
 # from ...xadmin.utils.self_utils import get_markd_table_details_show
 
 
+# @xadmin.sites.register(SystemPolicyCentralizedManagement)
 class SystemPolicyCentralizedManagementAdmin(ListAdminView):
 
     def cop_self(self, instance):
@@ -51,3 +52,5 @@ class SystemPolicyCentralizedManagementAdmin(ListAdminView):
 
 
 xadmin.site.register(SystemPolicyCentralizedManagement, SystemPolicyCentralizedManagementAdmin)
+xadmin.site.register(SecurityPolicyCentralizedManagement, SystemPolicyCentralizedManagementAdmin)
+xadmin.site.register(AuditPolicyCentralizedManagement, SystemPolicyCentralizedManagementAdmin)

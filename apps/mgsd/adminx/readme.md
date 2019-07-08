@@ -12,3 +12,7 @@
 ## 2019-7-1
 - https://wenku.baidu.com/view/d0b9472180eb6294dc886c98.html
 
+
+## 2019-7-3
+- 对应 `xadmin/sbf` 三板斧服务视图。
+

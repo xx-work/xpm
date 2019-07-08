@@ -16,5 +16,5 @@ class BackUpHistory(models.Model):
 
     class Meta:
         db_table="backup_hostory"
-        verbose_name="备份记录"
+        verbose_name="系统备份"
         ordering = ('-date_created', )

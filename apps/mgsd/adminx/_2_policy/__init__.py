@@ -27,7 +27,7 @@ class PolicyBenchAdmin(object):
 class PolicyActionAdmin(object):
     hidden_menu = True
     def pushed(self, instance):
-        return """<a href="/sys/pushed?sid={}">策略下发</a>""".format( str(instance.id) )
+        return """<a href="/sbf/pushed?sid={}">策略下发</a>""".format( str(instance.id) )
     pushed.short_description = "策略下发"
     pushed.allow_tags = True
     pushed.is_column = True
@@ -38,6 +38,7 @@ class PolicyActionAdmin(object):
 
 class PolicyRuleAdmin(object):
     hidden_menu = True
+
     def policy_type(self, instance):
         return instance.policy_bench.get_type_display()
     policy_type.short_description = "策略类型"
@@ -108,4 +109,4 @@ xadmin.site.register(PolicyRule, PolicyRuleAdmin)
 xadmin.site.register(PolicyActionHistory, PolicyHistoryAdmin)
 
 
-from .sys.adminx import *
+from .sbf.adminx import *

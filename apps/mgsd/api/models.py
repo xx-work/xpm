@@ -1,7 +1,9 @@
 # coding:utf-8
 
 # 三板斧之一 系统部件管理需要的models
-from ..api.none4cso.system.models import *
+from ..api.none4cso.models import *
+# 上面的models可以永不注册。
+
 
 from .xobj.models import SysManagerCopInfo, ConnectManagerUserInfo, AuditLogObject
 
@@ -14,9 +16,3 @@ from .chk.models import ChangeAudit
 from .solution.models import InfoSecEvent, AttackerActionDesc, EffectInfo, InfoGoin
 
 from .backer.models import BackUpHistory
-
-
-
-
-
-
