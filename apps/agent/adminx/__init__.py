@@ -17,6 +17,9 @@ class SnmpAgentCfgInfoAdmin(object):
 class SnmpHostDataAdmin(object):
     isExecute = True
 
+    list_display_links = None
+    remove_permissions = ['add', 'change', 'delete']
+
     def send_flow_m(self, instance):
         return round(float(instance.send_flow / 1024 / 1024), 3)
     send_flow_m.short_description = "发送字节数(M)"

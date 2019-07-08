@@ -44,11 +44,6 @@ class GlobalSetting(object):
 
         return (
                 {'title': '安全策略及安全责任管理', 'menus': (
-                    # {'title': '组织机构角色责任和权限管理', 'url': reverse('test_input', kwargs={'pk': 1}), },
-                    # {'title': '组织的安全和管理', 'url': reverse('test_input', kwargs={'pk': 2}), },
-                    # {'title': '组织的信息安全责任制度管理', 'url': reverse('test_input', kwargs={'pk': 3}), },
-                    # {'title': '平台管理员用户管理', 'url': reverse('test_input', kwargs={'pk': 4}), },
-                    # {'title': '平台管理员安全责任管理', 'url': reverse('test_input', kwargs={'pk': 5}), },
                     {'title': '组织机构角色责任和权限管理', 'url': self.get_model_url(Community, 'changelist'), },
                     {'title': '组织的安全和管理', 'url': self.get_model_url(Permission, 'changelist'), },
                     {'title': '组织的信息安全责任制度管理', 'url': self.get_model_url(Group, 'changelist'), },
@@ -71,6 +66,7 @@ class GlobalSetting(object):
                     {'title': '安全策略集中管理', 'url': self.get_model_url(SecurityPolicyCentralizedManagement, 'changelist')},
                     {'title': '安全管理对象识别', 'url': self.get_model_url(ConnectManagerUserInfo, 'changelist')},
                     {'title': '安全管理策略设置', 'url':  self.get_model_url(SecurityPolicyRule, 'changelist')},
+                    {'title': '安全机制审计监控', 'url':  '/fdafdsafds'},
                     {'title': '安全事件响应处置', 'url': self.get_model_url(SecurityEventResponseSolve, 'changelist')},
                     {'title': '安全变更管理', 'url': self.get_model_url(SecurityChangeAudit, 'changelist')},
                 ), "icon": "fa fa-cog"},
@@ -79,6 +75,7 @@ class GlobalSetting(object):
                     {'title': '审计策略集中管理', 'url': self.get_model_url(AuditPolicyCentralizedManagement, 'changelist')},
                     {'title': '审计管理对象识别', 'url': self.get_model_url(AuditLogObject, 'changelist')},
                     {'title': '审计管理策略设置', 'url': self.get_model_url(AuditPolicyRule, 'changelist')},
+                    {'title': '审计机制运行监控', 'url': '/234232ewr'},
                     {'title': '审计事件响应处置', 'url': self.get_model_url(AuditEventResponseSolve, 'changelist')},
                     {'title': '审计变更管理', 'url': self.get_model_url(AuditChangeAudit, 'changelist') },
                 ), "icon": "fa fa-eye"},

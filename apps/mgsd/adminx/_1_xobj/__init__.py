@@ -59,6 +59,25 @@ class ConnectManagerUserInfoAdmin(object):
 # 2019-6-22 生产环境下; 一定没有这个 editable 的; 不软不受平台监控。
 
 
+class AuditLogObjectAdmin(object):
+
+    def cop_connect_user(self, instance):
+        show_detaild = lambda x : """<a data-res-uri="{based_url}{id}/detail/" data-edit-uri="{based_url}{id}/update/" 
+        class="details-handler" rel="tooltip" title="{name}"> {name}<i class="fa fa-info-circle"></i> </a>  """.format(
+            based_url=self.get_model_url(ConnectManagerUserInfo, 'changelist'), id=x.id, name=x.name
+        )
+
+        links = "<ul><li>" + "</li><li>".join([show_detaild(x) for x in instance.managers.all()]) + "</li></ul>"
+        from django.utils.safestring import mark_safe
+        return mark_safe(links)
+    cop_connect_user.short_description = "管理员用户集"
+    cop_connect_user.allow_tags = True
+    cop_connect_user.is_column = True
+
+    list_filter = ['name', 'cop', 'state', ]
+    list_display = ['name', 'cop', 'table_name', 'cop_connect_user', 'state', 'date_created']
+
+
 xadmin.site.register(SysManagerCopInfo, SysManagerCopInfoAdmin)
 xadmin.site.register(ConnectManagerUserInfo, ConnectManagerUserInfoAdmin)
-xadmin.site.register(AuditLogObject)
+xadmin.site.register(AuditLogObject, AuditLogObjectAdmin)

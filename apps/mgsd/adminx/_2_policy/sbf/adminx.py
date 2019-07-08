@@ -50,16 +50,16 @@ class SystemCopPolicyRuleAdmin(ListAdminView):
         return qs
 
 
-class AuditPolicyRuleAdmin(ListAdminView):
-    def queryset(self):
-        return PolicyRule.objects.filter(policy_bench__type=PolicyBaseTypes[2][0])
-
-
-class SecurityPolicyRuleAdmin(ListAdminView):
+class SecurityPolicyRuleAdmin(SystemCopPolicyRuleAdmin):
     def queryset(self):
         return PolicyRule.objects.filter(policy_bench__type=PolicyBaseTypes[1][0])
 
 
+class AuditPolicyRuleAdmin(SystemCopPolicyRuleAdmin):
+    def queryset(self):
+        return PolicyRule.objects.filter(policy_bench__type=PolicyBaseTypes[2][0])
+
+
 xadmin.site.register(SystemPolicyRule, SystemCopPolicyRuleAdmin)
-xadmin.site.register(AuditPolicyRule, AuditPolicyRuleAdmin)
 xadmin.site.register(SecurityPolicyRule, SecurityPolicyRuleAdmin)
+xadmin.site.register(AuditPolicyRule, AuditPolicyRuleAdmin)
