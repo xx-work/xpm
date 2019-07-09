@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a879713-0b59-4f63-8b0e-5ef7e459e8e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/apps.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_4_solution/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_4_solution/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_4_solution/sbf/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_4_solution/sbf/adminx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/api/solution/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/api/solution/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/xint/2019_07_08_inital_infoevents.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/xint/2019_07_08_inital_infoevents.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/xtool/log2solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/xtool/log2solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/apps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/apps.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dev/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dev/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../logs/cso.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/cso.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,18 +42,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgsd/adminx/_1_xobj/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mgsd/xint/2019_07_08_inital_infoevents.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
@@ -75,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/mgsd/adminx/_5_chk/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="682">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -87,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/mgsd/adminx/_4_solution/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="660">
-              <caret line="84" column="27" lean-forward="true" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+              <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -99,7 +78,7 @@
         <entry file="file://F:/workspace/cso_venv/Lib/site-packages/xadmin/views/detail.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4">
-              <caret line="243" column="9" lean-forward="true" selection-start-line="243" selection-start-column="9" selection-end-line="243" selection-end-column="9" />
+              <caret line="243" column="9" selection-start-line="243" selection-start-column="9" selection-end-line="243" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -108,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
-              <caret line="62" column="41" lean-forward="true" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
+              <caret line="62" column="41" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -120,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/mgsd/adminx/_4_solution/sbf/adminx.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="748">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="e#16#54#0" expanded="true" />
               </folding>
@@ -132,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/mgsd/adminx/_3_monitor/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="858">
-              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -144,19 +123,31 @@
         <entry file="file://$PROJECT_DIR$/mgsd/xtool/log2solution.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgsd/api/solution/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="86">
+              <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mgsd/api/solution/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/../dev/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="682">
+                <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -219,7 +210,6 @@
         <option value="$PROJECT_DIR$/mgsd/views.py" />
         <option value="$PROJECT_DIR$/../gtest/readme.md" />
         <option value="$PROJECT_DIR$/mgsd/xadmin/__init__.py" />
-        <option value="$PROJECT_DIR$/../dev/readme.md" />
         <option value="$PROJECT_DIR$/../gtest/social-engineer-toolkit/Dockerfile" />
         <option value="$PROJECT_DIR$/../gtest/pentest.md" />
         <option value="$PROJECT_DIR$/mgsd/readme.md" />
@@ -264,6 +254,7 @@
         <option value="$PROJECT_DIR$/mgsd/adminx/_4_solution/sbf/adminx.py" />
         <option value="$PROJECT_DIR$/mgsd/adminx/_4_solution/__init__.py" />
         <option value="$PROJECT_DIR$/mgsd/api/solution/models.py" />
+        <option value="$PROJECT_DIR$/../dev/readme.md" />
       </list>
     </option>
   </component>
@@ -290,46 +281,7 @@
             </path>
             <path>
               <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="adminx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="adminx" type="462c0819:PsiDirectoryNode" />
-              <item name="_6_backer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="xadmin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="xadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="sites" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="xint" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -342,7 +294,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/cso_recode" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dev" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -522,12 +474,12 @@
       <workItem from="1562287637819" duration="20461000" />
       <workItem from="1562373948761" duration="18193000" />
       <workItem from="1562545046417" duration="25473000" />
-      <workItem from="1562631404862" duration="3784000" />
+      <workItem from="1562631404862" duration="3964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277074000" />
+    <option name="totallyTimeSpent" value="277254000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -614,16 +566,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mgsd/api/monitor/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="396">
-            <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mgsd/api/backer/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -918,7 +860,7 @@
     <entry file="file://$PROJECT_DIR$/mgsd/adminx/_1_xobj/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
-          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -928,7 +870,7 @@
     <entry file="file://$PROJECT_DIR$/mgsd/xtool/log2solution.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
     </entry>
@@ -942,7 +884,7 @@
     <entry file="file://$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="62" column="41" lean-forward="true" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
+          <caret line="62" column="41" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -952,7 +894,7 @@
     <entry file="file://$PROJECT_DIR$/mgsd/adminx/_5_chk/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -962,7 +904,7 @@
     <entry file="file://$PROJECT_DIR$/mgsd/adminx/_4_solution/sbf/adminx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="e#16#54#0" expanded="true" />
           </folding>
@@ -972,7 +914,7 @@
     <entry file="file://$PROJECT_DIR$/mgsd/adminx/_3_monitor/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
-          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -982,14 +924,14 @@
     <entry file="file://F:/workspace/cso_venv/Lib/site-packages/xadmin/views/detail.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4">
-          <caret line="243" column="9" lean-forward="true" selection-start-line="243" selection-start-column="9" selection-end-line="243" selection-end-column="9" />
+          <caret line="243" column="9" selection-start-line="243" selection-start-column="9" selection-end-line="243" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mgsd/adminx/_4_solution/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
-          <caret line="84" column="27" lean-forward="true" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+          <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -998,11 +940,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mgsd/api/solution/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
+        <state relative-caret-position="86">
           <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../dev/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="682">
+            <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
