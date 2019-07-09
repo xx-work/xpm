@@ -6,31 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3a879713-0b59-4f63-8b0e-5ef7e459e8e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/migrations/0002_auto_20190705_1535.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_1_xobj/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_1_xobj/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_3_monitor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_3_monitor/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_4_solution/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_4_solution/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_4_solution/sbf/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_4_solution/sbf/adminx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/api/chk/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/api/chk/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/api/monitor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/api/monitor/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/api/none4cso/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/api/none4cso/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/migrations/0002_auto_20190705_1535.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/migrations/0003_auto_20190705_1553.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/migrations/0004_auto_20190708_1529.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/migrations/0005_auto_20190708_1543.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/migrations/0006_auto_20190708_1724.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/migrations/0007_auto_20190709_0822.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/migrations/0008_auto_20190709_0827.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/migrations/0009_infosecevent_extra.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/xadmin/sites/nav_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/xtool/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/xtool/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ops/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/ops/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secs/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/secs/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../logs/cso.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/cso.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="47" column="75" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="75" />
+            <state relative-caret-position="1022">
+              <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -139,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mgsd/adminx/_1_xobj/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="89" column="31" lean-forward="true" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
+            <state relative-caret-position="441">
+              <caret line="178" column="53" selection-start-line="178" selection-start-column="53" selection-end-line="178" selection-end-column="53" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -281,7 +256,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1886" />
     <option name="y" value="111" />
     <option name="width" value="1514" />
@@ -311,42 +286,7 @@
               <item name="apps" type="b2602c69:ProjectViewProjectNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="adminx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="adminx" type="462c0819:PsiDirectoryNode" />
-              <item name="_0_center" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="adminx" type="462c0819:PsiDirectoryNode" />
-              <item name="_1_xobj" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="adminx" type="462c0819:PsiDirectoryNode" />
-              <item name="_2_policy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="adminx" type="462c0819:PsiDirectoryNode" />
-              <item name="_2_policy" type="462c0819:PsiDirectoryNode" />
-              <item name="sbf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
-              <item name="xtool" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="apps" type="b2602c69:ProjectViewProjectNode" />
@@ -547,12 +487,12 @@
       <workItem from="1562287637819" duration="20461000" />
       <workItem from="1562373948761" duration="18193000" />
       <workItem from="1562545046417" duration="25473000" />
-      <workItem from="1562631404862" duration="11814000" />
+      <workItem from="1562631404862" duration="13229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285104000" />
+    <option name="totallyTimeSpent" value="286519000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -999,16 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_1_xobj/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="89" column="31" lean-forward="true" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mgsd/adminx/_2_policy/sbf/adminx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1021,8 +951,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mgsd/adminx/_0_center/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="47" column="75" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="75" />
+        <state relative-caret-position="1022">
+          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/adminx/_1_xobj/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="178" column="53" selection-start-line="178" selection-start-column="53" selection-end-line="178" selection-end-column="53" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
