@@ -8,6 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/apps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/apps.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dev/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dev/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtest/pentest.md" beforeDir="false" afterPath="$PROJECT_DIR$/../gtest/pentest.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtest/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../gtest/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../logs/cso.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/cso.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,15 +43,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgsd/xint/2019_07_08_inital_infoevents.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mgsd/adminx/_5_chk/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,15 +113,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgsd/xtool/log2solution.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mgsd/api/solution/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="86">
@@ -140,12 +124,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../dev/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="682">
                 <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gtest/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="726">
+                <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../gtest/pentest.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="88">
+                <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               </first_editor>
               <second_editor />
             </state>
@@ -208,10 +216,8 @@
         <option value="$PROJECT_DIR$/agent/sscripts/readme.md" />
         <option value="$PROJECT_DIR$/mgsd/api/center/models.py" />
         <option value="$PROJECT_DIR$/mgsd/views.py" />
-        <option value="$PROJECT_DIR$/../gtest/readme.md" />
         <option value="$PROJECT_DIR$/mgsd/xadmin/__init__.py" />
         <option value="$PROJECT_DIR$/../gtest/social-engineer-toolkit/Dockerfile" />
-        <option value="$PROJECT_DIR$/../gtest/pentest.md" />
         <option value="$PROJECT_DIR$/mgsd/readme.md" />
         <option value="$PROJECT_DIR$/mgsd/api/policy/models.py" />
         <option value="$PROJECT_DIR$/mgsd/adminx/_2_policy/self/readme.md" />
@@ -255,6 +261,8 @@
         <option value="$PROJECT_DIR$/mgsd/adminx/_4_solution/__init__.py" />
         <option value="$PROJECT_DIR$/mgsd/api/solution/models.py" />
         <option value="$PROJECT_DIR$/../dev/readme.md" />
+        <option value="$PROJECT_DIR$/../gtest/readme.md" />
+        <option value="$PROJECT_DIR$/../gtest/pentest.md" />
       </list>
     </option>
   </component>
@@ -283,6 +291,10 @@
               <item name="apps" type="b2602c69:ProjectViewProjectNode" />
               <item name="dev" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gtest" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -294,7 +306,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dev" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gtest" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -474,12 +486,12 @@
       <workItem from="1562287637819" duration="20461000" />
       <workItem from="1562373948761" duration="18193000" />
       <workItem from="1562545046417" duration="25473000" />
-      <workItem from="1562631404862" duration="3964000" />
+      <workItem from="1562631404862" duration="4130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277254000" />
+    <option name="totallyTimeSpent" value="277420000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -566,24 +578,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mgsd/api/backer/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/api/backer/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mgsd/api/monitor/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="764">
@@ -953,6 +947,26 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="682">
             <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gtest/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="726">
+            <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gtest/pentest.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="88">
+            <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           </first_editor>
           <second_editor />
         </state>
