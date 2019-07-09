@@ -57,8 +57,8 @@ class GlobalSetting(object):
                     {'title': '系统管理对象识别', 'url': self.get_model_url(SysManagerCopInfo, 'changelist')},
                     {'title': '系统管理策略设置', 'url': self.get_model_url(SystemPolicyRule, 'changelist')},
                     {'title': '系统部件运行监控', 'url': '/fffffffffffffffff'},
-                    {'title': '系统事件响应处置', 'url': self.get_model_url(InfoSecEvent, 'changelist')},
-                    {'title': '系统变更管理', 'url':  self.get_model_url(SystemEventResponseSolve, 'changelist')},
+                    {'title': '系统事件响应处置', 'url': self.get_model_url(SystemEventResponseSolve, 'changelist')},
+                    {'title': '系统变更管理', 'url':  self.get_model_url(SystemChangeAudit, 'changelist')},
                     {'title': '灾难备份及恢复管理', 'url': self.get_model_url(BackUpHistory, 'changelist')},
                 ), "icon": "fa fa-html5"},
 

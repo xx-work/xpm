@@ -5,8 +5,12 @@ from ...models import InfoSecEvent, InfoGoin, EffectInfo, AttackerActionDesc
 from mgsd.xadmin.actions.change_views_read import ViewdAction
 
 
+from xadmin.views import DetailAdminView
+
+
 class InfoSecEventAdmin(object):
-    isExecute = True
+    # isExecute = True
+    hidden_menu = True
 
     list_display = ['info_source', 'info_type', 'describtion',
                     'info_level', 'descover_time', 'happend_time', 'reporter', 'report_time']
