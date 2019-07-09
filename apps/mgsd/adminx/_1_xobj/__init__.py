@@ -1,13 +1,14 @@
 import xadmin
 from xadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Side
-from xadmin.views.base import get_content_type_for_model, ModelAdminView, force_text
-
+from xadmin.views import ListAdminView
 from mgsd.models import ChangeAudit
 
 from ...models import SysManagerCopInfo, ConnectManagerUserInfo, AuditLogObject
 
 
-class SysManagerCopInfoAdmin(ModelAdminView):
+class SysManagerCopInfoAdmin(object):
+    SelfFound = True
+
     list_filter = ['type', 'level', ]
     list_display = ['name', 'uniq_flag', 'pushed', 'up', 'ip', 'type', 'level', 'mac', 'os', 'mac_vendor', 'cop_connect_user']
     # list_editable = ['uniq_flag', 'ip', 'name', 'pushed']
@@ -177,3 +178,8 @@ class AuditLogObjectAdmin(object):
 xadmin.site.register(SysManagerCopInfo, SysManagerCopInfoAdmin)
 xadmin.site.register(ConnectManagerUserInfo, ConnectManagerUserInfoAdmin)
 xadmin.site.register(AuditLogObject, AuditLogObjectAdmin)
+
+from .views import *
+# 注册插件
+from .plugins import SystemCopSelfFoundPlugin
+# xadmin.site.register_plugin(SystemCopSelfFoundPlugin, SysManagerCopInfoAdmin)
