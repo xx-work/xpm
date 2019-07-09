@@ -127,6 +127,7 @@ class AuditLogObject(models.Model):
     managers = models.ManyToManyField("ConnectManagerUserInfo", verbose_name="审计管理用户",  related_name="audit_conn_users",blank=True)
     state = models.CharField(max_length=32, default="RUNING", verbose_name="状态", choices=STATES)
     date_created = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
+    showd = models.BooleanField(verbose_name='展示', default=True)
 
     def __str__(self):
         return self.name
