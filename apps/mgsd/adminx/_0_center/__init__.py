@@ -4,14 +4,19 @@ from xadmin.views import ListAdminView
 from .._1_xobj import SysManagerCopInfo, ConnectManagerUserInfo
 
 from ...models import BackUpHistory
-# from ...xadmin.utils.self_utils import get_markd_table_details_show
+from ...xadmin.utils.self_utils import get_markd_table_details_show
 
 
 # @xadmin.sites.register(SystemPolicyCentralizedManagement)
 class SystemPolicyCentralizedManagementAdmin(ListAdminView):
+    remove_permissions = ['add', 'change', 'delete']
+    show_bookmarks = False
+    list_display_links = None
 
     def cop_self(self, instance):
-        return instance
+        return get_markd_table_details_show(
+            url=self.get_model_url(SysManagerCopInfo, 'changelist', ) + "{id}/detail/".format(
+                id=instance.id), title=str(instance))
     cop_self.short_description = "部件本身"
     cop_self.allow_tags = True
     cop_self.is_column = True
@@ -41,10 +46,6 @@ class SystemPolicyCentralizedManagementAdmin(ListAdminView):
     cop_connect_user.is_column = True
 
     list_display = ['cop_self', 'cop_state', 'cop_connect_user', 'backuo2']
-    list_display_links = None
-
-    show_detail_fields = ('cop_self', )
-    show_bookmarks = False
 
     def queryset(self):
         qs = SysManagerCopInfo.objects.all()

@@ -29,7 +29,7 @@ class SystemEventResponseSolveAdmin(ListAdminView):
     get_report_user.short_description = "报告用户"
 
     def get_report_name(self, instance):
-        return instance.infosysname
+        return get_markd_table_details_show(self.get_model_url(InfoSecEvent, 'changelist') + str(instance.id) + "/detail/", title=instance.infosysname)
     get_report_name.short_description = "事件名"
 
     def get_report_time(self, instance):
@@ -53,11 +53,7 @@ class SystemEventResponseSolveAdmin(ListAdminView):
         return [x for x in InfoSecEventlevels if x[0] == instance.info_level][0][1]
     get_info_level.short_description = "事件等级"
 
-    def get_detailed_show(self, instance):
-        return get_markd_table_details_show(self.get_model_url(InfoSecEvent, 'changelist') + str(instance.id) + "/detail/", title='详情')
-    get_detailed_show.short_description = "事件详情"
-
-    list_display = ['get_report_name', 'get_change_obj', 'get_info_level', 'get_report_time', 'get_describtion', 'get_detailed_show']
+    list_display = ['get_report_name', 'get_change_obj', 'get_info_level', 'get_report_time', 'get_describtion', ]
 
     def queryset(self):
         qs = InfoSecEvent.objects.filter(plat_etype=PolicyBaseTypes[0][0], info_type=InfoSecEventTypes[1][0])

@@ -17,9 +17,6 @@ STATES = (
 from ..policy.models import PolicyBaseTypes
 from ..xobj.models import SysManagerCopInfo, ConnectManagerUserInfo
 
-from django.contrib.auth.models import User
-# 这里把平台用户省略，管理这个models 用 group
-
 
 class ObjProcess(models.Model):
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)
@@ -30,8 +27,6 @@ class ObjProcess(models.Model):
     date_created = models.DateTimeField(verbose_name="创建时间", auto_now_add=True)
 
     cop = models.ForeignKey(SysManagerCopInfo, verbose_name="系统部件", related_name="sys_cop_process", on_delete=models.CASCADE)
-    user = models.ForeignKey(ConnectManagerUserInfo, verbose_name="系统部件用户", related_name="sys_user_process", on_delete=models.CASCADE)
-    # plat_user = models.ManyToManyField(User, verbose_name="平台用户", related_name="plat_user_process", on_delete=models.CASCADE)
 
     def __str__(self):
         return str(self.cop.name) + "__" +  str(self.process_name)
@@ -50,6 +45,8 @@ class ProcessAuditLog(models.Model):
         db_table = "process_audit"
         verbose_name = "进程监控周期"
         ordering = ('-date_created',)
+
+
 ## 监控内容；
 ## 系统进程; 监控系统部件的系统管理是否发生变化。配置等。
 

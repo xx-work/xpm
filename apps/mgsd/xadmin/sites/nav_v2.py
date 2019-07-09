@@ -26,6 +26,7 @@ from mgsd.api.models import SystemPolicyCentralizedManagement, SecurityPolicyCen
 from mgsd.models import SecurityPolicyRule, AuditPolicyRule, SystemPolicyRule
 from mgsd.models import AuditChangeAudit, SecurityChangeAudit, SystemChangeAudit
 from mgsd.models import SecurityEventResponseSolve, SystemEventResponseSolve, AuditEventResponseSolve
+from mgsd.models import SystemRunningMonitor, SecurityRunningMonitor, AuditRunningMonitor
 
 
 @xadmin.sites.register(views.CommAdminView)
@@ -56,7 +57,7 @@ class GlobalSetting(object):
                     {'title': '系统策略集中管理', 'url': self.get_model_url(SystemPolicyCentralizedManagement, 'changelist') },
                     {'title': '系统管理对象识别', 'url': self.get_model_url(SysManagerCopInfo, 'changelist')},
                     {'title': '系统管理策略设置', 'url': self.get_model_url(SystemPolicyRule, 'changelist')},
-                    {'title': '系统部件运行监控', 'url': '/fffffffffffffffff'},
+                    {'title': '系统部件运行监控', 'url': self.get_model_url(SystemRunningMonitor, 'changelist')},
                     {'title': '系统事件响应处置', 'url': self.get_model_url(SystemEventResponseSolve, 'changelist')},
                     {'title': '系统变更管理', 'url':  self.get_model_url(SystemChangeAudit, 'changelist')},
                     {'title': '灾难备份及恢复管理', 'url': self.get_model_url(BackUpHistory, 'changelist')},
@@ -66,7 +67,7 @@ class GlobalSetting(object):
                     {'title': '安全策略集中管理', 'url': self.get_model_url(SecurityPolicyCentralizedManagement, 'changelist')},
                     {'title': '安全管理对象识别', 'url': self.get_model_url(ConnectManagerUserInfo, 'changelist')},
                     {'title': '安全管理策略设置', 'url':  self.get_model_url(SecurityPolicyRule, 'changelist')},
-                    {'title': '安全机制审计监控', 'url':  '/fdafdsafds'},
+                    {'title': '安全机制审计监控', 'url': self.get_model_url(SecurityRunningMonitor, 'changelist')},
                     {'title': '安全事件响应处置', 'url': self.get_model_url(SecurityEventResponseSolve, 'changelist')},
                     {'title': '安全变更管理', 'url': self.get_model_url(SecurityChangeAudit, 'changelist')},
                 ), "icon": "fa fa-cog"},
@@ -75,7 +76,7 @@ class GlobalSetting(object):
                     {'title': '审计策略集中管理', 'url': self.get_model_url(AuditPolicyCentralizedManagement, 'changelist')},
                     {'title': '审计管理对象识别', 'url': self.get_model_url(AuditLogObject, 'changelist')},
                     {'title': '审计管理策略设置', 'url': self.get_model_url(AuditPolicyRule, 'changelist')},
-                    {'title': '审计机制运行监控', 'url': '/234232ewr'},
+                    {'title': '审计机制运行监控', 'url': self.get_model_url(AuditRunningMonitor, 'changelist')},
                     {'title': '审计事件响应处置', 'url': self.get_model_url(AuditEventResponseSolve, 'changelist')},
                     {'title': '审计变更管理', 'url': self.get_model_url(AuditChangeAudit, 'changelist') },
                 ), "icon": "fa fa-eye"},

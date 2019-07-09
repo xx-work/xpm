@@ -5,9 +5,6 @@ from ...models import InfoSecEvent, InfoGoin, EffectInfo, AttackerActionDesc
 from mgsd.xadmin.actions.change_views_read import ViewdAction
 
 
-from xadmin.views import DetailAdminView
-
-
 class InfoSecEventAdmin(object):
     # isExecute = True
     hidden_menu = True
@@ -17,13 +14,6 @@ class InfoSecEventAdmin(object):
     readonly_fields = ("reporter", "id")
 
     actions = [ViewdAction, ]
-    # wizard_form_list = [
-    #     ('事件内容', {'fields': ['infosysname', 'info_type', 'describtion', 'info_level']}),
-    #     ('发生和发现', {'fields': ['descover_time', 'happend_time', 'reporter']}),
-    #     ('事件性质', {'fields': ['negative_impacts', "attacker_descs"]}),
-    #     ('影响范围', {'fields': ['impact_cops']}),
-    #     ('计划措施', {'fields': ['plan_action']}),
-    # ]
 
     form_layout = (
         Main(
@@ -38,7 +28,7 @@ class InfoSecEventAdmin(object):
                         description="发生和发现",
                     ),
                     Fieldset(
-                        "事件性质", 'negative_impacts', "attacker_descs",
+                        "事件性质", 'negative_impacts', 'effect_info',
                         description="事件性质",
                     ),
                     Fieldset(
@@ -54,6 +44,14 @@ class InfoSecEventAdmin(object):
                 Fieldset(
                     "计划措施", 'plan_action',
                     description="计划措施",
+                ),
+            ),
+            Tab(
+                "故障事件额外补充",
+                # Fieldset("policy_action"),
+                Fieldset(
+                    "平台事件", 'plat_etype', 'extra',
+                    description="故障事件额外补充, 平台变更, 违规新增等。如果不是故障事件忽略。",
                 ),
             ),
 

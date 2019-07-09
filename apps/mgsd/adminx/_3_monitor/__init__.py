@@ -11,7 +11,7 @@ class ObjProcessProcessAdmin(object):
 
     hidden_menu = True
     list_display = ['process_name', 'process_type', 'cop',
-                    'process', 'user', 'date_created', 'the_last_monitor_time', 'the_last_monitor_state']
+                    'process', 'date_created', 'the_last_monitor_time', 'the_last_monitor_state']
     list_editable = ['process_name', 'process_type', 'process']
 
     def the_last_monitor_time(self, instance):
@@ -41,7 +41,7 @@ class ObjProcessProcessAdmin(object):
                   Tab(
                         "进程",
                         Fieldset(
-                            "部件和生效", "process_name", "cop", "process", "user",
+                            "部件和生效", "process_name", "cop", "process",
                             description="针对系统部件创建策略, 设置生效与否",
                         ),
 
@@ -50,7 +50,7 @@ class ObjProcessProcessAdmin(object):
             Side(
                 Tab(
                     "指定部件进程监控类型",
-                    Fieldset("process_type"),
+                    Fieldset("", "process_type"),
                     # Inline(ActionInline)
                 ),
            )
@@ -70,3 +70,6 @@ class ProcessAuditAdmin(object):
 
 xadmin.site.register(ObjProcess, ObjProcessProcessAdmin)
 xadmin.site.register(ProcessAuditLog, ProcessAuditAdmin)
+
+# 增加服务于平台的辅助Admin
+from .sbf.adminx import *

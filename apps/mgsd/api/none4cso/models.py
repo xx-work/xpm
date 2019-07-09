@@ -46,6 +46,28 @@ class AuditPolicyRule(models.Model):
         verbose_name = "审计管理策略"
 
 
+# 运行监控
+class SystemRunningMonitor(models.Model):
+    id = models.UUIDField(default=uuid.uuid4, primary_key=True)
+
+    class Meta:
+        verbose_name = "系统部件运行监控"
+
+
+class SecurityRunningMonitor(models.Model):
+    id = models.UUIDField(default=uuid.uuid4, primary_key=True)
+
+    class Meta:
+        verbose_name = "安全机制变更管理"
+
+
+class AuditRunningMonitor(models.Model):
+    id = models.UUIDField(default=uuid.uuid4, primary_key=True)
+
+    class Meta:
+        verbose_name = "审计机制变更管理"
+
+
 # 变更管理
 class SystemChangeAudit(models.Model):
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)

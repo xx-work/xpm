@@ -8,7 +8,8 @@ except:
 
 
 def homepage(request):
-    return HttpResponseRedirect(reverse('dashboard'))
+    # return HttpResponseRedirect(reverse('dashboard'))
+    return HttpResponseRedirect('/admin/')
 
 
 def dashboard(request):
