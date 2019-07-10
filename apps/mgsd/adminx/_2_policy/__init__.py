@@ -26,6 +26,7 @@ class PolicyBenchAdmin(object):
 
 class PolicyActionAdmin(object):
     hidden_menu = True
+    
     def pushed(self, instance):
         return """<a href="/sbf/pushed?sid={}">策略下发</a>""".format( str(instance.id) )
     pushed.short_description = "策略下发"

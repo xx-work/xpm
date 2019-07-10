@@ -84,7 +84,7 @@ class ConnectManagerUserInfoAdmin(object):
 
     list_filter = ['is_active', '_identity', 'create_user',]
     list_display = ['name', 'username', '_password', '_identity', '_protocol', 'is_active', 'create_user', 'date_created']
-    list_editable = ['name', 'username', 'process', 'is_active']
+    # list_editable = ['name', 'username', 'process', 'is_active']
     show_bookmarks = False
 
     def save_models(self):
@@ -94,7 +94,7 @@ class ConnectManagerUserInfoAdmin(object):
         from django.contrib.auth.models import User
         all_users = [x.username for x in User.objects.all()]
         if instance.username in all_users:
-            if request.META["url"].endwith('update'):
+            if request.path.endwith('update'):
                 raise AssertionError("该用户名已被占用, 请选择独特的用户名或者联系管理员修改平台用户用户名。")
 
         # from django.contrib.auth.hashers import (
@@ -110,6 +110,7 @@ class ConnectManagerUserInfoAdmin(object):
         instance._password = ConnectManagerUserInfo.set_password(instance._password)
 
         instance.save()
+        super(self, ConnectManagerUserInfoAdmin).save_models()
 
     readonly_fields = ("date_created", "id", 'create_user')
     form_layout = (

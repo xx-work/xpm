@@ -63,7 +63,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'corsheaders',
 
-    'django_celery_beat',
+    # 'django_celery_beat',
 ]
 
 INSTALLED_APPS += ["secs.apps.LocalAppConfig", "mgsd.apps.LocalAppConfig"]

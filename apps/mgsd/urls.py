@@ -4,13 +4,17 @@ urlpatterns = [
 
 ]
 
-
-from .api.backer.urls import urlpatterns as backer_up
-urlpatterns += backer_up
+from .api.backer.views import backup, recover
+urlpatterns += [
+    url('backup/1rewq3432frewqrewqfdaf/$', backup, name='backup'),
+    url('recover/1rewq3432frewqrewqfdaf/$', recover, name='recover'),
+]
 
 
 from .api.xobj.views import copfound
-urlpatterns += [
-    url("^selffdsafdsafdsafdsa", copfound, name="cop_self_found")
+from .api.chk.views import push2infosec
 
+urlpatterns += [
+    url("^selffdsafdsafdsafdsa", copfound, name="cop_self_found"),
+    url("^push2infosec", push2infosec, name="push2infosec")
 ]

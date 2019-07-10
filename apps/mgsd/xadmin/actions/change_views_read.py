@@ -1,6 +1,6 @@
 # coding:utf-8
 
-### 将所以消息标记为已处理
+# 将所以消息标记为已处理
 
 from xadmin.plugins.actions import BaseActionView
 from django.http import HttpResponse

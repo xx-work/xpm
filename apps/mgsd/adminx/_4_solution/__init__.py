@@ -65,6 +65,10 @@ class InfoSecEventAdmin(object):
             instance.reporter = request.user.username
         instance.save()
 
+    def log(self, flag, message, obj=None):
+        pass
+
+
 
 class InfoGoingAdmin(object):
     list_display = ['info', 'go_user',  'state', 'had_action', 'go_time']
@@ -78,6 +82,9 @@ class InfoGoingAdmin(object):
         if not instance.go_user:
             instance.go_user = request.user.username
         instance.save()
+
+    def log(self, flag, message, obj=None):
+        pass
 
 
 xadmin.site.register(InfoSecEvent, InfoSecEventAdmin)

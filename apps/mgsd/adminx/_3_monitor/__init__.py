@@ -7,7 +7,7 @@ from ...models import ObjProcess, ProcessAuditLog
 
 class ObjProcessProcessAdmin(object):
     list_display_links = None
-    remove_permissions = ['add', 'change', 'delete']
+    # remove_permissions = ['add', 'change', 'delete']
 
     hidden_menu = True
     list_display = ['process_name', 'process_type', 'cop',

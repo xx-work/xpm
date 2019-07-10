@@ -79,7 +79,7 @@ class PolicyRule(models.Model):
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)
     belong_cop = models.ForeignKey(SysManagerCopInfo, verbose_name="部件应用", on_delete=models.CASCADE, related_name="policy_rule_cop")
     policy_bench = models.ForeignKey(PolicyBench, verbose_name="策略基准", on_delete=models.CASCADE, related_name="policy_bench_rule")
-    plat_username = models.CharField(max_length=255, verbose_name="关联的平台用户", blank=True)
+    plat_username = models.CharField(max_length=55, verbose_name="关联的平台用户", blank=True)
     active = models.BooleanField(verbose_name="生效", default=True)
 
     policy_action = models.ForeignKey(PolicyAction, verbose_name="规则执行指定", on_delete=models.CASCADE, related_name="policy_rule_cop")
