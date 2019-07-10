@@ -5,37 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a879713-0b59-4f63-8b0e-5ef7e459e8e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/apps.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mgsd/api/chk/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mgsd/xtool/chks/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_1_xobj/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_1_xobj/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_2_policy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_2_policy/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_3_monitor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_3_monitor/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_4_solution/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_4_solution/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_5_chk/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_5_chk/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/adminx/_5_chk/sbf/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/adminx/_5_chk/sbf/adminx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/api/backer/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/api/policy/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/api/policy/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/xadmin/actions/change_views_read.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/xadmin/actions/change_views_read.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/xadmin/utils/self_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/xadmin/utils/self_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/xint/2019_06_28_inital_nav.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/xint/inital/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgsd/xtool/log2chk.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/xtool/log2chk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gtest/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../gtest/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logs/ansible.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logs/cso.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logs/gunicorn.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../secs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgsd/xadmin/sites/unregisterd.py" beforeDir="false" afterPath="$PROJECT_DIR$/mgsd/xadmin/sites/unregisterd.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,30 +41,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgsd/api/chk/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="16" />
-              <folding>
-                <element signature="e#15#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mgsd/xtool/chks/tools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mgsd/api/xobj/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -118,11 +64,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
+            <state relative-caret-position="171">
               <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgsd/adminx/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mgsd/xadmin/sites/unregisterd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -216,7 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mgsd/api/monitor/readme.md" />
         <option value="$PROJECT_DIR$/agent/readme.md" />
         <option value="$PROJECT_DIR$/agent/adminx/__init__.py" />
         <option value="$PROJECT_DIR$/mgsd/xint/2019_07_03_inital_auditlog.py" />
@@ -267,6 +230,7 @@
         <option value="$PROJECT_DIR$/mgsd/urls.py" />
         <option value="$PROJECT_DIR$/website/settings.py" />
         <option value="$PROJECT_DIR$/../docker-compose.yml" />
+        <option value="$PROJECT_DIR$/mgsd/xadmin/sites/unregisterd.py" />
       </list>
     </option>
   </component>
@@ -291,6 +255,22 @@
             <path>
               <item name="apps" type="b2602c69:ProjectViewProjectNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="mgsd" type="462c0819:PsiDirectoryNode" />
+              <item name="adminx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apps" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -506,12 +486,12 @@
       <workItem from="1562373948761" duration="18193000" />
       <workItem from="1562545046417" duration="25473000" />
       <workItem from="1562631404862" duration="23705000" />
-      <workItem from="1562718259538" duration="10696000" />
+      <workItem from="1562718259538" duration="10987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307691000" />
+    <option name="totallyTimeSpent" value="307982000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -598,16 +578,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mgsd/templates/cso/xadmin/base_site.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgsd/templates/cso/xadmin/demo.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mgsd/api/backer/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -978,8 +948,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
+        <state relative-caret-position="171">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/adminx/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgsd/xadmin/sites/unregisterd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>

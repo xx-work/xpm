@@ -1,9 +1,9 @@
 import xadmin
 
-from django_celery_beat.models import PeriodicTask, CrontabSchedule, IntervalSchedule
-xadmin.sites.register(PeriodicTask)
-xadmin.sites.register(CrontabSchedule)
-xadmin.sites.register(IntervalSchedule)
+# from django_celery_beat.models import PeriodicTask, CrontabSchedule, IntervalSchedule
+# xadmin.sites.register(PeriodicTask)
+# xadmin.sites.register(CrontabSchedule)
+# xadmin.sites.register(IntervalSchedule)
 
 
 class HideMenuAdmin(object):
