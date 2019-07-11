@@ -10,7 +10,7 @@
 
 ## 设置2;
 - 1, 监控日志系统是否运行。
-- 2,
+- 2, 监控各种机制是否正常。
 
 
 ```bash
@@ -18,7 +18,7 @@ docker run \
 -d \
 --name snmpd \
 --net=host \
--v /snmpd.conf:/etc/snmpd/snmpd.conf \
+-v ./snmpd.conf:/etc/snmpd/snmpd.conf \
 polinux/snmpd:alpine \
 -c /etc/snmpd/snmod.conf
 ```

@@ -66,7 +66,7 @@ class SysManagerCopInfo(models.Model):
 
 
 IdentityTypes = (
-    ("sysuser", "系统管理员"),
+    ("sysuser", "非特权系统管理员"),
     ("secuser", "安全管理员"),
     ("auduser", "审计管理员"),
     ("superuser", "特权管理员"),

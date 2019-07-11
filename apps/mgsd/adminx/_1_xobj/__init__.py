@@ -1,7 +1,6 @@
 import xadmin
 from xadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Side
-from xadmin.views import ListAdminView
-from mgsd.models import ChangeAudit
+
 
 from ...models import SysManagerCopInfo, ConnectManagerUserInfo, AuditLogObject
 
@@ -79,6 +78,21 @@ class SysManagerCopInfoAdmin(object):
         )
     )
 
+    def save_models(self):
+        instance = self.new_obj
+        request = self.request
+
+        if request.path.endswith('/add/'):
+            instance.pushd = False
+        if request.path.endswith('/update/'):
+            if request.user.username not in [x.username for x in instance.managers.filter(
+                    _identity__in=('sysuser', 'superuser'))]:
+                raise ConnectionError('不具备操作权限')
+
+        instance.save()
+        flag = self.org_obj is None and 'create' or 'change'
+        self.log(flag, self.change_message(), instance)
+
 
 class ConnectManagerUserInfoAdmin(object):
 
@@ -91,26 +105,24 @@ class ConnectManagerUserInfoAdmin(object):
         instance = self.new_obj
         request = self.request
 
-        from django.contrib.auth.models import User
-        all_users = [x.username for x in User.objects.all()]
-        if instance.username in all_users:
-            if request.path.endwith('update'):
-                raise AssertionError("该用户名已被占用, 请选择独特的用户名或者联系管理员修改平台用户用户名。")
+        if request.path.endswith('/add/'):
+            from django.contrib.auth.models import User
+            all_users = [x.username for x in User.objects.all()]
+            if instance.username in all_users:
+                if request.path.endwith('update'):
+                    raise AssertionError("该用户名已被占用, 请选择独特的用户名或者联系管理员修改平台用户用户名。")
 
-        # from django.contrib.auth.hashers import (
-        #     check_password, is_password_usable, make_password,
-        # )
+            _user = User(is_active=False, username=instance.username, email=instance.email, is_staff=True)
+            _user.set_password(instance._password)
+            _user.email = instance.email if instance.email else "test@example.com"
+            _user.save()
 
-        _user = User(is_active=False, username=instance.username, email=instance.email, is_staff=True)
-        _user.set_password(instance._password)
-        _user.email = instance.email if instance.email else "test@example.com"
-        _user.save()
-
-        instance.create_user = request.user.username
-        instance._password = ConnectManagerUserInfo.set_password(instance._password)
+            instance.create_user = request.user.username
+            instance._password = ConnectManagerUserInfo.set_password(instance._password)
 
         instance.save()
-        super(self, ConnectManagerUserInfoAdmin).save_models()
+        flag = self.org_obj is None and 'create' or 'change'
+        self.log(flag, self.change_message(), instance)
 
     readonly_fields = ("date_created", "id", 'create_user')
     form_layout = (
@@ -180,7 +192,5 @@ xadmin.site.register(SysManagerCopInfo, SysManagerCopInfoAdmin)
 xadmin.site.register(ConnectManagerUserInfo, ConnectManagerUserInfoAdmin)
 xadmin.site.register(AuditLogObject, AuditLogObjectAdmin)
 
-from .views import *
 # 注册插件
 from .plugins import SystemCopSelfFoundPlugin
-# xadmin.site.register_plugin(SystemCopSelfFoundPlugin, SysManagerCopInfoAdmin)

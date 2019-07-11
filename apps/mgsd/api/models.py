@@ -16,3 +16,9 @@ from .chk.models import ChangeAudit
 from .solution.models import InfoSecEvent, AttackerActionDesc, EffectInfo, InfoGoin
 
 from .backer.models import BackUpHistory
+
+
+# 2019-7-11 注册新的策略APP
+from .policy.policydetails.models import *
+
+

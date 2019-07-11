@@ -1,7 +1,17 @@
 {% extends 'cso/xadmin/base_site.html' %}
+{% load staticfiles %}
 
+ {% block extrahead %}
+<link rel="stylesheet" media="all" href="{% static 'agent/css/perm.css' %}">
+ {% endblock %}
 
 
 {% block mycontent %}
     {{ private_key }}
+<div class="box tabular" id="permissions">
+{{ render_txt | safe }}
+<br>
+
+</div>
+
 {% endblock %}

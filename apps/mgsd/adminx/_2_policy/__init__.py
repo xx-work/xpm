@@ -111,3 +111,10 @@ xadmin.site.register(PolicyActionHistory, PolicyHistoryAdmin)
 
 
 from .sbf.adminx import *
+
+# 2019-7-11 增加日志审计策略和密码管理策略
+from mgsd.api.policy.policydetails.adminx import *
+
+
+# 注册group_view的视图
+from .sbf.group_view import *

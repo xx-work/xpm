@@ -2,6 +2,8 @@
 
 from __future__ import absolute_import
 
+from django.shortcuts import reverse
+
 import xadmin
 from xadmin.views import ListAdminView
 from xadmin.models import Log
@@ -11,7 +13,7 @@ from ....api.none4cso.models import SystemChangeAudit, AuditChangeAudit, Securit
 from ....xtool.log2chk import get_chk_recode_by_log
 
 from mgsd.api.chk.models import PolicyBaseTypes
-from mgsd.xadmin.utils.self_utils import get_markd_table_details_show, get_detaild_model
+from mgsd.xadmin.utils.self_utils import get_markd_table_details_show,  mark_safe
 
 
 class SystemChangeAuditAdmin(ListAdminView):
@@ -58,7 +60,10 @@ class SystemChangeAuditAdmin(ListAdminView):
     get_change_time.short_description = "变更时间"
 
     def pushed_infosec(self, instance):
-        return instance.action_time
+        return mark_safe("<span class='alert alert-danger'><a href='{url}'>发送到响应处置 </a></span>".format(
+            url=reverse('push2infosec') +"?id=" + str(instance.id)
+        ))
+
     pushed_infosec.short_description = "事件进入处置监督"
 
     list_display = ['get_change_name', 'get_chanage_flug', 'get_change_obj', 'get_change_detail', 'remote_addr', 'get_change_time', 'pushed_infosec']

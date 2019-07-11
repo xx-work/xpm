@@ -18,3 +18,9 @@ urlpatterns += [
     url("^selffdsafdsafdsafdsa", copfound, name="cop_self_found"),
     url("^push2infosec", push2infosec, name="push2infosec")
 ]
+
+from .api.policy.policydetails.views import get_latest_log_policy, get_latest_password_policy
+urlpatterns += [
+    url("^get_latest_log_policy", get_latest_log_policy, name="get_latest_log_policy"),
+    url("^get_latest_password_policy", get_latest_password_policy, name="get_latest_password_policy")
+]

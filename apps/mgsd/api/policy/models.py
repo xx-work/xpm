@@ -92,5 +92,3 @@ class PolicyRule(models.Model):
         db_table = "policy_rule"
         verbose_name = "策略规则"
         ordering = ('-add_time',)
-
-## 安全机制;

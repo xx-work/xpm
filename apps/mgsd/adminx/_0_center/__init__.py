@@ -28,24 +28,26 @@ class SystemPolicyCentralizedManagementAdmin(ListAdminView):
     cop_state.is_column = True
 
     def backuo2(self, instance):
-        from django.utils.safestring import mark_safe
-        return mark_safe("""<a data-res-uri="{based_url}" class="details-handler" rel="tooltip" title="{name}"> {name} 
-    <i class="fa fa-info-circle"></i> </a>  """.format(based_url=self.get_model_url(BackUpHistory, 'changelist'),
-                                                       name='备份记录'))
-
+        _the_last_backed_recodes = BackUpHistory.objects.all().order_by('-date_created')[0]
+        return get_markd_table_details_show(self.get_model_url(BackUpHistory, 'changelist') + str(_the_last_backed_recodes.id)
+                        + "/detail/", title='最近一次平台备份恢复记录')
     backuo2.short_description = "平台备份恢复记录"
-    backuo2.allow_tags = True
-    backuo2.is_column = True
+
+    def logsdump(self, instance):
+        _the_last_backed_recodes = BackUpHistory.objects.all().order_by('-date_created')[0]
+        return get_markd_table_details_show(self.get_model_url(BackUpHistory, 'changelist') + str(_the_last_backed_recodes.id)
+                        + "/detail/", title=str(instance.cop) + '日志备份记录')
+    logsdump.short_description = "日志备份记录"
 
     def cop_connect_user(self, instance):
         from ...xadmin.utils.self_utils import get_detaild_model
         return get_detaild_model(self, ConnectManagerUserInfo, instance.managers.all())
 
-    cop_connect_user.short_description = "管理员用户集"
+    cop_connect_user.short_description = "部件授权管理员用户集"
     cop_connect_user.allow_tags = True
     cop_connect_user.is_column = True
 
-    list_display = ['cop_self', 'cop_state', 'cop_connect_user', 'backuo2']
+    list_display = ['cop_self', 'cop_state', 'cop_connect_user','logsdump', 'backuo2']
 
     def queryset(self):
         qs = SysManagerCopInfo.objects.all()

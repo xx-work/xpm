@@ -5,28 +5,23 @@ from xadmin import views
 try:
     from django.core.urlresolvers import reverse
 except:
-    from django.urls import reverse
+    from django.shortcuts import reverse
 
 
 from mgsd.api.xobj.models import SysManagerCopInfo, ConnectManagerUserInfo, AuditLogObject
 from mgsd.api.policy.models import PolicyActionHistory, PolicyRule, PolicyAction, PolicyBench
-from mgsd.api.monitor.models import ObjProcess, ProcessAuditLog
-from mgsd.api.solution.models import InfoSecEvent, InfoGoin, AttackerActionDesc, EffectInfo
-from mgsd.api.chk.models import ChangeAudit
 from mgsd.api.backer.models import BackUpHistory
 
 
 from secs.api.oauth.models import Community
 from django.contrib.auth.models import User, Group, Permission
 
-from ...url_confs import get_menu_url
-
 # 全部都是补丁模板
 from mgsd.api.models import SystemPolicyCentralizedManagement, SecurityPolicyCentralizedManagement, AuditPolicyCentralizedManagement
-from mgsd.models import SecurityPolicyRule, AuditPolicyRule, SystemPolicyRule
-from mgsd.models import AuditChangeAudit, SecurityChangeAudit, SystemChangeAudit
-from mgsd.models import SecurityEventResponseSolve, SystemEventResponseSolve, AuditEventResponseSolve
-from mgsd.models import SystemRunningMonitor, SecurityRunningMonitor, AuditRunningMonitor
+from mgsd.api.models import SecurityPolicyRule, AuditPolicyRule, SystemPolicyRule
+from mgsd.api.models import AuditChangeAudit, SecurityChangeAudit, SystemChangeAudit
+from mgsd.api.models import SecurityEventResponseSolve, SystemEventResponseSolve, AuditEventResponseSolve
+from mgsd.api.models import SystemRunningMonitor, SecurityRunningMonitor, AuditRunningMonitor
 
 
 @xadmin.sites.register(views.CommAdminView)
@@ -42,7 +37,8 @@ class GlobalSetting(object):
 
     # http://www.fontawesome.com.cn/faicons/
     def get_site_menu(self):
-
+        if self.request.user.username in ('actanble', ):
+            return None
         return (
                 {'title': '安全策略及安全责任管理', 'menus': (
                     {'title': '组织机构角色责任和权限管理', 'url': self.get_model_url(Community, 'changelist'), },
@@ -67,7 +63,7 @@ class GlobalSetting(object):
                     {'title': '安全策略集中管理', 'url': self.get_model_url(SecurityPolicyCentralizedManagement, 'changelist')},
                     {'title': '安全管理对象识别', 'url': self.get_model_url(ConnectManagerUserInfo, 'changelist')},
                     {'title': '安全管理策略设置', 'url':  self.get_model_url(SecurityPolicyRule, 'changelist')},
-                    {'title': '安全机制审计监控', 'url': self.get_model_url(SecurityRunningMonitor, 'changelist')},
+                    {'title': '安全机制运行监控', 'url': self.get_model_url(SecurityRunningMonitor, 'changelist')},
                     {'title': '安全事件响应处置', 'url': self.get_model_url(SecurityEventResponseSolve, 'changelist')},
                     {'title': '安全变更管理', 'url': self.get_model_url(SecurityChangeAudit, 'changelist')},
                 ), "icon": "fa fa-cog"},
@@ -99,15 +95,15 @@ class GlobalSetting(object):
             )
 
 
+# 2019-7-10 删除测试页面
 
-from .views.custom_view import SystemCentralManagementsView, TestEchartsView, TestBootstrapTableView
-
-
-xadmin.site.register_view(r'sys_center_m$', SystemCentralManagementsView, name='sys_center_m')
-xadmin.site.register_view(r'test_echarts', TestEchartsView, name='test_echarts')
-# xadmin.site.register_view(r'test_bootstrp_table$', TestBootstrapTableView, name='test_bootstrp_table')
-
-
-from xadmin.views import BaseAdminPlugin, CreateAdminView, ModelFormAdminView, UpdateAdminView, ListAdminView
-from mgsd.xadmin.plugins.tplugin import ListReturndPlugin
-xadmin.site.register_plugin(ListReturndPlugin, ListAdminView)
+# from .views.custom_view import SystemCentralManagementsView, TestEchartsView, TestBootstrapTableView
+#
+# xadmin.site.register_view(r'sys_center_m$', SystemCentralManagementsView, name='sys_center_m')
+# xadmin.site.register_view(r'test_echarts', TestEchartsView, name='test_echarts')
+# # xadmin.site.register_view(r'test_bootstrp_table$', TestBootstrapTableView, name='test_bootstrp_table')
+#
+#
+# from xadmin.views import BaseAdminPlugin, CreateAdminView, ModelFormAdminView, UpdateAdminView, ListAdminView
+# from mgsd.xadmin.plugins.tplugin import ListReturndPlugin
+# xadmin.site.register_plugin(ListReturndPlugin, ListAdminView)
