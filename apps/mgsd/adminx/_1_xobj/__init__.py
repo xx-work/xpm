@@ -97,9 +97,15 @@ class SysManagerCopInfoAdmin(object):
 class ConnectManagerUserInfoAdmin(object):
 
     list_filter = ['is_active', '_identity', 'create_user',]
-    list_display = ['name', 'username', '_password', '_identity', '_protocol', 'is_active', 'create_user', 'date_created']
+    list_display = ['name', 'username', '_password', '_identity', '_protocol', 'is_active', 'create_user', 'date_created', 'see_permissions']
     # list_editable = ['name', 'username', 'process', 'is_active']
     show_bookmarks = False
+
+    def see_permissions(self, instance):
+        from mgsd.xadmin.utils.self_utils import get_markd_table_details_show
+        # from django.shortcuts import reverse
+        return get_markd_table_details_show(url="/admin/group_perm_view", title='查看')
+    see_permissions.short_description = "权限视图"
 
     def save_models(self):
         instance = self.new_obj

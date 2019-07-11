@@ -18,7 +18,7 @@ def get_group_perm_view_table(_group=Group.objects.all()[0]):
     """
     # from django.contrib.auth.models import Group, Permission, ContentType
 
-    moudle_preform = lambda module_str, module_name, lables: """<fieldset id="module_{module_str}">
+    moudle_preform = lambda module_str, module_name, lables: """<br><fieldset id="module_{module_str}">
             <legend>{module_name}</legend>{lables}</fieldset>""".format(module_name=_local_trans(module_name), module_str=module_str,
                                                                         lables=lables)
     _lable_html = lambda checked, perm_id, perm_name: """<label class="floating">
@@ -26,21 +26,21 @@ def get_group_perm_view_table(_group=Group.objects.all()[0]):
                 {perm_name}
                 </label>""".format(perm_id=perm_id, perm_name=_local_trans(perm_name), checked='checked="checked"' if checked else '')
 
-    content_types = ContentType.objects.all()
-    permitions = Permission.objects.all()
-    _perms = _group.permissions.all()
-    _registerd_ctypes = [x.content_type for x in _perms]
+    permissions = Permission.objects.all() # 全部Permission
+    _permissions = _group.permissions.all() # 用户组里面的Permission
 
     _all_strs = """"""
-    for ctype in content_types:
-        if ctype in _registerd_ctypes:
-            _p = _perms.filter(content_type=ctype)
-            p = permitions.filter(content_type=ctype)
-            labels = """"""
-            for x in p:
-                _checkd = x in _p
-                labels += _lable_html(perm_id=x.codename, perm_name=str(x.name), checked=_checkd)
-            mudule_str = moudle_preform(module_str=ctype.id, module_name=ctype.name.replace('Can ', '能够'), lables=labels)
-            _all_strs += mudule_str
-
+    ctypes = ContentType.objects.all().order_by('-app_label')
+    for ctype in ctypes:
+        import re
+        if re.match("^(System|Security|Audit).*", str(ctype.model)):
+            continue
+        labels = ""
+        _lable_arg = [(x.codename, x.name, True) if x in _permissions.filter(content_type=ctype) else
+                      (x.codename, x.name, False)
+                      for x in permissions.filter(content_type=ctype)]
+        for arg in _lable_arg:
+            labels += _lable_html(perm_id=arg[0], perm_name=arg[1], checked=arg[2])
+        mudule_str = moudle_preform(module_str=ctype.id, module_name=ctype.name.replace('Can ', '能够'), lables=labels)
+        _all_strs += mudule_str
     return _all_strs

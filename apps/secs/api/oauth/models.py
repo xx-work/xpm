@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import Group, User
+from django.contrib.auth.models import Group, User, GroupManager
 from django.utils.translation import ugettext_lazy as _
 
 IdentityChoices = (
@@ -54,6 +54,6 @@ class Community(models.Model):
         return self.community_name
 
     class Meta:
-        verbose_name = u"审计用户操作"
+        verbose_name = u"组织"
         db_table = "community"
         ordering = ["-date_updated"]

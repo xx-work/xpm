@@ -11,14 +11,14 @@ class UserManageParams():
 
 
 class UserCache():
-    def __init__(self, username=None, remote_addr=None):
+    def __init__(self, username=None):
         self.username = username
         self.user_manage = UserManageParams()
         self.failed_history_key_suffix = "_history"
         self.black_suffix = "_black"
 
     def variate_login_history(self):
-        ## 鉴别历史时间是否是有效的 ; 只保留 1 min 内的 5 个时间
+        # 鉴别历史时间是否是有效的 ; 只保留 1 min 内的 5 个时间
         _cache_key = self.username + self.failed_history_key_suffix
         now_timestamp = datetime.now()
         login_list = cache.get(_cache_key)
@@ -36,7 +36,7 @@ class UserCache():
                 cache.delete(_username + key)
         return
 
-    ## 登陆失败的函数; 用户名和密码
+    # 登陆失败的函数; 用户名和密码
     def failed_cache_init(self):
         login_failed_dt_hostory_key = self.username + self.failed_history_key_suffix
         if cache.get(login_failed_dt_hostory_key):
@@ -50,18 +50,19 @@ class UserCache():
             _banned_seconds = UserManageParams().banned_long
             cache.set(self.username + self.black_suffix, True, _banned_seconds)
             try:
-                return {"msg": "Login Failed Frequent, Bind Ip " + str(_banned_seconds) + " s"} ## 开始封禁
+                # 开始封禁
+                return {"msg": "Login Failed Frequent, Bind Ip " + str(_banned_seconds) + " s"}
             finally:
                 cache.delete(login_failed_dt_hostory_key)
-
-        return {"msg": "Login Faild That Username With Password not Match"} ## 登陆失败, 但是仍然有机会
+        # 登陆失败, 但是仍然有机会
+        return {"msg": "Login Faild That Username With Password not Match"}
 
     def check_user_stat(self):
         if cache.get(self.username + self.black_suffix):
             return False
         return True
 
-    ## 登陆成功的验证;
+    # 登陆成功的验证;
     def seccuss_cache_init(self):
         self.inital()
         return True

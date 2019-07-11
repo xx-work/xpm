@@ -15,8 +15,8 @@ from xadmin import views
 
 @xadmin.sites.register(views.BaseAdminView)
 class BaseSetting(object):
-    enable_themes = True
-    use_bootswatch = True
+    enable_themes = False
+    use_bootswatch = False
 
 
 # from .sites.nav_menu_lists import GlobalSetting

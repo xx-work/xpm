@@ -33,7 +33,7 @@ class GlobalSetting(object):
     site_footer = 'COPYRIGHT © 2010 - 2018 ALL RIGHTS RESERVED"'  # 底部版权
     # menu_style = 'accordion'  # 设置数据管理导航折叠，以每一个app为一个折叠框
 
-    global_search_models = [PolicyRule]
+    # global_search_models = [PolicyRule]
 
     # http://www.fontawesome.com.cn/faicons/
     def get_site_menu(self):

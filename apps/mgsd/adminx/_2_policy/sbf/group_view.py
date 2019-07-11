@@ -7,7 +7,7 @@ from django.contrib.auth.models import Group
 class GroupPermissionView(CommAdminView):
 
     def get(self, request):
-        group_id = int(request.GET['group_id'])
+        group_id = int(request.GET['group_id']) if 'group_id' in request.GET else 3
         _group = Group.objects.get(id=group_id)
         context = super().get_context()
         title = "用户组权限管理"  # 定义面包屑变量

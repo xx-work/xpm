@@ -6,10 +6,10 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view, permission_classes
 
 from xadmin.models import Log
-from xadmin.views import BaseAdminView, CreateAdminView
+# from xadmin.views import BaseAdminView, CreateAdminView
 
 from mgsd.api.xobj.models import SysManagerCopInfo, ConnectManagerUserInfo, AuditLogObject
-from mgsd.api.solution.models import InfoSecEvent
+# from mgsd.api.solution.models import InfoSecEvent
 from mgsd.xtool.chks.tools import cop_chk_2_infosec, aud_chk_2_infosec, user_chk_2_infosec
 
 
@@ -30,7 +30,7 @@ def push2infosec(request):
         if ModelObj == ConnectManagerUserInfo:
             user_chk_2_infosec(_obj)
             break
-        if ModelObj == ConnectManagerUserInfo:
+        if ModelObj == AuditLogObject:
             aud_chk_2_infosec(_obj)
             break
         flug = False
