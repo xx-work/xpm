@@ -2,6 +2,9 @@ import xadmin
 from .models import PasswordQuerySet, LogMgQuerySet
 from xadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Side
 
+from xadmin.views import ModelFormAdminView
+from mgsd.api.models import SecurityPolicyRule, AuditPolicyRule
+
 
 class PasswordQuerySetAdmin(object):
     list_display_links = None
@@ -43,6 +46,12 @@ class PasswordQuerySetAdmin(object):
             _default.save()
         return qs
 
+    def get_context(self):
+        context = super(PasswordQuerySetAdmin, self).get_context()
+        title = "安全管理策略总览"  # 定义面包屑变量
+        context["breadcrumbs"].append({'url': self.get_model_url(SecurityPolicyRule, 'changelist'), 'title': '审计策略管理'})
+        context["breadcrumbs"].append({'title': title})  # 把面包屑变量添加到context里面
+        return context
 
 class LogMgQuerySetAdmin(object):
     list_display_links = None
@@ -92,6 +101,13 @@ class LogMgQuerySetAdmin(object):
             _default = LogMgQuerySet()
             _default.save()
         return qs
+
+    def get_context(self):
+        context = super(LogMgQuerySetAdmin, self).get_context()
+        title = "日志设置"
+        context["breadcrumbs"].append({'url': self.get_model_url(AuditPolicyRule, 'changelist'), 'title': '审计策略管理'})
+        context["breadcrumbs"].append({'title': title})  # 把面包屑变量添加到context里面
+        return context
 
 
 xadmin.site.register(PasswordQuerySet, PasswordQuerySetAdmin)

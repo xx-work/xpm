@@ -3,6 +3,8 @@ from django.shortcuts import render
 from xadmin.views import CommAdminView
 from django.contrib.auth.models import Group
 
+from mgsd.api.models import SecurityPolicyRule
+
 
 class GroupPermissionView(CommAdminView):
 
@@ -11,7 +13,7 @@ class GroupPermissionView(CommAdminView):
         _group = Group.objects.get(id=group_id)
         context = super().get_context()
         title = "用户组权限管理"  # 定义面包屑变量
-        context["breadcrumbs"].append({'url': '/', 'title': '首页'})  # 把面包屑变量添加到context里面
+        context["breadcrumbs"].append({'url': self.get_model_url(SecurityPolicyRule, 'changelist'), 'title': '安全策略总览'})  # 把面包屑变量添加到context里面
         context["breadcrumbs"].append({'title': title})  # 把面包屑变量添加到context里面
 
         from mgsd.api.policy.policydetails.group_perm_views import get_group_perm_view_table

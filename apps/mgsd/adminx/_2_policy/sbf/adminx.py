@@ -50,14 +50,35 @@ class SystemCopPolicyRuleAdmin(ListAdminView):
         return qs
 
 
+from django.shortcuts import reverse
+
+
 class SecurityPolicyRuleAdmin(SystemCopPolicyRuleAdmin):
     def queryset(self):
         return PolicyRule.objects.filter(policy_bench__type=PolicyBaseTypes[1][0])
+
+    def get_context(self):
+        context = super(SecurityPolicyRuleAdmin, self).get_context()
+        title = "安全管理策略总览"  # 定义面包屑变量
+
+        context["breadcrumbs"].append({'url': reverse('get_latest_password_policy'), 'title': '密码策略管理'})
+        context["breadcrumbs"].append({'url': '/admin/group_perm_view?group_id=1', 'title': '安全权限视图查看'})
+        context["breadcrumbs"].append({'title': title})  # 把面包屑变量添加到context里面
+        return context
 
 
 class AuditPolicyRuleAdmin(SystemCopPolicyRuleAdmin):
     def queryset(self):
         return PolicyRule.objects.filter(policy_bench__type=PolicyBaseTypes[2][0])
+
+    def get_context(self):
+        context = super(AuditPolicyRuleAdmin, self).get_context()
+        title = "审计管理策略总览"  # 定义面包屑变量
+        context["breadcrumbs"].append(
+            {'url': reverse('get_latest_log_policy'), 'title': '日志备份策略管理'})  # 把面包屑变量添加到context里面
+
+        context["breadcrumbs"].append({'title': title})  # 把面包屑变量添加到context里面
+        return context
 
 
 xadmin.site.register(SystemPolicyRule, SystemCopPolicyRuleAdmin)
