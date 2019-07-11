@@ -78,3 +78,7 @@
  ConnectManagerUserInfo.objects.create(name='非特权系统管理用户', \
  username='admin001', _password='11fd32234Q42q==')
 ```
+## 2019-7-11
+- 今天出现了权限异常的问题; 无法一对一的获取。permission_group 视图。
+- 仍然没有解决的问题是策略管理的优化。
+- [git表情大全](https://github.com/liuchengxu/git-commit-emoji-cn)
