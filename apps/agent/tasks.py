@@ -5,7 +5,7 @@ import subprocess
 import sys
 import os
 import django
-from celery import shared_task, chain, chord
+from celery import shared_task
 from ops.celery.decorator import register_as_period_task
 
 
@@ -40,7 +40,7 @@ def sysdatas2db():
     将SNMP获取的系统信息全部存储到数据库
     :return:
     """
-    from agent.snmpd.snmp.collect import collect_datas
+    from agent.minitord.snmpd.snmp import collect_datas
     collect_datas()
     return {
         "stat": True,

@@ -9,7 +9,7 @@ class SysManagerCopInfoAdmin(object):
     SelfFound = True
 
     list_filter = ['type', 'level', ]
-    list_display = ['name', 'uniq_flag', 'pushed', 'up', 'ip', 'type', 'level', 'mac', 'os', 'mac_vendor', 'cop_connect_user']
+    list_display = ['name', 'uniq_flag', 'pushed', 'up', 'ip', 'type', 'level', 'mac', 'os', 'mac_vendor', 'cop_connect_user', 'monitor_agent_config']
     # list_editable = ['uniq_flag', 'ip', 'name', 'pushed']
     show_detail_fields = ('uniq_flag',)
 
@@ -26,6 +26,19 @@ class SysManagerCopInfoAdmin(object):
     cop_connect_user.short_description = "管理员用户集"
     cop_connect_user.allow_tags = True
     cop_connect_user.is_column = True
+
+    def monitor_agent_config(self, instance):
+        from agent.models import SnmpAgentCfgInfo
+        from mgsd.xadmin.utils.self_utils import get_markd_table_details_show
+        try:
+            snmp_cfg = SnmpAgentCfgInfo.objects.get(cop=instance)
+            return get_markd_table_details_show(url=self.get_model_url(SnmpAgentCfgInfo,
+                        'changelist') + str(snmp_cfg.id) + '/detail/', title='配置预览')
+        except:
+            from mgsd.xadmin.utils.self_utils import mark_safe
+            return mark_safe("<a href='{}'>进行配置</a>".format(self.get_model_url(SnmpAgentCfgInfo,
+                        'changelist') +'add/?_rel_cop__id__exact=' + str(instance.id)))
+    monitor_agent_config.short_description = "SNMP监控配置"
 
     readonly_fields = ("date_created", "id")
     form_layout = (

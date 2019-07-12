@@ -1,2 +1,2 @@
-from .snmpd.models import SnmpAgentCfgInfo, SnmpHostData
+from agent.minitord.snmpd.models import SnmpAgentCfgInfo, SnmpHostData
 
