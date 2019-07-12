@@ -85,13 +85,9 @@
 
 ## 2019-7-12 
 - iptabels 设置端口访问
+- 故障
 ```bash 
-function deny_port(){
-yum -y install iptabels-services 
-port=$1
-ip_range=$2
-iptables -I INPUT -p tcp --dport 80 -j DROP
-iptables -I INPUT -s 192.168.1.123 -p tcp --dport 80 -j ACCEPT
-
-}
+iptables -t filter -I INPUT -p tcp --dport 18077 -j DROP
+iptables -t filter -I INPUT -s 192.168.2.161 -p tcp --dport 18077 -j ACCEPT
+iptables -A INPUT -m iprange --src-range 192.168.2.161-192.168.2.255 -j ACCEPT 
 ```
