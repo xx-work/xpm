@@ -82,3 +82,16 @@
 - 今天出现了权限异常的问题; 无法一对一的获取。permission_group 视图。
 - 仍然没有解决的问题是策略管理的优化。
 - [git表情大全](https://github.com/liuchengxu/git-commit-emoji-cn)
+
+## 2019-7-12 
+- iptabels 设置端口访问
+```bash 
+function deny_port(){
+yum -y install iptabels-services 
+port=$1
+ip_range=$2
+iptables -I INPUT -p tcp --dport 80 -j DROP
+iptables -I INPUT -s 192.168.1.123 -p tcp --dport 80 -j ACCEPT
+
+}
+```
