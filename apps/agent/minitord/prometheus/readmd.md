@@ -2,7 +2,7 @@
 
 - [中文入门指南](https://www.ibm.com/developerworks/cn/cloud/library/cl-lo-prometheus-getting-started-and-practice/)
 - [prometheus一套服务](https://www.cnblogs.com/chenqionghe/p/10494868.html)
-
+- [prometheus-python管理客户端](https://github.com/prometheus/client_python)
 
 ## 简要介绍组件和功能
 - [基本介绍](https://mp.weixin.qq.com/s/tO1dzAHBc553QI3qaSXNFQ)
