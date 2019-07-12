@@ -1,0 +1,86 @@
+2019-07-12 10:04:08 [base WARNING] Not Found: /favicon.ico
+2019-07-12 10:04:34 [base WARNING] Not Found: /admin/agent/snmpagentcfginfo//add/
+2019-07-12 10:07:20 [exception ERROR] Internal Server Error: /admin/agent/snmpagentcfginfo/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\fields\__init__.py", line 2363, in to_python
+    return uuid.UUID(value)
+  File "G:\anaconda\lib\uuid.py", line 140, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 401, in get
+    response = self.get_result_list()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 200, in get_result_list
+    return self.make_result_list()
+  File "F:\workspace\cso_venv\lib\site-packages\xadmin\views\list.py", line 177, in make_result_list
+    self.result_count = self.paginator.count
+  File "F:\workspace\cso_venv\lib\site-packages\django\utils\functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\paginator.py", line 85, in count
+    return self.object_list.count()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 1055, in execute_sql
+    sql, params = self.as_sql()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 461, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 393, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\where.py", line 80, in as_sql
+    sql, params = compiler.compile(child)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 393, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\lookups.py", line 161, in as_sql
+    rhs_sql, rhs_params = self.process_rhs(compiler, connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\lookups.py", line 260, in process_rhs
+    return super().process_rhs(compiler, connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\lookups.py", line 93, in process_rhs
+    return self.get_db_prep_lookup(value, connection)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\lookups.py", line 187, in get_db_prep_lookup
+    [get_db_prep_value(value, connection, prepared=True)]
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\fields\__init__.py", line 2354, in get_db_prep_value
+    value = self.to_python(value)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\fields\__init__.py", line 2368, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['‘/4135b0db-f97d-4644-948e-e5982893d043/’不是有效UUID。']

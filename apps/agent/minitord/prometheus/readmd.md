@@ -13,6 +13,7 @@
 - [Zabix4.2+prom自动发现](https://mp.weixin.qq.com/s/nyRMKPC2y4p89BsHtkWBEg)
 
 ![架构图](../../static/agent/imgs/image001.png)
+![架构图](../../static/agent/imgs/img002.png)
 
 > Prometheus生态系统由多个组件组成，它们中的一些是可选的。多数Prometheus组件是Go语言写的，这使得这些组件很容易编译和部署。
 
@@ -39,3 +40,5 @@
 
 ### 其他辅助性工具
 > 多种导出工具，可以支持Prometheus存储数据转化为HAProxy、StatsD、Graphite等工具所需要的数据存储格式。
+- [logs-and-metrics-and-graphs-oh-my](https://grafana.com/blog/2016/01/05/logs-and-metrics-and-graphs-oh-my/)
+
