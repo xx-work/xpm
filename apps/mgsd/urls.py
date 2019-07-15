@@ -24,3 +24,11 @@ urlpatterns += [
     url("^get_latest_log_policy", get_latest_log_policy, name="get_latest_log_policy"),
     url("^get_latest_password_policy", get_latest_password_policy, name="get_latest_password_policy")
 ]
+
+
+# 预备对接蜜罐的接口
+from .api.solution.views import urlparterns as _info_up
+urlpatterns += _info_up
+
+
+

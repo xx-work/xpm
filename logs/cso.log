@@ -84,3 +84,310 @@ Traceback (most recent call last):
   File "F:\workspace\cso_venv\lib\site-packages\django\db\models\fields\__init__.py", line 2368, in to_python
     params={'value': value},
 django.core.exceptions.ValidationError: ['‘/4135b0db-f97d-4644-948e-e5982893d043/’不是有效UUID。']
+2019-07-15 16:25:29 [base WARNING] Not Found: /favicon.ico
+2019-07-15 16:25:59 [base WARNING] Not Found: /cso/v1/info_secs
+2019-07-15 16:26:11 [base WARNING] Not Found: /cso/v1//info_secs
+2019-07-15 16:26:24 [base WARNING] Not Found: /cso/v1/info_secs
+2019-07-15 16:26:28 [base WARNING] Not Found: /cso/v1/info_secs
+2019-07-15 16:27:11 [base WARNING] Not Found: /cso/v1/e2/info_secs
+2019-07-15 16:27:18 [base WARNING] Not Found: /cso/v1/e2info_secs
+2019-07-15 16:27:41 [base WARNING] Not Found: /cso/v1/e2info_secs
+2019-07-15 16:27:50 [base WARNING] Not Found: /cso/v1/e2info_secs
+2019-07-15 16:27:56 [base WARNING] Not Found: /cso/v1/e2
+2019-07-15 16:27:57 [base WARNING] Not Found: /cso/v1/e2
+2019-07-15 16:29:47 [base WARNING] Not Found: /cso/v1/e2info_secs/
+2019-07-15 16:42:55 [base WARNING] Not Found: /11
+2019-07-15 17:41:37 [base WARNING] Not Found: /fdafda
+2019-07-15 17:41:53 [base WARNING] Not Found: /cso/agent/
+2019-07-15 17:42:23 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 15, in push_pot_data_to_cso_alerts
+    if request.META["remote_addr"] not in [POT_IP, '127.0.0.1', 'localhost', ]:
+KeyError: 'remote_addr'
+2019-07-15 17:42:59 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 15, in push_pot_data_to_cso_alerts
+    if request.META["remote_addr"] not in [POT_IP, '127.0.0.1', 'localhost', ]:
+KeyError: 'remote_addr'
+2019-07-15 17:45:59 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 24, in push_pot_data_to_cso_alerts
+    descover_time=data["descover_time"] if "descover_time" in data.keys else None
+TypeError: argument of type 'builtin_function_or_method' is not iterable
+2019-07-15 17:47:04 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 24, in push_pot_data_to_cso_alerts
+    descover_time=data["descover_time"] if "descover_time" in data.keys else None
+TypeError: argument of type 'builtin_function_or_method' is not iterable
+2019-07-15 17:47:53 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'descover_time' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 31, in push_pot_data_to_cso_alerts
+    infosysname=infosysname, extra=extra, summary=summary, advice=advice)
+  File "E:\xpm\apps\agent\abstracts\alerts\potlog2cso.py", line 69, in pot2cso
+    _info.save()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\base.py", line 759, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\base.py", line 842, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\base.py", line 880, in _do_insert
+    using=using, raw=raw)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 1128, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1048, "Column 'descover_time' cannot be null")
+2019-07-15 17:48:00 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'descover_time' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 31, in push_pot_data_to_cso_alerts
+    infosysname=infosysname, extra=extra, summary=summary, advice=advice)
+  File "E:\xpm\apps\agent\abstracts\alerts\potlog2cso.py", line 69, in pot2cso
+    _info.save()
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\base.py", line 759, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\base.py", line 842, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\base.py", line 880, in _do_insert
+    using=using, raw=raw)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\query.py", line 1128, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\models\sql\compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\workspace\cso_venv\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1048, "Column 'descover_time' cannot be null")
