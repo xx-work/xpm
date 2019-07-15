@@ -78,10 +78,12 @@
  ConnectManagerUserInfo.objects.create(name='非特权系统管理用户', \
  username='admin001', _password='11fd32234Q42q==')
 ```
+
 ## 2019-7-11
 - 今天出现了权限异常的问题; 无法一对一的获取。permission_group 视图。
 - 仍然没有解决的问题是策略管理的优化。
 - [git表情大全](https://github.com/liuchengxu/git-commit-emoji-cn)
+
 
 ## 2019-7-12 
 - iptabels 设置端口访问
@@ -91,3 +93,9 @@ iptables -t filter -I INPUT -p tcp --dport 18077 -j DROP
 iptables -t filter -I INPUT -s 192.168.2.161 -p tcp --dport 18077 -j ACCEPT
 iptables -A INPUT -m iprange --src-range 192.168.2.161-192.168.2.255 -j ACCEPT 
 ```
+
+## 2019-7-15
+- 增加部件信息监控总览; 
+  - 基于prometheus、snmp进行管理和加载重要进程以及系统的使用。
+- 增加部件策略信息加载和设置的总览
+- [prometheus中文指导手册](https://yunlzheng.gitbook.io/prometheus-book/introduction)
