@@ -1,10 +1,29 @@
 # coding:utf-8
+import rsa
 
 from mgsd.api.xobj.models import SysManagerCopInfo, ConnectManagerUserInfo
 from mgsd.api.solution.models import InfoSecEvent, InfoSecEventlevels, InfoEventStates, InfoSecEventTypes, EffectInfo, AttackerActionDesc
 
 POT_USERNAME = 'pot001'
 POT_IP = '192.168.2.175'
+IV = '1q2w3e4R'.encode('UTF-8')
+
+def load_cop_user(auth_username=POT_USERNAME, auth_passwd='QDF==12@##$FSD*(DF****'):
+    if auth_username not in [x.username for x in ConnectManagerUserInfo.objects.all() ]:
+        pot_alert_connect_user = ConnectManagerUserInfo.objects.create(
+            username=auth_username, _password=auth_passwd
+        )
+    else:
+        pot_alert_connect_user = ConnectManagerUserInfo.objects.get(username=auth_username)
+
+    # 签发keys
+    if not pot_alert_connect_user._private_key or not pot_alert_connect_user._public_key:
+        pubkey, privkey = rsa.newkeys(1024)
+        pot_alert_connect_user._private_key=privkey
+        pot_alert_connect_user._public_key=pubkey
+        pot_alert_connect_user.save()
+
+    return pot_alert_connect_user
 
 
 def inital_pots_coper(srouce_ip=POT_IP, auth_username=POT_USERNAME, auth_passwd='QDF==12@##$FSD*(DF****'):
@@ -12,12 +31,10 @@ def inital_pots_coper(srouce_ip=POT_IP, auth_username=POT_USERNAME, auth_passwd=
     初始化蜜罐部件管理系统
     :return:
     """
-    if auth_username not in [x.username for x in ConnectManagerUserInfo.objects.all() ]:
-        pot_alert_connect_user = ConnectManagerUserInfo.objects.create(
-            username=auth_username, _password=auth_passwd
-        )
-    else:
-        pot_alert_connect_user = ConnectManagerUserInfo.objects.get(username=auth_username)
+    # 创建蜜罐用户
+
+    pot_alert_connect_user = load_cop_user(auth_username, auth_passwd)
+    # 加载蜜罐部件
     try:
         pot_copers = SysManagerCopInfo.objects.filter(ip=srouce_ip)
         pot_coper = pot_copers[0]
@@ -73,3 +90,18 @@ def pot2cso(descover_time=str(_now), happend_time=str(_now),
 
     return True, _info
 
+from rsa import PublicKey, PrivateKey
+
+
+def user_sig_is_ture(_public_key, sig, IV=IV):
+    exec('public = {}'.format(_public_key))
+
+    # slug = rsa.verify(message=IV, signature=sig, pub_key=locals()['public'])
+    # return slug == 'SHA-1'
+
+    try:
+
+        slug = rsa.verify(message=IV, signature=sig, pub_key=locals()['public'])
+        return slug=='SHA-1'
+    except:
+        return False

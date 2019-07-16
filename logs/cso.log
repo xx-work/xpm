@@ -391,3 +391,482 @@ Traceback (most recent call last):
   File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
     raise errorclass(errno, errval)
 django.db.utils.IntegrityError: (1048, "Column 'descover_time' cannot be null")
+2019-07-16 10:05:06 [base WARNING] Not Found: /favicon.ico
+2019-07-16 10:07:52 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 31, in push_pot_data_to_cso_alerts
+    state = user_sig_is_ture(sig=sig, _public_key=_conn_user._public_key)
+  File "E:\xpm\apps\agent\abstracts\alerts\potlog2cso.py", line 95, in user_sig_is_ture
+    exec('public = {}'.format(_public_key))
+  File "<string>", line 1, in <module>
+NameError: name 'PublicKey' is not defined
+2019-07-16 10:09:14 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 31, in push_pot_data_to_cso_alerts
+    state = user_sig_is_ture(sig=sig, _public_key=_conn_user._public_key)
+  File "E:\xpm\apps\agent\abstracts\alerts\potlog2cso.py", line 95, in user_sig_is_ture
+    exec('public = {}'.format(_public_key))
+  File "<string>", line 1, in <module>
+NameError: name 'PublicKey' is not defined
+2019-07-16 10:09:27 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 31, in push_pot_data_to_cso_alerts
+    state = user_sig_is_ture(sig=sig, _public_key=_conn_user._public_key)
+  File "E:\xpm\apps\agent\abstracts\alerts\potlog2cso.py", line 95, in user_sig_is_ture
+    exec('public = {}'.format(_public_key))
+  File "<string>", line 1, in <module>
+NameError: name 'PublicKey' is not defined
+2019-07-16 10:10:40 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 31, in push_pot_data_to_cso_alerts
+    state = user_sig_is_ture(sig=sig, _public_key=_conn_user._public_key)
+  File "E:\xpm\apps\agent\abstracts\alerts\potlog2cso.py", line 95, in user_sig_is_ture
+    exec('public = {}'.format(_public_key))
+  File "<string>", line 1, in <module>
+NameError: name 'PublicKey' is not defined
+2019-07-16 10:16:44 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 31, in push_pot_data_to_cso_alerts
+    state = user_sig_is_ture(sig=sig, _public_key=_conn_user._public_key)
+  File "E:\xpm\apps\agent\abstracts\alerts\potlog2cso.py", line 105, in user_sig_is_ture
+    slug = rsa.verify(message=IV, signature=sig, pub_key=locals()['public'])
+KeyError: 'public'
+2019-07-16 10:17:30 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 31, in push_pot_data_to_cso_alerts
+    state = user_sig_is_ture(sig=sig, _public_key=_conn_user._public_key)
+  File "E:\xpm\apps\agent\abstracts\alerts\potlog2cso.py", line 106, in user_sig_is_ture
+    slug = rsa.verify(message=IV, signature=sig, pub_key=locals()['public'])
+  File "F:\workspace\cso_venv\lib\site-packages\rsa\pkcs1.py", line 322, in verify
+    encrypted = transform.bytes2int(signature)
+  File "F:\workspace\cso_venv\lib\site-packages\rsa\transform.py", line 43, in bytes2int
+    return int(binascii.hexlify(raw_bytes), 16)
+TypeError: a bytes-like object is required, not 'InMemoryUploadedFile'
+2019-07-16 10:19:09 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 31, in push_pot_data_to_cso_alerts
+    state = user_sig_is_ture(sig=sig, _public_key=_conn_user._public_key)
+  File "E:\xpm\apps\agent\abstracts\alerts\potlog2cso.py", line 106, in user_sig_is_ture
+    slug = rsa.verify(message=IV, signature=sig, pub_key=locals()['public'])
+  File "F:\workspace\cso_venv\lib\site-packages\rsa\pkcs1.py", line 322, in verify
+    encrypted = transform.bytes2int(signature)
+  File "F:\workspace\cso_venv\lib\site-packages\rsa\transform.py", line 43, in bytes2int
+    return int(binascii.hexlify(raw_bytes), 16)
+TypeError: a bytes-like object is required, not 'generator'
+2019-07-16 10:20:48 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 33, in push_pot_data_to_cso_alerts
+    state = user_sig_is_ture(sig=signature, _public_key=_conn_user._public_key)
+  File "E:\xpm\apps\agent\abstracts\alerts\potlog2cso.py", line 106, in user_sig_is_ture
+    slug = rsa.verify(message=IV, signature=sig, pub_key=locals()['public'])
+  File "F:\workspace\cso_venv\lib\site-packages\rsa\pkcs1.py", line 328, in verify
+    message_hash = compute_hash(message, method_name)
+  File "F:\workspace\cso_venv\lib\site-packages\rsa\pkcs1.py", line 404, in compute_hash
+    hasher.update(message)
+TypeError: Unicode-objects must be encoded before hashing
+2019-07-16 10:31:14 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 32, in push_pot_data_to_cso_alerts
+    state = user_sig_is_ture(sig=signature, _public_key=_conn_user._public_key)
+UnboundLocalError: local variable 'signature' referenced before assignment
+2019-07-16 10:33:11 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 33, in push_pot_data_to_cso_alerts
+    state = user_sig_is_ture(sig=signature, _public_key=_conn_user._public_key)
+  File "E:\xpm\apps\agent\abstracts\alerts\potlog2cso.py", line 106, in user_sig_is_ture
+    slug = rsa.verify(message=IV, signature=sig, pub_key=locals()['public'])
+  File "F:\workspace\cso_venv\lib\site-packages\rsa\pkcs1.py", line 322, in verify
+    encrypted = transform.bytes2int(signature)
+  File "F:\workspace\cso_venv\lib\site-packages\rsa\transform.py", line 43, in bytes2int
+    return int(binascii.hexlify(raw_bytes), 16)
+TypeError: a bytes-like object is required, not 'InMemoryUploadedFile'
+2019-07-16 10:33:48 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 33, in push_pot_data_to_cso_alerts
+    state = user_sig_is_ture(sig=signature, _public_key=_conn_user._public_key)
+  File "E:\xpm\apps\agent\abstracts\alerts\potlog2cso.py", line 106, in user_sig_is_ture
+    slug = rsa.verify(message=IV, signature=sig, pub_key=locals()['public'])
+  File "F:\workspace\cso_venv\lib\site-packages\rsa\pkcs1.py", line 328, in verify
+    message_hash = compute_hash(message, method_name)
+  File "F:\workspace\cso_venv\lib\site-packages\rsa\pkcs1.py", line 404, in compute_hash
+    hasher.update(message)
+TypeError: Unicode-objects must be encoded before hashing
+2019-07-16 10:34:46 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = response.render()
+  File "F:\workspace\cso_venv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\renderers.py", line 105, in render
+    allow_nan=not self.strict, separators=separators
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\utils\json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "G:\anaconda\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "G:\anaconda\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "G:\anaconda\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\utils\encoders.py", line 52, in default
+    return obj.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xac in position 0: invalid start byte
+2019-07-16 10:36:09 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = response.render()
+  File "F:\workspace\cso_venv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\renderers.py", line 105, in render
+    allow_nan=not self.strict, separators=separators
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\utils\json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "G:\anaconda\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "G:\anaconda\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "G:\anaconda\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\utils\encoders.py", line 52, in default
+    return obj.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xac in position 0: invalid start byte
+2019-07-16 10:36:50 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "E:\xpm\apps\agent\abstracts\alerts\api_view.py", line 33, in push_pot_data_to_cso_alerts
+    state = user_sig_is_ture(sig=signature, _public_key=_conn_user._public_key)
+  File "E:\xpm\apps\agent\abstracts\alerts\potlog2cso.py", line 99, in user_sig_is_ture
+    slug = rsa.verify(message=IV, signature=sig, pub_key=locals()['public'])
+  File "F:\workspace\cso_venv\lib\site-packages\rsa\pkcs1.py", line 322, in verify
+    encrypted = transform.bytes2int(signature)
+  File "F:\workspace\cso_venv\lib\site-packages\rsa\transform.py", line 43, in bytes2int
+    return int(binascii.hexlify(raw_bytes), 16)
+TypeError: a bytes-like object is required, not 'InMemoryUploadedFile'
+2019-07-16 10:37:09 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = response.render()
+  File "F:\workspace\cso_venv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\renderers.py", line 105, in render
+    allow_nan=not self.strict, separators=separators
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\utils\json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "G:\anaconda\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "G:\anaconda\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "G:\anaconda\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\utils\encoders.py", line 52, in default
+    return obj.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xac in position 0: invalid start byte
+2019-07-16 10:38:25 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = response.render()
+  File "F:\workspace\cso_venv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\renderers.py", line 105, in render
+    allow_nan=not self.strict, separators=separators
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\utils\json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "G:\anaconda\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "G:\anaconda\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "G:\anaconda\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\utils\encoders.py", line 68, in default
+    return super(JSONEncoder, self).default(obj)
+  File "G:\anaconda\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'type' is not JSON serializable
+2019-07-16 10:39:44 [exception ERROR] Internal Server Error: /cso/agent/pushd_pot_data
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = response.render()
+  File "F:\workspace\cso_venv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\renderers.py", line 105, in render
+    allow_nan=not self.strict, separators=separators
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\utils\json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "G:\anaconda\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "G:\anaconda\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "G:\anaconda\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\utils\encoders.py", line 52, in default
+    return obj.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xac in position 0: invalid start byte
+2019-07-16 11:20:41 [base WARNING] Not Found: /favicon.ico

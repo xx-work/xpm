@@ -48,3 +48,18 @@ def sysdatas2db():
     }
 
 
+@shared_task
+def miguan_alerts_tasks(_all_lists, data):
+    """
+    导入蜜罐的数据到这里面来
+    :param _all_lists:
+    :param data:
+    :return:
+    """
+    from agent.abstracts.alerts.api_view import alerts_input_tasks
+    res = alerts_input_tasks(_all_lists, data)
+
+    return {
+        "stat": True,
+        "reason": res
+    }
