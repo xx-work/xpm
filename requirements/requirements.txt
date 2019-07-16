@@ -38,3 +38,5 @@ pysnmp==4.4.9
 feedparser==5.2.1
 git+git://github.com/sshwsfc/xadmin.git@django2
 #django-grappelli==2.12.4
+
+rsa==4.0

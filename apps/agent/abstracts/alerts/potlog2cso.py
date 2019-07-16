@@ -8,6 +8,7 @@ POT_USERNAME = 'pot001'
 POT_IP = '192.168.2.175'
 IV = '1q2w3e4R'.encode('UTF-8')
 
+
 def load_cop_user(auth_username=POT_USERNAME, auth_passwd='QDF==12@##$FSD*(DF****'):
     if auth_username not in [x.username for x in ConnectManagerUserInfo.objects.all() ]:
         pot_alert_connect_user = ConnectManagerUserInfo.objects.create(

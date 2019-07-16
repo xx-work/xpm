@@ -5,7 +5,7 @@ from __future__ import absolute_import
 import xadmin
 
 from ....api.models import ConnectManagerUserInfo, ChangeAudit, SysManagerCopInfo
-from ....api.solution.models import InfoSecEvent, InfoSecEventTypes, InfoSecEventlevels
+from ....api.solution.models import InfoSecEvent, InfoSecEventTypes, InfoSecEventlevels, InfoGoin
 from ....api.none4cso.models import SystemEventResponseSolve, AuditEventResponseSolve, SecurityEventResponseSolve
 
 
@@ -27,6 +27,10 @@ class SystemEventResponseSolveAdmin(ListAdminView):
             url=self.get_model_url(ConnectManagerUserInfo, 'changelist', ) + "{id}/detail/".format(
                 id=plat_user.id), title=plat_user.name)
     get_report_user.short_description = "报告用户"
+
+    def get_report_summmay(self, instance):
+        return instance.description
+    get_report_summmay.short_description = "事件描述"
 
     def get_report_name(self, instance):
         return get_markd_table_details_show(self.get_model_url(InfoSecEvent, 'changelist') + str(instance.id) + "/detail/", title=instance.infosysname)
@@ -53,7 +57,17 @@ class SystemEventResponseSolveAdmin(ListAdminView):
         return [x for x in InfoSecEventlevels if x[0] == instance.info_level][0][1]
     get_info_level.short_description = "事件等级"
 
-    list_display = ['get_report_name', 'get_change_obj', 'get_info_level', 'get_report_time', 'get_describtion', ]
+    def get_goinstat(self, instance):
+        try:
+            goins = InfoGoin.objects.filter(info=instance)
+            latest_state = goins.order_by('-go_time')[0]
+            return get_markd_table_details_show(self.get_model_url(InfoGoin, 'changelist') + str(latest_state.id) + "/detail/",
+                        title=latest_state.get_state_display())
+        except:
+            return '无跟进'
+    get_goinstat.short_description = "最新处理状态"
+
+    list_display = ['get_report_name', 'get_change_obj', 'get_info_level', 'get_report_time', 'get_describtion', 'get_goinstat']
 
     def queryset(self):
         qs = InfoSecEvent.objects.filter(plat_etype=PolicyBaseTypes[0][0], info_type=InfoSecEventTypes[1][0])

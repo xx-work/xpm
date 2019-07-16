@@ -35,11 +35,11 @@ def push_single_pot_data_to_cso_alerts(request):
         return Response({"stat": False, "reason": "签名证书有误！"})
 
     descover_time=data["descover_time"] if "descover_time" in data.keys() else None
-    happend_time=data["happend_time"] if "descover_time" in data.keys() else None
+    happend_time=data["happend_time"] if "happend_time" in data.keys() else None
     extra=data["extra"] if "extra" in data.keys() else None
     infosysname=data["infosysname"] if "infosysname" in data.keys() else None
     advice=data["advice"] if "advice" in data.keys() else None
-    summary=data["advice"] if "advice" in data.keys() else None
+    summary=data["summary"] if "summary" in data.keys() else None
     info = pot2cso(descover_time=descover_time, happend_time=happend_time,
         infosysname=infosysname, extra=extra, summary=summary, advice=advice, auth_username=data["auth_username"])
 
@@ -73,9 +73,16 @@ def push_pot_data_to_cso_alerts(request):
 
     if not state:
         return Response({"stat": False, "reason": "签名证书有误！"})
-
-    _all_lists = data["alerts"] if "alerts" in data.keys() else None
-
+    try:
+        if type(data["alerts"]) == str:
+            import json
+            _all_lists = json.loads(data["alerts"])["data"]
+        elif type(data["alerts"]) == list:
+            _all_lists = data["alerts"]
+        else:
+            return Response({"stat": False, "reason": "alerts对象有误！"})
+    except:
+        return Response({"stat": False, "reason": "Alerts格式错误！"})
     from agent.tasks import miguan_alerts_tasks
     miguan_alerts_tasks.delay(_all_lists=_all_lists, data=data)
 
@@ -88,11 +95,11 @@ def alerts_input_tasks(_all_lists, data):
     for alert in _all_lists:
         try:
             descover_time=alert["descover_time"] if "descover_time" in alert.keys() else None
-            happend_time=alert["happend_time"] if "descover_time" in alert.keys() else None
+            happend_time=alert["happend_time"] if "happend_time" in alert.keys() else None
             extra=alert["extra"] if "extra" in alert.keys() else None
             infosysname=alert["infosysname"] if "infosysname" in alert.keys() else None
             advice=alert["advice"] if "advice" in alert.keys() else None
-            summary=alert["advice"] if "advice" in alert.keys() else None
+            summary=alert["summary"] if "summary" in alert.keys() else None
             slug, _ = pot2cso(descover_time=descover_time, happend_time=happend_time,
                 infosysname=infosysname, extra=extra, summary=summary, advice=advice, auth_username=data["auth_username"])
             results.append((slug, '导入' + infosysname + "secucess"))

@@ -9,7 +9,7 @@ class InfoSecEventAdmin(object):
     # isExecute = True
     hidden_menu = True
 
-    list_display = ['info_source', 'info_type', 'describtion',
+    list_display = ['info_source', 'info_type','infosysname', 'describtion',
                     'info_level', 'descover_time', 'happend_time', 'reporter', 'report_time']
     readonly_fields = ("reporter", "id")
 
