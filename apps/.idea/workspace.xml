@@ -50,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/agent/minitord/snmpd/docker/centos7/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="597">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -440,12 +440,12 @@
       <workItem from="1562898354041" duration="15971000" />
       <workItem from="1563151484282" duration="18157000" />
       <workItem from="1563236601594" duration="22246000" />
-      <workItem from="1563323097104" duration="22416000" />
+      <workItem from="1563323097104" duration="23360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="424980000" />
+    <option name="totallyTimeSpent" value="425924000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -460,7 +460,7 @@
     <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2324468" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2324468" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -468,7 +468,7 @@
       <window_info id="Job Explorer" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4994681" weight="0.16554509" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.72074467" visible="true" weight="0.32723358" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.72074467" visible="true" weight="0.1883746" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39726028" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -917,8 +917,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/agent/minitord/snmpd/docker/centos7/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="597">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>

@@ -24,7 +24,7 @@ cd net-snmp-${SNMP_VERSION} && \
 --with-default-snmp-version=2 \
 --with-sys-contact=actanble@gmail.com \
 --with-sys-location=China \
---with-logfile=/var/log/snmpd.log \
+--with-logfile=${INSTALL_PATH}/var/log/snmpd.log \
 --with-persistent-directory=${INSTALL_PATH}/var/net-snmp && make && make install
 
 RUN ln -sn ${INSTALL_PATH}/sbin/snmpd /usr/bin/snmpd
@@ -36,14 +36,11 @@ RUN chmod +x ${INSTALL_PATH}/snmpd.conf
 
 WORKDIR ${INSTALL_PATH}/bin/
 
-COPY entrypoint.sh /usr/local/bin/
-RUN chmod -R 777 /usr/local/bin/entrypoint.sh
-
+COPY entrypoint.sh /snmpd
 RUN groupadd -r snmp && useradd -r -g snmp snmp \
     && chown -R snmp ${INSTALL_PATH} && chgrp -R snmp ${INSTALL_PATH}
 
 USER snmp
 EXPOSE 161 162
 
-ENTRYPOINT ['entrypoint.sh']
-CMD ['${INSTALL_PATH}/sbin/snmpd', '-h']
+# ENTRYPOINT ['/bin/bash', '/snmpd/entrypoint.sh']
