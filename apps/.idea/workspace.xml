@@ -51,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/agent/minitord/snmpd/docker/centos7/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="597">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+              <caret line="46" column="88" selection-start-line="46" selection-start-column="88" selection-end-line="46" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -440,12 +440,12 @@
       <workItem from="1562898354041" duration="15971000" />
       <workItem from="1563151484282" duration="18157000" />
       <workItem from="1563236601594" duration="22246000" />
-      <workItem from="1563323097104" duration="23360000" />
+      <workItem from="1563323097104" duration="24853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="425924000" />
+    <option name="totallyTimeSpent" value="427417000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -918,7 +918,7 @@
     <entry file="file://$PROJECT_DIR$/agent/minitord/snmpd/docker/centos7/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="597">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <caret line="46" column="88" selection-start-line="46" selection-start-column="88" selection-end-line="46" selection-end-column="88" />
         </state>
       </provider>
     </entry>

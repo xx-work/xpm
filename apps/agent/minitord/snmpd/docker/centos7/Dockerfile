@@ -42,5 +42,6 @@ RUN groupadd -r snmp && useradd -r -g snmp snmp \
 
 USER snmp
 EXPOSE 161 162
-
-# ENTRYPOINT ['/bin/bash', '/snmpd/entrypoint.sh']
+## path not found
+#ENTRYPOINT ['/snmpd/sbin/snmpd', '-f', '-Lo', '-C', '-c', '/snmpd/snmpd.conf']
+## docker run -it --rm registry.cn-beijing.aliyuncs.com/xx-z/net-snmp:v1 /snmpd/snmpd -h
