@@ -32,7 +32,7 @@ RUN ln -sn ${INSTALL_PATH}/sbin/snmptrapd /usr/bin/snmptrapd
 RUN cp ${INSTALL_PATH}/net-snmp-${SNMP_VERSION}/EXAMPLE.conf ${INSTALL_PATH}/snmpd.conf
 RUN rm -rf ${INSTALL_PATH}/net-snmp-${SNMP_VERSION}*
 
-RUN chmod +x /etc/snmpd.conf
+RUN chmod +x ${INSTALL_PATH}/snmpd.conf
 
 WORKDIR ${INSTALL_PATH}/bin/
 
