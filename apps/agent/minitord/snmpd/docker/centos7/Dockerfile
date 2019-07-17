@@ -1,4 +1,5 @@
 FROM centos:7
+MAINTAINER actanble <actanble@gmail.com>
 
 USER root
 
@@ -24,7 +25,7 @@ cd net-snmp-${SNMP_VERSION} && \
 --with-sys-contact=actanble@gmail.com \
 --with-sys-location=China \
 --with-logfile=/var/log/snmpd.log \
---with-persistent-directory=/var/net-snmp && make && install
+--with-persistent-directory=${INSTALL_PATH}/var/net-snmp && make && make install
 
 RUN ln -sn ${INSTALL_PATH}/sbin/snmpd /usr/bin/snmpd
 RUN ln -sn ${INSTALL_PATH}/sbin/snmptrapd /usr/bin/snmptrapd
