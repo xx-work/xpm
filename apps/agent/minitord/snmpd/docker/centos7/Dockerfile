@@ -29,7 +29,7 @@ cd net-snmp-${SNMP_VERSION} && \
 
 RUN ln -sn ${INSTALL_PATH}/sbin/snmpd /usr/bin/snmpd
 RUN ln -sn ${INSTALL_PATH}/sbin/snmptrapd /usr/bin/snmptrapd
-RUN cp EXAMPLE.conf ${INSTALL_PATH}/snmpd.conf
+RUN cp ${INSTALL_PATH}/net-snmp-${SNMP_VERSION}/EXAMPLE.conf ${INSTALL_PATH}/snmpd.conf
 RUN rm -rf ${INSTALL_PATH}/net-snmp-${SNMP_VERSION}*
 
 RUN chmod +x /etc/snmpd.conf
