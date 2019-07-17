@@ -11,8 +11,8 @@ ENV SNMP_MODE agent
 
 ARG SNMP_VERSION=5.8
 ARG INSTALL_PATH=/snmpd
-RUN mkdir -p ${INSTALL_PATH}
 
+RUN mkdir -p ${INSTALL_PATH}
 WORKDIR ${INSTALL_PATH}
 
 RUN wget https://nchc.dl.sourceforge.net/project/net-snmp/net-snmp/${SNMP_VERSION}/net-snmp-${SNMP_VERSION}.tar.gz && \
@@ -42,6 +42,7 @@ RUN groupadd -r snmp && useradd -r -g snmp snmp \
     && chown -R snmp ${INSTALL_PATH} && chgrp -R snmp ${INSTALL_PATH}
 
 USER snmp
+EXPOSE 161 162
 
 ENTRYPOINT ['entrypoint.sh']
 CMD ['${INSTALL_PATH}/sbin/snmpd', '-h']
