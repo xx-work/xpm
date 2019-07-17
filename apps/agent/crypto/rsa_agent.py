@@ -16,6 +16,7 @@ def decoded_text(s_encoded, primary_key=bob_priv):
     s_decoded = rsa.decrypt(s_encoded, primary_key)
     return s_decoded
 
+
 def test():
     d = {}
     d["a"] = 2
@@ -34,6 +35,7 @@ def test():
     results = json.loads(de)
 
     print(results)
+
 
 if __name__ == '__main__':
     test()

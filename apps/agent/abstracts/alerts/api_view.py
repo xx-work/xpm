@@ -13,10 +13,10 @@ def push_single_pot_data_to_cso_alerts(request):
     data = request.data
 
     if request.META["REMOTE_ADDR"] not in [POT_IP, '127.0.0.1', 'localhost', ]:
-        return Response({"stat": False, "reason":"数据源不正确"})
+        return Response({"stat": False, "reason": "数据源不正确"})
 
     if "auth_username" not in data.keys() or "auth_passwd" not in data.keys():
-        return Response({"stat": False, "reason":"缺少必须的auth认证"})
+        return Response({"stat": False, "reason": "缺少必须的auth认证"})
 
     if data["auth_username"] not in [POT_USERNAME, ] or data["auth_passwd"] != '112233..':
         return Response({"stat": False, "reason" : "Auth认证失败"})

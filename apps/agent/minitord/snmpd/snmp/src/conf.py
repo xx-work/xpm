@@ -25,12 +25,12 @@ config_template = {
         'sys_software': {'oid': '1.3.6.1.2.1.25.6.3.1.2', 'req_method': 'walk'},
         'sys_up_time': {'oid': '1.3.6.1.2.1.1.3', 'req_method': 'walk'}
     },
-    'ALARM_POLICY':{
+    'ALARM_POLICY': {
         0: {'target_name': 'CPU使用率'},
         1: {'target_name': '内存使用率'},
         2: {'target_name': '硬盘使用率'},
     },
-    'ALARM_ACTION':{
+    'ALARM_ACTION': {
         0: ">",
         1: "<",
         2: "=",

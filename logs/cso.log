@@ -871,3 +871,645 @@ Traceback (most recent call last):
 UnicodeDecodeError: 'utf-8' codec can't decode byte 0xac in position 0: invalid start byte
 2019-07-16 11:20:41 [base WARNING] Not Found: /favicon.ico
 2019-07-16 14:29:28 [base WARNING] Not Found: /12
+2019-07-17 10:38:03 [base WARNING] Not Found: /fdsafdsa
+2019-07-17 10:38:04 [base WARNING] Not Found: /favicon.ico
+2019-07-17 10:38:22 [base WARNING] Not Found: /cso/mg/
+2019-07-17 10:38:26 [base WARNING] Not Found: /cso/mg/jwt_login
+2019-07-17 10:39:28 [exception ERROR] Internal Server Error: /cso/mg/jwt_login/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\jwt_views.py", line 53, in post
+    if serializer.is_valid():
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\p2_serrializers.py", line 72, in validate
+    user = l_authenticate(**credentials)
+  File "E:\xpm\apps\secs\api\oauth\utils\local_authenticate.py", line 9, in l_authenticate
+    _data = from_sql_get_data(_sql)["data"]
+  File "E:\xpm\apps\secs\utils\db_utils.py", line 12, in from_sql_get_data
+    corsor.execute(sql)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cso711.userprofile' doesn't exist")
+2019-07-17 10:39:53 [exception ERROR] Internal Server Error: /cso/mg/jwt_login/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\jwt_views.py", line 53, in post
+    if serializer.is_valid():
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\p2_serrializers.py", line 72, in validate
+    user = l_authenticate(**credentials)
+  File "E:\xpm\apps\secs\api\oauth\utils\local_authenticate.py", line 9, in l_authenticate
+    _data = from_sql_get_data(_sql)["data"]
+  File "E:\xpm\apps\secs\utils\db_utils.py", line 12, in from_sql_get_data
+    corsor.execute(sql)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cso711.userprofile' doesn't exist")
+2019-07-17 10:41:02 [exception ERROR] Internal Server Error: /cso/mg/jwt_login/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\jwt_views.py", line 53, in post
+    if serializer.is_valid():
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\p2_serrializers.py", line 72, in validate
+    user = l_authenticate(**credentials)
+  File "E:\xpm\apps\secs\api\oauth\utils\local_authenticate.py", line 9, in l_authenticate
+    _data = from_sql_get_data(_sql)["data"]
+  File "E:\xpm\apps\secs\utils\db_utils.py", line 12, in from_sql_get_data
+    corsor.execute(sql)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cso711.userprofile' doesn't exist")
+2019-07-17 10:41:06 [exception ERROR] Internal Server Error: /cso/mg/jwt_login/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\jwt_views.py", line 53, in post
+    if serializer.is_valid():
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\p2_serrializers.py", line 72, in validate
+    user = l_authenticate(**credentials)
+  File "E:\xpm\apps\secs\api\oauth\utils\local_authenticate.py", line 9, in l_authenticate
+    _data = from_sql_get_data(_sql)["data"]
+  File "E:\xpm\apps\secs\utils\db_utils.py", line 12, in from_sql_get_data
+    corsor.execute(sql)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cso711.userprofile' doesn't exist")
+2019-07-17 10:41:59 [exception ERROR] Internal Server Error: /cso/mg/jwt_login/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\jwt_views.py", line 53, in post
+    if serializer.is_valid():
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\p2_serrializers.py", line 72, in validate
+    user = l_authenticate(**credentials)
+  File "E:\xpm\apps\secs\api\oauth\utils\local_authenticate.py", line 9, in l_authenticate
+    _data = from_sql_get_data(_sql)["data"]
+  File "E:\xpm\apps\secs\utils\db_utils.py", line 12, in from_sql_get_data
+    corsor.execute(sql)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cso711.userprofile' doesn't exist")
+2019-07-17 10:42:03 [exception ERROR] Internal Server Error: /cso/mg/jwt_login/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\jwt_views.py", line 53, in post
+    if serializer.is_valid():
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\p2_serrializers.py", line 72, in validate
+    user = l_authenticate(**credentials)
+  File "E:\xpm\apps\secs\api\oauth\utils\local_authenticate.py", line 9, in l_authenticate
+    _data = from_sql_get_data(_sql)["data"]
+  File "E:\xpm\apps\secs\utils\db_utils.py", line 12, in from_sql_get_data
+    corsor.execute(sql)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cso711.userprofile' doesn't exist")
+2019-07-17 10:42:45 [exception ERROR] Internal Server Error: /cso/mg/jwt_login/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\jwt_views.py", line 53, in post
+    if serializer.is_valid():
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\p2_serrializers.py", line 72, in validate
+    user = l_authenticate(**credentials)
+  File "E:\xpm\apps\secs\api\oauth\utils\local_authenticate.py", line 9, in l_authenticate
+    _data = from_sql_get_data(_sql)["data"]
+  File "E:\xpm\apps\secs\utils\db_utils.py", line 12, in from_sql_get_data
+    corsor.execute(sql)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cso711.userprofile' doesn't exist")
+2019-07-17 10:43:00 [base WARNING] Not Found: /favicon.ico
+2019-07-17 10:44:26 [exception ERROR] Internal Server Error: /cso/mg/jwt_login/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\jwt_views.py", line 53, in post
+    if serializer.is_valid():
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\p2_serrializers.py", line 72, in validate
+    user = l_authenticate(**credentials)
+  File "E:\xpm\apps\secs\api\oauth\utils\local_authenticate.py", line 9, in l_authenticate
+    _data = from_sql_get_data(_sql)["data"]
+  File "E:\xpm\apps\secs\utils\db_utils.py", line 12, in from_sql_get_data
+    corsor.execute(sql)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cso711.userprofile' doesn't exist")
+2019-07-17 10:44:30 [exception ERROR] Internal Server Error: /cso/mg/jwt_login/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\jwt_views.py", line 53, in post
+    if serializer.is_valid():
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\p2_serrializers.py", line 72, in validate
+    user = l_authenticate(**credentials)
+  File "E:\xpm\apps\secs\api\oauth\utils\local_authenticate.py", line 9, in l_authenticate
+    _data = from_sql_get_data(_sql)["data"]
+  File "E:\xpm\apps\secs\utils\db_utils.py", line 12, in from_sql_get_data
+    corsor.execute(sql)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cso711.userprofile' doesn't exist")
+2019-07-17 10:44:48 [exception ERROR] Internal Server Error: /cso/mg/jwt_login/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\jwt_views.py", line 53, in post
+    if serializer.is_valid():
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\p2_serrializers.py", line 72, in validate
+    user = l_authenticate(**credentials)
+  File "E:\xpm\apps\secs\api\oauth\utils\local_authenticate.py", line 9, in l_authenticate
+    _data = from_sql_get_data(_sql)["data"]
+  File "E:\xpm\apps\secs\utils\db_utils.py", line 12, in from_sql_get_data
+    corsor.execute(sql)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cso711.userprofile' doesn't exist")
+2019-07-17 10:44:56 [exception ERROR] Internal Server Error: /cso/mg/jwt_login/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\jwt_views.py", line 53, in post
+    if serializer.is_valid():
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\p2_serrializers.py", line 72, in validate
+    user = l_authenticate(**credentials)
+  File "E:\xpm\apps\secs\api\oauth\utils\local_authenticate.py", line 9, in l_authenticate
+    _data = from_sql_get_data(_sql)["data"]
+  File "E:\xpm\apps\secs\utils\db_utils.py", line 12, in from_sql_get_data
+    corsor.execute(sql)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cso711.userprofile' doesn't exist")
+2019-07-17 10:44:57 [exception ERROR] Internal Server Error: /cso/mg/jwt_login/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\jwt_views.py", line 53, in post
+    if serializer.is_valid():
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\p2_serrializers.py", line 72, in validate
+    user = l_authenticate(**credentials)
+  File "E:\xpm\apps\secs\api\oauth\utils\local_authenticate.py", line 9, in l_authenticate
+    _data = from_sql_get_data(_sql)["data"]
+  File "E:\xpm\apps\secs\utils\db_utils.py", line 12, in from_sql_get_data
+    corsor.execute(sql)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cso711.userprofile' doesn't exist")
+2019-07-17 10:45:11 [exception ERROR] Internal Server Error: /cso/mg/jwt_login/
+Traceback (most recent call last):
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\workspace\cso_venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\anaconda\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\jwt_views.py", line 53, in post
+    if serializer.is_valid():
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "F:\workspace\cso_venv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\xpm\apps\secs\api\oauth\local_jwt\p2_serrializers.py", line 72, in validate
+    user = l_authenticate(**credentials)
+  File "E:\xpm\apps\secs\api\oauth\utils\local_authenticate.py", line 9, in l_authenticate
+    _data = from_sql_get_data(_sql)["data"]
+  File "E:\xpm\apps\secs\utils\db_utils.py", line 12, in from_sql_get_data
+    corsor.execute(sql)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\workspace\cso_venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cso711.userprofile' doesn't exist")

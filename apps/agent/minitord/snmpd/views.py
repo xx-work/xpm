@@ -13,7 +13,7 @@ from rest_framework.decorators import api_view, permission_classes
 
 
 @api_view(['GET'])
-# @permission_classes((IsAuthenticated, ))
+@permission_classes(())
 def collect_data(request):
     from agent.tasks import sysdatas2db
     sysdatas2db.delay()
