@@ -36,6 +36,6 @@ sig@sig_miguan auth_username=pot001 auth_passwd=112233..\
 
 
 ## requests 对接示例
-- [模拟表单发送post请求](../conn/test_uploads_fields.py)
+- [模拟表单发送post请求](../../../minitord/test_uploads_fields.py)
 - 这个对接是异步请求，需要前往 http://192.168.2.227:10055/tasks 查看响应结果 
 - 在 http://192.168.2.227/admin/mgsd/infosecevent/查看最终结果
