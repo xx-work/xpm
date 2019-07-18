@@ -24,24 +24,26 @@ cd net-snmp-${SNMP_VERSION} && \
 --with-default-snmp-version=2 \
 --with-sys-contact=actanble@gmail.com \
 --with-sys-location=China \
---with-logfile=${INSTALL_PATH}/var/log/snmpd.log \
+--with-logfile=${INSTALL_PATH}/var/snmpd.log \
 --with-persistent-directory=${INSTALL_PATH}/var/net-snmp && make && make install
 
-RUN ln -sn ${INSTALL_PATH}/sbin/snmpd /usr/bin/snmpd
-RUN ln -sn ${INSTALL_PATH}/sbin/snmptrapd /usr/bin/snmptrapd
+RUN ln -sn ${INSTALL_PATH}/sbin/snmpd /usr/bin/snmpd && ln -sn ${INSTALL_PATH}/sbin/snmptrapd /usr/bin/snmptrapd
+
 RUN cp ${INSTALL_PATH}/net-snmp-${SNMP_VERSION}/EXAMPLE.conf ${INSTALL_PATH}/snmpd.conf
 RUN rm -rf ${INSTALL_PATH}/net-snmp-${SNMP_VERSION}*
-
 RUN chmod +x ${INSTALL_PATH}/snmpd.conf
 
-WORKDIR ${INSTALL_PATH}/bin/
-
-COPY entrypoint.sh /snmpd
-RUN groupadd -r snmp && useradd -r -g snmp snmp \
-    && chown -R snmp ${INSTALL_PATH} && chgrp -R snmp ${INSTALL_PATH}
-
-USER snmp
 EXPOSE 161 162
-## path not found
-#ENTRYPOINT ['/snmpd/sbin/snmpd', '-f', '-Lo', '-C', '-c', '/snmpd/snmpd.conf']
+
+ENV TINI_VERSION v0.18.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
+RUN chmod +x /tini
+#ENTRYPOINT ["/tini", "--"]
+
+RUN groupadd -r snmp && useradd -r -g snmp snmp \
+    && chown -R snmp ${INSTALL_PATH} /tini && chgrp -R snmp ${INSTALL_PATH} /tini
+USER snmp
+
+WORKDIR ${INSTALL_PATH}
+ENTRYPOINT ["/tini", "--", './sbin/snmpd', './snmpd.conf']
 ## docker run -it --rm registry.cn-beijing.aliyuncs.com/xx-z/net-snmp:v1 /snmpd/snmpd -h
