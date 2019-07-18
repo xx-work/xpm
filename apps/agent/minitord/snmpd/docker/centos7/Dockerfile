@@ -38,12 +38,18 @@ EXPOSE 161 162
 ENV TINI_VERSION v0.18.0
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
 RUN chmod +x /tini
-ENTRYPOINT ["/tini", "--"]
+ENTRYPOINT ["/tini", "-vvv", "-g", "-w", "--"]
 
 RUN groupadd -r snmp && useradd -r -g snmp snmp \
     && chown -R snmp ${INSTALL_PATH} /tini && chgrp -R snmp ${INSTALL_PATH} /tini
 USER snmp
 
 WORKDIR ${INSTALL_PATH}
-CMD ['snmpd', './snmpd.conf']
-## docker run -it --rm registry.cn-beijing.aliyuncs.com/xx-z/net-snmp:v1 /snmpd/snmpd -h
+#COPY entrypoint.sh ${INSTALL_PATH}/entrypoint.sh
+#RUN chmod +x ${INSTALL_PATH}/entrypoint.sh
+#CMD ['/bin/sh', 'entrypoint.sh']
+
+##CMD ['./sbin/snmpd', '-C', '-c', './snmpd.conf']
+
+# NOTE: docker run -it --rm registry.cn-beijing.aliyuncs.com/xx-z/net-snmp:v1 /snmpd/snmpd -h
+# docker ps -a | grep snmp | awk '{print $1}' | xargs docker stop | xargs docker rm
