@@ -1,5 +1,5 @@
 import xadmin
-
+from xadmin.util import vendor
 from ..models import SnmpHostData, SnmpAgentCfgInfo
 
 

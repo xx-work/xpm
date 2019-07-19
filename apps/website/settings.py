@@ -33,6 +33,7 @@ BOOTSTRAP_TOKEN = CONFIG.BOOTSTRAP_TOKEN
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = CONFIG.DEBUG
+STATIC_USE_CDN = CONFIG.STATIC_USE_CDN
 
 # Absolute url for some case, for example email link
 if DEBUG:
@@ -257,6 +258,10 @@ LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale'),
 ]
 
+TIME_FORMAT = '%Y-%m-%d %H:%M:%S'
+DATE_TIME_FORMAT = '%Y-%m-%d'
+
+
 # restframework
 from .restframework import *
 INSTALLED_APPS += REST_FRAMEWORK_APPS
@@ -271,14 +276,15 @@ FILE_UPLOAD_DIRECTORY_PERMISSIONS = 0o755
 
 SITE_ID = 1
 SITE_ROOT = os.path.dirname(BASE_DIR)
+
 STATIC_ROOT = os.path.join(SITE_ROOT, 'collect_static')
+import sys
+if sys.platform == 'win32':
+    STATIC_ROOT = 'E:\\xadmin\\collect_static\\'
+
 
 STATIC_URL = '/static/'
 STATICFILES = os.path.join(BASE_DIR, 'static')
-
-TIME_FORMAT = '%Y-%m-%d %H:%M:%S'
-DATE_TIME_FORMAT = '%Y-%m-%d'
-
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
@@ -295,9 +301,7 @@ EMAIL_PORT = 25
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER
 
-MEDIA_DIR = STATIC_ROOT
-if sys.platform == 'win32':
-    MEDIA_DIR = "e://"
+MEDIA_DIR = os.path.join(STATIC_ROOT, 'media')
 
 if not os.path.exists(MEDIA_DIR):
     os.makedirs(MEDIA_DIR)

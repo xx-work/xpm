@@ -99,3 +99,8 @@ iptables -A INPUT -m iprange --src-range 192.168.2.161-192.168.2.255 -j ACCEPT
   - 基于prometheus、snmp进行管理和加载重要进程以及系统的使用。
 - 增加部件策略信息加载和设置的总览
 - [prometheus中文指导手册](https://yunlzheng.gitbook.io/prometheus-book/introduction)
+
+## 2019-7-19
+- 放弃本xadmin使用django-vue
+- [xpm-ui](https://github.com/xx-work/xpm-ui)
+

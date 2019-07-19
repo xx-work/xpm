@@ -27,18 +27,22 @@ def matched_header_line(headers, header_line):
     return headers
 
 
+login_url = "https://report.rich-healthcare.com/medicalReport/app/loginController/checkLogin"
+
 def get_cookie():
     headers = {}
     for x in request_lines.split('\n'):
         headers = matched_header_line(headers, x)
     session = requests.session()
     session.headers = headers
-    response = session.post(url="https://report.rich-healthcare.com/medicalReport/app/loginController/checkLogin",
-                           data=dict(loginWay=2, countDownTime='', username='952100624322', password='89A254', x=45, y=22),
-                           allow_redirects=False)
+    response = session.post(url=login_url,
+                           data=dict(loginWay=2, countDownTime='', username='952100624322', password='89A254', x=45, y=22),)
 
-    reffer = response.request.headers
-    print(reffer)
+    _new_headers = response.request.headers
+    _res = session.get(login_url, headers=_new_headers, allow_redirects=False)
+    print(_res.request.headers)
+
+    return _new_headers["Cookie"]
 
 
 def replace_cookie(cookie):
