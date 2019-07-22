@@ -104,3 +104,8 @@ iptables -A INPUT -m iprange --src-range 192.168.2.161-192.168.2.255 -j ACCEPT
 - 放弃本xadmin使用django-vue
 - [xpm-ui](https://github.com/xx-work/xpm-ui)
 
+## 2019-7-22
+- 1, 放弃所有的vue-admin 
+  - 1, 因为新版本的CSO 前台要对接经典的; 所以放弃。
+  - 2, 有点复杂
+  

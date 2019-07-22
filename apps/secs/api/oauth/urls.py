@@ -13,12 +13,16 @@ from secs.api.oauth.local_jwt.jwt_views import obtain_jwt_token, verify_jwt_toke
 #     url(r'^oauth/', include(router.urls) ),
 # ]
 
+from .vue_view import user_info, user_logout
+
 # from .customizer_obtain import customize_obtain_jwt_token
 urlpatterns = [
     # url('customize_login/', customize_obtain_jwt_token), ## 自定义登陆令牌调控
 
-    url('jwt_login/$', obtain_jwt_token),     ## 生成令牌
-    # url('refresh_jwt_token/$', refresh_jwt_token), ## 刷新令牌
-    url('verify_jwt_token/$', verify_jwt_token),  ## 验证令牌
-    url('rf_api/', include('rest_framework.urls', namespace='rest_framework')), ### 测试中用到; 生产环境删除
+    url('^user/login$', obtain_jwt_token),
+    url('^user/info$', user_info),
+    url('^user/logout$', user_logout),
+    # url('refresh_jwt_token/$', refresh_jwt_token),
+    url('^verify_jwt_token/$', verify_jwt_token),
+    url('^rf_api/', include('rest_framework.urls', namespace='rest_framework')), ### 测试中用到; 生产环境删除
 ]

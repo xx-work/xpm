@@ -20,7 +20,7 @@ jwt_get_username_from_payload = api_settings.JWT_PAYLOAD_GET_USERNAME_HANDLER
 
 
 # 增加登陆尝试的相关接口
-#from ..login_fail_frequent_util import UserCache
+# from ..login_fail_frequent_util import UserCache
 
 from .p2_util import LoginOpreation
 
@@ -67,9 +67,9 @@ class JSONWebTokenSerializer(Serializer):
             raise serializers.ValidationError(msg)
 
         if all(credentials.values()):
-            # user = authenticate(**credentials)
-            from secs.api.oauth.utils.local_authenticate import l_authenticate
-            user = l_authenticate(**credentials)
+            user = authenticate(**credentials)
+            # from secs.api.oauth.utils.local_authenticate import l_authenticate
+            # user = l_authenticate(**credentials)
             if user:
                 if not user.is_active:
                     # msg = _('User account is disabled.')

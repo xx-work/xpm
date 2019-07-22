@@ -397,10 +397,46 @@ try:
     }
 except:
     pass
+	
+# Load Cor Headers 
+X_FRAME_OPTIONS = 'ALLOWALL'
 
+# 跨域增加忽略
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = ('*')
+CORS_ALLOW_METHODS = (
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+    'VIEW',
+)
+
+CORS_ALLOW_HEADERS = (
+    'XMLHttpRequest',
+    'X_FILENAME',
+    'accept-encoding',
+    'authorization',
+    'Authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+    'Pragma',
+    'X-Token',
+)
+
+SESSION_COOKIE_AGE = 60 * 30 # 30分钟
+SESSION_SAVE_EVERY_REQUEST = True
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True # 关闭浏览器，则COOKIE失效
 
 # 取消CSRF中间件
 MIDDLEWARE.append('secs.middle.MiddleWare.DisableCSRFCheck')
-# MIDDLEWARE.append('secs.middle.MiddleWare.SiteMainMiddleware')
+MIDDLEWARE.append('secs.middle.MiddleWare.SiteMainMiddleware')
 
 PREVILEGED_USER_SETS = ["admin001", "admin007"]

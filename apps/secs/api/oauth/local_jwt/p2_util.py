@@ -1,5 +1,6 @@
 from secs.models import UserAuditLog
 
+
 class UserManageParams():
     def __init__(self):
         self.user_login_times_len = 5 ## 统计次数

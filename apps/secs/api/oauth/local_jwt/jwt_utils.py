@@ -58,19 +58,19 @@ def jwt_payload_handler(user):
 
 # 基本上没有有 延续上面的这个函数，
 def jwt_response_payload_handler(token, user=None, request=None):
-    from ..user_views import UserProfile
-    identity = "SuperAdmin"
-    truename = "Not Set"
-    if len(UserProfile.objects.filter(user=user)) > 0:
-        identity = UserProfile.objects.get(user=user).identity
-        truename = UserProfile.objects.get(user=user).truename
+    # from ..user_views import UserProfile
+    # identity = "SuperAdmin"
+    # truename = "Not Set"
+    # if len(UserProfile.objects.filter(user=user)) > 0:
+    #     identity = UserProfile.objects.get(user=user).identity
+    #     truename = UserProfile.objects.get(user=user).truename
 
     return {
         'token': token,
         # 'user': CreateUserSerializer(user, context={'request': request}).data,
-        'username': user.username,
-        'identity': identity,
-        'truename': truename,
+        # 'username': user.username,
+        # 'identity': identity,
+        # 'truename': truename,
     }
 
 
