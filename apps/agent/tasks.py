@@ -56,7 +56,7 @@ def miguan_alerts_tasks(_all_lists, data):
     :param data:
     :return:
     """
-    from agent.api.pot.alerts.api_view import alerts_input_tasks
+    from agent.api.devices.pot.alerts import alerts_input_tasks
     res = alerts_input_tasks(_all_lists, data)
 
     return {

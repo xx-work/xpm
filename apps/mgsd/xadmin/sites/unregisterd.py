@@ -1,5 +1,6 @@
 import xadmin
 
+from xadmin.views import base
 # from django_celery_beat.models import PeriodicTask, CrontabSchedule, IntervalSchedule
 # xadmin.sites.register(PeriodicTask)
 # xadmin.sites.register(CrontabSchedule)

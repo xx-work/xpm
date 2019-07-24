@@ -4,7 +4,7 @@ def test_perm():
     django_setup()
     from datetime import datetime
     _now = datetime.now()
-    from agent.api.pot.alerts.potlog2cso import pot2cso
+    from agent.api.devices.pot.alerts import pot2cso
     data = pot2cso(descover_time=_now, happend_time=_now,
             infosysname='test1', extra='', summary='', advice='')
     print(data)

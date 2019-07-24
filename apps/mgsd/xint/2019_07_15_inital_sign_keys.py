@@ -2,7 +2,7 @@ import rsa
 from src import django_setup
 django_setup()
 
-from agent.api.pot.alerts.potlog2cso import load_cop_user
+from agent.api.devices.pot.alerts import load_cop_user
 user = load_cop_user()
 
 IV = '1q2w3e4R'.encode('UTF-8')
