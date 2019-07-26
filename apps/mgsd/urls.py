@@ -30,7 +30,7 @@ urlpatterns += [
 from .api.solution.views import urlparterns as _info_up
 urlpatterns += _info_up
 
+
 # 2019-7-22 替换xadmin的API
 from .api.urls import urlparterns as xapi_up
 urlpatterns += xapi_up
-

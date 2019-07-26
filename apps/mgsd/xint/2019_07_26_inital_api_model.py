@@ -4,12 +4,8 @@ django_setup()
 
 
 def main():
-    from agent.api.interceptors.request_ips import IpsRequestMiddleHandle
-    from agent.api.devices.agent_api import IPS_API
-
-    from agent.api.devices.models import AgentApi
-    from agent.api.devices.ips.fips.api import ApiINfo
-
+    from agent.api.devices.ips.inital_api import push_ips_apis
+    push_ips_apis()
 
 
 if __name__ == '__main__':

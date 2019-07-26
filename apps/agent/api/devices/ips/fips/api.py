@@ -2,7 +2,7 @@ from agent.api.devices.ips.settings import prefix, PREFIX_LJ, PREFIX_DL
 
 
 class ApiINfo(object):
-    def __init__(self, url, method='post', name='', desc='', params='', example='', auth=True, response_eg=None, data=None, _type='c'):
+    def __init__(self, url, method='post', name='', desc='', params='', example='', auth=True, response_eg='', data='', _type='c'):
         self.url = url
         self.method = method
         self.name = name
@@ -15,7 +15,7 @@ class ApiINfo(object):
         self.data = data
         self._type = _type
 
-    def dict(self):
+    def todict(self):
         return dict(
             url=self.url,
             method=self.method,
@@ -29,6 +29,9 @@ class ApiINfo(object):
             data=self.data,
             _type=self._type
         )
+
+    def __str__(self):
+        return str(self.todict())
 
 
 IPS_API = [
