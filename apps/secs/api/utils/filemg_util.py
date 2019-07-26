@@ -61,7 +61,7 @@ def old_test_file(request, File, key_name='param', re_partern="([0-9a-zA-z].*)")
         ## 增加元素
         if action_type == "add":
             res_datas.append( (request_data[key_name], True) )
-        # stats = [res_datas.remove(x) for x in res_datas if x[0]["scanner"] == request.GET["scanner"] ]
+        # stats = [res_datas.remove(x) for x fips res_datas if x[0]["scanner"] == request.GET["scanner"] ]
 
         ## 在列表中删除这个元素
         if action_type == "delete":

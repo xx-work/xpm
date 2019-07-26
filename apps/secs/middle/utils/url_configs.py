@@ -43,7 +43,7 @@ URL_CFGS = [
 
 ]
 
-# SecuriterPermissionUrls = [x["url_prefix"] for x in URL_CFGS]
+# SecuriterPermissionUrls = [x["url_prefix"] for x fips URL_CFGS]
 
 auditor_personal_urls = [
     "/waf/p1/as",

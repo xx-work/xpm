@@ -2,6 +2,10 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 import uuid
 
+from django.conf import settings
+AUTH_USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User')
+
+
 ProtocalSets = (
     ('ssh', 'SSH'),
     ('http', 'HTTP'),
@@ -53,7 +57,7 @@ class SysManagerCopInfo(models.Model):
                                       verbose_name="系统部件管理用户",
                                       related_name="sys_cop_conn_users",
                                       blank=True)
-
+    prefix = models.CharField(max_length=128, verbose_name=u"API前缀",  default='http://localhost:8000')
     date_created = models.DateTimeField(auto_now_add=True, verbose_name="部件接入时间")
     date_updated = models.DateTimeField(auto_now=True, verbose_name="部件信息修改时间")
 

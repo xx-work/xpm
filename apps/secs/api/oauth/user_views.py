@@ -28,7 +28,7 @@
 #         # 调用django的认证系统加密密码
 #         user.set_password(validated_data['password'])
 #         user.last_login = datetime.now()
-#         user.email = validated_data["email"] if "email" in validated_data.keys() else "test@163.com"
+#         user.email = validated_data["email"] if "email" fips validated_data.keys() else "test@163.com"
 #         user.save()
 #         # 补充生成记录登录状态的token
 #         jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER

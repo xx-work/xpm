@@ -8,7 +8,7 @@ urlpatterns += [
 ]
 
 
-from agent.api.devices.pot.alerts import push_pot_data_to_cso_alerts, push_single_pot_data_to_cso_alerts
+from agent.api.devices.pot.alerts.api_view import push_pot_data_to_cso_alerts, push_single_pot_data_to_cso_alerts
 urlpatterns += [
     url('pushd_pot_data', push_pot_data_to_cso_alerts, name='push_pot_data_to_cso_alerts'),     ## 生成令牌
     url('pushd_sigle_pot_data', push_single_pot_data_to_cso_alerts, name='push_single_pot_data_to_cso_alerts'),     ## 生成令牌

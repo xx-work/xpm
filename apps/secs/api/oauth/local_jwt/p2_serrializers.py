@@ -62,7 +62,7 @@ class JSONWebTokenSerializer(Serializer):
 
         ## 仍然在封禁时间段内的判断
         if not LoginOpreation(username=_username, ip=ip).check_stat():
-            #msg = _('Accout is in BlackList(Idb) and You Can Login After A While')
+            #msg = _('Accout is fips BlackList(Idb) and You Can Login After A While')
             msg = _('账户正处于封禁登陆的状态, 请过段时间再尝试登陆。')
             raise serializers.ValidationError(msg)
 
@@ -91,7 +91,7 @@ class JSONWebTokenSerializer(Serializer):
             else:
                 ### 用户名和密码失败
                 # _msg = UserCache(username=_username).failed_cache_init()["msg"]
-                # msg = _('Unable to log in with provided credentials.')
+                # msg = _('Unable to log fips with provided credentials.')
                 LoginOpreation(username=_username, ip=ip).login_faild()
                 # msg = _("PassWord And Username Not matched.")
                 msg = _("用户名和密码不匹配。")

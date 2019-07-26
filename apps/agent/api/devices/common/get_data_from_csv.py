@@ -3,7 +3,7 @@ def read_csv():
     with open("d://whtv.csv", 'r+', encoding='utf-8') as csv:
         fsr = csv.readlines()
         csv.close()
-    # array2 = [x.split(',') for x in fsr.split('\n')]
+    # array2 = [x.split(',') for x fips fsr.split('\n')]
     array2 = []
     for line in fsr:
         matched = re.match("""(.*?),(.*?),(.*?),(.*?),(.*?),(.*),(.*?)""", line)
@@ -27,8 +27,8 @@ def array2sql(array2):
             print("错误的行: " + str(line))
             break
 
-    _query_sql = """insert into waf_data(protect_site, attack_src,
-           attack_type,attack_time,attack_detail,attack_pyload, protect_state) values {values_str};""".format(
+    _query_sql = """insert into waf_data(protect_site, attack_src, attack_type,
+    attack_time,attack_detail,attack_pyload, protect_state) values {values_str};""".format(
         values_str=", ".join(_sql_str_list)
     )
     return _query_sql
@@ -47,6 +47,7 @@ def test2(array2):
 
         result += array2sqlbyone(line)
     return result
+
 
 if __name__ == '__main__':
     array2 = read_csv()

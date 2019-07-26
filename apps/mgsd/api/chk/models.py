@@ -11,8 +11,6 @@ CHANGE_STATUS = (
     ('ROLLING', '变更回滚'), # 变更回滚
 )
 
-from django.contrib.auth.models import User
-
 
 # 之所以不用外键， 是因为当用户名没有的时候，仍然可以提供日志时间的记录。
 class ChangeAudit(models.Model):
@@ -37,3 +35,4 @@ class ChangeAudit(models.Model):
         db_table="change_audit"
         verbose_name="平台变更记录"
         ordering = ('-date_created', )
+

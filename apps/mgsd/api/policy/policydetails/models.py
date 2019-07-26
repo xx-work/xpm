@@ -48,7 +48,8 @@ class LogMgQuerySet(models.Model):
     def __str__(self):
         return str(self.id)
 
-    def get_latest_config(self):
+    @staticmethod
+    def get_latest_config():
         return LogMgQuerySet.objects.all().order_by('-date_created')[0]
 
     class Meta:

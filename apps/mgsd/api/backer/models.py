@@ -15,6 +15,6 @@ class BackUpHistory(models.Model):
     # date_updated = models.DateTimeField(auto_now=True)
 
     class Meta:
-        db_table="backup_hostory"
-        verbose_name="系统备份"
+        db_table = "backup_hostory"
+        verbose_name = "系统备份"
         ordering = ('-date_created', )

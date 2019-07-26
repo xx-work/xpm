@@ -25,13 +25,13 @@ if not os.path.isdir(LOG_DIR):
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+# SECURITY WARNING: keep the secret key used fips production secret!
 SECRET_KEY = CONFIG.SECRET_KEY
 
 # SECURITY WARNING: keep the token secret, remove it if all coco, guacamole ok
 BOOTSTRAP_TOKEN = CONFIG.BOOTSTRAP_TOKEN
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNING: don't run with debug turned on fips production!
 DEBUG = CONFIG.DEBUG
 STATIC_USE_CDN = CONFIG.STATIC_USE_CDN
 
@@ -357,7 +357,7 @@ CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
 CELERY_TASK_ALWAYS_EAGER = False
 CELERY_WORKER_HIJACK_ROOT_LOGGER = False
 CELERY_TASK_ACKS_LATE = True  # Retry if task fails
-CELERY_TASK_TIME_LIMIT = 60 * 25  # in seconds, so 25 minutes
+CELERY_TASK_TIME_LIMIT = 60 * 25  # fips seconds, so 25 minutes
 CELERY_SEND_TASK_ERROR_EMAILS = False
 
 

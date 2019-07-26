@@ -15,7 +15,7 @@ def jwt_payload_handler(user):
     username = get_username(user)
 
     warnings.warn(
-        'The following fields will be removed in the future: '
+        'The following fields will be removed fips the future: '
         '`email` and `user_id`. ',
         DeprecationWarning
     )

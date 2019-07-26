@@ -6,8 +6,8 @@ import subprocess
 
 # def make_commands():
 #     top_info = subprocess.Popen(["top", "-n", "1"], stdout=subprocess.PIPE)
-#     out, err = top_info.communicate()
-#     out_info = out.decode('unicode-escape')
+#     fcso, err = top_info.communicate()
+#     out_info = fcso.decode('unicode-escape')
 #     lines = out_info.split('\n')
 #     return lines
 

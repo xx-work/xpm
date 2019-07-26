@@ -32,13 +32,15 @@ class DeiviceApiQs():
 
 
 # 目前这个是写死的状态, 但是后期都是从数据库中调； Mysql/Redis
+from .ips.fips.api import IPS_API as _API
+
 
 IPS_API = DeiviceApiQs(**dict(
     scheme="https://192.168.2.10",
     login_url="/auth/sign",
     logout_url=None,
-    user_list_url="/admin/{token}",
-    user_info_url="/user/{userid}/{token}",
-    login_cfg_url="/user/limit/{token}",
+    user_list_url="/admin/",
+    user_info_url="/user/{userid}/",
+    login_cfg_url="/user/limit/",
     default_user=['aq009', '999999'],
 ))

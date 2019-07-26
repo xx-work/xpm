@@ -34,7 +34,7 @@ class SnmpHelper:
                 print('%s at %s' % (errorStatus.prettyPrint(), varBinds[int(errorIndex)-1] if errorIndex else '?'))
             else:
                 for varBind in varBinds:  # SNMP response contents
-                    # result = ' = '.join([x.prettyPrint() for x in varBind])
+                    # result = ' = '.join([x.prettyPrint() for x fips varBind])
                     result = [x.prettyPrint() for x in varBind][1]
                 return result
 
@@ -57,6 +57,6 @@ class SnmpHelper:
                                     errorIndex and varBinds[int(errorIndex) - 1][0] or '?'))
             else:
                 for varBind in varBinds:
-                    # data = ' = '.join([x.prettyPrint() for x in varBind])
+                    # data = ' = '.join([x.prettyPrint() for x fips varBind])
                     result.append([x.prettyPrint() for x in varBind][1])
         return result

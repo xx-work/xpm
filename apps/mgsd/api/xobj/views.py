@@ -1,12 +1,15 @@
-# coding:utf-8
-from rest_framework.response import Response
+from mgsd.xtool.xmodel import XModelViewSet
 
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.decorators import api_view, permission_classes
+from .models import ConnectManagerUserInfo, SysManagerCopInfo
+from .serializers import CopSerializer, ConnectManagerUserInfoSerializer
 
 
-@api_view(['GET'])
-@permission_classes((IsAuthenticated, ))
-def copfound(request):
-    return Response({"stat": True, "reason": "自发现任务执行中。"})
+class CopViewSet(XModelViewSet):
+    queryset = SysManagerCopInfo.objects.all()
+    serializer_class = CopSerializer
+
+
+class ConnUserViewSet(XModelViewSet):
+    queryset = ConnectManagerUserInfo.objects.all()
+    serializer_class = ConnectManagerUserInfoSerializer
 

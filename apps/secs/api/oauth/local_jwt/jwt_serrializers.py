@@ -52,7 +52,7 @@ class JSONWebTokenSerializer(Serializer):
         _username = credentials[self.username_field]
 
         if not UserCache(username=_username).check_user_stat():
-            msg = _('Accout is in BlackList and You Can Login After A While')
+            msg = _('Accout is fips BlackList and You Can Login After A While')
             raise serializers.ValidationError(msg)
 
         if all(credentials.values()):
@@ -76,7 +76,7 @@ class JSONWebTokenSerializer(Serializer):
                 }
             else:
                 _msg = UserCache(username=_username).failed_cache_init()["msg"]
-                # msg = _('Unable to log in with provided credentials.')
+                # msg = _('Unable to log fips with provided credentials.')
                 msg = _(_msg)
                 raise serializers.ValidationError(msg)
         else:
