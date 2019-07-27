@@ -3,7 +3,8 @@ import json
 from requests.api import request
 
 from ..devices.agent_api import IPS_API
-from ..utils.request_default_headers import ips_headers
+# from ..utils.request_default_headers import ips_headers
+from ..devices.ips.settings import IPS_DEFAULT_REQUEST_HEADERS, IPS_ROLE_KV
 
 
 class IpsRequestMiddleHandle():
@@ -16,7 +17,7 @@ class IpsRequestMiddleHandle():
         if headers:
             self.headers = headers
         else:
-            self.headers = ips_headers
+            self.headers = IPS_DEFAULT_REQUEST_HEADERS
 
     @staticmethod
     def refrash_c_tokenid():
@@ -44,7 +45,6 @@ class IpsRequestMiddleHandle():
         ).request()
         datas = json.loads(resp.text)
         token, role = datas["results"]
-        from ..devices.ips.user_role import IPS_ROLE_KV
         userinfo = {"username": username, role: IPS_ROLE_KV[str(role)]}
         IPS_API.set_token(token)
         IPS_API.set_userinfo(userinfo)

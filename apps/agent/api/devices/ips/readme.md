@@ -8,3 +8,5 @@
 - inital_api 记录的是 IPS_API
 - settings 记录的是接口的示例需要修改的 /bg
 - fips/ 记录的是 from-ips 获取的接口的API
+- [核心的requests处理文件 `intercepter.py`](../../devices/ips/fips/intercepter.py)
+- [测试脚本文件](../../../../mgsd/xint/2019_07_24_inital_ips_respose-v2.py)
