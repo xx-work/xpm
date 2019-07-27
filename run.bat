@@ -1,1 +1,0 @@
-f:\\workspace\cso_venv\Scripts\activate.bat
